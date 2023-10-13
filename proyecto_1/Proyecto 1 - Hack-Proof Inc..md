@@ -2,8 +2,11 @@
 
 ## Hacking Ético - Ciberseguridad en las TI
 
+
 *Raúl Ladrón de Guevara*
+
 *Juan Manuel Cumbrera López*
+
 *Christian Romero Oliva*
 
 # Índice
@@ -56,17 +59,17 @@
     - [Impacto](#impacto)
     - [Exploración y Explotación](#exploración-y-explotación)
     - [Contramedidas](#contramedidas)
-    
 - [Conclusiones](#conclusiones)
 - [Recomendaciones](#recomendaciones)
 
 ## Introducción
 
-En el vasto campo de la ciberseguridad, la identificación y comprensión de las vulnerabilidades es un elemento clave en el aprendizaje como profesional. EN las operaciones de Red Team o Pentesting, las vulnerabilidades son un gran punto principal que un profesional de la ciberseguridad va a intentar buscar, corregir o explotar 
+En el vasto campo de la ciberseguridad, la identificación y comprensión de las vulnerabilidades es un elemento clave en el aprendizaje como profesional. En las operaciones de Red Team o Pentesting, las vulnerabilidades son un gran punto principal que un profesional de la ciberseguridad va a intentar buscar, corregir o explotar 
 
-En este proyecto se realiza un análisis e investigación de una serie de vulnerabilidades en relación a varios sistemas operativos como Android o Linux. 
+En este proyecto se realiza un análisis e investigación de una serie de vulnerabilidades en relación a varios sistemas operativos como Android, Linux o iOS, que ha sido nuestra elección del tema que íbamos a investigar en este informe.
 
 Se ofrece una breve clasificación de las mismas con diferentes secciones para ofrecer una información amigable y comprensible de un contenido altamente técnico.
+
 ## Vulnerabilidades Investigadas
 
 ### 1 CVE-2023-43660 - ¿Warpgate?
@@ -365,11 +368,29 @@ Ej:
 
 ## Conclusiones
 
-Durante el proceso de este proyecto nos hemos adentrado en conceptos y definiciones claves en la ciberseguridad, como exploit, vulnerabilidad, UAF o EBPF. [[Proyecto 1 - Hack-Proof Inc.]]
+Durante el proceso de este proyecto nos hemos adentrado en conceptos y definiciones claves en la ciberseguridad, como exploit, vulnerabilidad, UAF o EBPF. Al haber elegido sistemas operativos como nuestro tema hemos tenido que indagar sobre componentes básicos de computación, e intentar comprender superficialmente al menos su funcionamiento para entender el motivo de la vulnerabilidad.
 
+Hemos podido comprobar que para analizar y comprender en profundidad una vulnerabilidad de seguridad informática se necesitan conocimientos muy extensos sobre el funcionamiento base de software esencial, ya que muchas de estas vulnerabilidades se basan en errores lógicos producidos a bajo nivel de computación, provocados por errores humanos a la hora de codificar. 
 
-Este proyecto nos ha ayudado a mejorar nuestra capacidad de identificar las distintas vulnerabilidades que existen en los distintos sistemas operativos, en realizar un análisis de las mismas para comprender su funcionamiento y el impacto que tienen sobre el sistema, a saber como detectarlas mediante el uso de comandos, software, scripts, etc..., a como se podrián explotar mediante el uso de herramientas como Nmap, Burpsuit, Metasploit, OpenVAS, etc... o bien con scripts ya creados por la comunidad de ciberseguridad y a saber que distintas medidas de seguridad y prevención debemos aplicar para poder evitarlas o detectarlas a tiempo. También nos a ayudado a tener un poco más de conciencia sobre la importacia que tiene la ciberseguridad.
+Se ha podido comprobar también que tener nuestros sistemas operativos actualizados nos previene frente a problemas de seguridad, ya que muchas de estas vulnerabilidades fueron instantáneamente arregladas nada más publicarse. 
+
+También hemos conocido mucho acerca de las distintas clasificaciones y recursos donde podemos encontrar clasificadas y organizadas de manera excelente todas estas vulnerabilidades, como por ejemplo [NIST](https://nvd.nist.gov/vuln) o [ExploitDB](https://www.exploit-db.com/). Gracias al estándar CVE, la clasificación y publicación de vulnerabilidades se simplifica y facilita a los investigadores de ciberseguridad para que la comunidad siga avanzando y mejorando con el tiempo.
+
+Este proyecto nos ha ayudado a mejorar nuestra capacidad de identificar las distintas vulnerabilidades que existen en los distintos sistemas operativos, en realizar un análisis de las mismas para comprender su funcionamiento y el impacto que tienen sobre el sistema, saber como detectarlas mediante el uso de comandos, software, scripts, etc... Y también como se podrian explotar mediante el uso de herramientas como Nmap, Burpsuit, Metasploit, OpenVAS, etc... o bien con scripts ya creados por la comunidad de ciberseguridad. 
+
+También con ello podemos conocer que distintas medidas de seguridad y prevención debemos aplicar para prevenirnos de ellas o detectarlas a tiempo. 
+
+Por supuesto toda esta investigación nos conciencia aún más de la importancia de la ciberseguridad y el potencial daño que podría sufrir una persona, entidad u organización.
+
 
 ## Recomendaciones
 
-Podemos recomendar que tengamos siempre instalado en nuestro sistema un antivirus/antimalware, un escaner de vulnerabilidades como pueden ser Nessus o OpenVas, también un sistema IDS que nos ayude a detectar intrusiones en nuestro sistema, actualizar siempre tanto las aplicaciones como el sistema operativo a la última versión ya que suelen corregir muchas vulnerabilidades, aplicar restricciones mediante el uso de un firewall, cambiar los puertos por defecto de los servicios más comunes como por ejemplo el de ssh.
+Podemos recomendar que tengamos siempre instalado en nuestro sistema un antivirus/antimalware, un escaner de vulnerabilidades como pueden ser Nessus o OpenVas.
+
+Sería también conveniente utilizar un sistema IDS (Intruder Detecter System) que nos ayude a detectar intrusiones en nuestro sistema, actualizar siempre tanto las aplicaciones como el sistema operativo a la última versión ya que los parches corrigen muchas de las vulnerabilidades halladas. 
+
+Por supuesto aplicar restricciones mediante el uso de un firewall, y cambiar los puertos por defecto de los servicios más comunes como por ejemplo el de SSH.
+
+En general, antes que confiar en software de terceros que nos proteja automáticamente y se encargue de todo, debemos estar concienciados sobre los riesgos de la ciberseguridad e informados en la medida de lo posible, así como actuar con cautela y atención en nuestro paso por el ciberespacio. 
+
+Nosotros mismos somos al final los mejores antivirus de los que podemos disponer.
