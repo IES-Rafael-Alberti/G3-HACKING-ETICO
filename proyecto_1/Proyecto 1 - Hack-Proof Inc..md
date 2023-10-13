@@ -188,7 +188,9 @@ El impacto de la vulnerabilidad es crítico ya que afecta directamente la confid
 
 #### Exploración y Explotación
 
-Esta vulnerabilidad se puede detectar y explotar a través de herramientas que escanean vulnerabilidades, como Metasploit. También existen scripts en GitHub, Openwall o Packet Storm Security que permiten automatizar la explotación.
+Podríamos detectar la vulnerabilidad viendo la versión de sudo que tenemos instalada usando el comando: "apt list sudo"
+
+También la podríamos detectar y explotar a través de herramientas que escanean vulnerabilidades, como Metasploit. También existen scripts en GitHub, Openwall o Packet Storm Security que permiten automatizar la explotación.
 
 [Script en Packet Storm Security](https://packetstormsecurity.com/files/161230/Sudo-Buffer-Overflow-Privilege-Escalation.html)
 
@@ -196,19 +198,17 @@ Esta vulnerabilidad se puede detectar y explotar a través de herramientas que e
 
 #### Contramedidas
 
-Se puede detectar la vulnerabilidad verificando la versión de sudo instalada con el comando: `apt list sudo`. La mayoría de las distribuciones ya han lanzado actualizaciones para corregir esto, por lo que la actualización del sistema o del paquete de sudo solucionará esta vulnerabilidad.
+ La mayoría de las distribuciones ya han lanzado actualizaciones para corregir esto, por lo que la actualización del sistema o del paquete de sudo solucionará esta vulnerabilidad.
 
 ### 5 CVE-2023-26604 - systemd 246
 
 #### Descripción
 
-Systemd anterior a la versión 247 no bloquea adecuadamente la escalada de privilegios locales para algunas configuraciones de Sudo. Por ejemplo, el archivo sudoers, que requiere autenticación, podría ejecutar el comando "systemctl status". Específicamente, systemd no establece LESSSECURE en 1 y, por lo tanto, se pueden iniciar otros programas desde el programa less. Esto presenta un riesgo de seguridad sustancial al ejecutar systemctl desde Sudo, porque less se ejecuta como root cuando el tamaño del terminal es demasiado pequeño para mostrar la salida completa de systemctl.
+Systemd anterior a la versión 247 no bloquea adecuadamente la escalada de privilegios locales para algunas configuraciones de Sudo, por ejemplo, el archivo sudoers que necesita de autenticación se podría ejecutar mediante el comando "systemctl status". Específicamente, systemd no establece LESSSECURE en 1 y, por lo tanto, se pueden iniciar otros programas desde el programa less (Es un visualizador de archivos de texto). Esto presenta un riesgo de seguridad sustancial cuando se ejecuta systemctl desde Sudo, porque less se ejecuta como root cuando el tamaño del terminal es demasiado pequeño para mostrar la salida completa de systemctl.
 
-Systemd es un conjunto de procesos de administración de sistema, bibliotecas y herramientas diseñados como una plataforma central para interactuar con el núcleo del Sistema operativo GNU/Linux, afectando directamente al núcleo del sistema. Esta vulnerabilidad afecta hasta Ubuntu 20.x y hasta Red Hat 8.
+Systemd es un conjunto de procesos de administración de sistema, bibliotecas y herramientas que interactuan con el núcleo del Sistema operativo.
 
 #### Impacto
-
-Como la vulnerabilidad requiere una configuración no predeterminada (reglas de sudo modificadas) que está fuera del control de un atacante, el impacto se califica como moderado.
 
 - **Disponibilidad:** Un atacante podría utilizar esta vulnerabilidad para detener o interrumpir los servicios críticos del sistema. Por ejemplo, podría ejecutar el comando "systemctl stop nginx" para detener el servidor web nginx.
 - **Integridad:** Un atacante podría utilizar esta vulnerabilidad para modificar o eliminar archivos críticos del sistema. Por ejemplo, para ejecutar el comando "cp /etc/passwd /tmp/passwd" y copiar el archivo de contraseñas.
@@ -216,12 +216,12 @@ Como la vulnerabilidad requiere una configuración no predeterminada (reglas de 
 
 #### Exploración y Explotación
 
-Para explotar esta vulnerabilidad, no hace falta nada en especial, simplemente ejecutar comandos de systemd como systemctl o journalctl.
+Para explotar esta vulnerabilidad no hace falta nada en especial, simplemente ejecutar comandos de systemd como por ejemplo systemctl o journalctl.
 
-Aquí podemos ver un ejemplo con el que se accede fácilmente a root:
-Primero, lista los permisos de sudo con "sudo -l" y muestra que tiene permisos de root al ver el estado de cron.service. Luego, simplemente ejecuta el comando como sudo ya que tiene privilegios para hacerlo y, por último, invoca una shell con el comando !sh (!sh -> lo que hace es llamar a la última vez que se ejecutó el comando sh, con el comando bash podríamos hacer lo mismo (!/bin/bash)) y como vemos ya puede ejecutar comandos como usuario root:
+Aquí podemos ver un ejemplo con el que se accede fácilmente a root :
+Primero se lista los permisos de sudo con "sudo -l" y nos muestra que binarios tienen permisos de root (En este caso cron.service), luego simplemente ejecuta el comando como sudo ya que tiene privilegios para hacerlo y por último, invoca una shell con el comando !sh (!sh -> lo que hace es llamar a la última vez que se ejecuto el comando sh, con el comando bash podríamos hacer lo mismo (!/bin/bash))  y como vemos ya puede ejecutar comandos como usuario root:
 
-![Ejemplo de Exploración y Explotación](link_a_la_imagen.png)
+![Ejemplo de Exploración y Explotación](./systemd246.png)
 
 #### Contramedidas
 
@@ -328,7 +328,7 @@ Una vez que el atacante ha escrito datos en el búfer del pipe, podría enviar l
 
 #### Impacto: 
 
-Esta vulnerabilidad tiene varios impactos sobre la disponibilidad, integridad y confidencialidad de los datos:
+Esta vulnerabilidad tiene graves impactos sobre la disponibilidad, integridad y confidencialidad de los datos:
 
 - Disponibilidad: se podría utilizar para interrumpir servicios críticos, instalar malware o tomar el control del sistema.
 - Integridad: Se podría utilizar para modificar archivos de solo lectura.
@@ -351,9 +351,9 @@ Este repositorio tiene dos exploits que con cualquiera de ellos podríamos explo
 - El segundo lo que hace es elevar los privilegios mediante un binario que tenga permisos SUID. (Este permiso se utiliza para permitir a los usuarios del sistema ejecutar binarios con privilegios elevados temporalmente para realizar una tarea específica.).
 Ej: 
 - Detectamos los binarios que tienen permisos SUID con el comando:
-	- find / -perm -4000 2>/dev/null
+	- `find / -perm -4000 2>/dev/null`
 - Y ejecutamos el exploit2 indicandole el directorio de ese binario:
-	- ./exploit-2 /usr/bin/sudo
+	- `./exploit-2 /usr/bin/sudo`
 
 #### Contramedidas: 
 
@@ -362,6 +362,7 @@ Ej:
 - Utilizar un firewall para bloquear el acceso no autorizado a ciertos servicios como por ejemplo ssh (puerto 22)
 - Implementar un sistema de detección de intrusiones (IDS) para que nos ayude a detectar el ataque.
 - La vulnerabilidad se solucionó en Linux 5.16.11, 5.15.25 y 5.10.102 por lo que usar una de estas versiones nos solucionaría el problema.
+
 ## Conclusiones
 
 Durante el proceso de este proyecto nos hemos adentrado en conceptos y definiciones claves en la ciberseguridad, como exploit, vulnerabilidad, UAF o EBPF. [[Proyecto 1 - Hack-Proof Inc.]]
