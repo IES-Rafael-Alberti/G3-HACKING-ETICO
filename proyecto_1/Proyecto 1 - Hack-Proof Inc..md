@@ -8,55 +8,57 @@
 
 # Índice
 
-- [[#Vulnerabilidades Investigadas|Vulnerabilidades Investigadas]]
-	- [[#Vulnerabilidades Investigadas#1 CVE-2023-43660 - ¿Warpgate?|1 CVE-2023-43660 - ¿Warpgate?]]
-		- [[#1 CVE-2023-43660 - ¿Warpgate?#Descripción|Descripción]]
-		- [[#1 CVE-2023-43660 - ¿Warpgate?#Impacto|Impacto]]
-		- [[#1 CVE-2023-43660 - ¿Warpgate?#Exploración y Explotación|Exploración y Explotación]]
-		- [[#1 CVE-2023-43660 - ¿Warpgate?#Contramedidas|Contramedidas]]
-		- [[#1 CVE-2023-43660 - ¿Warpgate?#Referencias|Referencias]]
-	- [[#Vulnerabilidades Investigadas#2 CVE-2023-44466 Desbordamiento de búfer|2 CVE-2023-44466 Desbordamiento de búfer]]
-		- [[#2 CVE-2023-44466 Desbordamiento de búfer#Descripción|Descripción]]
-		- [[#2 CVE-2023-44466 Desbordamiento de búfer#Impacto|Impacto]]
-		- [[#2 CVE-2023-44466 Desbordamiento de búfer#Exploración y Explotación|Exploración y Explotación]]
-		- [[#2 CVE-2023-44466 Desbordamiento de búfer#Contramedidas|Contramedidas]]
-	- [[#Vulnerabilidades Investigadas#3 CVE-2023-39191 - Kernel de Linux eBPF|3 CVE-2023-39191 - Kernel de Linux eBPF]]
-		- [[#3 CVE-2023-39191 - Kernel de Linux eBPF#Descripción|Descripción]]
-		- [[#3 CVE-2023-39191 - Kernel de Linux eBPF#Impacto|Impacto]]
-		- [[#3 CVE-2023-39191 - Kernel de Linux eBPF#Exploración y Explotación|Exploración y Explotación]]
-		- [[#3 CVE-2023-39191 - Kernel de Linux eBPF#Contramedidas|Contramedidas]]
-	- [[#Vulnerabilidades Investigadas#4 CVE-2021-3156 - Sudo (Baron Samedit)|4 CVE-2021-3156 - Sudo (Baron Samedit)]]
-		- [[#4 CVE-2021-3156 - Sudo (Baron Samedit)#Descripción|Descripción]]
-		- [[#4 CVE-2021-3156 - Sudo (Baron Samedit)#Impacto|Impacto]]
-		- [[#4 CVE-2021-3156 - Sudo (Baron Samedit)#Exploración y Explotación|Exploración y Explotación]]
-		- [[#4 CVE-2021-3156 - Sudo (Baron Samedit)#Contramedidas|Contramedidas]]
-	- [[#Vulnerabilidades Investigadas#5 CVE-2023-26604 - systemd 246|5 CVE-2023-26604 - systemd 246]]
-		- [[#5 CVE-2023-26604 - systemd 246#Descripción|Descripción]]
-		- [[#5 CVE-2023-26604 - systemd 246#Impacto|Impacto]]
-		- [[#5 CVE-2023-26604 - systemd 246#Exploración y Explotación|Exploración y Explotación]]
-		- [[#5 CVE-2023-26604 - systemd 246#Contramedidas|Contramedidas]]
-	- [[#Vulnerabilidades Investigadas#6 CVE-2016-2414 - Minikin Android|6 CVE-2016-2414 - Minikin Android]]
-		- [[#6 CVE-2016-2414 - Minikin Android#Descripción|Descripción]]
-		- [[#6 CVE-2016-2414 - Minikin Android#Impacto|Impacto]]
-		- [[#6 CVE-2016-2414 - Minikin Android#Exploración y Explotación|Exploración y Explotación]]
-		- [[#6 CVE-2016-2414 - Minikin Android#Contramedidas|Contramedidas]]
-	- [[#Vulnerabilidades Investigadas#7 CVE-2022-2586 - Linux Kernel UAF|7 CVE-2022-2586 - Linux Kernel UAF]]
-		- [[#7 CVE-2022-2586 - Linux Kernel UAF#Descripción|Descripción]]
-		- [[#7 CVE-2022-2586 - Linux Kernel UAF#Impacto|Impacto]]
-		- [[#7 CVE-2022-2586 - Linux Kernel UAF#Exploración y Explotación|Exploración y Explotación]]
-		- [[#7 CVE-2022-2586 - Linux Kernel UAF#Contramedidas|Contramedidas]]
-	- [[#Vulnerabilidades Investigadas#8 CVE-2018-4087 - iOS Core Bluetooth|8 CVE-2018-4087 - iOS Core Bluetooth]]
-		- [[#8 CVE-2018-4087 - iOS Core Bluetooth#Descripción|Descripción]]
-		- [[#8 CVE-2018-4087 - iOS Core Bluetooth#Impacto|Impacto]]
-		- [[#8 CVE-2018-4087 - iOS Core Bluetooth#Exploración y Explotación|Exploración y Explotación]]
-		- [[#8 CVE-2018-4087 - iOS Core Bluetooth#Contramedidas|Contramedidas]]
-	- [[#Vulnerabilidades Investigadas#9 Dirty pipe (CVE-2022-0847)|9 Dirty pipe (CVE-2022-0847)]]
-		- [[#9 Dirty pipe (CVE-2022-0847)#Descripción:|Descripción:]]
-		- [[#9 Dirty pipe (CVE-2022-0847)#Impacto:|Impacto:]]
-		- [[#9 Dirty pipe (CVE-2022-0847)#Exploración y explotación:|Exploración y explotación:]]
-		- [[#9 Dirty pipe (CVE-2022-0847)#Contramedidas:|Contramedidas:]]
-- [[#Conclusiones|Conclusiones]]
-- [[#Recomendaciones|Recomendaciones]]
+- [Introducción](#Introducción)
+- [Vulnerabilidades Investigadas](#vulnerabilidades-investigadas)
+  - [1 CVE-2023-43660 - ¿Warpgate?](#1-cve-2023-43660---warpgate)
+    - [Descripción](#descripción)
+    - [Impacto](#impacto)
+    - [Exploración y Explotación](#exploración-y-explotación)
+    - [Contramedidas](#contramedidas)
+    - [Referencias](#referencias)
+  - [2 CVE-2023-44466 Desbordamiento de búfer](#2-cve-2023-44466-desbordamiento-de-búfer)
+    - [Descripción](#descripción)
+    - [Impacto](#impacto)
+    - [Exploración y Explotación](#exploración-y-explotación)
+    - [Contramedidas](#contramedidas)
+  - [3 CVE-2023-39191 - Kernel de Linux eBPF](#3-cve-2023-39191---kernel-de-linux-ebpf)
+    - [Descripción](#descripción)
+    - [Impacto](#impacto)
+    - [Exploración y Explotación](#exploración-y-explotación)
+    - [Contramedidas](#contramedidas)
+  - [4 CVE-2021-3156 - Sudo (Baron Samedit)](#4-cve-2021-3156---sudo-baron-samedit)
+    - [Descripción](#descripción)
+    - [Impacto](#impacto)
+    - [Exploración y Explotación](#exploración-y-explotación)
+    - [Contramedidas](#contramedidas)
+  - [5 CVE-2023-26604 - systemd 246](#5-cve-2023-26604---systemd-246)
+    - [Descripción](#descripción)
+    - [Impacto](#impacto)
+    - [Exploración y Explotación](#exploración-y-explotación)
+    - [Contramedidas](#contramedidas)
+  - [6 CVE-2016-2414 - Minikin Android](#6-cve-2016-2414---minikin-android)
+    - [Descripción](#descripción)
+    - [Impacto](#impacto)
+    - [Exploración y Explotación](#exploración-y-explotación)
+    - [Contramedidas](#contramedidas)
+  - [7 CVE-2022-2586 - Linux Kernel UAF](#7-cve-2022-2586---linux-kernel-uaf)
+    - [Descripción](#descripción)
+    - [Impacto](#impacto)
+    - [Exploración y Explotación](#exploración-y-explotación)
+    - [Contramedidas](#contramedidas)
+  - [8 CVE-2018-4087 - iOS Core Bluetooth](#8-cve-2018-4087---ios-core-bluetooth)
+    - [Descripción](#descripción)
+    - [Impacto](#impacto)
+    - [Exploración y Explotación](#exploración-y-explotación)
+    - [Contramedidas](#contramedidas)
+  - [9 Dirty pipe (CVE-2022-0847)](#9-dirty-pipe-cve-2022-0847)
+    - [Descripción](#descripción)
+    - [Impacto](#impacto)
+    - [Exploración y Explotación](#exploración-y-explotación)
+    - [Contramedidas](#contramedidas)
+    
+- [Conclusiones](#conclusiones)
+- [Recomendaciones](#recomendaciones)
 
 ## Introducción
 
