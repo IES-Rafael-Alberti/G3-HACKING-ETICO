@@ -13,13 +13,13 @@
 
 - [Introducción](#Introducción)
 - [Vulnerabilidades Investigadas](#vulnerabilidades-investigadas)
-  - [1 CVE-2023-43660 - ¿Warpgate?](#1-cve-2023-43660---warpgate)
+  - [1 CVE-2023-41995 - Desbordamiento de búfer en el kernel de Linux](#1-cve-2023-41995---desbordamiento-de-búfer-en-el-kernel-de-linux)
     - [Descripción](#descripción)
     - [Impacto](#impacto)
     - [Exploración y Explotación](#exploración-y-explotación)
     - [Contramedidas](#contramedidas)
     - [Referencias](#referencias)
-  - [2 CVE-2023-44466 Desbordamiento de búfer](#2-cve-2023-44466-desbordamiento-de-búfer)
+  - [2 CVE-2023-44466 - Desbordamiento de búfer](#2-cve-2023-44466---desbordamiento-de-búfer)
     - [Descripción](#descripción)
     - [Impacto](#impacto)
     - [Exploración y Explotación](#exploración-y-explotación)
@@ -34,7 +34,7 @@
     - [Impacto](#impacto)
     - [Exploración y Explotación](#exploración-y-explotación)
     - [Contramedidas](#contramedidas)
-  - [5 CVE-2023-26604 - systemd 246](#5-cve-2023-26604---systemd-246)
+  - [5 CVE-2023-26604 - systemd 246](#5-cve-2023-26604---Systemd-246)
     - [Descripción](#descripción)
     - [Impacto](#impacto)
     - [Exploración y Explotación](#exploración-y-explotación)
@@ -61,6 +61,7 @@
     - [Contramedidas](#contramedidas)
 - [Conclusiones](#conclusiones)
 - [Recomendaciones](#recomendaciones)
+- [Referencias](#referencias)
 
 ## Introducción
 
@@ -72,11 +73,15 @@ Se ofrece una breve clasificación de las mismas con diferentes secciones para o
 
 ## Vulnerabilidades Investigadas
 
-### 1 CVE-2023-43660 - ¿Warpgate?
+### 1 CVE-2023-41995 - Desbordamiento de búfer en el kernel de Linux
 
 #### Descripción
 
-La vulnerabilidad CVE-2023-43660 se produce debido a una falta de validación de entrada en el código utilizado para verificar las firmas de clave SSH, lo que podría proporcionar una clave SSH sin firma que el software Warpgate aceptará y ejecutará a un posible atacante.
+La vulnerabilidad CVE-2023-41995 es una vulnerabilidad de uso después de la liberación en el kernel de Linux[3] que afecta a las versiones de iOS y iPadOS anteriores a la 17 y a las versiones de macOS anteriores a la 14 y se encuentra en el subsistema de mensajería del kernel, el cual se utiliza para procesar los mensajes enviados entre los procesos. 
+
+Esta vulnerabilidad se produce porque el kernel de Linux no libera correctamente la memoria después de que se haya utilizado, lo cual implica que un posible atacante pueda proporcionar un mensaje malicioso que el kernel procesará incorrectamente, provocando un desbordamiento de búfer. Este desbordamiento de búfer podría permitir al atacante ejecutar código arbitrario en el contexto del kernel.
+
+El desbordamiento de búfer podría permitir al atacante ejecutar código arbitrario en el contexto del kernel. Esto significa que el atacante podría tener acceso a todos los recursos del sistema, incluyendo los datos confidenciales, los procesos y los servicios.
 
 #### Impacto
 
@@ -90,38 +95,43 @@ Además de esto último, esta vulnerabilidad tendría las consecuencias siguient
 
 #### Exploración y Explotación
 
-Para explotar y hacer uso de esta vulnerabilidad, primero se debe tener acceso al sistema a atacar. Una vez que se ha conseguido el subsiguiente acceso, se puede proporcionar una clave SSH sin firma al software Warpgate. Este software aceptará la susodicha clave sin firma y ejecutará el código que contenga, el cual podrá ser usado por el hipotético atacante para controlar el sistema, además de acceder a datos confidenciales y/o producir daños en el mismo.
+Para explotar y hacer uso de esta vulnerabilidad, un atacante debe enviar un mensaje malicioso al subsistema de mensajería del kernel de Linux. Dicho mensaje debe ser lo suficientemente grande como para provocar un desbordamiento de búfer.
+
+Existen varias formas en las que el hipotético atacante podría enviar el susodicho mensaje malicioso, las cuales incluyen:
+
+- Ataque de inyección de código en una aplicación que use el subsistema de mensajería del kernel de Linux.
+- Ataque de envenenamiento de caché DNS[4] en un servidor que utiliza el subsistema de mensajería del kernel de Linux.
+- Ataque de explotación de desbordamiento de búfer en un dispositivo que utiliza el subsistema de mensajería del kernel de Linux.
 
 #### Contramedidas
 
 A fin de reducir el riesgo de explotación de esta vulnerabilidad, exponemos algunas maneras de mantenerse a salvo:
 
-- **Actualizar los sistemas a la última versión de Warpgate.** Esta versión corrige la vulnerabilidad CVE-2023-43660.
-- **Limitar el acceso al software Warpgate.** Solo los usuarios autorizados deben tener acceso a este software.
-- **Monitorear los sistemas en busca de signos de explotación de esta vulnerabilidad.** Los administradores de sistemas deben estar atentos a los signos de actividad maliciosa, como intentos de conectarse al sistema vulnerable con una clave SSH sin firma.
+- **Actualizar el kernel a la última versión.** Las últimas versiones del kernel de Linux corrigen la vulnerabilidad.
+- **Instalar un firewall.** Esto permitiría bloquear el tráfico entrante no autorizado.
+- **Mantener los sistemas actualizados con las últimas actualizaciones de seguridad.**
+- **Mantener actualizado el antivirus.**
+<br>
 
-#### Referencias
-
-[1]: **eBPF** (_Extended Berkeley Packet Filter_) es una máquina virtual que se ejecuta dentro del kernel de Linux. Esta funciona como un marco de programación que nos permite ejecutar de forma segura programas en código máquina en el kernel de Linux sin cambiar el código del mismo.
-[2]: **CAP_BPF** Consiste en la capacidad de cargar y modificar programas BPF en el kernel.
-
-### 2 CVE-2023-44466 Desbordamiento de búfer
+### 2 CVE-2023-44466 - Desbordamiento de búfer
 
 #### Descripción
 
-La vulnerabilidad CVE-2023-44466 es una vulnerabilidad de desbordamiento de búfer en el subsistema de mensajería del kernel de Linux, la cual permite a un atacante ejecutar código en un sistema vulnerable con privilegios de usuario root.
+La vulnerabilidad CVE-2023-44466 es una vulnerabilidad de desbordamiento de búfer en el módulo de mensajería del kernel de Linux. Esto tiene su origen en el sistema de ficheros _Ceph_, ya que el módulo de mensajería es utilizado por Ceph para recibir paquetes TCP de una dirección IP. Antes de que se complete cualquier autorización, cualquier dispositivo con esa dirección IP puede enviar un paquete que produzca el susodicho desbordamiento de búfer en el kernel. Este desbordamiento de búfer puede permitir al atacante ejecutar código arbitrario en el contexto del kernel, así como una posible denegación de servicio.
 
 Esta se produce debido a una falta de validación de entrada en el código que se utiliza para procesar los mensajes enviados al subsistema de mensajería del kernel de Linux. Esto significa que un atacante puede proporcionar un mensaje malicioso que el kernel procesará incorrectamente, provocando un desbordamiento de búfer.
 
 #### Impacto
 
-Esta vulnerabilidad tiene un impacto grave en los sistemas vulnerables, ya que explotarla puede garantizar la toma de control sobre el sistema, el acceso a datos confidenciales o la posibilidad de causar daños.
+Esta vulnerabilidad tiene un impacto moderado en los sistemas vulnerables, ya que un atacante pueda identificar la IP de un dispositivo que lee el sistema de archivos Ceph puede provocar una denegación de servicio y la ejecución remota de código en el kernel, lo que podría llevar a la toma de control sobre el sistema, el acceso a datos confidenciales o la posibilidad de causar daños.
 
 La vulnerabilidad en cuestión puede tener una serie de posibles consecuencias puestas en términos de confidencialidad, integridad y disponibilidad:
 
 - **Confidencialidad:** El atacante podría acceder a datos confidenciales, como contraseñas, información financiera o datos personales.
 - **Integridad:** El atacante podría modificar o destruir datos.
-- **Disponibilidad:** El atacante podría interrumpir los servicios o sistemas.
+- **Disponibilidad:** El atacante podría interrumpir los servicios o sistemas (_DoS_).
+
+Sin embargo, la vulnerabilidad podría no tener ningún impacto si el atacante no puede ejecutar código arbitrario en el contexto del kernel. En este caso, el atacante solo podría provocar una denegación de servicio.
 
 #### Exploración y Explotación
 
@@ -134,7 +144,7 @@ A continuación resumimos algunas medidas que los usuarios deben tomar, con el o
 - **Actualizar los sistemas a la última versión del kernel de Linux.** Esta versión corrige la vulnerabilidad CVE-2023-44466.
 - **Limitar el acceso al subsistema de mensajería del kernel de Linux.** Solo los usuarios autorizados deben tener acceso a este subsistema.
 - **Monitorear los sistemas en busca de signos de explotación de esta vulnerabilidad.** Los administradores de sistemas deben estar atentos a los signos de actividad maliciosa, como intentos de enviar mensajes maliciosos al subsistema de mensajería del kernel de Linux.
-
+<br>
 
 ### 3 CVE-2023-39191 - Kernel de Linux eBPF
 
@@ -142,7 +152,7 @@ A continuación resumimos algunas medidas que los usuarios deben tomar, con el o
 
 La vulnerabilidad CVE-2023-39191 es una vulnerabilidad de validación de entrada en el subsistema _eBPF_[^1] del kernel de Linux. Estos programas se pueden utilizar para una variedad de propósitos, como la supervisión del rendimiento, el filtrado de tráfico y la creación de reglas de firewall.
 
-IntroducciónEsta vulnerabilidad se produce debido a una falta de validación de entrada en el subsistema eBPF. Esto significa que un atacante puede proporcionar datos maliciosos a un programa eBPF que el kernel ejecutará sin verificar.
+Esta vulnerabilidad se produce debido a una falta de validación de entrada en el subsistema eBPF. Esto significa que un atacante puede proporcionar datos maliciosos a un programa eBPF que el kernel ejecutará sin verificar.
 
 #### Impacto
 
@@ -168,8 +178,7 @@ Para mitigar el riesgo de explotación de esta vulnerabilidad, los usuarios debe
 - **Limitar el acceso a los privilegios CAP_BPF.** Solo los usuarios autorizados deben tener estos privilegios.
 - **Implementar controles de acceso para proteger los programas eBPF.** Estos controles pueden ayudar a evitar que los atacantes proporcionen datos maliciosos a los programas eBPF.
 - **Monitorear los sistemas en busca de signos de explotación de esta vulnerabilidad.** Los administradores de sistemas deben estar atentos a los signos de actividad maliciosa, como intentos de ejecutar código arbitrario en el contexto del kernel.
-
-
+<br>
 
 ### 4 CVE-2021-3156 - Sudo (Baron Samedit)
 
@@ -202,8 +211,8 @@ También la podríamos detectar y explotar a través de herramientas que escanea
 #### Contramedidas
 
  La mayoría de las distribuciones ya han lanzado actualizaciones para corregir esto, por lo que la actualización del sistema o del paquete de sudo solucionará esta vulnerabilidad.
-
-### 5 CVE-2023-26604 - systemd 246
+<br>
+### 5 CVE-2023-26604 - Systemd 246
 
 #### Descripción
 
@@ -250,7 +259,7 @@ se ejecuta en modo "seguro". Esto significa que estas funciones están deshabili
 
 También se puede compilar Less para que esté permanentemente en modo "seguro". Para ello tenemos que modificar el archivo sudoers y añadir la variable: 
 env_keep=LESSSECURE
-
+<br>
 ### 6 CVE-2016-2414 - Minikin Android
 #### Descripción
 
@@ -273,7 +282,7 @@ Para evitar vernos afectados por esta vulnerabilidad podríamos seguir las sigui
 - **Utilizar siempre las versiones más actualizadas de los sistemas operativos**, en este caso Android, que por lo general contienen actualizaciones que arreglan este tipo de problemas. (En este caso Google corrigió la vulnerabilidad en las actualizaciones de seguridad de Abril de 2016)
 - **Evitar descargar o instalar fuentes de terceros o de origen desconocido** para modificar nuestro sistema.
 - **Evitar abrir archivos adjuntos de correos electrónicos** cuyo remitente sea **desconocido o sospechoso**.
-
+<br>
 
 ###  7 CVE-2022-2586 - Linux Kernel UAF
 
@@ -302,7 +311,7 @@ Para protegerse de esta vulnerabilidad, los usuarios de sistemas Linux deben:
 
 * **Actualizar a la versión 5.18.11 o posterior del kernel de Linux.** Esta versión corrige la vulnerabilidad.
 * **Evitar ejecutar código arbitrario de fuentes desconocidas.** Esto podría ayudar a prevenir la explotación de la vulnerabilidad por parte de un atacante.
-
+<br>
 ### 8 CVE-2018-4087 - iOS Core Bluetooth
 
 #### Descripción
@@ -317,7 +326,7 @@ Para protegerse de esta vulnerabilidad, los usuarios de sistemas Linux deben:
 
 
 #### Contramedidas
-
+<br>
 ### 9 Dirty pipe (CVE-2022-0847)
 #### Descripción: 
 Es una vulnerabilidad en el kernel de Linux desde la versión 5.8 en adelante que permite sobrescribir datos en archivos de solo lectura. Esto conduce a una escalada de privilegios porque los procesos sin privilegios pueden inyectar código en los procesos raíz.
@@ -365,10 +374,10 @@ Ej:
 - Utilizar un firewall para bloquear el acceso no autorizado a ciertos servicios como por ejemplo ssh (puerto 22)
 - Implementar un sistema de detección de intrusiones (IDS) para que nos ayude a detectar el ataque.
 - La vulnerabilidad se solucionó en Linux 5.16.11, 5.15.25 y 5.10.102 por lo que usar una de estas versiones nos solucionaría el problema.
-
+<br>
 ## Conclusiones
 
-Durante el proceso de este proyecto nos hemos adentrado en conceptos y definiciones claves en la ciberseguridad, como exploit, vulnerabilidad, UAF o EBPF. Al haber elegido sistemas operativos como nuestro tema hemos tenido que indagar sobre componentes básicos de computación, e intentar comprender superficialmente al menos su funcionamiento para entender el motivo de la vulnerabilidad.
+Durante el proceso de este proyecto nos hemos adentrado en conceptos y definiciones claves en la ciberseguridad, como exploit, vulnerabilidad, UAF o EBPF. Al haber elegido los sistemas operativos como nuestro tema hemos tenido que indagar sobre componentes básicos de computación, e intentar comprender superficialmente al menos su funcionamiento para entender el motivo de la vulnerabilidad.
 
 Hemos podido comprobar que para analizar y comprender en profundidad una vulnerabilidad de seguridad informática se necesitan conocimientos muy extensos sobre el funcionamiento base de software esencial, ya que muchas de estas vulnerabilidades se basan en errores lógicos producidos a bajo nivel de computación, provocados por errores humanos a la hora de codificar. 
 
@@ -380,7 +389,7 @@ Este proyecto nos ha ayudado a mejorar nuestra capacidad de identificar las dist
 
 También con ello podemos conocer que distintas medidas de seguridad y prevención debemos aplicar para prevenirnos de ellas o detectarlas a tiempo. 
 
-Por supuesto toda esta investigación nos conciencia aún más de la importancia de la ciberseguridad y el potencial daño que podría sufrir una persona, entidad u organización.
+Por supuesto toda esta investigación nos conciencia aún más de la importancia de la ciberseguridad y el potencial daño que podría sufrir una persona, entidad u organización.<br>
 
 
 ## Recomendaciones
@@ -393,4 +402,12 @@ Por supuesto aplicar restricciones mediante el uso de un firewall, y cambiar los
 
 En general, antes que confiar en software de terceros que nos proteja automáticamente y se encargue de todo, debemos estar concienciados sobre los riesgos de la ciberseguridad e informados en la medida de lo posible, así como actuar con cautela y atención en nuestro paso por el ciberespacio. 
 
-Nosotros mismos somos al final los mejores antivirus de los que podemos disponer.
+Nosotros mismos somos al final los mejores antivirus de los que podemos disponer.<br>
+
+
+## Referencias
+
+[1]: **eBPF** (_Extended Berkeley Packet Filter_) es una máquina virtual que se ejecuta dentro del kernel de Linux. Esta funciona como un marco de programación que nos permite ejecutar de forma segura programas en código máquina en el kernel de Linux sin cambiar el código del mismo.
+[2]: **CAP_BPF** Consiste en la capacidad de cargar y modificar programas BPF en el kernel.
+[3]: La vulnerabilidad CVE-2023-41995 se encuentra en el kernel de Linux, pero afecta también a los sistemas operativos de Apple que hacen uso del mismo, entre los que se encuentran iOS, ipadOS, macOS, tvOS o watchOS.
+[4]: Un ataque de envenenamiento de caché de DNS consiste en proporcionar información maliciosa a los solucionadores de DNS, con el objetivo que estos envíen la dirección IP equivocada a los clientes, dirigiéndolos al sitio que el atacante desee.
