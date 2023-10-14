@@ -82,9 +82,9 @@ La vulnerabilidad existe debido a que *MInikin* contiene un error a la hora de p
 
 #### Impacto
 
-Base score: 6.2 Medio
-Impact score: 3.6
-Exploitability score: 2.5
+- Base score: 6.2 Medio
+- Impact score: 3.6
+- Exploitability score: 2.5
 
 La explotación de esta vulnerabilidad puede conllevar a una pérdida de la integridad y denegación completa de la disponibilidad de los datos de un dispositivo que tenga instalado Android 5.0.x anteriores a la 5.0.2, 5.1.x anteriores a la 5.1.1 y 6.x anteriores al 1 de abril de 2016.
 
@@ -113,9 +113,9 @@ La vulnerabilidad se encuentra en el código del kernel de Linux que maneja las 
 
 #### Impacto
 
-Base score: 6.7 Medio
-Impact score: 5.9
-Exploitability score: 0.8
+- Base score: 6.7 Medio
+- Impact score: 5.9
+- Exploitability score: 0.8
 
 La explotación de esta vulnerabilidad podría permitir al atacante ejecutar código arbitrario con privilegios del kernel. Esto podría permitir al atacante tomar el control total del sistema. 
 
@@ -145,9 +145,9 @@ Esta vulnerabilidad se produce porque el kernel de Linux no libera correctamente
 El desbordamiento de búfer podría permitir al atacante ejecutar código arbitrario en el contexto del kernel. Esto significa que el atacante podría tener acceso a todos los recursos del sistema, incluyendo los datos confidenciales, los procesos y los servicios.
 
 #### Impacto
-Base score: 7.8 Alto
-Impact score: 5.9
-Exploitability score: 1.8
+- Base score: 7.8 Alto
+- Impact score: 5.9
+- Exploitability score: 1.8
 
 La vulnerabilidad discutida tiene un impacto grave en los sistemas vulnerables. Como las anteriores, esta permite a un atacante que pueda explotarla tomar el control total del sistema, acceder a datos confidenciales o causar daños.
 
@@ -189,9 +189,9 @@ Esta vulnerabilidad afecta a varios sistemas operativos como Ubuntu 20.04 (Sudo 
 
 #### Impacto
 
-Base score: 7.8 Alto
-Impact score: 5.9
-Exploitability score: 1.8
+- Base score: 7.8 Alto
+- Impact score: 5.9
+- Exploitability score: 1.8
 
 El impacto de la vulnerabilidad es crítico ya que afecta directamente la confidencialidad, integridad y disponibilidad de los datos al obtener privilegios de root:
 
@@ -224,9 +224,9 @@ Systemd es un conjunto de procesos de administración de sistema, bibliotecas y 
 
 #### Impacto
 
-Base score: 7.8 Alto
-Impact score: 5.9
-Exploitability score: 1.8
+- Base score: 7.8 Alto
+- Impact score: 5.9
+- Exploitability score: 1.8
 
 - **Disponibilidad:** Un atacante podría utilizar esta vulnerabilidad para detener o interrumpir los servicios críticos del sistema. Por ejemplo, podría ejecutar el comando "systemctl stop nginx" para detener el servidor web nginx.
 - **Integridad:** Un atacante podría utilizar esta vulnerabilidad para modificar o eliminar archivos críticos del sistema. Por ejemplo, para ejecutar el comando "cp /etc/passwd /tmp/passwd" y copiar el archivo de contraseñas.
@@ -275,9 +275,9 @@ env_keep=LESSSECURE
 
 #### Impacto
 
-Base score: 7.8 Alto
-Impact score: 5.9
-Exploitability score: 1.8
+- Base score: 7.8 Alto
+- Impact score: 5.9
+- Exploitability score: 1.8
 
 
 
@@ -300,9 +300,9 @@ Una vez que el atacante ha escrito datos en el búfer del pipe, podría enviar l
 
 #### Impacto: 
 
-Base score: 7.8 Alto
-Impact score: 5.9
-Exploitability score: 1.8
+- Base score: 7.8 Alto
+- Impact score: 5.9
+- Exploitability score: 1.8
 
 Esta vulnerabilidad tiene graves impactos sobre la disponibilidad, integridad y confidencialidad de los datos:
 
@@ -346,9 +346,9 @@ El framework msfvenom de Metaexploit permite a un usuario malintencionado crear 
 
 ## Impacto
 
-Base score: 7.8 Alto
-Impact score: 5.9
-Exploitability score: 1.8
+- Base score: 7.8 Alto
+- Impact score: 5.9
+- Exploitability score: 1.8
 
 Un atacante que pueda explotar esta vulnerabilidad podría tomar el control completo de un dispositivo android. Esto podría permitirles robar datos, instalar malware o incluso tomar el control físico del dispositivo, por ejemplo, para hacer fotos, mandar sms's, geocalizar a la persona, etc...
 
@@ -396,9 +396,9 @@ Esta vulnerabilidad se produce debido a una falta de validación de entrada en e
 
 #### Impacto
 
-Base score: 8.2 Alto
-Impact score: 6
-Exploitability score: 1.5
+- Base score: 8.2 Alto
+- Impact score: 6
+- Exploitability score: 1.5
 
 Esta vulnerabilidad tiene un impacto grave en los sistemas vulnerables, dado que un atacante que pueda explotarla puede ejecutar código en el contexto del kernel. Esto le permitiría al atacante tomar el control total del sistema, acceder a datos confidenciales o causar múltiples daños.
 
@@ -434,9 +434,9 @@ Esta se produce debido a una falta de validación de entrada en el código que s
 
 #### Impacto
 
-Base score: 8.8 Alto
-Impact score: 5.9
-Exploitability score: 2.8
+- Base score: 8.8 Alto
+- Impact score: 5.9
+- Exploitability score: 2.8
 
 Esta vulnerabilidad tiene un impacto moderado en los sistemas vulnerables, ya que un atacante pueda identificar la IP de un dispositivo que lee el sistema de archivos Ceph puede provocar una denegación de servicio y la ejecución remota de código en el kernel, lo que podría llevar a la toma de control sobre el sistema, el acceso a datos confidenciales o la posibilidad de causar daños.
 
