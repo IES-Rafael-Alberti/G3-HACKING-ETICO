@@ -313,7 +313,7 @@ Para explotar esta vulnerabilidad lo unico que necesitariamos es una máquina co
 
 ---
 
-# **CVE-2023-44466 - Desbordamiento de búfer**
+# **CVE-2023-44466 - Ceph**
 
 - Es una vulnerabilidad de desbordamiento de búfer en el módulo de mensajería del kernel de Linux.
 
