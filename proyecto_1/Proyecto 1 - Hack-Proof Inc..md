@@ -75,7 +75,9 @@ Dentro del amplio campo de la ciberseguridad, la identificación y comprensión 
 
 Este proyecto se enfoca en la investigación y análisis de diversas vulnerabilidades, en relación a sistemas operativos tales como Android, Linux o iOS. Estos sistemas han sido elegidos como tema de estudio para este informe debido a la gran relevancia que estos tienen en el mundo actual.
 
-En este documento se ofrece una breve clasificación de las mismas, contando con diferentes secciones que ofrecerán una información amigable y comprensible de un contenido altamente técnico, de modo que incluso aquellas personas no familiarizadas con aspectos técnicos de este ámbito puedan comprenderlo con relativa facilidad.
+En este documento se ofrece una clasificación de las mismas, donde hemos tenido en cuenta su puntuación base de CVSS (*Common Vulnerability Score System*) además de su puntuación de explotabilidad e impacto. 
+
+Lo hemos divido en diferentes secciones que ofrecen una información amigable y comprensible de un contenido altamente técnico, de modo que incluso aquellas personas no familiarizadas con aspectos técnicos de este ámbito puedan comprenderlo con relativa facilidad.
 
 ## Vulnerabilidades Investigadas
 
