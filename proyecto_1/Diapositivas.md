@@ -103,7 +103,7 @@ Esta vulnerabilidad se basa en que el el daemon systemd no establece un parámet
 
 ### **¿Como podríamos explotarla?**
 
-Para explotarla necesitaríamos tener una versión anterior a la 247 de systemd y poder ejecutar con sudo el comando 
+Para explotarla necesitaríamos tener una versión anterior a la 247 de systemd y poder ejecutar con sudo el comando systemctl. Por ejemplo podríamos hacer:
 
 `sudo /usr/bin/systemctl status cron.service`
 
@@ -115,7 +115,7 @@ Para prevenirnos de esta vulnerabilidad debemos establecer una variable de entor
 ---
 
 ### **¿Que impacto podría tener?**
-Al conseguir una escalada de privilegios, un atacante podría conseguir control total sobre el sistema.
+Tan solo los usuarios que puedan ejecutar systemctl podrían llegar a explotar esta vulnerabilidad, pero si un atacante pudiera llegar a conseguirlo podría conseguir el control total sobre el sistema.
 
 ---
 
