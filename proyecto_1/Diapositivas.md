@@ -16,7 +16,7 @@ backgroundImage: url('./img/background.jpg')
 ## Grupo 3
 
 Raúl Ladrón de Guevara García
-Juan Manuel cumbrera López
+Juan Manuel Cumbrera López
 Christian Romero Oliva
 
 ---
