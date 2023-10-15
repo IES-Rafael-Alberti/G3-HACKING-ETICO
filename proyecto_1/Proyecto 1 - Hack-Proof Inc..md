@@ -69,11 +69,11 @@
 
 ## Introducción
 
-En el vasto campo de la ciberseguridad, la identificación y comprensión de las vulnerabilidades es un elemento clave en el aprendizaje como profesional. En las operaciones de Red Team o Pentesting, las vulnerabilidades son un gran punto principal que un profesional de la ciberseguridad va a intentar buscar, corregir o explotar 
+Dentro del amplio campo de la ciberseguridad, la identificación y comprensión de vulnerabilidades son un elemento clave para el desarrollo profesional. En operaciones de Red Team o Pentesting, las vulnerabilidades se convierten en un elemento crítico que los expertos en ciberseguridad buscan localizar, abordar y, en algunos casos, aprovechar.
 
-En este proyecto se realiza un análisis e investigación de una serie de vulnerabilidades en relación a varios sistemas operativos como Android, Linux o iOS, que ha sido nuestra elección del tema que íbamos a investigar en este informe.
+Este proyecto se enfoca en la investigación y análisis de diversas vulnerabilidades, en relación a sistemas operativos tales como Android, Linux o iOS. Estos sistemas han sido elegidos como tema de estudio para este informe debido a la gran relevancia que estos tienen en el mundo actual.
 
-Se ofrece una breve clasificación de las mismas con diferentes secciones para ofrecer una información amigable y comprensible de un contenido altamente técnico.
+En este documento se ofrece una breve clasificación de las mismas, contando con diferentes secciones que ofrecerán una información amigable y comprensible de un contenido altamente técnico, de modo que incluso aquellas personas no familiarizadas con aspectos técnicos de este ámbito puedan comprenderlo con relativa facilidad.
 
 ## Vulnerabilidades Investigadas
 
