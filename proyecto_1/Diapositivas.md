@@ -15,8 +15,8 @@ backgroundImage: url('./img/background.jpg')
 # **Proyecto 1 - Hack-Proof Inc.**
 ## Grupo 3
 
-Raúl Ladrón de Guevara López
-Juan Manuel cumbrera
+Raúl Ladrón de Guevara García
+Juan Manuel cumbrera López
 Christian Romero Oliva
 
 ---
