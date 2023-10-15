@@ -84,9 +84,9 @@ Lo hemos divido en diferentes secciones que ofrecen una información amigable y 
 ### 1 CVE-2016-2414 - Minikin Android
 #### Descripción
 
-Esta es una vulnerabilidad encontrada en *MInikin* una implementación de la interfaz de renderizado de fuentes en Android. Es un componente clave de android al ser una parte integral del sistema de gráficos, al estar encargado de renderizar las fuentes y el manejo de varios aspectos referidos al texto.
+Esta es una vulnerabilidad encontrada en *Minikin* una implementación de la interfaz de renderizado de fuentes en Android. Es un componente clave de android al ser una parte integral del sistema de gráficos, al estar encargado de renderizar las fuentes y el manejo de varios aspectos referidos al texto.
 
-La vulnerabilidad existe debido a que *MInikin* contiene un error a la hora de parsear los archivos .TTF (archivos de fuentes de texto) correctamente. Esto podría permitir a un atacante establecer un bloqueo completo de un dispositivo Android mediante la carga de un archivo .TTF debidamente modificado para desencadenar un error que termina provocando continuos reinicios permanentes en el dispositivo y corrupción de memoria, por lo tanto un ataque de denegación de servicio (DoS).
+La vulnerabilidad existe debido a que *Minikin* contiene un error a la hora de parsear los archivos .TTF (archivos de fuentes de texto) correctamente. Esto podría permitir a un atacante establecer un bloqueo completo de un dispositivo Android mediante la carga de un archivo .TTF debidamente modificado para desencadenar un error que termina provocando continuos reinicios permanentes en el dispositivo y corrupción de memoria, por lo tanto un ataque de denegación de servicio (DoS).
 
 #### Impacto
 
@@ -107,6 +107,9 @@ Para evitar vernos afectados por esta vulnerabilidad podríamos seguir las sigui
 - **Utilizar siempre las versiones más actualizadas de los sistemas operativos**, en este caso Android, que por lo general contienen actualizaciones que arreglan este tipo de problemas. (En este caso Google corrigió la vulnerabilidad en las actualizaciones de seguridad de Abril de 2016)
 - **Evitar descargar o instalar fuentes de terceros o de origen desconocido** para modificar nuestro sistema.
 - **Evitar abrir archivos adjuntos de correos electrónicos** cuyo remitente sea **desconocido o sospechoso**.
+
+#### Fuente
+https://www.fortinet.com/blog/threat-research/analysis-of-cve-2016-2414-out-of-bound-write-denial-of-service-vulnerability-in-android-minikin-library-1
 <br>
 
 ###  2 CVE-2022-2586 - Linux Kernel UAF
