@@ -39,8 +39,14 @@ Christian Romero Oliva
 
 ---
 
-## ¿Como podríamos explotarla?
-Un archivo .TTF malicioso que modifique la tabla cmap 
+### **¿Como podríamos explotarla?**
+Haciendo que un usuario o aplicación instalase archivo .TTF malicioso previamente modificado para causar el error.
+
+### **¿Como podríamos prevenirla?**
+Esta vulnerabilidad se puede prevenir utilizando versiones de Android superiores a 5.0.2, 5.1.1, 6.0, 6.0.1 y también evitando utilizar archivos de fuentes no verificadas que podrían ser maliciosos.
+
+### **¿Que impacto podría tener?**
+Si esta vulnerabilidad fuera explotada en un dispositivo el usuario perderia el control sobre el mismo y no podría acceder a sus datos, además podría perderlos debido a que el error por su naturaleza podría provocar una corrupción de memoria.
 
 ---
 
@@ -69,6 +75,47 @@ Un archivo .TTF malicioso que modifique la tabla cmap
 - **Instalar un firewall.** Esto permitiría bloquear el tráfico entrante no autorizado.
 - **Mantener los sistemas actualizados con las últimas actualizaciones de seguridad.**
 - **Mantener actualizado el antivirus.**
+
+
+---
+
+# **CVE-2021-3156 - Sudo (Baron Samedit)**
+
+Esta vulnerabilidad consiste en que en el comando sudo de las versiones v1.8.2 - v1.9.5 permite a un usuario común obtener privilegios de root con tan solo ejecutar una instrucción sudo.
+
+---
+
+### **¿Como podríamos explotarla?**
+Con un exploit adecuado que modifique el archivo de configuración de sudo se puede lograr conseguir una escalada de privilegios de un usuario sin privilegios a root.
+
+### **¿Como podríamos prevenirla?**
+Para prevenirnos de esta vulnerabilidad debemos de actualizar nuestro sistema ya que es una vulnerabilidad interna de los sitemas basados en UNIX
+
+### **¿Que impacto podría tener?**
+El impacto es crítico ya que permitiría conseguir de administrador y por tanto vulnerar los datos de todas las maneras, pero primero deberíamos de conseguir un usuario en el sistema para poder llevarla a cabo.
+
+---
+# **CVE-2023-26604 - Systemd 246**
+
+Esta vulnerabilidad se basa en que el el daemon systemd no establece un parámetro para evitar que mediante el uso del comando less se ejecuten comandos. Esto sumado a los prilegios que tiene systemd de root provoca que se puedan conseguir privilegios de root fácilmente.
+
+---
+
+### **¿Como podríamos explotarla?**
+
+Para explotarla necesitaríamos tener una versión anterior a la 247 de systemd y poder ejecutar con sudo el comando 
+
+`sudo /usr/bin/systemctl status cron.service`
+
+y en medio de la ejecución de less, activar por ejemplo una shell con `!sh` y ya tendríamos acceso a una shell con privilegios de root.
+### **¿Como podríamos prevenirla?**
+
+Para prevenirnos de esta vulnerabilidad debemos establecer una variable de entorno llamada LESSSECURE en 1, que deshabilita el uso de varios comandos entre ellos el de shell ( !sh )
+
+---
+
+### **¿Que impacto podría tener?**
+Al conseguir una escalada de privilegios, un atacante podría conseguir control total sobre el sistema.
 
 ---
 
