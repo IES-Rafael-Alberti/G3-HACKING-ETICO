@@ -530,7 +530,7 @@ En general, antes que confiar en software de terceros que nos proteja automátic
 Nosotros mismos somos al final los mejores antivirus de los que podemos disponer.<br>
 
 
-## Referencias
+## Glosario
 
 [1]: **eBPF** (_Extended Berkeley Packet Filter_) es una máquina virtual que se ejecuta dentro del kernel de Linux. Esta funciona como un marco de programación que nos permite ejecutar de forma segura programas en código máquina en el kernel de Linux sin cambiar el código del mismo.
 
