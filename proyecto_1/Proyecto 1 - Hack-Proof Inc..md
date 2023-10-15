@@ -275,6 +275,17 @@ env_keep=LESSSECURE
 
 #### Descripción
 
+Esta vulnerabilidad consiste en una escalada de privilegios a través de una aplicación maliciosa instalada en iOS. 
+
+Para comprender de que trata esta vulnerabilidad, debemos ser conscientes de que en muchos sistemas operativos, entre ellos iOS y Android, las aplicaciones se ejecutan en lo que llamamos un **sandbox**: Digamos que es un *espacio virtual* donde la aplicacion se ejecuta y solo tiene acceso a aquellos recursos que le hagan falta, no a todos los recursos del dispositivo, para evitar problemas de seguridad. 
+
+Esta vulnerabilidad se basa en un componente de iOS llamado "Core Bluetooth" que sirve para efectivamente usar el bluetooth del dispositivo. Concretamente dentro de Core Bluetooth existe un proceso llamado **bluetoothd** que permite a la aplicacion en si comunicarse con otros procesos. Cuando una aplicación legítima está intentando establecer comunicación con el proceso **bluetoothd**, a nivel de código se crea un *session token* que va a utilizar la aplicación para identificarse y mantener una conexión. 
+
+La clave de esta vulnerabilidad es que ese *session token* que se crea cuando una aplicación se une al proceso **bluetoothd** básicamente es el puerto que se asigna para la conexión, entonces solo hay que descubrir que puerto te han dado, y es relativamente fácil sacarlo por fuerza bruta porque se sabe que el puerto que te dan es de tipo "**mach_port_t**". 
+
+Una aplicación legítima no tiene por qué conocer el *session token*, simplemente lo utiliza y deja que el sistema operativo lo gestione. Sin embargo a través de esta vulnerabilidad podemos manipularlo y utilizarlo para crear por ejemplo nuevas funciones que serían, *a los ojos de bluetoothd*, legítimas.
+
+Entonces, teniendo el *session token* se puede hacer *hijack* de una sesión concreta entre una aplicación y el proceso **bluetoothd**, por lo que pueden interceptarse datos sensibles, cortar la comunicación, o intentar inyectar código malicioso en esa comunicación.
 
 
 #### Impacto
@@ -283,12 +294,28 @@ env_keep=LESSSECURE
 - Impact score: 5.9
 - Exploitability score: 1.8
 
+Esta vulnerabilidad puede llegar a permitir ejecutar código arbitrario en los dispositivos, lo que podría conllevar a un borrado de datos, al bloqueo del dispositivo, a la filtración y robo de datos personales. Podría usarse también para realizar un espionaje tomando datos de las conexiones secuestradas. 
+
+Luego podemos decir que podría llegar a afectar de manera crítica a los niveles de confidencialidad, integridad y disponibilidad de los datos.
 
 
 #### Exploración y Explotación
 
+Esta vulnerabilidad se podría explotar mediante la creación de una aplicación maliciosa que solicitara un puerto *mach* para comunicarse con el exterior de su sandbox. 
+
+Entonces al solicitarlo, la aplicación podría intentar sacar el *session token* por fuerza bruta debido a que conocemos que se genera a partir del nombre del puerto. 
+
+Una vez descifre el token, el atacante podrá interferir en la comunicación entre el servicio **bluetoothd** y sus clientes, por lo que podría por ejemplo inyectar código malicioso en alguna de estas comunicaciones.
+
 
 #### Contramedidas
+
+En cuanto al usuario la única contramedida que podría adoptar sería mantener su sistema actualizado a las versiones más recientes donde estos problemas han sido corregidos. A nivel de corregir la vulnerabilidad, Apple la corrigió haciendo que el token de sesión generado fuera aleatorio en lugar de usar el mismo puerto de la conexión. 
+
+#### Fuente
+
+https://www.zimperium.com/blog/cve-2018-4087-poc-escaping-sandbox-misleading-bluetoothd/
+
 <br>
 
 ### 7 CVE-2022-0847 - Dirty pipe
