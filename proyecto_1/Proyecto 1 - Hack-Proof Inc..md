@@ -1,7 +1,9 @@
-# Grupo III
+# Proyecto 1 - Hack-Proof Inc.
+
 
 ## Hacking Ético - Ciberseguridad en las TI
 
+## Grupo III
 
 *Raúl Ladrón de Guevara*
 
@@ -526,6 +528,9 @@ Nosotros mismos somos al final los mejores antivirus de los que podemos disponer
 ## Referencias
 
 [1]: **eBPF** (_Extended Berkeley Packet Filter_) es una máquina virtual que se ejecuta dentro del kernel de Linux. Esta funciona como un marco de programación que nos permite ejecutar de forma segura programas en código máquina en el kernel de Linux sin cambiar el código del mismo.
+
 [2]: **CAP_BPF** Consiste en la capacidad de cargar y modificar programas BPF en el kernel.
+
 [3]: La vulnerabilidad CVE-2023-41995 se encuentra en el kernel de Linux, pero afecta también a los sistemas operativos de Apple que hacen uso del mismo, entre los que se encuentran iOS, ipadOS, macOS, tvOS o watchOS.
+
 [4]: Un ataque de envenenamiento de caché de DNS consiste en proporcionar información maliciosa a los solucionadores de DNS, con el objetivo que estos envíen la dirección IP equivocada a los clientes, dirigiéndolos al sitio que el atacante desee.
