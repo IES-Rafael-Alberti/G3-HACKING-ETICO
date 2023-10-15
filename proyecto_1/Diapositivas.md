@@ -44,6 +44,11 @@ Un archivo .TTF malicioso que modifique la tabla cmap
 
 ---
 
+## paco paco
+Un archivo .TTF malicioso que modifique la tabla cmap 
+
+---
+
 # **Conclusión:**
 
 - Enfatiza la importancia de entender componentes de sistemas a bajo nivel para una ciberseguridad efectiva.
