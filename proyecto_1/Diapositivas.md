@@ -5,7 +5,7 @@ _class: lead
 paginate: true
 backgroundColor: #fff
 color: white
-backgroundImage: url('https://fcit.usf.edu/matrix/wp-content/uploads/2019/03/CircuitBoard-K-Wide.jpg')
+backgroundImage: url('./img/background.jpg')
 ---
 
 ![bg left:30% 50%](./img/imago-iesra-1.png)
