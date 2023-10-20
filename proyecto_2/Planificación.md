@@ -8,6 +8,13 @@
 - *Sergio Guerrero Merlo*
 - *Christian Romero Oliva*
 
+## Índice
+
+- [Introducción](#introducción)
+- [Responsabilidades de los miembros](#responsabilidades-de-los-miembros)
+- [Tareas a realizar](#tareas-a-realizar)
+- [Plazos y fechas clave](#plazos-y-fechas-clave)
+
 ## Introducción
 
 En este documento se van a resumir los planes de nuestro grupo para el proyecto 2 del módulo de Hacking Ético. 
