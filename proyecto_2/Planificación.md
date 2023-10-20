@@ -33,7 +33,7 @@ En las secciones siguientes se detallan en profundidad aspectos concretos de nue
    
 3. Explorar las herramientas de monitorización y comprender su funcionamiento.
    
-4. Clasificar los tipos de ataques.
+4. Clasificar los distintos tipos de ataques.
    
 5. Seleccionar las auditorías que se ajusten a las necesidades específicas y clasificaciones previamente identificadas.
    
