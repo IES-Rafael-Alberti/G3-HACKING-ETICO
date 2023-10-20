@@ -29,7 +29,8 @@ En las secciones siguientes se detallan en profundidad aspectos concretos de nue
 
 ## Plazos y fechas clave
 
-En esta parte del documento se describe en formato tabla el resumen de los plazos y fechas claves que vamos a llevar a cabo en nuestro proyecto, dividiéndolo en dos columnas en la que cada cual tiene su función.
+En esta parte del documento se describe en formato tabla el resumen de los plazos y fechas claves que vamos a llevar a cabo en nuestro proyecto, dividiéndolo en dos columnas en la que cada cual tiene su función. 
+
 La primera columna indica la fecha en la que se va a llevar a cabo la actuación que se indica en la segunda columna.
 
 | Fecha y Plazo     | Descripción de la Fecha              |
