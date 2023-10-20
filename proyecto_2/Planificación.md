@@ -3,10 +3,10 @@
 
 ## Hacking Ético - Ciberseguridad en las TI
 
-*Raúl Ladrón de Guevara*
-*Juan Manuel Cumbrera López*
-*Sergio Guerrero Merlo*
-*Christian Romero Oliva*
+- *Raúl Ladrón de Guevara García*
+- *Juan Manuel Cumbrera López*
+- *Sergio Guerrero Merlo*
+- *Christian Romero Oliva*
 
 ## Introducción
 
@@ -19,9 +19,40 @@ Consideramos que separar y asignar las tareas a roles básicos con tareas simple
 Se establecen también en este documento las fechas y puntos de control claves que hemos establecido para realizar este proyecto.
 
 En las secciones siguientes se detallan en profundidad aspectos concretos de nuestra planificación.
+
 ## Responsabilidades de los miembros
 
+Las responsabilidades de los miembros de nuestro grupo estarán equitativamente distribuidas dado que, como ya se ha mencionado en la introducción, nuestro equipo tendrá un perfil multidisciplinar en el que todos realizaremos tareas de investigación, redacción y organización de su tiempo.
 
+Para ello, decidimos distribuir el trabajo de manera que cada miembro del grupo tendría asignada un área que investigará y recopilará información para más tarde elaborar un documento que pondrá en común con el resto del grupo.
+
+Con esta planificación en mente se convoca una reunión y en esta decidimos las áreas sobre las que nuestra empresa simulada ofrecerá servicios de auditoría, así como el reparto de las áreas para cada miembro del grupo. 
+
+Las áreas elegidas fueron las siguientes:
+
+- Correo Electrónico
+- Software
+- Web
+- Red
+- *Internet of Things* (IOT)
+
+Hecho esto, el reparto de trabajo queda de la siguiente forma:
+
+> **Juan Manuel Cumbrera**
+> Seguridad software
+
+> **Christian Romero Oliva**
+> Área de Web
+
+> **Sergio Guerrero Merlo**
+> Seguridad de Red
+
+> **Raúl Ladrón de Guevara García**
+> Seguridad de Correo Electrónico
+
+El área restante **Internet de las cosas (IOT)** será distribuida entre todos los miembros del equipo de manera que cada uno realizará una pequeña investigación de una metodología concreta, algunos ataques y alguna herramienta para después ponerla en común.
+
+En la siguiente sección se describen las tareas que cada uno llevará a cabo en su proceso de trabajo personal.
 
 ## Tareas a realizar
 
@@ -33,7 +64,7 @@ A fin de llevar a cabo una investigación eficiente acerca de los tipos de ataqu
    
 3. Explorar las herramientas de monitorización y comprender su funcionamiento.
    
-4. Clasificar los tipos de ataques.
+4. Clasificar los distintos tipos de ataques.
    
 5. Seleccionar las auditorías que se ajusten a las necesidades específicas y clasificaciones previamente identificadas.
    
@@ -50,12 +81,12 @@ A continuación se expone detalladamente el planning que se ha seguido hasta aho
 
 En esta parte del documento se describe en formato tabla el resumen de los plazos y fechas claves que vamos a llevar a cabo en nuestro proyecto, dividiéndolo en dos columnas en la que cada cual tiene su función. 
 
-La primera columna indica la fecha en la que se va a llevar a cabo la actuación que se indica en la segunda columna.
+La primera columna indica la fecha y la hora de la reunión en la que se va a llevar a cabo la actuación que se indica en la segunda columna.
 
 | Fecha y Plazo     | Descripción de la Fecha              |
 |:------------------:|------------------------------------- |
-|     Jueves, 19 de Octubre de 2023         | Primera reunión del grupo de trabajo para el inicio de la planificación del proyecto y asignar tareas de investigación sobre un área concreta referente a cada uno de los servicios que vamos a auditar.              |
-|     	Viernes, 20 de Octubre de 2023     | Segunda reunión con intención a terminar la planificación del proyecto y su entrega.                   |
-|     Domingo, 22 de Octubre de 2023       | Presentar cada investigador su parte documentada en referencia a los dos primeros puntos de la segunda entrega del proyecto para el inicio de unirlo en un solo documento.        |
-|     Lunes, 23 de Octubre de 2023          | Presentar el tercer punto de la segunda entrega y ultimar el documento para su posible entrega ese mismo día.             |
-|     Martes, 24 de Octubre de 2023         | Día de ultimar en caso de ser necesario el documento antes de la entrega si no se ha concluido el día anterior.             |
+|     Jueves, 19 de Octubre de 2023 a las 20:30 PM       | Primera reunión del grupo de trabajo para el inicio de la planificación del proyecto y asignar tareas de investigación sobre un área concreta referente a cada uno de los servicios que vamos a auditar.              |
+|     	Viernes, 20 de Octubre de 2023 a las 16:30 PM   | Segunda reunión con intención a terminar la planificación del proyecto y su entrega.                   |
+|     Domingo, 22 de Octubre de 2023 a las 16:00 PM    | Presentar cada investigador su parte documentada en referencia a los dos primeros puntos de la segunda entrega del proyecto para el inicio de unirlo en un solo documento.        |
+|     Lunes, 23 de Octubre de 2023 a las 16:00 PM        | Presentar el tercer punto de la segunda entrega y ultimar el documento para su posible entrega ese mismo día.             |
+|     Martes, 24 de Octubre de 2023 a las 16:00 PM       | Día de ultimar en caso de ser necesario el documento antes de la entrega si no se ha concluido el día anterior.             |
