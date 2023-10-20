@@ -3,10 +3,10 @@
 
 ## Hacking Ético - Ciberseguridad en las TI
 
-*Raúl Ladrón de Guevara*
-*Juan Manuel Cumbrera López*
-*Sergio Guerrero Merlo*
-*Christian Romero Oliva*
+- *Raúl Ladrón de Guevara García*
+- *Juan Manuel Cumbrera López*
+- *Sergio Guerrero Merlo*
+- *Christian Romero Oliva*
 
 ## Introducción
 
@@ -19,9 +19,40 @@ Consideramos que separar y asignar las tareas a roles básicos con tareas simple
 Se establecen también en este documento las fechas y puntos de control claves que hemos establecido para realizar este proyecto.
 
 En las secciones siguientes se detallan en profundidad aspectos concretos de nuestra planificación.
+
 ## Responsabilidades de los miembros
 
+Las responsabilidades de los miembros de nuestro grupo estarán equitativamente distribuidas dado que, como ya se ha mencionado en la introducción, nuestro equipo tendrá un perfil multidisciplinar en el que todos realizaremos tareas de investigación, redacción y organización de su tiempo.
 
+Para ello, decidimos distribuir el trabajo de manera que cada miembro del grupo tendría asignada un área que investigará y recopilará información para más tarde elaborar un documento que pondrá en común con el resto del grupo.
+
+Con esta planificación en mente se convoca una reunión y en esta decidimos las áreas sobre las que nuestra empresa simulada ofrecerá servicios de auditoría, así como el reparto de las áreas para cada miembro del grupo. 
+
+Las áreas elegidas fueron las siguientes:
+
+- Correo Electrónico
+- Software
+- Web
+- Red
+- *Internet of Things* (IOT)
+
+Hecho esto, el reparto de trabajo queda de la siguiente forma:
+
+> **Juan Manuel Cumbrera**
+> Seguridad software
+
+> **Christian Romero Oliva**
+> Área de Web
+
+> **Sergio Guerrero Merlo**
+> Seguridad de Red
+
+> **Raúl Ladrón de Guevara García**
+> Seguridad de Correo Electrónico
+
+El área restante **Internet de las cosas (IOT)** será distribuida entre todos los miembros del equipo de manera que cada uno realizará una pequeña investigación de una metodología concreta, algunos ataques y alguna herramienta para después ponerla en común.
+
+En la siguiente sección se describen las tareas que cada uno llevará a cabo en su proceso de trabajo personal.
 
 ## Tareas a realizar
 
