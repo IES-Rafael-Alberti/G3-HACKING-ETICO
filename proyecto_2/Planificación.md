@@ -25,7 +25,7 @@ En las secciones siguientes se detallan en profundidad aspectos concretos de nue
 
 ## Tareas a realizar
 
-
+A fin de llevar a cabo una investigación eficiente acerca de los tipos de ataques y auditorías, así como las herramientas utilizadas para dichos fines, es necesario establecer una lista de tareas bien detallada, para poder aportar claridad a la investigación.
 
 1. Investigar y profundizar en los diversos tipos de ataques.
    
@@ -43,6 +43,8 @@ En las secciones siguientes se detallan en profundidad aspectos concretos de nue
 8. Compilar y elaborar el documento final que refleje los hallazgos y decisiones del grupo.
    
 9. Llevar a cabo una revisión minuciosa del documento final para garantizar la precisión y la coherencia.
+
+A continuación se expone detalladamente el planning que se ha seguido hasta ahora y se llevará a cabo en los próximos días, con el fin de organizar el trabajo y documentar las reuniones que tengan lugar.
 
 ## Plazos y fechas clave
 
