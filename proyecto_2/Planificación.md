@@ -27,6 +27,23 @@ En las secciones siguientes se detallan en profundidad aspectos concretos de nue
 
 
 
+1. Investigar y profundizar en los diversos tipos de ataques.
+   
+2. Examinar los distintos enfoques de auditoría de seguridad disponibles.
+   
+3. Explorar las herramientas de monitorización y comprender su funcionamiento.
+   
+4. Clasificar los tipos de ataques.
+   
+5. Seleccionar las auditorías que se ajusten a las necesidades específicas y clasificaciones previamente identificadas.
+   
+6. Documentar exhaustivamente todos los resultados de tus investigaciones y clasificaciones.
+7. Realiza una reunión de trabajo para compartir y consolidar la información recopilada por todos los participantes.
+   
+8. Compilar y elaborar el documento final que refleje los hallazgos y decisiones del grupo.
+   
+9. Llevar a cabo una revisión minuciosa del documento final para garantizar la precisión y la coherencia.
+
 ## Plazos y fechas clave
 
 En esta parte del documento se describe en formato tabla el resumen de los plazos y fechas claves que vamos a llevar a cabo en nuestro proyecto, dividiéndolo en dos columnas en la que cada cual tiene su función. La primera columna indica la fecha en la que se va a llevar a cabo la actuación que se indica en la segunda columna.
