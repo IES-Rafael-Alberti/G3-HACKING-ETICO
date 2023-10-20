@@ -52,8 +52,8 @@ La primera columna indica la fecha en la que se va a llevar a cabo la actuación
 
 | Fecha y Plazo     | Descripción de la Fecha              |
 |:------------------:|------------------------------------- |
-|     Jueves, 19 de Octubre de 2023 a las 20:30       | Primera reunión del grupo de trabajo para el inicio de la planificación del proyecto y asignar tareas de investigación sobre un área concreta referente a cada uno de los servicios que vamos a auditar.              |
-|     	Viernes, 20 de Octubre de 2023 a las 16:30   | Segunda reunión con intención a terminar la planificación del proyecto y su entrega.                   |
-|     Domingo, 22 de Octubre de 2023 a las 16:00     | Presentar cada investigador su parte documentada en referencia a los dos primeros puntos de la segunda entrega del proyecto para el inicio de unirlo en un solo documento.        |
-|     Lunes, 23 de Octubre de 2023 a las 16:00         | Presentar el tercer punto de la segunda entrega y ultimar el documento para su posible entrega ese mismo día.             |
-|     Martes, 24 de Octubre de 2023 a las 16:00        | Día de ultimar en caso de ser necesario el documento antes de la entrega si no se ha concluido el día anterior.             |
+|     Jueves, 19 de Octubre de 2023 a las 20:30 pm       | Primera reunión del grupo de trabajo para el inicio de la planificación del proyecto y asignar tareas de investigación sobre un área concreta referente a cada uno de los servicios que vamos a auditar.              |
+|     	Viernes, 20 de Octubre de 2023 a las 16:30 pm   | Segunda reunión con intención a terminar la planificación del proyecto y su entrega.                   |
+|     Domingo, 22 de Octubre de 2023 a las 16:00 pm    | Presentar cada investigador su parte documentada en referencia a los dos primeros puntos de la segunda entrega del proyecto para el inicio de unirlo en un solo documento.        |
+|     Lunes, 23 de Octubre de 2023 a las 16:00 pm        | Presentar el tercer punto de la segunda entrega y ultimar el documento para su posible entrega ese mismo día.             |
+|     Martes, 24 de Octubre de 2023 a las 16:00 pm       | Día de ultimar en caso de ser necesario el documento antes de la entrega si no se ha concluido el día anterior.             |
