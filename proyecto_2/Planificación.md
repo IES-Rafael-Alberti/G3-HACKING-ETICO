@@ -29,3 +29,12 @@ En las secciones siguientes se detallan en profundidad aspectos concretos de nue
 
 ## Plazos y fechas clave
 
+En esta parte del documento se describe en formato tabla el resumen de los plazos y fechas claves que vamos a llevar a cabo en nuestro proyecto, dividiéndolo en dos columnas en la que cada cual tiene su función. La primera columna indica la fecha en la que se va a llevar a cabo la actuación que se indica en la segunda columna.
+
+| Fecha y Plazo     | Descripción de la Fecha              |
+|:------------------:|------------------------------------- |
+|     Jueves, 19 de Octubre de 2023         | Primera reunión del grupo de trabajo para el inicio de la planificación del proyecto y asignar tareas de investigación sobre un área concreta referente a cada uno de los servicios que vamos a auditar.              |
+|     	Viernes, 20 de Octubre de 2023     | Segunda reunión con intención a terminar la planificación del proyecto y la entrega del mismo.                   |
+|     Domingo, 22 de Octubre de 2023       | Presentar cada investigador su parte documentada en referencia a los dos primeros puntos de la segunda entrega del proyecto para el inicio de unirlo en un solo documento.        |
+|     Lunes, 23 de Octubre de 2023          | Presentar el tercer punto de la segunda entrega y ultimar el documento para su posible entrega ese mismo día.             |
+|     Martes, 24 de Octubre de 2023         | Día de ultimar en caso de ser necesario el documento antes de la entrega si no se ha concluido el día anterior.             |
