@@ -1,5 +1,17 @@
 # Proyecto 2: Offensive Audit Services
 
+<br/>
+
+![Portada](img/Cabecera_Auditoría_seg_infor.jpg)
+
+**Autores:** *Grupo 3*
+
+**Integrantes:**
+- Raúl Ladrón de Guevara García
+- Juan Manuel Cumbrera López
+- Christian Romero Oliva
+- Sergio Guerrero Merlo
+
 ## Índice
 
 - [Introducción](#introducción)
@@ -11,6 +23,10 @@
     - [Descripción de los Servicios](#descripción-de-los-servicios)
         - [Auditoría de Seguridad de Software](#auditorc3ada-de-seguridad-de-software-1)
 - [Investigación de Fases de Ataque](#investigación-de-fases-de-ataque)
+    - [Investigación de Metodologías de Pentesting](#investigación-de-metodologías-de-pentesting)
+    - [Tipos de Auditoría Ofensiva](#tipos-de-auditorc3ada-ofensiva-1)
+    - [Descripción de los servicios](#descripcic3b3n-de-los-servicios-1)
+- [Conclusión](#conclusión)
 - [Bibliografía](#bibliografía)
 
 ## Introducción
@@ -350,6 +366,10 @@ Teniendo en cuenta las auditorías que ofrecemos, hemos elegido implementar la m
 
 [...]
 
+## Conclusión
+
+[...]
+
 ## Bibliografía
 
 https://masterenciberseguridadonline.es/tipos-de-ataques-de-fuerza-bruta/<br/>
@@ -366,3 +386,4 @@ https://nordvpn.com/es/blog/que-es-adware/<br/>
 https://es.gridinsoft.com/spyware<br/>
 https://softwarelab.org/es/blog/que-es-un-gusano-informatico/<br/>
 https://www.danysoft.com/los-12-peores-botnets/<br/>
+https://ayudaleyprotecciondatos.es/2021/04/23/rogueware/<br/>
