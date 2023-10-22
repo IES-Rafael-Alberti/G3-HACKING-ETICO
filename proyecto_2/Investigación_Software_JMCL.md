@@ -23,9 +23,10 @@
     - [Descripción de los Servicios](#descripción-de-los-servicios)
         - [Auditoría de Seguridad de Software](#auditorc3ada-de-seguridad-de-software-1)
 - [Investigación de Fases de Ataque](#investigación-de-fases-de-ataque)
-    - [Investigación de Metodologías de Pentesting](#investigación-de-metodologías-de-pentesting)
-    - [Tipos de Auditoría Ofensiva](#tipos-de-auditorc3ada-ofensiva-1)
-    - [Descripción de los servicios](#descripcic3b3n-de-los-servicios-1)
+    - [Investigación de Fases de Ataque](#investigación-de-fases-de-ataque)
+    - [Investigación de las Metodologías de Pentesting](#investigación-de-metodologías-de-pentesting)
+        - [PTES (Penetration Testing Execution Standard)](#metodología-ptes-penetration-testing-execution-standard)
+    - [Selección de una metodología](#selección-de-una-metodología)
 - [Conclusión](#conclusión)
 - [Bibliografía](#bibliografía)
 
@@ -315,6 +316,8 @@ Antes de comenzar es importante proponer acuerdos, establecer límites y estudia
 - **Pruebas de Caja Gris (Gray Box Testing).** Las pruebas de caja gris otorgan un conocimiento parcial del sistema al analista de ciberseguridad, ofreciendo detalles sobre el diseño o arquitectura del sistema, pero sin entrar en el código del mismo. Esto permite realizar pruebas con un enfoque mayor en un área concreta.
 - **Pruebas de Caja Blanca (White Box Testing).** En las pruebas de caja blanca, a los evaluadores se les da un conocimiento completo del sistema, incluido el acceso al código fuente y la arquitectura interna del mismo. Esto da la posibilidad de llevar a cabo pruebas complejas, profundas y exhaustivas, con el objeto de identificar vulnerabilidades y/o fallos en el código del sistema.
 
+![Testing](img/black-box-white-box-gray-box-ethical-hacking.png)
+
 Conociendo esto, se explicarán los tipos de auditorías ofensivas. Estas se dividen entre las diferentes áreas informáticas, y el objetivo de cada tipo es centrar los esfuerzos en un área concreta, para mayor efectividad y profundidad de las pruebas. 
 
 ##### Auditoría de Seguridad de Software
@@ -352,17 +355,37 @@ Se ha de remarcar que este es un mero esquema general con un enfoque claro en la
 
 ## Investigación de Fases de Ataque
 
+### Identificación de las fases de un ataque
+
+La cadena de fases de un ciberataque son cada uno de los pasos dados por un atacante para lograr el acceso no autorizado a un sistema, sirviéndose de diversos medios. Una vez dentro, la misión consiste en lograr persistir en el sistema, elevando los privilegios para robar datos confidenciales o sensibles, espiando la actividad de la víctima o directamente tomando el control completo sobre el sistema e incluso bloqueándolo o dañándolo.
+
+![Cyber kill chain](img/7-fases-ciberataque.png)
+
+Para lograr este cometido, los atacantes deben seguir una serie de pasos que se detallarán a continuación, en los que se podrá observar el proceso existente desde la recolección de información acerca de la víctima potencial hasta el acceso no autorizado, persistencia en el sistema y robo de datos, contraseñas, etc.
+
+Existen múltiples modelos que presentan un diferente número de fases en un ciberataque, que van desde 5 hasta 14, como el modelo perteneciente a Mitre Att&ck. A continuación se expone el modelo desarrollado por la compañía estadounidense Lockheed Martin y más conocido como "*Cyber Kill Chain*", que consta de 7 pasos.  
+
+1. **Fase de Reconocimiento.** La primera etapa del ataque consiste en la recopilación de información sobre la víctima, ya sea un usuario en particular o incluso una empresa concreta. Para ello se realiza un seguimiento, buscando información pública, redes sociales, analizar el tipo de tecnología utilizada, e incluso llegar hasta una interacción social real con la propia compañía.
+2. **Fase de Preparación.** Una vez obtenida la información deseada, se comienza a preparar el ataque. De esta forma, se decide el tipo de método que será usado, así como la forma de hacerlo. Un ejemplo bastante común y que se suele barajar entre las opciones de ataque suele ser una campaña de Ingeniería Social, sirviéndose de malware para poder lograr del acceso remoto al sistema de la víctima.
+3. **Fase de Distribución.** En esta fase se inicia el ataque, y es donde se espera que la víctima incauta descargue un software en concreto, aparentemente inocuo, abra un enlace malicioso o descargue el documento infectado que se le ha enviado por correo electrónico.
+4. **Fase de Explotación.** Ya abierto y ejecutado el malware, la víctima ha quedado infectada, y su seguridad comprometida. En esta fase los atacantes ganan acceso al sistema objetivo. Normalmente esto se logra a través de vulnerabilidades explotadas en el sistema de la víctima, lo que permite de forma efectiva ganar una vía de acceso al mismo.
+5. **Fase de Instalación.** Cuando los atacantes han logrado vulnerar el sistema objetivo accediendo a él, comienza la fase de instalación, que puede ser automática o manual. Si la instalación estaba programada en el código del malware, se dice que es automática, mientras que si es manual, los propios atacantes se encargarían de realizar esta operación. Los objetivos de los atacantes suelen incluir el robo de credenciales y datos sensibles, datos bancarios, hasta llegar a capturar las pulsaciones de teclado de la víctima o realizar capturas a su pantalla directamente.
+6. **Fase de Comando y Control.** En esta fase los atacantes ya han logrado tomar el control completo del sistema vulnerado, pudiendo realizar las acciones que desee, como encriptar los datos de la víctima o robarlos, integrar el equipo en una botnet (aunque esto se suele hacer de forma automática por el propio malware), etc.
+7. **Fase de Acciones sobre los objetivos.** Ya llegados a esta fase, el atacante ha logrado culminar todos los objetivos propuestos, pudiendo expandirse a otras víctimas, o realizar las acciones que considere pertinentes sobre la víctima actual.
+
+Como hemos podido comprobar, en muchas ocasiones se emplean tácticas de manipulación psicológica e ingeniería social, para lograr que la víctima haga clic en el enlace malicioso preparado con antelación por el criminal, o descargue el malware que permita el acceso a su equipo. Por todo esto es crucial comprender estas formas de operar de los delincuentes, para así poder mitigar los ataques y aumentar la seguridad, dado que es mucho más fácil frustrar el ataque en las primeras fases, donde el agresor no tiene acceso a nuestro sistema, manteniéndonos seguros.
+
 ### Investigación de Metodologías de Pentesting
 
 Las pruebas de pentesting son importantes en el ámbito de la seguridad informática, dado que poniendo a prueba los sistemas en los que realizan las pruebas, logran obtener resultados y, por ende, posibles soluciones o mitigaciones a fallos de seguridad y vulnerabilidades.
 
 Teniendo en cuenta las auditorías que ofrecemos, hemos elegido implementar la metodología PTES (Penetration Testing Execution Standard), que posee un enfoque en un amplio espectro de áreas. Esta metodología está diseñada para poder ser aplicada tanto en redes y sistemas, aplicaciones web, redes, aplicaciones (software), ingeniería social e incluso seguridad física. Esta elección se hace debido al hecho de no existir una metodología concreta para el ámbito del software, pero sí una que cubre en gran medida, la mayoría de campos relevantes en el campo de la seguridad informática.
 
-### Tipos de Auditoría Ofensiva
+#### Metodología PTES (Penetration Testing Execution Standard)
 
-[...]
+La metodología PTES proporciona una forma clara y estructurada de auditar la seguridad de múltiples ámbitos, p
 
-### Descripción de los Servicios
+### Selección de una Metodología
 
 [...]
 
@@ -387,3 +410,6 @@ https://es.gridinsoft.com/spyware<br/>
 https://softwarelab.org/es/blog/que-es-un-gusano-informatico/<br/>
 https://www.danysoft.com/los-12-peores-botnets/<br/>
 https://ayudaleyprotecciondatos.es/2021/04/23/rogueware/<br/>
+https://www.platinumciber.com/las-fases-de-un-ciberataque/<br/>
+https://www.ymant.com/blog/las-7-fases-de-un-ciberataque/<br/>
+http://www.pentest-standard.org/index.php/Main_Page<br/>
