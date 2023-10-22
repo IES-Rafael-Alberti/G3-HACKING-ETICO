@@ -11,6 +11,7 @@
     - [Descripción de los Servicios](#descripción-de-los-servicios)
         - [Auditoría de Seguridad de Software](#auditorc3ada-de-seguridad-de-software-1)
 - [Investigación de Fases de Ataque](#investigación-de-fases-de-ataque)
+- [Bibliografía](#bibliografía)
 
 ## Introducción
 
@@ -40,7 +41,7 @@ El *software* es un conjunto de programas, aplicaciones y datos que permiten que
 
 Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar un sistema debemos entender la diferencia entre un *exploit* y un *virus*. Mientras que un exploit es un software malicioso usado para aprovechar las vulnerabilidades de un sistema objetivo, un virus se acopla en un programa legítimo para camuflarse, y al ser ejecutado, el código malicioso entra en escena, copiándose en programas y ficheros del sistema.
 
-##### Ataque de Fuerza Bruta
+##### Ataque de Fuerza Bruta Estándar
 
 *Características*
 
@@ -57,7 +58,7 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 - El objetivo principal es el de obtener acceso no autorizado a cuentas, sistemas o datos protegidos por contraseña.
 - Suele ser usado en cuentas online, sistemas protegidos por contraseñas o incluso en el descifrado de datos.
 
-##### Ataque de Diccionario
+##### Ataque de Fuerza Bruta de Diccionario
 
 *Características*
 
@@ -73,6 +74,36 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 
 - El objetivo principal es adivinar la contraseña de un usuario, cuenta, sistemas o datos protegidos.
 - Tras la obtención de la contraseña, el objetivo suele ser robar información confidencial, acceder a sistemas no autorizados, etc.
+
+##### Ataque de Fuerza Bruta con Algoritmo de Búsqueda Inteligente
+
+*Características*
+
+- Es un tipo de ataque de fuerza bruta en el que los atacantes usan algoritmos diseñados para predecir las combinaciones de contraseñas más probables.
+- El ataque usa una base de información conocida de la víctima, así como de pautas usuales al crear contraseñas.  
+
+*Métodos*
+
+- Uso de software especializado o scripts en su defecto, aunque existe la posibilidad de usar una IA para esta tarea.
+
+*Objetivos*
+
+- El objetivo es el mismo que los demás ataques de fuerza bruta, que es obtener un acceso no autorizado a una cuenta de un usuario online, adivinar contraseñas, y acceder a sistemas o datos protegidos.
+
+##### Ataque de Fuerza de Fuerza Bruta Híbrido
+
+*Características*
+
+- Este tipo de ataque combina tanto los ataques de fuerza bruta comunes como los ataques de diccionario.
+- Se suele crear un diccionario con contraseñas comunes, y a través de fuerza bruta estándar agregar caracteres especiales o números.
+
+*Métodos*
+
+- Uso de software especializado o scripts en su defecto.
+
+*Objetivos*
+
+- Estos ataques buscan poder acceder de forma no autorizada a sistemas, cuentas de usuario, contraseñas o información confidencial.
 
 ##### Ataque de Escalada de Privilegios
 
@@ -279,3 +310,7 @@ Teniendo en cuenta las auditorías que ofrecemos, hemos elegido implementar la m
 ### Descripción de los Servicios
 
 [...]
+
+## Bibliografía
+
+https://masterenciberseguridadonline.es/tipos-de-ataques-de-fuerza-bruta/
