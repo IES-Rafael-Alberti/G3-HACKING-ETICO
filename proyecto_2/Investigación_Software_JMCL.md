@@ -75,6 +75,12 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 - El objetivo principal es adivinar la contraseña de un usuario, cuenta, sistemas o datos protegidos.
 - Tras la obtención de la contraseña, el objetivo suele ser robar información confidencial, acceder a sistemas no autorizados, etc.
 
+*Ejemplos*
+
+- Aircrack-ng
+
+![Aircrack](img/Aircrack.png)
+
 ##### Ataque de Fuerza Bruta con Algoritmo de Búsqueda Inteligente
 
 *Características*
@@ -112,6 +118,7 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 - Intento por parte del atacante de lograr un nivel de acceso o privilegios en un sistema superior al concedido inicialmente. 
 - Esta clase de ataque suelen servirse de vulnerabilidades y fallos en la configuración de seguridad de sistemas para obtener dichos privilegios.
 - El atacante suele buscar cuentas de root o administrador.
+- Se distinguen entre la escalada de privilegios vertical, donde el atacante eleva sus privilegios desde una cuenta con privilegios de nivel bajo; y la escalada de privilegios horizontal, donde el atacante a pesar de usar una cuenta con bajos privilegios, gana acceso a datos y funcionalidades a las que no debería poder acceder.
 
 *Métodos*
 
@@ -141,6 +148,11 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 - El principal objetivo es el de otorgar a los atacantes acceso al sistema infectado, así como de mantener dicho acceso de forma persistente.
 - El objetivo de los atacantes es robar contraseñas o datos financieros, información confidencial o alterar o destruir el sistema objetivo.
 
+*Ejemplos*
+
+- Uroburos (2014). El rootkit Uroburos tenía como objetivo robar datos en compañías de alto perfil, pudiendo afectar desde empresas hasta organizaciones gubernamentales.
+- Rustock (2006). Este rootkit tenía el siguiente *modus operandi*: infectar equipos informáticos de toda índole, desde ordenadores personales hasta sistemas empresariales, para convertirlos en *bots*, agregándolos a una *botnet* dedicada a enviar spam de manera masiva.
+
 ##### Troyano
 
 *Características*
@@ -158,6 +170,10 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 - Los troyanos suelen usarse para crear puertas traseras (backdoors) en los sistemas atacados.
 - También poseen capacidades de espionaje tales como el uso de keyloggers (software que registra las pulsaciones de teclado) o capturar la pantalla.
 
+*Ejemplo*
+
+- URSNIF. Troyano especializado en robar datos bancarios, contraseñas, y datos personales. Ezste malware además, puede ser usado como puente para instalar más malware en el sistema
+
 ##### Adware
 
 *Características*
@@ -172,6 +188,10 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 
 - El objetivo principal del adware es generar ingresos para los anunciantes y desarrolladores del mismo.
 - Algunos tipos de adware pueden llegar a recopilar información del usuario, a fin de poder mostrar publicidad personalizada a estas personas, o directamente vender esta información a otras empresas.
+
+*Ejemplo*
+
+- Appearch. Adware que usa software gratuito instalado como medio para poder colarse en el sistema, ya que es instalado junto con el software gratis aparentemente inocuo. Una vez instalado, llena el navegador de la víctima con publicidad basura.
 
 ##### Spyware
 
@@ -191,6 +211,10 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 - El objetivo consiste en la recopilación de información del usuario infectado.
 - Estos datos pueden incluir tarjetas de crédito, contraseña, historial de Internet o correos electrónicos.
 
+*Ejemplo*
+
+- Pegasus. Malware de espionaje (spyware) diseñado por la compañia israelí NSO Group. Pegasus puede instalarse de diversas formas en los móviles de sus víctimas, habiendo hecho uso para su ventaja de varias vulnerabilidades 0-Day. Este spyware es capaz de afectar tanto a iOS como a Android.
+
 ##### Gusano
 
 *Características*
@@ -207,6 +231,11 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 
 - El objetivo principal y razón de la existencia de un gusano es propagarse a otros sistemas, infectándolos para poder seguir propagándose.
 - Algunos gusanos pueden contener payloads maliciosos.
+
+*Ejemplos*
+
+- Morris Worm (1998). El gusano Morris fué el primer gusano que causó un impacto significativo en Internet, siendo desarrollado por el entonces estudiante de postgrado, Robert Tappan Morris.
+- Sasser Worm (2004). Gusano que explotaba una vulnerabilidad en sistemas Windows, bloqueando y reiniciando los equipos. Este gusano fué desarrollado por un estudiante alemán de 18, el cual fué capturado y condenado.
 
 ##### Botnets
 
@@ -229,6 +258,12 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 - Infección de más dispositivos.
 - Cryptojacking o minado de criptomonedas.
 
+*Ejemplos*
+
+- CONFICKER (2008). Botnet dedicada a los ataques DDoS y al envío masivo de spam. Llegó a infectar entre 9 y 15 millones de equipos.
+
+- GAMEOVER ZEUS (2012). Con su origen en Rusia, esta botnet infectó entre medio millón y un millón de equipos, y está diseñada para propagar entre los bots el malware CryptoLocker, que es un malware de tipo RansomWare, el cual encripta los equipos de las víctima y pide un rescate a cambio de la clave de desencriptado.
+
 ##### Rogueware
 
 *Características*
@@ -247,6 +282,10 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 - El objetivo prioritario del rogueware es el lucro y la estafa a las víctimas a través de la venta de un software falso, que no sólo no los protege, sino que los daña.
 - El rogueware es además capaz de robar información del usuario y su sistema.
 - También posee la capacidad de instalar malware adicional.
+
+*Ejemplo*
+
+- WinWebSec. Familia de supuestos escáneres que emulan ser un sistema de seguridad legítimo, pero en realidad pueden llegar a infectar el equipo, convirtiéndolo en un *bot*. Algunos ejemplos son Live Security Platinum, Smart Protection y Win XP Security System.
 
 <br/>
 
@@ -278,8 +317,8 @@ Nuestra Auditoría de Seguridad Ofensiva orientada al Software está diseñada p
 
 Comenzando por el entorno donde se llevarán a cabo las pruebas, existe la opción de realizarse de forma interna o externa a su organización, según los intereses que tenga el cliente. Obviamente, ambos enfoques ofrecen resultados distintos, así como enfoques distintos:
 
-- *Auditoría Interna.* Una auditoría interna se realiza teniendo acceso a la red interna de la empresa cliente, llevando a cabo las pruebas de penetración o pentesting desde allí, pudiendo incluir las propias oficinas, su Intranet o una VPN.
-- *Auditoría Externa.* Las auditorías externas se llevan a cabo desde fuera de la red de la organización, no teniendo acceso a los sistemas internos o datos de la empresa cliente.
+- *Auditoría Interna.* Una auditoría interna se realiza teniendo acceso a la red interna de la empresa cliente, llevando a cabo las pruebas de penetración o pentesting desde allí, pudiendo incluir las propias oficinas, su Intranet o una VPN. En esta clase de auditoría el experto en seguridad actúa como un usuario que previamente disponía de acceso a la red de la empresa.
+- *Auditoría Externa.* Las auditorías externas se llevan a cabo desde fuera de la red de la organización, no teniendo acceso a los sistemas internos o datos de la empresa cliente. A diferencia del tipo de auditoría interna, en esta el auditor asume el papel de un atacante externo, el cual obviamente carece de un acceso autorizado a los sistemas de la empresa.
 
 Una vez que hemos elegido si queremos una auditoría externa o interna, también debemos optar entre enfoques diferentes a la hora de realizar las pruebas, dado que estas podrán tener una mayor superficie para realizarlas, o llegar a una mayor profundidad en el sistema de la empresa cliente, obteniendo resultados más concretos en un área. Estos tres enfoques son los siguientes:
 
@@ -289,7 +328,7 @@ Una vez que hemos elegido si queremos una auditoría externa o interna, también
 
 Ya elegido el tipo exacto de pruebas que desea para su empresa, pasaremos a explicar el esquema general de la auditoría, desde la realización de las pruebas hasta la presentación del informe con los resultados obtenidos.
 
-![Alt text](Esquema_Auditoría.png)
+![Alt text](img/Esquema_Auditoría.png)
 
 Se ha de remarcar que este es un mero esquema general con un enfoque claro en la seguridad del software de la empresa, haciendo hincapié en esta área concreta. Si se elige un enfoque de análisis externo, obviamente se obtendrá una evaluación general de la seguridad de sus programas, pero careciendo de un nivel alto de detalles.
 
@@ -313,4 +352,17 @@ Teniendo en cuenta las auditorías que ofrecemos, hemos elegido implementar la m
 
 ## Bibliografía
 
-https://masterenciberseguridadonline.es/tipos-de-ataques-de-fuerza-bruta/
+https://masterenciberseguridadonline.es/tipos-de-ataques-de-fuerza-bruta/<br/>
+https://winempresas.pe/blog/ataques-informaticos-causas-y-12-tipos-de-ciberataques<br/>
+https://cnipj.es/tipos-ataques-informaticos/<br/>
+https://ciberseguridad.blog/25-tipos-de-ataques-informaticos-y-como-prevenirlos/<br/>
+https://www.hackbysecurity.com/servicios-empresas/auditoria-informatica/tipos-de-auditorias-de-seguridad-informatica<br/>
+https://www.deltaprotect.com/blog/auditoria-de-seguridad-informatica<br/>
+https://resources.infosecinstitute.com/topics/hacking/popular-tools-for-brute-force-attacks/<br/>
+https://www.ciberseguridad.eus/ciberglosario/escalada-de-privilegios<br/>
+https://softwarelab.org/es/blog/que-es-un-rootkit/<br/>
+https://www.20minutos.es/tecnologia/ciberseguridad/5-troyanos-muy-peligrosos-que-te-pueden-vaciar-la-cuenta-5040746/<br/>
+https://nordvpn.com/es/blog/que-es-adware/<br/>
+https://es.gridinsoft.com/spyware<br/>
+https://softwarelab.org/es/blog/que-es-un-gusano-informatico/<br/>
+https://www.danysoft.com/los-12-peores-botnets/<br/>
