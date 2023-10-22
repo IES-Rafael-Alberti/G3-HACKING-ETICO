@@ -266,3 +266,16 @@ Se ha de remarcar que este es un mero esquema general con un enfoque claro en la
 
 ## Investigación de Fases de Ataque
 
+### Investigación de Metodologías de Pentesting
+
+Las pruebas de pentesting son importantes en el ámbito de la seguridad informática, dado que poniendo a prueba los sistemas en los que realizan las pruebas, logran obtener resultados y, por ende, posibles soluciones o mitigaciones a fallos de seguridad y vulnerabilidades.
+
+Teniendo en cuenta las auditorías que ofrecemos, hemos elegido implementar la metodología PTES (Penetration Testing Execution Standard), que posee un enfoque en un amplio espectro de áreas. Esta metodología está diseñada para poder ser aplicada tanto en redes y sistemas, aplicaciones web, redes, aplicaciones (software), ingeniería social e incluso seguridad física. Esta elección se hace debido al hecho de no existir una metodología concreta para el ámbito del software, pero sí una que cubre en gran medida, la mayoría de campos relevantes en el campo de la seguridad informática.
+
+### Tipos de Auditoría Ofensiva
+
+[...]
+
+### Descripción de los Servicios
+
+[...]
