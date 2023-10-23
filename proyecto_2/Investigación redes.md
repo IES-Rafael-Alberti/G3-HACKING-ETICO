@@ -37,6 +37,8 @@ El spoofing de DNS consiste en alterar el DNS para por ejemplo redigir el tráfi
 
 Esto permite que la victima introduzca un nombre de usuario y contraseña y el atacante puede robar su información de acceso.
 
+![Imagen DNS Spoofing](img/dns-spoofing.png)
+
 En el Spoofing IP se suplanta la dirección IP de origen de un determinado equipo, de esta forma se pueden enviar TCP, UDP o IP con una dirección IP falsa.
 
 ### Ataque Man in the Middle (MitM)
