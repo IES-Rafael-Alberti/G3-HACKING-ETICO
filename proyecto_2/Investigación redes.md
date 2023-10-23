@@ -21,7 +21,7 @@ Hay muchos tipos de ataques DoS que no se explicarán en este documento pero al 
 
 Estos ataques son ataques DoS que se ejecutan a través de distintas técnicas pero con el objetivo de saturar una red o un servidor.
 
-![Imagén DoS](./img/DoS.png)
+![Imagen DoS](img/DoS.png)
 
 ### Ataque de denegación de servicio o Distributed Denial of Service (DDoS)
 
@@ -29,13 +29,19 @@ Este ataque es un ataque DoS que utiliza múltiples dispositivos (Equipos remoto
 
 Un ejemplo de este ataque es el que recibió AWS en Febrero de 2020 que generó un tráfico de 2,3 terabits por segundos. Los atacantes usaron servidores web pirateados del protocolo CLDAP. este protocolo es de los más usado en los últimos años.
 
+![Imagen DDOS](img/DDoS.png)
+
 ### Spoofing de DNS y Spoofing IP
 
 El spoofing de DNS consiste en alterar el DNS para por ejemplo redigir el tráfico a una página web falsa que emula una legítima.
 
 Esto permite que la victima introduzca un nombre de usuario y contraseña y el atacante puede robar su información de acceso.
 
+![Imagen Spoofin DNS](img/dns-spoofing.png)
+
 En el Spoofing IP se suplanta la dirección IP de origen de un determinado equipo, de esta forma se pueden enviar TCP, UDP o IP con una dirección IP falsa.
+
+![Imagen Spoofin IP](img/Ip-spoofing.png)
 
 ### Ataque Man in the Middle (MitM)
 
