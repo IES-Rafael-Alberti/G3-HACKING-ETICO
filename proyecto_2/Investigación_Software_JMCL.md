@@ -383,7 +383,23 @@ Teniendo en cuenta las auditorías que ofrecemos, hemos elegido implementar la m
 
 #### Metodología PTES (Penetration Testing Execution Standard)
 
-La metodología PTES proporciona una forma clara y estructurada de auditar la seguridad de múltiples ámbitos, p
+La metodología PTES proporciona una forma clara y estructurada de auditar la seguridad de múltiples ámbitos. Para lograr esto, esta metodología dispone de una serie de fases, las cuales expondremos a continuación:
+
+1. **Fase de Interacción Previa.** Fase inicial, en la que se planifica el pentesting, definiendo los objetivos del mismo, el alcance que va a tener, acordar una autorización con la empresa objetivo, así como llevar a cabo una recopilación básica de información.
+
+2. **Fase de Recopilación de Información.** En esta fase se comienza a analizar el objetivo, llevándose a cabo a través de fuentes OSINT. Con esto obtenemos información detallada sobre la organización objetivo, incluyendo sus sistemas, aplicaciones y recursos de red. Este análisis puede llegar a cubrir el escaneo de puertos, enumeración de servicios y repopilación de información sobre empleados y archivos. 
+
+3. **Fase de Modelado de Amenazas.** Esta fase consiste en analizar tanto el entorno interno como el externo del objetivo en busca de elementos susceptibles de ser explotados por posibles atacantes, pudiendo llevar a futuros ataques contra la organización objetivo. Su propósito es doble: primero, identificar los activos que serán objeto de la auditoría, evaluando su valor para la empresa y su importancia en los procesos de la organización; y en segundo lugar, evaluar quiénes podrían ser los posibles atacantes y su capacidad, se busca comprender y describir las amenazas en profundidad. Esta fase permite perfilar los tipos de ataques más probables, que serán los que se considerarán principalmente en las etapas posteriores del proceso.
+
+4. **Fase de Análisis de Vulnerabilidades.** Fase en la que se realiza el proceso de análisis de vulnerabilidades y fallos en la configuración de los sistemas del objetivo, adelantándose al posible atacante. Una configuración de seguridad errónea, una contraseña débil o por defecto o un diseño inseguro pueden facilitar un posible ataque, y son objetivos en esta fase del pentesting.
+
+5. **Fase de Explotación.** Una vez recopilada una lista de fallos de seguridad y vulnerabilidades, los pentesters o expertos en seguridad informática comienzan el proceso de acceso al sistema objetivo, saltándose los mecanismos de seguridad sirviéndose de exploits y apoyándose en las vulnerabilidades descubiertas. El fin último es lograr el control del sistema bajo prueba.
+
+6. **Fase de Post-Explotación.** Una vez logrado el acceso al sistema, se busca lograr una persistencia en el mismo, así como llevar a cabo movimientos laterales cuyo objetivo sea alcanzar el control de otros activos. Con estas acciones se busca, a través del acceso conseguido, analizar y recopilar la información con mayor valor posible.
+
+7. **Fase de Reporte.** Es la última fase, y consiste en la elaboración de un informe que detallen las conclusiones de las pruebas de pentesting. En este documento se resumen los resultados obtenidos, se evalúan los riesgos identificados y se sugiere un plan para reducir o gestionar dichos riesgos.
+
+Finalmente, se elimina cualquier acceso y rastro dejado durante el pentesting, lo que devuelve el sistema a su estado original.
 
 ### Selección de una Metodología
 
