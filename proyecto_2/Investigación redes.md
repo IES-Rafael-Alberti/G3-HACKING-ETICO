@@ -49,6 +49,8 @@ El atacante en este tipo de ataques intercepta una comunicación entre dos perso
 
 En este ataque se puede por ejemplo hacer en una red WiFi no cifrada. Las victimas no saben que el atacante está espiando o modificando la comunicación.
 
+![Imagen DNS Spoofing](img/Man-in-the.middle.png)
+
 ### Tunelización de DNS
 
 Se usa el protocolo DNS para comunicar tráfico que no pertenece al tráfico DNS por el puerto 53. Por ejemplo se puede enviar HTTP y otro tipo de tráfico.
