@@ -21,7 +21,7 @@ Hay muchos tipos de ataques DoS que no se explicarán en este documento pero al 
 
 Estos ataques son ataques DoS que se ejecutan a través de distintas técnicas pero con el objetivo de saturar una red o un servidor.
 
-![Imagén DoS](./img/DoS.png)
+![Imagén DoS](img/DoS.png)
 
 ### Ataque de denegación de servicio o Distributed Denial of Service (DDoS)
 
