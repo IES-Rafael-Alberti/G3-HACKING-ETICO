@@ -43,6 +43,12 @@ En el Spoofing IP se suplanta la dirección IP de origen de un determinado equip
 
 ![Imagen DNS Spoofing](img/ip-spoofing.png)
 
+### ARP Spoofing
+
+Este ataque permite atacar a equipos que esten en la misma red local, ya sea cableada o inalámbrica.
+
+El atacante se hace pasar por el router haciendo que todo el tráfico de la red hacia internet pase directamente por él, pudiendo leer, modificar o bloquear este tráfico.
+
 ### Ataque Man in the Middle (MitM)
 
 El atacante en este tipo de ataques intercepta una comunicación entre dos personas de forma secreta e incluso puede alterarla.
@@ -57,12 +63,6 @@ Se usa el protocolo DNS para comunicar tráfico que no pertenece al tráfico DNS
 
 También se puede utilizar para tráfico VPN de tunelización DNS, manipular las solicitudes DNS a fin de exfiltrar los datos de un sistema comprometido y para encubrir tráfico saliente ocultando los datos que se suelen compartir mediante una conexión a internet. 
 
-### ARP Spoofing
-
-Este ataque permite atacar a equipos que esten en la misma red local, ya sea cableada o inalámbrica.
-
-El atacante se hace pasar por el router haciendo que todo el tráfico de la red hacia internet pase directamente por él, pudiendo leer, modificar o bloquear este tráfico.
-
 ### Ataque de inundación MAC
 
 Este tipo de ataques es uno de los más comunes y consiste en inundar la tabla CAM de un Switch con diferentes MAC como dirección de origen, con el objetivo de que el Switch acabe funcionando como un HUB.
@@ -72,6 +72,8 @@ Este tipo de ataques es uno de los más comunes y consiste en inundar la tabla C
 Consiste en tomar posesión de una sesión TCP que ya existe y la victima ya está utilizando. 
 
 Este tipo de ataque se debe utilizar en un momento concreto que es en el inicio de las conexiones TCP que es donde se realiza la autenticación. 
+
+![Imagen Hijacking](img/hijacking.png)
 
 ## Tipos de auditoria ofensiva en la red
 
