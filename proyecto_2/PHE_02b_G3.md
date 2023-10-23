@@ -508,11 +508,18 @@ Nessus es una herramienta de escaneo de vulnerabilidades desarrollada por Tenabl
 
 Creemos que nessus es una herramienta bastante completa y bastante útil ya que es analizador de vulnerabilidades más potente del mercado por lo que nos ahorra mucho tiempo para encontrarlas ya que dispone de escaneo de puertos y servicios, escaneos de aplicaciones web, escaneos de configuración y escaneos de software.
 
-#### SIEM Splunk: 
+### SpoofCheck: Gratis
 
-Es una plataforma de análisis de datos en tiempo real que permite recopilar, almacenar, analizar y visualizar datos generados por los dispositivos. Es utilizada por organizaciones y empresas de todos los tamaños para una variedad de propósitos.
+Esta herramienta se encarga de ir comprobando una serie de condiciones para verificar si un servidor de correos es spoofeable o no.
 
-falta................................
+Nos será bastante útil ya que podremos comprobar si el servidor de correos es vulnerable o no ejecuntando la herramienta por lo que nos ahorrará tiempo.
+
+### Splunk: el precio depende de los datos usados
+
+Es una plataforma de análisis de datos en tiempo real que permite recopilar, almacenar, analizar y visualizar datos generados por los dispositivos.
+
+En nuestra empresa necesitamos de un SIEM que nos ayude a mejorar la eficiencia de nuestras auditorías y creemos que Splunk es la mejor opción ya que es bastante flexible y se paga por la cantidad de datos utilizados.
+
 
 ### Herramientas para pentesting de redes
 
