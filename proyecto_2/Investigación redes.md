@@ -163,7 +163,7 @@ Además de estas restricciones, existen una serie de fases que se emplean en el 
 
  Se han investigado un número de herramientas de Pentesting sobre red, buscando las más conocidas. Todas estas herramientas son de código abierto y por lo tanto gratuitas.
 
-### NMAP
+### NMAP: Gratis
 
 NMAP es una de las herramientas credas para administradores, auditores y profesionales de seguridad. Tiene muchas funcionalidades, entre ellas permite la ejecución de scripts personalizados que permiten la identifiaciones de informaciones específicas.
 
@@ -173,13 +173,13 @@ También escanea puertas de servicios que estén abiertas, determina el tipo de 
 
 Con ella podemos hacer un barrido de la red y obtener respuestas de todos los dispositivos que estén conectados a la misma.
 
-### NetCat
+### NetCat: Gratis
 
 Conocido como nc, es una de las herramientas más antiguas. Fue creada para interactuar con puertas de servicios directamente a través de la entrega de una dirección IP, una puerta y un protocolo.
 
 Esta herramienta también puede transferir archivos y establecer sesiones de host a host.
 
-### Kismet Wireless
+### Kismet Wireless: Gratis
 
 Es un sistema de detección de intrusos, detector de redes inalámbricas y rastreador de contraseñas, funciona con otras tarjetas inalámbricas y admite el modo de monitoreo sin formato.
 
@@ -189,33 +189,33 @@ Funciona principalmente con redes Wi-Fi(IEEE 802.11) y se le pueden ampliar sus 
 
 Funciona en sistemas Linux, Ubuntu y más.
 
-### NetStumbler
+### NetStumbler: Gratis
 
 Se utiliza para evitar wardriving, funciona en sistemas operativos Windows. Es capaz de detectar redes IEEE 802.11g, 802 y 802.11b. La versión más actualizada se llama MiniStumbler
 
-### Aircrack-ng
+### Aircrack-ng: Gratis
 
 Ofrece una variedad de herramientas de línes de comandos que verifican y evalúan la seguridad de la red Wi-Fi. Se dedica a actividades como ataque, monitoreo, prueba y descifrar contraseñas de redes inalámbricas WEP/WAP/WPA2.
 
 Su funcionamiento se basa en tomar los paquetes de la red, y analizarlos mediante contraseñas recuperadas.
 
-### Wireshark
+### Wireshark: Gratis
 
 Se utiliza para analizar paquetes de datos, también puede realizar inspecciones profundas de gran cantidad de protocolos establecidos. Podemos exportar los resultados del análisis a muchos formatos de archivo diferentes.
 
 Realiza capturas en vivo y análisis fuera de línea.
 
-### Ettercap
+### Ettercap: Gratis
 
 Es un sniffer/interceptor/logger para redes LAN con switchs, que soportan la disección activa y pasiva de muchos protocolos e incluye muchas características para el análisis de la red y el host anfitrión.
 
 Filtra contenido y puede rastrear conexiones en vivo.
 
-### Angry IP Scanner
+### Angry IP Scanner: Gratis
 
 Sirve para escanear direcciones IP y puertos. Puede usarse en internet o en LAN y es compatible con varios Sistemas Operativos. Permite realizar un rastreo y exportar los resultados en distintos formatos.
 
-### TCPDump y WinDump
+### TCPDump y WinDump: Gratis
 
 TCPDump es una herramienta diseñada para analizar el tráfico que circula por la red. Basada en línea de comandos y permite capturar y representar todo el tráfico que pasa por la red.
 
