@@ -161,7 +161,7 @@ Además de estas restricciones, existen una serie de fases que se emplean en el 
 
 ## Herramientas de pentesting referentes a la red
 
-En este apartado se nombrarán, explicarán y presupuestarán las diferentes herramientas pentesting para redes conocidas. Todas las herramientas investigadas son de código abierto y por lo tanto gratuitas.
+ Se han investigado un número de herramientas de Pentesting sobre red, buscando las más conocidas. Todas estas herramientas son de código abierto y por lo tanto gratuitas.
 
 ### NMAP
 
