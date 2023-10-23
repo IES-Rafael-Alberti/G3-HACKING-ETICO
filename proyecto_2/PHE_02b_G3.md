@@ -665,22 +665,22 @@ En este apartado hemos dividido la bibliografía de cada área investigada.
 - https://www.arsys.es/blog/owasp#:~:text=6%20Conclusiones-,%C2%BFQu%C3%A9%20es%20OWASP%3F,las%20mejores%20pr%C3%A1cticas%20de%20seguridad.
 - https://www.osintux.org/documentacion/the-harvester
 - https://hunter.io/
-- https://consejoderedaccion.org/sello-cdr/- hunter-busca-correos-emails#:~:text=Hunter.io%20es%20un%20portal,- solo%20introducir%20su%20p%C3%A1gina%20web.&- text=Durante%20la%20investigaci%C3%B3n%20period%C3%ADstica%20es,- con%20personas%20que%20no%20conocemos.
+- https://consejoderedaccion.org/sello-cdr/- hunter-busca-correos-emails#:~:text=Hunter.io%20es%20un%20portal,solo%20introducir%20su%20p%C3%A1gina%20web.&- text=Durante%20la%20investigaci%C3%B3n%20period%C3%ADstica%20es,- con%20personas%20que%20no%20conocemos.
 - https://medium.com/devrolabs/- find-email-addresses-in-seconds-mailshunt-9f15b9692ed6
-- https://blog.dopplerrelay.com/- herramientas-para-investigar-problemas-de-entregabilidad/- #:~:text=MXToolBox%20es%20una%20fuente%20probada,- listas%20negras%20de%20correo%20electr%C3%B3nico.
+- https://blog.dopplerrelay.com/herramientas-para-investigar-problemas-de-entregabilidad/#:~:text=MXToolBox%20es%20una%20fuente%20probada,- listas%20negras%20de%20correo%20electr%C3%B3nico.
 - https://mxtoolbox.com/
 - https://www.maltego.com/
-- https://www.welivesecurity.com/la-es/2023/05/11/- maltego-herramienta-muestra-tan-expuesto-estas-internet/
+- https://www.welivesecurity.com/la-es/2023/05/11/maltego-herramienta-muestra-tan-expuesto-estas-internet/
 - https://keepcoding.io/blog/que-es-maltego-ciberseguridad/
 - https://nmap.org/
-- https://www.freecodecamp.org/espanol/news/- que-es-nmap-y-como-usarlo-un-tutorial-para-la-mejor-herramienta-de-escaneo- -de-todos-los-tiempos/
+- https://www.freecodecamp.org/espanol/news/que-es-nmap-y-como-usarlo-un-tutorial-para-la-mejor-herramienta-de-escaneo-de-todos-los-tiempos/
 - https://openwebinars.net/blog/wireshark-que-es-y-ejemplos-de-uso/
 - https://www.incibe.es/ciudadania/herramientas/wireshark
-- https://www.cyberseguridad.com.mx/- nessus-escaner-de-vulnerabilidades-overview/
+- https://www.cyberseguridad.com.mx/nessus-escaner-de-vulnerabilidades-overview/
 - https://fferia.wordpress.com/nessus/
 - https://behacker.pro/nessus-como-hallar-vulnerabilidades/
 - https://keepcoding.io/blog/que-es-nessus/
 - https://es-la.tenable.com/products/nessus
-- https://www.computing.es/seguridad/- splunk-la-herramienta-para-anticiparse-a-los-ataques/
+- https://www.computing.es/seguridad/splunk-la-herramienta-para-anticiparse-a-los-ataques/
 - https://aprenderbigdata.com/splunk/
 - https://www.flu-project.com/2016/08/simpleemailspoofer-y-spoofcheck.html
