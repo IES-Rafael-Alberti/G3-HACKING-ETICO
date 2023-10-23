@@ -27,6 +27,8 @@
     - [Investigación de las Metodologías de Pentesting](#investigación-de-metodologías-de-pentesting)
         - [PTES (Penetration Testing Execution Standard)](#metodología-ptes-penetration-testing-execution-standard)
     - [Selección de una metodología](#selección-de-una-metodología)
+- [Herramientas de Monitorización](#herramientas-de-monitorización)
+    - [Herramientas de Monitorización de Software](#herramientas-de-monitorización-de-software)
 - [Conclusión](#conclusión)
 - [Bibliografía](#bibliografía)
 
@@ -405,27 +407,46 @@ Finalmente, se elimina cualquier acceso y rastro dejado durante el pentesting, l
 
 [...]
 
+<br/>
+
+## Herramientas de Monitorización
+
+### Herramientas de Monitorización de Software
+
+En este apartado incluimos un abanico de aplicaciones destinadas al uso del pentesting en el ámbito de la seguridad del software. Para ello hemos elegido cuidadosamente una serie de herramientas que nos facilitarán dicho trabajo:
+
+- **Nessus.** Herramienta de evaluación de vulnerabilidades en sistemas operativos. Esta herramienta se compone de dos módulos, siendo *Nessusd* y *Nessus Client*. El primero se encarga de realizar el escaneo, mientras que el segundo controla las exploraciones y muestra los resultados acerca de las vulnerabilidades encontradas.
+Este software es capaz de escanear puertos, así como los dispositivos conectados a una red, es capaz de detectar servicios, identificando los que son usados por las aplicaciones del sistema, identifica vulnerabilidades y finalmente, realiza un sondeo, asegurándose de no cometer falsos positivos. El precio oscila entre 500€ a 4482,49€ la versión más cara, aunque existe la posibilidad de solicitar una demo gratutita por 7 días.
+
+- **Metasploit.** Plataforma de pruebas de penetración y desarrollo de exploits ampliamente utilizada en al ámbito de seguridad informática. Esta herramienta permite el desarrollo y prueba de exploits, ofreciendo una amplia biblioteca, de modo que el pentester tan sólo tiene que elegir el que necesite en cada momento; también permite escanear y enumerar servicios en una red y recopilar información en sistemas objetivo. Metasploit incluye también una shell remota, permitiendo acceder a sistemas previamente comprometidos, ejecutando comandos de forma remota; ofrece un sistema de gestión de sesiones de explotación en una misma consola, y provee al pentester de un sistema de genración de informes. Esta herramienta es gratuita, pero existe una versión Pro por 14000€.
+
+<br/>
+
 ## Conclusión
 
 [...]
 
 ## Bibliografía
 
-https://masterenciberseguridadonline.es/tipos-de-ataques-de-fuerza-bruta/<br/>
-https://winempresas.pe/blog/ataques-informaticos-causas-y-12-tipos-de-ciberataques<br/>
-https://cnipj.es/tipos-ataques-informaticos/<br/>
-https://ciberseguridad.blog/25-tipos-de-ataques-informaticos-y-como-prevenirlos/<br/>
-https://www.hackbysecurity.com/servicios-empresas/auditoria-informatica/tipos-de-auditorias-de-seguridad-informatica<br/>
-https://www.deltaprotect.com/blog/auditoria-de-seguridad-informatica<br/>
-https://resources.infosecinstitute.com/topics/hacking/popular-tools-for-brute-force-attacks/<br/>
-https://www.ciberseguridad.eus/ciberglosario/escalada-de-privilegios<br/>
-https://softwarelab.org/es/blog/que-es-un-rootkit/<br/>
-https://www.20minutos.es/tecnologia/ciberseguridad/5-troyanos-muy-peligrosos-que-te-pueden-vaciar-la-cuenta-5040746/<br/>
-https://nordvpn.com/es/blog/que-es-adware/<br/>
-https://es.gridinsoft.com/spyware<br/>
-https://softwarelab.org/es/blog/que-es-un-gusano-informatico/<br/>
-https://www.danysoft.com/los-12-peores-botnets/<br/>
-https://ayudaleyprotecciondatos.es/2021/04/23/rogueware/<br/>
-https://www.platinumciber.com/las-fases-de-un-ciberataque/<br/>
-https://www.ymant.com/blog/las-7-fases-de-un-ciberataque/<br/>
-http://www.pentest-standard.org/index.php/Main_Page<br/>
+### Software
+
+- https://masterenciberseguridadonline.es/tipos-de-ataques-de-fuerza-bruta/
+- https://winempresas.pe/blog/ataques-informaticos-causas-y-12-tipos-de-ciberataques
+- https://cnipj.es/tipos-ataques-informaticos/
+- https://ciberseguridad.blog/25-tipos-de-ataques-informaticos-y-como-prevenirlos/
+- https://www.hackbysecurity.com/servicios-empresas/auditoria-informatica/tipos-de-auditorias-de-seguridad-informatica
+- https://www.deltaprotect.com/blog/auditoria-de-seguridad-informatica
+- https://resources.infosecinstitute.com/topics/hacking/popular-tools-for-brute-force-attacks/
+- https://www.ciberseguridad.eus/ciberglosario/escalada-de-privilegios
+- https://softwarelab.org/es/blog/que-es-un-rootkit/
+- https://www.20minutos.es/tecnologia/ciberseguridad/5-troyanos-muy-peligrosos-que-te-pueden-vaciar-la-cuenta-5040746/
+- https://nordvpn.com/es/blog/que-es-adware/
+- https://es.gridinsoft.com/spyware
+- https://softwarelab.org/es/blog/que-es-un-gusano-informatico/
+- https://www.danysoft.com/los-12-peores-botnets/
+- https://ayudaleyprotecciondatos.es/2021/04/23/rogueware/
+- https://www.platinumciber.com/las-fases-de-un-ciberataque/
+- https://www.ymant.com/blog/las-7-fases-de-un-ciberataque/
+- http://www.pentest-standard.org/index.php/Main_Page
+- https://keepcoding.io/blog/que-es-nessus/
+- https://keepcoding.io/blog/que-es-metasploit-ciberseguridad/
