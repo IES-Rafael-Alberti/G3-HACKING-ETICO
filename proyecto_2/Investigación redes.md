@@ -29,7 +29,7 @@ Este ataque es un ataque DoS que utiliza múltiples dispositivos (Equipos remoto
 
 Un ejemplo de este ataque es el que recibió AWS en Febrero de 2020 que generó un tráfico de 2,3 terabits por segundos. Los atacantes usaron servidores web pirateados del protocolo CLDAP. este protocolo es de los más usado en los últimos años.
 
-![Imagen DDOS](img(DDoS.png)
+![Imagen DDOS](img/DDoS.png)
 
 ### Spoofing de DNS y Spoofing IP
 
