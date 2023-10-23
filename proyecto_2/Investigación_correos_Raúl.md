@@ -36,7 +36,7 @@ Si bien es similar al phishing, estos dos ataques son distintos. El phishing bus
 
 El spam de correos electrónicos es un tipo de comunicación masiva que se envía principalmente por motivos comerciales. A los atacantes que realizan el envió de este tipo de correos se les suele llamar "Spammers". Estos correos electrónicos suelen contener publicidad no deseada, promociones, malware, enlaces a sitios web falsos o contenido irrelevante. 
 
-![Alt text](./img/spam-1.jpg)
+![Alt text](./img/spam.png)
 
 Algunos ejemplos pueden ser:
 
