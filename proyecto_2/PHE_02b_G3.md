@@ -25,7 +25,7 @@ Debido a estas dos poderosas razones, hemos podido ver un aumento exponencial de
 
 Además de clasificar estos ataques, también se busca diseñas estrategias de auditoría ofensiva, lo cual es un componente esencial en el ámbito de la ciberseguridad. Las auditorías ofensivas nos permiten identificar debilidades y vulnerabilidades en sistemas, aplicaciones y redes antes que los atacantes las puedan explotar.
 
-## Tipos de Ataques y su Clasificación
+## Tipos de Ataques y clasificación por área
 
 Como antes hemos explicado, el modus vivendi de los profesionales de la ciberseguridad orbita en torno a la búsqueda y estudio de las vulnerabilidades y fallos de seguridad informáticos, analizando y comprendiendo los diversos tipos de ataques que los sistemas y aplicaciones pueden sufrir, anticipándose a ellos. 
 
@@ -259,11 +259,215 @@ Este tipo de ataque se debe utilizar en un momento concreto que es en el inicio 
 
 ![Imagen Hijacking](img/hijacking.png)
 
-### Clasificación por área
-##### - Especificar que la gravedad dependerá del cliente
+### Ataques en el área de web
 
-Basándonos en estos tipos de ataques, estas son las auditorías que nuestra empresa ofrecerá
-## Auditorías
+El área de web es una de las áreas de acción más comunes de las empresas. Muchas empresas de todos los tamaños se fundamentan en el correcto funcionamiento de una página web, ya sea porque es su medio de contacto con sus clientes, porque es una parte fundamental de su soporte o porque es de hecho su producto. 
+
+Por ello, el área de web puede resultar de crucial interés para todo tipo de perfiles de clientes. Se han enumerado en esta sección los ataques más destacables que podemos encontrar y una descripción de los mismos
+
+#### Inyección de SQL
+Una inyección SQL en web consiste como bien dice el nombre en introducir código malicioso en algún lugar de la web que lo permita, normalmente formularios, parámetros de la misma URL o barras de búsqueda. Este código aprovechará la forma en la que una aplicación web maneja las entradas de usuario, poniendo a prueba la forma en la que se validan o sanitizan.
+
+Para comprenderlo mejor podríamos pensar en este caso:
+
+Supongamos que una aplicación web realiza en algún punto la siguiente consulta a la hora de realizar una autenticación:
+
+```sql
+SELECT * 
+FROM usuarios 
+WHERE nombre_usuario = 'user' 
+AND contraseña = '1234';
+```
+
+Pensando en esta posibilidad, un usuario malicioso podría intentar introducir un código malicioso como el siguiente:
+
+```sql
+usuario' OR '1'='1'; --
+```
+
+Si el campo donde se introdujo ese código no está validado ni sanitizado, lo que el servidor procesará será lo siguiente:
+
+```sql
+SELECT * 
+FROM usuarios 
+WHERE nombre_usuario = 'user' 
+OR '1'='1'; 
+--' AND contraseña = 'contraseña123';
+```
+
+El atacante ha utilizado el operador lógico `OR` para añadir la condición verdadera  `'1'='1'`, y luego ha añadido dos guiones `--` que crearían un comentario, eludiendo la comprobación de la contraseña. 
+
+De esta manera un atacante sortea el proceso de autenticación con facilidad y sin ni siquiera conocer la contraseña.
+#### Cross-Site Scripting
+El Cross-Site Scripting o XSS, son principalmente ataques que permiten la ejecución de código malicioso que ha sido inyectado en sitios benignos y fiables, provocando que los usuarios que también visiten o utilicen esa página web se vean afectados por la acción maliciosa. Los problemas de seguridad que se pueden provocar por este problema abarcan desde una suplantación de la identidad hasta el robo de información sensible.
+
+Este tipo de ataque intenta evadir la *política del mismo origen* (SOP, Same-Origin Policy), la cual consiste de una manera resumida en que un documento o script de un origen concreto ( entendiéndose origen como la combinación entre dominio, protocolo y puerto ) no podrá afectar ni interactuar con un recurso de otro origen.
+
+Estos ataques podemos clasificarlos en 3 categorías principales:
+
+**XSS Almacenados**
+En este caso, el código inyectado se almacena permanentemente en los servidores o el código de la página o aplicación web concretos, provocando que cada vez que un cliente recupere datos del servidor se traiga consigo el script malicioso de nuevo. Suelen darse en cajas de comentarios, mensajes del foro incluso secciones como tweets de twitter podrían ser vulnerables.
+
+**XSS Reflejados**
+En los XSS reflejados, el código malicioso lo inyecta un usuario en el momento y el servidor lo muestra de vuelta en una petición HTTP. Suelen ser menos peligrosos que los anteriores.
+
+**XSS Basados en el DOM**
+Los XSS basados en el DOM se producen cuando un atacante logra inyectar código en el DOM de la web, siendo ésta la abstracción lógica que indica la jerarquía de los elementos de la página web. En este caso la página en sí misma no cambia, pero el código del cliente se ejecuta de manera distinta y probablemente maliciosa.
+![[que-es-dom.png]]
+
+Un ejemplo de XSS podría ser el siguiente:
+
+Supongamos un sitio web con un buscador y una caja de comentarios que tiene debilidades en su implementación y no validan el código adecuadamente. Esto permite que por ejemplo podamos inyectar código directamente en ese buscador, por ejemplo algo tan simple como:
+
+```html
+<script>alert("Este es un ataque XSS!");</script>
+```
+
+Se consideraría un XSS Reflejado, ya que en principio el código actuaría en la respuesta HTTP de la búsqueda. 
+
+Al inyectarlo en la caja de comentarios por ejemplo, podríamos conseguir que ese código se quedase almacenado en la base de datos de esa web, por lo que estaríamos hablando de un XSS Almacenado.
+ 
+Y si por ejemplo integrásemos una etiqueta `<script>` y luego consiguiéramos ejecutar un código como éste:
+
+```javascript
+const script = document.createElement("script");
+script.textContent = `console.log("Hi there");`;
+document.body.appendChild(script);
+```
+
+Estaríamos realizando un XSS basado en el DOM.
+#### Cross-Site Request Forgering
+Este tipo de ataque consiste en trucar a un usuario para que realice una acción en una aplicación en la que está logueado.
+
+Por ejemplo se podría trucar a un usuario para que realice una solicitud a una aplicación web en la que ya está autenticado, y siendo así, la aplicación no podría distinguir entre una solicitud maliciosa y una legítima. 
+
+Se podría conseguir muy fácilmente de la siguiente manera:
+
+Supongamos que ésta es una petición normal para que un banco nos haga una transferencia de 100€:
+
+```HTTP
+GET http://netbank.com/transfer.do?acct=PersonB&amount=100€ HTTP/1.1
+```
+
+Es importante la parte de `acct=PersonB`, ya que indica el usuario que recibirá la transacción.
+
+Un atacante podría modificar esta petición para que la petición se le haga a él:
+
+```http
+GET http://netbank.com/transfer.do?acct=USUARIOATACANTE&amount=100€ HTTP/1.1
+```
+
+Ya estaría *forjada* la petición, ahora solo tendría que distribuirse. Esto sería el ejemplo de como podríamos camuflarla en un formulario:
+
+```html
+<body onload="document.forms[0].submit()">
+   <form action="http://netbank.com/transfer.do" method="POST">
+     <input type="hidden" name="acct" value="USUARIOATACANTE"/>
+     <input type="hidden" name="amount" value="100€"/>
+     <input type="submit" value="Reclama tu premio!!!!"/>
+   </form>
+ </body>
+```
+
+Este sería un esquema su funcionamiento:
+
+![[CSRF.png]]
+#### Session Hijacking
+
+El *session hijacking* o secuestro de sesión consiste en valerse de un token de inicio de sesión, una cookie o un session ID y utilizarlo para tomar el control. Una vez que la sesión ha sido robada, el atacante pasará totalmente desapercibido y ni siquiera ha tenido que preocuparse de averiguar la contraseña.
+
+Para entender bien este ataque, debemos comprender qué es una sesión HTTP.
+
+> Las sesiones HTTP debido a que este protocolo no tiene un *estado*, es decir, no existe algo constante que monitorice si la sesión está activa. Los desarrolladores necesitaban algo para no tener que obligar al usuario a autenticarse cada vez que pulsara un link (múltiples conexiones de un mismo usuario). Para ello crearon la *sesión*, parámetros que almacenan mientras el usuario está logueado en el sistema y se destruye cuando éste cierra su sesión.
+> 
+> Los ID de sesión suelen ser cadenas largas alfanuméricas y aleatorias comúnmente almacenadas en cookies o URLs entre otras.
+
+Sabiendo como funcionan las sesiones, deducimos que si consiguiéramos hacernos con ese id de sesión podríamos hacer *hijack* a esa sesión, hay diferentes técnicas para conseguirlo:
+
+- **Session Sniffing**: El atacante usaría un analizador de tráfico o un proxy para capturar precisamente el tráfico de una red, escrutarlo y sacar un ID o cookie de sesión de ello.
+- **Tokens predecibles**: Muchos servidores y páginas web utilizar algoritmos y patrones predefinidos para generar los ID de sesión. Un atacante podría probar patrones conocidos o deducir el patrón tras recopilar una serie de ellos y analizarlos.
+- **Man-in-the-browser**: En este caso, el atacante debería de infectar a una víctima con por ejemplo un troyano, para que realizara peticiones desde su navegador a una web concreta y se la mandase a él, pudiendo analizar esas peticiones y sacar el ID de sesión del usuario infectado.
+- **XSS**: El anteriormente mencionado, podría tratarse de un script para extraer cookies o IDs directamente.
+- **Session fixation attacks**: Este tipo de ataque consiste en un atacante que ha conseguido robar o crear un ID de formato válido para una web, y luego intenta trucar a un usuario para que lo use para autenticarse (es decir, que lo *fije*), ganando control sobre la cuenta de ese usuario. Las técnicas para conseguir que un usuario fije un ID varían desde tokens ocultos en formularios, cookies o URLs.
+
+****
+
+#### Ataques DoS y DDoS
+
+Los ataques de Denegación de Servicio (*Denial Of Service* o *DoS*) tienen como objetivo saturar la capacidad de un sistema, red o servicio al inundarlo con un gran volumen de tráfico falso. Existen dos variantes principales de este tipo de ataque:
+
+**DoS**: Denegación de servicio a secas. Es la denegación de servicio provocada por un aluvión de peticiones desde un solo equipo a otro concreto.
+
+**DDoS**: Denegación de servicio *Distribuida*. En esta variante se utilizan múltiples equipos para hacer peticiones simultáneamente a un solo equipo. Habitualmente se crean *botnets* o *redes zombies*, que son básicamente grandes conjuntos de equipos infectados para hacer peticiones en masa.
+
+![[639f433abf3d71a94ef2e5fd_ataque-ddos.png]]
+*Imagen de la web de DeltaProyect.com*
+
+Dentro de los ataques DoS, existen varios tipos:
+
+- Ataques para consumir los recursos de red y colapsar el servicio de un dispositivo
+- Alteración de una configuración de un protocolo, habitualmente causándole un error a través de la explotación de una vulnerabilidad
+- Interrupciones de comunicaciones por TCP (TCP Reset)
+- Obstrucción de la comunicación entre los usuarios y la víctima.
+- Explotación de vulnerabilidades en un sistema para lograr que el mismo deje de funcionar
+
+En cuanto a los ataques DDoS, existen 3 tipos principales que destacar:
+
+- **Ataque Volumétrico**: El tipo de ataque mayoritario, consiste en enviar una gran cantidad de datos mediante técnicas de creación de tráfico masivo como redes de bots. Principalmente se podrían subdividir en:
+	- *Inundación UDP*: Se utilizan paquetes UDP (*User Datagram Protocol*), un tipo de paquete más ligero que el TCP frecuentemente utilizado en aplicaciones que requieren latencia baja (juegos, streaming).
+	- *Inundación ICMP*: ICMP es el protocolo de mensajes de control de internet, utilizado para enviar mensajes de control y diagnóstico en redes IP. Los sistemas están obligados a contestar estos mensajes, por lo que suelen ser una elección interesante.
+	- *Reflejo de DNS*: Este ataque se orquesta normalmente con la ayuda de un bot que mande solicitudes a múltiples servidores DNS con la IP de la víctima, que resuelven las peticiones y reenvía los datos a la misma víctima, sobrecargando sus sistemas.
+- **Ataque de protocolo**: Los ataques DDoS de protocolo intentan agotar los recursos de la capa 3 (sesión) y 4 (transporte) del modelo OSI, donde se encuentran firewalls o servidores. Podemos diferenciar 2 tipos:
+	- *Inundación SYN*: En el momento de una conexión a internet, se activa el protocolo TCP que requiere tres pasos para funcionar: Envío de un paquete SYN, otro envío de paquete SYN-ACK para confirmar la conexión y uno ACK para completarla. Este tipo de ataque envía muchos paquetes SYN, *sin* enviar el paquete de confirmación, por lo que un servidor queda a la espera de los paquetes de confirmación
+	- *Ataque Smurf*: En este ataque se envían paquetes ICMP con la dirección de IP de la víctima a una extensa red de dispositivos que se ven obligados a dar una respuesta, por lo que se dirigen todas a la IP de la víctima. Su nombre fue tomado de "The Smurfs" (*Los pitufos*), capaces de derrotar a un enemigo mas grande que ellos siendo muchos.
+- **Ataque a la capa de aplicación**: Ataques dirigidos a la capa 7 de OSI, de aplicación, generalmente se suelen realizar a través de múltiples peticiones HTTP.
+#### Credential Stuffing
+
+El relleno de credenciales por fuerza bruta (*Credential Stuffing*) implica intentar adivinar contraseñas probando muchas combinaciones posibles. Normalmente los atacantes utilizarían una herramienta que automatice este proceso y utilizarán un *diccionario*, construido normalmente de filtraciones de credenciales. Realmente se considera un subconjunto de la categoría ataques de fuerza bruta, sin embargo estos ataques suelen intentar adivinar las contraseñas sin contexto ni pistas, mientras que en estos ataques mayormente se suelen utilizar credenciales expuestas.
+
+Un ejemplo sería un ataque en el que un atacante utiliza un programa automatizado para probar sistemáticamente diversas combinaciones de nombres de usuario y contraseñas hasta encontrar la correcta.
+
+#### API Abuse
+
+El abuso de API implica el uso indebido de una interfaz de programación de aplicaciones (API), como realizar solicitudes no autorizadas o manipuladas.
+
+Para entender este tipo de ataque por supuesto es necesario entender en qué consiste una API.
+
+> Una API (Application Programming Inteface) es un componente de software que proporciona una fuente de datos o recursos a varios solicitantes, como podrían ser aplicaciones, webs o servicios. Funcionan habitualmente mediante peticiones HTTP y tienen bien definidas las formas de solicitar datos mediante llamadas concretas, formatos de devolución específicos y convenciones que deberían ser respetadas. 
+
+Sabiendo esto, podremos entender que existen atacantes que realizan un proceso de ingeniería inversa a diferentes APIs para comprender como funcionan y así realizar *API Call Hijack* (Secuestro de llamada de una API), suele hacerse con por ejemplo servidores proxies que interceptan una petición y ésta se modifica para por ejemplo devolver una vista de un sitio web malicioso, siendo éste tan solo uno de los ejemplos. 
+
+Por supuesto las APIs también se ven afectadas por ataques DDoS provocados normalmente por pequeñas llamadas que solicitan cantidades enormes de datos, lo que consume muchos recursos del servidor. También, reciben ataques de atacantes que utilizan *botnets* cargadas con datos de datos robados de cuentas de usuario para conseguir combinaciones válidas.  
+
+Las APIs reciben ataques también de *Web Scraping*, que en sí no tiene por que ser un ciberataque, pero en este caso existen cibercriminales que mediante llamadas masivas a una API consiguen clonar en su totalidad un sitio web, con intención de falsearlo y utilizarlo como trampa para otras actividades maliciosas.
+
+#### Third-Party Code Exploitation
+
+El abuso de código de terceros implica explotar vulnerabilidades en códigos externos, como por ejemplo CMS (Wordpress, Joomla!), librerías de desarrollo, plugins de servicios de terceros o incluso vulnerabilidades en el propio javascript.
+
+Este tipo de ataque puede darse debido a que directamente muchos atacantes buscan vulnerabilidades en componentes de terceros muy utilizados por la comunidad, aunque existen distintos casos en los que por ejemplo los cibercriminales se hacen pasar por vendedores y creadores de software web de terceros que contienen puertas traseras y vulnerabilidades que puedan explotar más tarde.
+
+Existen también casos en los que muchos cibercriminales distribuyen parches de seguridad falsos, que añaden debilidades a la infraestructura de una aplicación.
+
+![[Pasted image 20231023014038.png]]
+*Imagen proveniente de [DVV solutions](https://www.dvvs.co.uk/third-party-javascript-attack/), TrendMicro*
+
+Un ejemplo sería un atacante que aprovecha una vulnerabilidad en un plugin de WordPress para inyectar código malicioso en un sitio web y comprometer la seguridad del mismo.
+#### Zero-Days attack
+
+Las vulnerabilidades zero-day son un punto más a tener en cuenta en las aplicaciones web y son una de las más críticas. 
+
+Básicamente consisten en brechas de seguridad desconocidas para el fabricante y en varias ocasiones incluso para la comunidad general, por lo que no tienen parche ni arreglo. Una vulnerabilidad *Zero-day* debe de venir junto a un *exploit Zero-day* para que efectivamente podamos considerarlo peligrosa de verdad, ya que muchas de ellas son tan difíciles de explotar que se abandonan.
+
+No tienen por que encontrarse en una página o aplicación web en sí, una vulnerabilidad en un navegador o servicio web concreto podría llegar a explotarse y causar grandes estragos.
+
+Como ejemplo de ataque zero day en web podríamos mencionar la [CVE-2020-0674](https://nvd.nist.gov/vuln/detail/cve-2020-0674) que consistía en un fallo de manejo de objetos en memoria del navegador ya anticuado Internet Explorer. El error permitía ejecutar código de manera remota. 
+
+En la siguiente sección detallamos los servicios ofrecidos por nuestra empresa en las diferentes áreas en las que nos especializamos. 
+
+Basándonos en la anterior clasificación de ataques, hemos definido las siguientes auditorías como servicio.
+
+## Auditorías ofrecidas por la empresa
 
 ### Auditoría de correos electrónicos
 
@@ -341,7 +545,7 @@ Una vez haber identificado los posibles vectores de acceso y vulnerabilidades, s
 
 Gracias a esto se dispone de los vectores de acceso, configuraciones erróneas y vulnerabilidades existentes en el perimtro, permitiendonos corregir y subsanar estas brechas de seguridad.
 
-## Metodologías
+## Metodologías con las que operamos
 
 ### Metodología para auditorias de correos electronicos
 
@@ -485,6 +689,10 @@ Además de estas restricciones, existen una serie de fases que se emplean en el 
 Estas herramientas nos serán muy útil para nuestra auditoría de correos electronicos ya que nos ahorrará mucho tiempo buscando direcciones de correos de los empleados de la empresa, direcciones IP, nombres de los servidores, arquitectura de red, etc...
 
 **Herramientas:**
+
+En esta sección se han definido las herramientas más adecuadas para cada área que nuestra empresa utilizará. 
+
+Son las siguientes:
 
 ##### - The Harvester: Gratis
 
@@ -709,3 +917,21 @@ En este apartado hemos dividido la bibliografía de cada área investigada.
 - https://www.computing.es/seguridad/splunk-la-herramienta-para-anticiparse-a-los-ataques/
 - https://aprenderbigdata.com/splunk/
 - https://www.flu-project.com/2016/08/simpleemailspoofer-y-spoofcheck.html
+
+### Bibliografía para la investigación del área web
+- https://www.imperva.com/learn/application-security/csrf-cross-site-request-forgery/
+
+- https://owasp.org/www-community/Types_of_Cross-Site_Scripting
+- https://lenguajejs.com/javascript/dom/que-es/
+- https://developer.mozilla.org/es/docs/Glossary/Cross-site_scripting
+- https://venafi.com/blog/what-session-hijacking/
+
+- https://www.deltaprotect.com/blog/ataques-ddos-que-son
+- https://academy.bit2me.com/que-son-ataques-dos/
+- https://owasp.org/www-community/attacks/Credential_stuffing
+- https://www.cloudflare.com/learning/bots/what-is-credential-stuffing/
+-  https://www.codemotion.com/magazine/cybersecurity/cybersecurity-threats-web-developer/
+- https://portswigger.net/web-security/xxe
+- https://security.packt.com/json-web-token-attack/
+- https://attack.mitre.org/
+- https://www.dvvs.co.uk/third-party-javascript-attack/
