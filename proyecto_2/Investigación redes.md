@@ -41,8 +41,6 @@ Esto permite que la victima introduzca un nombre de usuario y contraseña y el a
 
 En el Spoofing IP se suplanta la dirección IP de origen de un determinado equipo, de esta forma se pueden enviar TCP, UDP o IP con una dirección IP falsa.
 
-![Imagen IP Spoofing](img/Ip-spoofing.png)
-
 ### Ataque Man in the Middle (MitM)
 
 El atacante en este tipo de ataques intercepta una comunicación entre dos personas de forma secreta e incluso puede alterarla.
