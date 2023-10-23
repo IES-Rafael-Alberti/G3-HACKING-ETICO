@@ -353,6 +353,18 @@ Ya elegido el tipo exacto de pruebas que desea para su empresa, pasaremos a expl
 
 Se ha de remarcar que este es un mero esquema general con un enfoque claro en la seguridad del software de la empresa, haciendo hincapié en esta área concreta. Si se elige un enfoque de análisis externo, obviamente se obtendrá una evaluación general de la seguridad de sus programas, pero careciendo de un nivel alto de detalles.
 
+Para enfocarnos en el entorno del software, respetando es esquema construido para ejecutar la auditoría ofensiva, orientándola al software, se deberán incluir las siguientes pruebas:
+
+- **Ataques de Fuerza Bruta.** Se recomienda poner a prueba las constraseñas encontradas haciendo uso de ataques de fuerza bruta, tanto estándar, como de diccionario, híbridos e incluso con algoritmos de búsqueda inteligente.
+
+- **Uso de exploits.** El uso de exploits es ampliamente utilizado por agresores en ataques reales, a fin de obtener un acceso no autorizado al sistema objetivo, por lo que el uso de estos es recomendado para entender las técnicas empleadas por los atacantes.
+
+- **Ingeniería Social.** Si el cliente contrata una auditoría ofensiva con un enfonque de Red Teaming, se llevarían a cabo estrategias de ingeniería socialcon el fin de obtener acceso a sistemas no autorizados, tal y como lo harían atacantes reales. Esto se puede emplear en un ámbito de software, accediendo a herramientas empresariales que hagan uso de sistemas de autentificación.
+
+- **Uso generalizado de malware (Troyanos, Rootkits, Spyware, etc).** Lo que se busca con esto es usar malware diseñado para lograr un acceso permanente a los sistemas de la empresa, creando incluso puertas traseras (*backdoors*) que faciliten el acceso a los mismos. El objetivo no es damnificar dichos sistemas, sino evaluar la capacidad de respuesta de los equipos de seguridad de la empresa, y buscar formas de sobrepasar las defensas informáticas de la misma, a fin de mitigar ataques reales a futuro.
+
+- **Análisis de fallos a nivel de código.** Es necesario usar herramientas que evalúen de forma automática el código de diferentes aplicaciones de la empresa, con el objetivo de encontrar fallos de seguridad que puedan llevar a accesos no autorizados e incluso posibles vulnerabilidaes.
+
 <br/>
 
 ## Investigación de Fases de Ataque
@@ -418,7 +430,15 @@ En este apartado incluimos un abanico de aplicaciones destinadas al uso del pent
 - **Nessus.** Herramienta de evaluación de vulnerabilidades en sistemas operativos. Esta herramienta se compone de dos módulos, siendo *Nessusd* y *Nessus Client*. El primero se encarga de realizar el escaneo, mientras que el segundo controla las exploraciones y muestra los resultados acerca de las vulnerabilidades encontradas.
 Este software es capaz de escanear puertos, así como los dispositivos conectados a una red, es capaz de detectar servicios, identificando los que son usados por las aplicaciones del sistema, identifica vulnerabilidades y finalmente, realiza un sondeo, asegurándose de no cometer falsos positivos. El precio oscila entre 500€ a 4482,49€ la versión más cara, aunque existe la posibilidad de solicitar una demo gratutita por 7 días.
 
+![Nessus](img/nessus-live-results_large.png)
+
 - **Metasploit.** Plataforma de pruebas de penetración y desarrollo de exploits ampliamente utilizada en al ámbito de seguridad informática. Esta herramienta permite el desarrollo y prueba de exploits, ofreciendo una amplia biblioteca, de modo que el pentester tan sólo tiene que elegir el que necesite en cada momento; también permite escanear y enumerar servicios en una red y recopilar información en sistemas objetivo. Metasploit incluye también una shell remota, permitiendo acceder a sistemas previamente comprometidos, ejecutando comandos de forma remota; ofrece un sistema de gestión de sesiones de explotación en una misma consola, y provee al pentester de un sistema de genración de informes. Esta herramienta es gratuita, pero existe una versión Pro por 14000€.
+
+![Metasploit](img/metasploit.png)
+
+- **John the Ripper.** Software de crackeo de contraseñas muy útil en tests de penetración por su capacidad de poner a prueba la robustez de contraseñas frente a ataques de fuerza bruta, llegando a romper hashes MD5 y SHA-1, pudiendo detectar el tipo de hash utilizado. Esta herramienta es ampliamente utilizada y funciona tanto en Windows como en sistemas Linux. Existen tres versiones, siendo la gratuita; John the Ripper Pro, que cuesta x€ y finalmente tenemos John the Ripper Jumbo, costando x€.
+
+![JohnTheRipper](img/JohnTheRipper.jpg)
 
 <br/>
 
@@ -450,3 +470,4 @@ Este software es capaz de escanear puertos, así como los dispositivos conectado
 - http://www.pentest-standard.org/index.php/Main_Page
 - https://keepcoding.io/blog/que-es-nessus/
 - https://keepcoding.io/blog/que-es-metasploit-ciberseguridad/
+- https://www.redeszone.net/tutoriales/seguridad/crackear-contrasenas-john-the-ripper/
