@@ -1222,6 +1222,34 @@ Este software es capaz de escanear puertos, así como los dispositivos conectado
 
 <br/>
 
+### Presupuesto
+
+| Herramienta         | Precio/año       |
+|---------------------|------------------|
+| **The Harvester**  | 0€               |
+| **Hunter.io**      | 408€             |
+| **Mailshunt**      | 0€               |
+| **MXToolBox**      | 1569.84€         |
+| **Maltego**        | 999€             |
+| **Nmap**           | 0€               |
+| **Wireshark**      | 0€               |
+| **Network Miner**  | 0€               |
+| **Nessus**         | 4482,49€         |
+| **Splunk**         | Depende de los datos usados |
+| **SpoofCheck**     | 0€               |
+| **NetCat**         | 0€               |
+| **Kismet Wireless**| 0€               |
+| **NetStumbler**    | 0€               |
+| **Aircrack-ng**    | 0€               |
+| **Ettercap**       | 0€               |
+| **Angry IP Scanner**| 0€              |
+| **TCPDump**        | 0€               |
+| **WinDump**        | 0€               |
+| **Metasploit**     | 0€               |
+| **John the Ripper**| 0€               |
+| **Total**             | **7049.33€**  |
+
+
 ## Conclusión
 
 [...]
