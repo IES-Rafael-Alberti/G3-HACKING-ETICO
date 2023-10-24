@@ -323,7 +323,9 @@ En los XSS reflejados, el código malicioso lo inyecta un usuario en el momento 
 
 **XSS Basados en el DOM**
 Los XSS basados en el DOM se producen cuando un atacante logra inyectar código en el DOM de la web, siendo ésta la abstracción lógica que indica la jerarquía de los elementos de la página web. En este caso la página en sí misma no cambia, pero el código del cliente se ejecuta de manera distinta y probablemente maliciosa.
-![[que-es-dom.png]]
+
+![Explicación del DOM](img/que-es-dom.png)
+*Imagen de la web de Manz.dev*
 
 Un ejemplo de XSS podría ser el siguiente:
 
