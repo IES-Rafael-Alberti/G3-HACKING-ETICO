@@ -1247,6 +1247,7 @@ Este software es capaz de escanear puertos, así como los dispositivos conectado
 | **WinDump**        | 0€               |
 | **Metasploit**     | 0€               |
 | **John the Ripper**| 0€               |
+|---------------------|------------------|
 | **Total**             | **7049.33€**  |
 
 
