@@ -957,3 +957,15 @@ En este apartado hemos dividido la bibliografía de cada área investigada.
 
 - [https://www.tarlogic.com/es/auditoria-seguridad-iot/](https://www.tarlogic.com/es/auditoria-seguridad-iot/)
 - [https://www.isaca.org/es-es/resources/isaca-journal/issues/2018/volume-5/is-audit-basics-auditing-the-iot](https://www.isaca.org/es-es/resources/isaca-journal/issues/2018/volume-5/is-audit-basics-auditing-the-iot)
+- https://github.com/scriptingxss/owasp-fstm
+- https://www.tarlogic.com/es/blog/analisis-de-seguridad-en-iot-owasp/
+- https://www.tarlogic.com/es/blog/owasp-fstm-reconocimiento-informacion/
+- https://www.tarlogic.com/es/blog/owasp-fstm-obtencion-firmware-iot/
+- https://www.tarlogic.com/es/blog/owasp-fstm-etapa-3-analisis-del-firmware/
+- https://www.tarlogic.com/es/blog/owasp-fstm-extraccion-sistema-ficheros/
+- https://www.tarlogic.com/es/blog/owasp-fstm-analisis-sistema-ficheros/
+- https://www.tarlogic.com/es/blog/owasp-fstm-etapa-6-emulacion-del-firmware/
+- https://www.tarlogic.com/es/blog/owasp-fstm-analisis-dinamico/
+- https://www.tarlogic.com/es/blog/owasp-fstm-analisis-en-tiempo-de-ejecucion/
+- https://www.tarlogic.com/es/blog/owasp-fstm-etapa-9-explotacion-de-ejecutables/
+- https://auditordeciberseguridad.es/implementando-itdr-10-acciones-para-proteger-el-directorio-activo-3/
