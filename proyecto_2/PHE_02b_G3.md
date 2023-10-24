@@ -382,7 +382,7 @@ Ya estaría *forjada* la petición, ahora solo tendría que distribuirse. Esto s
 
 Este sería un esquema su funcionamiento:
 
-![[CSRF.png]]
+![Esquema de CSRF](img/CSRF.png)
 
 ##### 3. Session Hijacking
 
