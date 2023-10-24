@@ -69,8 +69,6 @@ Por motivos de comprensión y de organización, dividiremos este abanico de ataq
 
 El **phishing** es una técnica de estafa en la que se hace uso de técnicas de ingeniería social para engañar a un usuario con el fin de obtener información privada, beneficios económicos o incluso para instalar malware en el dispositivo.
 
-![Alt text](./img/phishing-1.jpg)
-
 Dentro del phising existen múltiples variantes como:
 
 - **Deceptive Phishing (Phishing clásico):** Consiste en suplantar la identidad mediante el envío de un correo electrónico por parte de un ciberdelincuente a un usuario simulando ser una entidad legítima (red social, banco, institución pública, etc.) con el objetivo de robarle información privada, realizarle un cargo económico o infectar el dispositivo. Para ello, adjuntan archivos infectados o enlaces a páginas fraudulentas en dicho correo electrónico.
@@ -89,8 +87,6 @@ Este tipo de ataque suele aprovechar la navegación en línea de las víctimas a
 
 El **email spoofing** consiste en la suplantación de identidad por correo electrónico, que se produce cuando un atacante envía un correo electrónico a un usuario haciéndose pasar por otra persona o empresa. Esto se consigue camuflando la dirección de correo electrónico de forma que la sustituyen por una legítima. Un ejemplo puede ser que el atacante use paypa1.com en vez de paypal.com. La mayoría de usuarios a los que van destinados estos correos no se suelen fijar bien en la dirección si el nombre le resulta familiar o simplemente ni la leen por lo que no se dan cuenta de que se trata de una dirección de correo falsa.
 
-![Alt text](./img/impostor-1.jpg)
-
 Los atacantes consiguen camuflar las direcciones de correo electrónico debido a la falta de seguridad del protocolo simple de transferencia de correo (SMTP), que no admite cifrado, autenticación ni otras medidas de seguridad similares. Por ejemplo, los servidores de correos más reconocidos como pueden ser Gmail o Outlook utilizan este protocolo por lo que es muy fácil para los atacantes hacer este cambio de dirección.
 
 Si bien es similar al phishing, estos dos ataques son distintos. El phishing busca robar información personal o credenciales a través de engaños o estafas, mientras que el email spoofing su objetivo principal es suplantar la identidad de alguien en un correo electrónico, lo que puede llevar a ataques de phishing, pero su objetivo principal es la suplantación de identidad.
@@ -98,8 +94,6 @@ Si bien es similar al phishing, estos dos ataques son distintos. El phishing bus
 ##### 3. Spam
 
 El spam de correos electrónicos es un tipo de comunicación masiva que se envía principalmente por motivos comerciales. A los atacantes que realizan el envió de este tipo de correos se les suele llamar "Spammers". Estos correos electrónicos suelen contener publicidad no deseada, promociones, malware, enlaces a sitios web falsos o contenido irrelevante. 
-
-![Alt text](./img/spam.png)
 
 Algunos ejemplos pueden ser:
 
@@ -114,8 +108,6 @@ Para combatir el spam, se utilizan filtros de correo electrónico que intentan b
 ##### 4. Scam
 
 El scam son los intentos de estafas llevadas a cabo a través de correos electrónicos, cuyo objetivo es engañar al usuario para que cometan una acción legítima, pero en realidad no lo son. En la mayoría de los casos, se pretende estafar económicamente pero también se utiliza para instalar malware o robar información.
-
-![Alt text](./img/scam-1.jpg)
 
 Algunos ejemplos pueden ser:
 
@@ -138,8 +130,6 @@ El funcionamiento del scam se divide en tres etapas:
 ##### 5. Malware
 
 **Malware o “software malicioso”** es un término amplio que describe cualquier programa o código malicioso que es dañino para los sistemas. Los ataques de malware a través del correo electrónico son muy habituales y generan una amenaza persistente y creciente en el mundo actual. Los atacantes lo usan para robar, cifrar o borrar datos, alterar o secuestrar funciones básicas del dispositivo e incluso para espiar su actividad sin su permiso.
-
-![Alt text](./img/Malware-1.png)
 
 Como existen muchos tipos de malware y mis compañeros también lo van a detallar y a explicar, mostraré algunos ejemplos de los más comunes que se distribuyen por correo electrónico:
 
@@ -186,8 +176,6 @@ Es muy común que los atacantes o ciberdelincuentes utilicen ataques como el phi
 La apropiación de cuentas de correos electrónicos es una práctica muy común entre los ciberdelincuentes. 
 Los atacantes se apropian de los correos electrónicos de los usuarios reales con la intención de realizar actividades como controlar sus mensajes, robar información, enviar malware a otras cuentas, realizar spam.
 
-![Alt text](./img/robo_cuentas-1.png)
-
 Existen muchas técnicas que usan los atacante para apropiarse de las cuentas:
 
 - **Phishing:** Podrían engañar a al usuario redirigiéndolos a sitios web falsos donde tienen que ingresar sus credenciales.
@@ -212,13 +200,9 @@ La interceptación de correos electrónicos es una actividad que implica que el 
 Los atacantes interceptan los mensajes para robar la información que contienen, o para llevar a cabo ataques en los que se hacen pasar por ambas partes de una conversación.
 El método más común para hacerlo es la monitorización de los paquetes de datos de la red en las redes de área local, ya que interceptar un correo electrónico mientras viaja por Internet es muy complicado.
 
-![Alt text](./img/man_the_middle-1.jpg)
-
 ##### 8. E-mail Bombing
 
 El ataque de bombardeo de correos electrónicos consiste en enviar grandes volúmenes de correos electrónicos a una dirección en específico con la intención de desbordar el buzón y saturar el servidor de correos donde está alojado. Su función es la misma que un ataque de denegación de servicio (ataque DoS) pero en este caso contra las cuentas de correos.
-
-![Alt text](./img/email_bombing-1.jpg)
 
 Estos mensajes se almacenan en el servidor hasta que el dueño de dicha cuenta de correo los lea. Cuando el dueño abra su correo, el último mensaje tardará demasiado tiempo en abrirse y la dirección de correo electrónico quedará inservible. También una cosa a tener en cuenta es que en ocasiones el e-mail bombing se utiliza para intentar distraer a los usuarios, a las empresas y organizaciones, y de esta forma pasar por alto otros correos importantes que puedan recibir.
 
@@ -241,15 +225,11 @@ Hay varios tipos de ataque DoS con técnicas distintas además de los ya mencion
 - SYN Flood: Este ataque es uno de los más utilizados, consiste en enviar paquetes TCP con el flag SYN activasdo, con el objetivo de enviar una gran cantidad de paquetes a un servidor y abrirle diferentes conexiones, saturandolo por completo. Se utiliza un ataque IP Spoofing como en el ataque anterior para falsificar la dirección IP de origen. Se puede evitar fácilmente con firewall o limitando el número de paquetes TCP SYN que se pueden recibir.
 - Fraggle DoS Attack: Este ataque enviar mucho tráfico UDP a una dirección IP broadcast, estos paquetes tiene la IP de origen de la victima, como anteriormente, este ataque también necesita que se haga un IP Spoofing para el ataque La red entregará el tráfico de red a todos los hosts y los equipos responderan. Esto ocasionará que la máquina objetivo reciba una gran cantidad de tráfico que no sea capaz de gestionar de manera adecuada, y será incapaz de trabajar con normalidad.
 
-![Imagen DoS](img/DoS.png)
-
 ##### 2. Ataque de denegación de servicio o Distributed Denial of Service (DDoS)
 
 Este ataque es un ataque DoS que utiliza múltiples dispositivos (Equipos remotos, bots o zombis) para que la red objetivo se vea desbordada, esto hace que el servidor se sobrecargue de forma más rápida que con un ataque DoS. 
 
 Un ejemplo de este ataque es el que recibió AWS en Febrero de 2020 que generó un tráfico de 2,3 terabits por segundos. Los atacantes usaron servidores web pirateados del protocolo CLDAP. este protocolo es de los más usado en los últimos años.
-
-![Imagen DDOS](img/DDoS.png)
 
 ##### 3. Spoofing de DNS y Spoofing IP
 
@@ -257,11 +237,7 @@ El spoofing de DNS consiste en alterar el DNS para por ejemplo redigir el tráfi
 
 Esto permite que la victima introduzca un nombre de usuario y contraseña y el atacante puede robar su información de acceso.
 
-![Imagen DNS Spoofing](img/dns-spoofing.png)
-
 En el Spoofing IP se suplanta la dirección IP de origen de un determinado equipo, de esta forma se pueden enviar TCP, UDP o IP con una dirección IP falsa.
-
-![Imagen DNS Spoofing](img/ip-spoofing.png)
 
 ##### 4. ARP Spoofing
 
@@ -274,8 +250,6 @@ El atacante se hace pasar por el router haciendo que todo el tráfico de la red 
 El atacante en este tipo de ataques intercepta una comunicación entre dos personas de forma secreta e incluso puede alterarla.
 
 En este ataque se puede por ejemplo hacer en una red WiFi no cifrada. Las victimas no saben que el atacante está espiando o modificando la comunicación.
-
-![Imagen Man in the Middle](img/Man-in-the-middle.png)
 
 ##### 6. Tunelización de DNS
 
@@ -292,8 +266,6 @@ Este tipo de ataques es uno de los más comunes y consiste en inundar la tabla C
 Consiste en tomar posesión de una sesión TCP que ya existe y la victima ya está utilizando. 
 
 Este tipo de ataque se debe utilizar en un momento concreto que es en el inicio de las conexiones TCP que es donde se realiza la autenticación. 
-
-![Imagen Hijacking](img/hijacking.png)
 
 #### Ataques en el Área Web
 
@@ -440,9 +412,6 @@ Los ataques de Denegación de Servicio (*Denial Of Service* o *DoS*) tienen como
 
 **DDoS**: Denegación de servicio *Distribuida*. En esta variante se utilizan múltiples equipos para hacer peticiones simultáneamente a un solo equipo. Habitualmente se crean *botnets* o *redes zombies*, que son básicamente grandes conjuntos de equipos infectados para hacer peticiones en masa.
 
-![[639f433abf3d71a94ef2e5fd_ataque-ddos.png]]
-*Imagen de la web de DeltaProyect.com*
-
 Dentro de los ataques DoS, existen varios tipos:
 
 - Ataques para consumir los recursos de red y colapsar el servicio de un dispositivo
@@ -489,9 +458,6 @@ El abuso de código de terceros implica explotar vulnerabilidades en códigos ex
 Este tipo de ataque puede darse debido a que directamente muchos atacantes buscan vulnerabilidades en componentes de terceros muy utilizados por la comunidad, aunque existen distintos casos en los que por ejemplo los cibercriminales se hacen pasar por vendedores y creadores de software web de terceros que contienen puertas traseras y vulnerabilidades que puedan explotar más tarde.
 
 Existen también casos en los que muchos cibercriminales distribuyen parches de seguridad falsos, que añaden debilidades a la infraestructura de una aplicación.
-
-![[Pasted image 20231023014038.png]]
-*Imagen proveniente de [DVV solutions](https://www.dvvs.co.uk/third-party-javascript-attack/), TrendMicro*
 
 Un ejemplo sería un atacante que aprovecha una vulnerabilidad en un plugin de WordPress para inyectar código malicioso en un sitio web y comprometer la seguridad del mismo.
 
@@ -552,8 +518,6 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 *Ejemplos*
 
 - Aircrack-ng
-
-![Aircrack](img/Aircrack.png)
 
 ##### 3. Ataque de Fuerza Bruta con Algoritmo de Búsqueda Inteligente
 
@@ -761,8 +725,6 @@ Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar
 
 - WinWebSec. Familia de supuestos escáneres que emulan ser un sistema de seguridad legítimo, pero en realidad pueden llegar a infectar el equipo, convirtiéndolo en un *bot*. Algunos ejemplos son Live Security Platinum, Smart Protection y Win XP Security System.
 
-
-
 ## Tipos de Auditorías Ofensivas ofrecidas
 
 A fin de garantizar la seguridad de los sistemas, redes y dispositivos de los clientes, ofrecemos diversos tipos de auditorías ofensivas, con un enfoque práctico y directo. Este enfoque nos permite llegar a la raíz de los posibles problemas, fallos y/o debilidades en configuraciones de seguridad, localizar contraseñas débiles o encontrar vulnerabilidades críticas que pudieran ser explotadas por cibercriminales.
@@ -773,15 +735,11 @@ Antes de comenzar es importante proponer acuerdos, establecer límites y estudia
 - **Pruebas de Caja Gris (Gray Box Testing).** Las pruebas de caja gris otorgan un conocimiento parcial del sistema al analista de ciberseguridad, ofreciendo detalles sobre el diseño o arquitectura del sistema, pero sin entrar en el código del mismo. Esto permite realizar pruebas con un enfoque mayor en un área concreta.
 - **Pruebas de Caja Blanca (White Box Testing).** En las pruebas de caja blanca, a los evaluadores se les da un conocimiento completo del sistema, incluido el acceso al código fuente y la arquitectura interna del mismo. Esto da la posibilidad de llevar a cabo pruebas complejas, profundas y exhaustivas, con el objeto de identificar vulnerabilidades y/o fallos en el código del sistema.
 
-![Testing](img/black-box-white-box-gray-box-ethical-hacking.png)
-
 Conociendo esto, se explicarán los tipos de auditorías ofensivas. Estas se dividen entre las diferentes áreas informáticas, y el objetivo de cada tipo es centrar los esfuerzos en un área concreta, para mayor efectividad y profundidad de las pruebas.
 
 ### 1. Auditoría de correos electrónicos
 
 La auditoría ofensiva de correos electrónicos nos puede ayudar mucho ya que con ella podemos evaluar la seguridad para identificar y corregir vulnerabilidades que podrían ser explotadas por atacantes. 
-
-![Alt text](./img/auditoria-1.png)
 
 En esta auditoría ofreceremos dos servicios. Uno centrado en analizar la configuración del sistema de correos y otro centrado en realizar pruebas de penetración para comprobar la seguridad de los sistemas:
 
@@ -889,8 +847,6 @@ Una vez que hemos elegido si queremos una auditoría externa o interna, también
 - *Red Teaming.* Las pruebas de Red Team podría decirse que son las más realistas de las tres, dado que alcanzan el mayor nivel de profundidad posible en los sistemas de la empresa, simulando un ataque real por parte de cibercriminales. Este tipo de prueba no posee constricciones de ningún tipo, pudiendo usar técnicas de Ingeniería Social como el Spear-Phishing, así como buscar ocultarse de los sistemas de seguridad de la empresa o explotar vulnerabilidades, tal y como lo haría un atacante real. El objetivo consiste no sólo en analizar las vulnerabilidades y fallos de seguridad de la compañía, sino en evaluar también la capacidad de respuesta de la misma.
 
 Ya elegido el tipo exacto de pruebas que desea para su empresa, pasaremos a explicar el esquema general de la auditoría, desde la realización de las pruebas hasta la presentación del informe con los resultados obtenidos.
-
-![Alt text](img/Esquema_Auditoría.png)
 
 Se ha de remarcar que este es un mero esquema general con un enfoque claro en la seguridad del software de la empresa, haciendo hincapié en esta área concreta. Si se elige un enfoque de análisis externo, obviamente se obtendrá una evaluación general de la seguridad de sus programas, pero careciendo de un nivel alto de detalles.
 
@@ -1108,7 +1064,6 @@ Esta extensión de navegador enumera todas las direcciones de correo electrónic
 MxToolbox no es tan útil para correos electrónicos de dominios de correo electrónico conocidos como Gmail, pero si nuestro objetivo utiliza su propio servidor de intercambio de correo (lo que suelen hacer la gran mayoría de las grandes empresas), nos puede ayudar, ya que identificar la dirección IP de un servidor de intercambio de correo puede ser un buen punto de partida para nuestra investigación (podremos observar las direcciones IP compartidas, los nombres de los servidores, su arquitectura de red, etc).
 MxToolbox también ofrece un servicio de análisis de encabezados de correo electrónico.
 
-
 ##### - Maltego: 999 EUR / año
 
 Maltego es un servicio que tiene el potencial de encontrar información sobre personas y empresas en Internet, permitiendo cruzar datos para obtener servidores de correo entre otras cosas.
@@ -1149,7 +1104,6 @@ Nos será bastante útil ya que podremos comprobar si el servidor de correos es 
 Es una plataforma de análisis de datos en tiempo real que permite recopilar, almacenar, analizar y visualizar datos generados por los dispositivos.
 
 En nuestra empresa necesitamos de un SIEM que nos ayude a mejorar la eficiencia de nuestras auditorías y creemos que Splunk es la mejor opción ya que es bastante flexible y se paga por la cantidad de datos utilizados.
-
 
 ### Herramientas para Pentesting de Redes
 
@@ -1210,46 +1164,30 @@ En este apartado incluimos un abanico de aplicaciones destinadas al uso del pent
 - **Nessus.** Herramienta de evaluación de vulnerabilidades en sistemas operativos. Esta herramienta se compone de dos módulos, siendo *Nessusd* y *Nessus Client*. El primero se encarga de realizar el escaneo, mientras que el segundo controla las exploraciones y muestra los resultados acerca de las vulnerabilidades encontradas.
 Este software es capaz de escanear puertos, así como los dispositivos conectados a una red, es capaz de detectar servicios, identificando los que son usados por las aplicaciones del sistema, identifica vulnerabilidades y finalmente, realiza un sondeo, asegurándose de no cometer falsos positivos. El precio oscila entre 500€ a 4482,49€ la versión más cara, aunque existe la posibilidad de solicitar una demo gratutita por 7 días.
 
-![Nessus](img/nessus-live-results_large.png)
-
 - **Metasploit.** Plataforma de pruebas de penetración y desarrollo de exploits ampliamente utilizada en al ámbito de seguridad informática. Esta herramienta permite el desarrollo y prueba de exploits, ofreciendo una amplia biblioteca, de modo que el pentester tan sólo tiene que elegir el que necesite en cada momento; también permite escanear y enumerar servicios en una red y recopilar información en sistemas objetivo. Metasploit incluye también una shell remota, permitiendo acceder a sistemas previamente comprometidos, ejecutando comandos de forma remota; ofrece un sistema de gestión de sesiones de explotación en una misma consola, y provee al pentester de un sistema de genración de informes. Esta herramienta es gratuita, pero existe una versión Pro por 14000€.
-
-![Metasploit](img/metasploit.png)
 
 - **John the Ripper.** Software de crackeo de contraseñas muy útil en tests de penetración por su capacidad de poner a prueba la robustez de contraseñas frente a ataques de fuerza bruta, llegando a romper hashes MD5 y SHA-1, pudiendo detectar el tipo de hash utilizado. Esta herramienta es ampliamente utilizada y funciona tanto en Windows como en sistemas Linux. Existen tres versiones, siendo la gratuita; John the Ripper Pro, que cuesta x€ y finalmente tenemos John the Ripper Jumbo, costando x€.
 
-![JohnTheRipper](img/JohnTheRipper.jpg)
-
 <br/>
 
-### Presupuesto
+## Presupuesto de inversión inicial
 
-| Herramienta         | Precio/año       |
+En función a las necesidades de nuestra empresa se ha estimado un presupuesto para la inversión inicial teniendo en cuenta algunos gastos legales la comunidad autónoma de Andalucía.
+
+| Recursos        | Precio/año       |
 |---------------------|------------------|
-| **The Harvester**  | 0€               |
 | **Hunter.io**      | 408€             |
-| **Mailshunt**      | 0€               |
 | **MXToolBox**      | 1569.84€         |
 | **Maltego**        | 999€             |
-| **Nmap**           | 0€               |
-| **Wireshark**      | 0€               |
-| **Network Miner**  | 0€               |
 | **Nessus**         | 4482,49€         |
-| **Splunk**         | Depende de los datos usados |
-| **SpoofCheck**     | 0€               |
-| **NetCat**         | 0€               |
-| **Kismet Wireless**| 0€               |
-| **NetStumbler**    | 0€               |
-| **Aircrack-ng**    | 0€               |
-| **Ettercap**       | 0€               |
-| **Angry IP Scanner**| 0€              |
-| **TCPDump**        | 0€               |
-| **WinDump**        | 0€               |
-| **Metasploit**     | 0€               |
-| **John the Ripper**| 0€               |
+| **Splunk**         | 1698,65          |
+| **Burpsuite**      | 445€         |
+| ****         |          |
+| ** Portátil Slimbook Pro X 15 AMD (Para 4 trabajadores)**   |  3996€    |
+| ** Salario (Para 4 trabajadores)**  | 88000€ |
+| ** Gastos legales** | 5000€ |
 |---------------------|------------------|
-| **Total**             | **7049.33€**  |
-
+| **Total**             | **106498.98€**  |
 
 ## Conclusión
 
