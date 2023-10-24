@@ -1114,18 +1114,15 @@ En esta sección se han definido las herramientas más adecuadas para cada área
 Son las siguientes:
 
 #### Herramientas OSINT (Open Source INTelligence)
-
 Estas herramientas nos serán muy útiles para nuestra auditoría de correos electronicos ya que nos ahorrará mucho tiempo buscando direcciones de correos de los empleados de la empresa, direcciones IP, nombres de los servidores, arquitectura de red, etc...
 
 ##### The Harvester
 Es una herramienta para la obtención de informacióna a través de los diferentes motores de los principales buscadores y servicios utilizados, o si lo preferimos haciendo fuerza bruta, resoluciones inversas, etc…
  
 ##### Hunter.io
-
 Es un portal web que permite buscar los emails de personas que trabajan en una empresa con solo introducir su página web.
 
 ##### MAILSHUNT
-
 Esta extensión de navegador enumera todas las direcciones de correo electrónico de las personas que trabajan en una empresa en concreto.
 
 ##### MXTOOLBOX
@@ -1134,29 +1131,25 @@ MxToolbox no es tan útil para correos electrónicos de dominios de correo elect
 MxToolbox también ofrece un servicio de análisis de encabezados de correo electrónico.
 
 ##### Maltego
-
 Maltego es un servicio que tiene el potencial de encontrar información sobre personas y empresas en Internet, permitiendo cruzar datos para obtener servidores de correo entre otras cosas.
 
 #### Wireshark
-
 Es una herramienta de análisis de tráfico de red que se utiliza para capturar y analizar paquetes de datos que se transmiten a través de una red. 
 
 Esta herramienta también nos resultará muy util ya que podremos para analizar todo el tráfico de la red de la empresa e identificar correos electrónicos sospechosos, recopilar evidencia de actividad y evaluar la seguridad de los servidores de correo.
 
 #### Network Miner
-
 Es similar a Wireshark.
 Es una herramienta de análisis de tráfico de red que puede ser utilizada para capturar y analizar paquetes de datos que se transmiten a través de una red. 
 
 Esta herramienta también nos resultará muy util ya que podremos para analizar todo el tráfico de la red de la empresa e identificar correos electrónicos sospechosos, recopilar evidencia de actividad y evaluar la seguridad de los servidores de correo.
 
 #### Nessus
-
 Nessus es una herramienta de escaneo de vulnerabilidades desarrollada por Tenable Network Security. Es una de las herramientas de escaneo de vulnerabilidades más populares del mundo, y es utilizada por organizaciones y empresas de todos los tamaños para evaluar sus sistemas y redes en busca de vulnerabilidades conocidas.
 
 Creemos que nessus es una herramienta bastante completa y bastante útil ya que es analizador de vulnerabilidades más potente del mercado por lo que nos ahorra mucho tiempo para encontrarlas ya que dispone de escaneo de puertos y servicios, escaneos de aplicaciones web, escaneos de configuración y escaneos de software.
 
-#### SpoofCheck: Gratis
+#### SpoofCheck
 
 Esta herramienta se encarga de ir comprobando una serie de condiciones para verificar si un servidor de correos es spoofeable o no.
 
