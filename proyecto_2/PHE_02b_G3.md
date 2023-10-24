@@ -900,6 +900,10 @@ Baśandonos en la metodología OWASP, se testearán las siguientes áreas:
 - Pruebas y revisión de la lógica de negocio
 - Pruebas en el lado cliente
 
+En esta auditoría se busca obtener como resultado una alerta lo más temprana posible de las posibles vulnerabilidades que una web pudiera tener, así como un informe de riesgos completo. 
+
+Aunque no se descubran vulnerabilidades, el objetivo es entregar un informe de todas las pruebas realizadas y superadas o fallidas, a fin de facilitar la mejor información posible al cliente con la mayor prontitud.
+
 ## Metodologías de Pentesting utilizadas
 
 Las pruebas de pentesting son importantes en el ámbito de la seguridad informática, dado que poniendo a prueba los sistemas en los que realizan las pruebas, logran obtener resultados y, por ende, posibles soluciones o mitigaciones a fallos de seguridad y vulnerabilidades.
