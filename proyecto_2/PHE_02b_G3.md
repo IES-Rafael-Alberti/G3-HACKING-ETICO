@@ -1253,7 +1253,7 @@ Este software es capaz de escanear puertos, así como los dispositivos conectado
 
 ## Conclusión
 
-[...]
+Como se ha discutido con anterioridad, vivimos en un mundo sumido por completo en las tecnologías de la información, y absolutamente dependiente de estas. Este hecho es una gran muestra de la evolución tecnológica de la humanidad desde mediados del siglo 20, donde se idearon los primeros ordenadores
 
 ## Bibliografía
 
