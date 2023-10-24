@@ -33,9 +33,6 @@
     - [Metodología OWISAM para Redes Inalámbricas](#3-metodología-owisam-para-redes-inalámbricas)
     - [Metodología PTES](#4-metodología-ptes)
 - [Herramientas de Pentesting](#herramientas-de-pentesting)
-    - [Herramientas para Pentesting de Correos Electrónicos](#herramientas-para-pentesting-de-correos-electrónicos)
-    - [Herramientas para Pentesting de Redes](#herramientas-para-pentesting-de-redes)
-    - [Herramientas para Pentesting de Software](#herramientas-para-pentesting-de-software)
 - [Conclusión](#conclusión)
 - [Bibliografía](#bibliografía)
 
