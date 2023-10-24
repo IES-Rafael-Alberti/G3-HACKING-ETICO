@@ -234,7 +234,6 @@ Por ejemplo, también podemos buscar CVE's conocidas de algunos protocolos que s
 
 Estas herramientas nos serán muy útil para nuestra auditoría de correos electronicos ya que nos ahorrará mucho tiempo buscando direcciones de correos de los empleados de la empresa, direcciones IP, nombres de los servidores, arquitectura de red, etc...
 
-
 **Herramientas:**
 
 #### - The Harvester: Gratis
@@ -284,79 +283,83 @@ Nessus es una herramienta de escaneo de vulnerabilidades desarrollada por Tenabl
 
 Creemos que nessus es una herramienta bastante completa y bastante útil ya que es analizador de vulnerabilidades más potente del mercado por lo que nos ahorra mucho tiempo para encontrarlas ya que dispone de escaneo de puertos y servicios, escaneos de aplicaciones web, escaneos de configuración y escaneos de software.
 
-### SIEM Splunk: 
+### SpoofCheck: Gratis
 
-Es una plataforma de análisis de datos en tiempo real que permite recopilar, almacenar, analizar y visualizar datos generados por los dispositivos. Es utilizada por organizaciones y empresas de todos los tamaños para una variedad de propósitos.
+Esta herramienta se encarga de ir comprobando una serie de condiciones para verificar si un servidor de correos es spoofeable o no.
 
+Nos será bastante útil ya que podremos comprobar si el servidor de correos es vulnerable o no ejecuntando la herramienta por lo que nos ahorrará tiempo.
 
+### Splunk: el precio depende de los datos usados
 
+Es una plataforma de análisis de datos en tiempo real que permite recopilar, almacenar, analizar y visualizar datos generados por los dispositivos.
 
+En nuestra empresa necesitamos de un SIEM que nos ayude a mejorar la eficiencia de nuestras auditorías y creemos que Splunk es la mejor opción ya que es bastante flexible y se paga por la cantidad de datos utilizados.
 
 
 ## Bibliografía
 
-https://www.skysnag.com/es/blog/example-of-email-based-attacks/#8_Denial-of-service_DoS_attacks
-https://www.globalsign.com/es/blog/tipos-comuns-ataques-de-phishing
-https://www.checkpoint.com/es/cyber-hub/threat-prevention/what-is-email-security/
-https://noticias.aixacorpore.es/iso-27001/ataques-por-medio-del-correo-electronico-email-spoofing/
-https://keepcoding.io/blog/tipos-de-amenazas-a-correos-electronicos/
-https://www.acronis.com/es-es/blog/posts/email-cyber-attack/
-https://powerdmarc.com/es/what-are-email-based-attacks/
-https://www.skysnag.com/es/blog/example-of-email-based-attacks/#1_Phishing
-https://www.incibe.es/ciudadania/blog/que-es-el-phishing
-https://latam.kaspersky.com/resource-center/definitions/what-is-a-whaling-attack
-https://support.microsoft.com/es-es/office/suplantaci%C3%B3n-de-identidad-phishing-y-comportamiento-sospechoso-0d882ea5-eedc-4bed-aebc-079ffa1105a3
-https://www.ing.es/seguridad-internet/vishing-que-es#:~:text=Llamada%20de%20alguien%20que%20se,tarjeta%20u%20otra%20incidencia%20grave.
-https://www.trendmicro.com/es_es/what-is/phishing/types-of-phishing.html
-https://www.uach.cl/direccion-de-tecnologias-de-informacion/seguridad/tipos-de-phishing
-https://latam.kaspersky.com/resource-center/definitions/pharming
-https://latam.kaspersky.com/resource-center/definitions/what-is-a-whaling-attack
-https://www.pandasecurity.com/es/mediacenter/seguridad/whaling/
-https://easydmarc.com/blog/es/12-tipos-de-ataques-phishing-y-como-identificarlos/
-https://www.welivesecurity.com/la-es/2015/04/17/que-es-un-backdoor/
-https://encyclopedia.kaspersky.es/knowledge/backdoor/
-https://www.cyberghostvpn.com/es_ES/privacyhub/que-es-una-puerta-trasera-backdoor/
-https://www.kaspersky.es/blog/que-es-un-rootkit/594/
-https://latam.kaspersky.com/resource-center/definitions/what-is-rootkit
-https://es.wikipedia.org/wiki/Rootkit
-https://www.avast.com/es-es/c-keylogger
-https://latam.kaspersky.com/resource-center/definitions/keylogger
-https://encyclopedia.kaspersky.es/knowledge/trojan-mailfinder/
-https://www.ninjaone.com/es/blog/como-prevenir-los-ataques-de-spoofing/
-https://powerdmarc.com/es/what-are-email-based-attacks/
-https://noticias.aixacorpore.es/iso-27001/ataques-por-medio-del-correo-electronico-email-spoofing/
-https://easydmarc.com/blog/es/que-son-los-correos-spam-y-como-podemos-prevenirlos/
-https://www.eset.com/es/caracteristicas/spam/
-https://www.strato.es/faq/correo/que-es-spam-y-como-puedo-protegerme/
-https://www.mailjet.com/es/blog/entregabilidad/que-es-spam/
-https://www.avast.com/es-es/c-spam
-https://www.proofpoint.com/es/threat-reference/email-scams
-https://medac.es/blogs/masteres-online/que-es-scam
-https://es.wikipedia.org/wiki/Scam
-https://www.pandasecurity.com/es/security-info/scam/
-https://www.uv.mx/infosegura/general/noti_scam-3/
-https://uniblog.unicajabanco.es/-que-es-el-scam-
-https://www.cloudflare.com/es-es/learning/email-security/what-is-email-security/
-https://es.linkedin.com/pulse/descifrando-las-t%C3%A1cticas-y-los-impactos-del-fraude-de-paola-noriega
-https://dynamics.microsoft.com/es-es/ai/fraud-protection/account-takeover/
-https://www.skrill.com/es/skrill-news/inside-skrill/prevencion-del-fraude-de-apropiacion-de-cuentas/
-https://www.cloudflare.com/es-es/learning/insights-bec-proactive-security/
-https://easydmarc.com/blog/es/como-hacen-los-estafadores-de-phishing-para-obtener-tu-direccion-de-correo-electronico/
-https://peritosinformaticos.es/fraude-por-cambio-de-numero-de-cuenta-bancaria-en-correos-electronicos/#:~:text=La%20t%C3%A9cnica%20de%20intercepci%C3%B3n%20de,est%C3%A1n%20cruzando%20conversaciones%20por%20email.
-https://foro.elhacker.net/hacking/se_pueden_interceptar_correos_electronicos-t517901.0.html;msg2270313
-https://es.ccm.net/aplicaciones-e-internet/museo-de-internet/enciclopedia/10566-que-es-el-email-bombing/
-https://medium.com/@edinsonrequena/tutorial-qu%C3%A9-es-un-email-bomb-attack-y-como-crearlo-con-python-3-c566d688944a
-https://zonavirus.com/noticias/2021/e-mail-bombing-como-usan-el-spam-para-atacar_71650
-https://es.wikipedia.org/wiki/Gusano_inform%C3%A1tico
-https://www.pandasecurity.com/es/security-info/worm/
-https://www.kaspersky.es/resource-center/threats/ransomware-wannacry
-https://es.malwarebytes.com/ransomware/
-https://es.wikipedia.org/wiki/Ransomware
-https://www.fortra.com/es/blog/pentesting-herramientas-tecnicas
-https://www.disruptivos.com/auditoria-email-mejorar-resultados/
-https://blog.mailup.es/2021/02/email-auditorias/
-https://www.acronis.com/es-es/blog/posts/cyber-security-audit/
-https://secuora.es/blog/auditoria-de-ciberseguridad-red-team-conoce-por-que-necesitas-realizarla/
-https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/
-https://www.reydes.com/d/?q=Metodologia_de_Pruebas_OWASP
-https://www.arsys.es/blog/owasp#:~:text=6%20Conclusiones-,%C2%BFQu%C3%A9%20es%20OWASP%3F,las%20mejores%20pr%C3%A1cticas%20de%20seguridad.
+- https://www.skysnag.com/es/blog/example-of-email-based-attacks/#8_Denial-of-service_DoS_attacks
+- https://www.globalsign.com/es/blog/tipos-comuns-ataques-de-phishing
+- https://www.checkpoint.com/es/cyber-hub/threat-prevention/what-is-email-security/
+- https://noticias.aixacorpore.es/iso-27001/ataques-por-medio-del-correo-electronico-email-spoofing/
+- https://keepcoding.io/blog/tipos-de-amenazas-a-correos-electronicos/
+- https://www.acronis.com/es-es/blog/posts/email-cyber-attack/
+- https://powerdmarc.com/es/what-are-email-based-attacks/
+- https://www.skysnag.com/es/blog/example-of-email-based-attacks/#1_Phishing
+- https://www.incibe.es/ciudadania/blog/que-es-el-phishing
+- https://latam.kaspersky.com/resource-center/definitions/what-is-a-whaling-attack
+- https://support.microsoft.com/es-es/office/suplantaci%C3%B3n-de-identidad-phishing-y-comportamiento-sospechoso-0d882ea5-eedc-4bed-aebc-079ffa1105a3
+- https://www.ing.es/seguridad-internet/vishing-que-es#:~:text=Llamada%20de%20alguien%20que%20se,tarjeta%20u%20otra%20incidencia%20grave.
+- https://www.trendmicro.com/es_es/what-is/phishing/types-of-phishing.html
+- https://www.uach.cl/direccion-de-tecnologias-de-informacion/seguridad/tipos-de-phishing
+- https://latam.kaspersky.com/resource-center/definitions/pharming
+- https://latam.kaspersky.com/resource-center/definitions/what-is-a-whaling-attack
+- https://www.pandasecurity.com/es/mediacenter/seguridad/whaling/
+- https://easydmarc.com/blog/es/12-tipos-de-ataques-phishing-y-como-identificarlos/
+- https://www.welivesecurity.com/la-es/2015/04/17/que-es-un-backdoor/
+- https://encyclopedia.kaspersky.es/knowledge/backdoor/
+- https://www.cyberghostvpn.com/es_ES/privacyhub/que-es-una-puerta-trasera-backdoor/
+- https://www.kaspersky.es/blog/que-es-un-rootkit/594/
+- https://latam.kaspersky.com/resource-center/definitions/what-is-rootkit
+- https://es.wikipedia.org/wiki/Rootkit
+- https://www.avast.com/es-es/c-keylogger
+- https://latam.kaspersky.com/resource-center/definitions/keylogger
+- https://encyclopedia.kaspersky.es/knowledge/trojan-mailfinder/
+- https://www.ninjaone.com/es/blog/como-prevenir-los-ataques-de-spoofing/
+- https://powerdmarc.com/es/what-are-email-based-attacks/
+- https://noticias.aixacorpore.es/iso-27001/ataques-por-medio-del-correo-electronico-email-spoofing/
+- https://easydmarc.com/blog/es/que-son-los-correos-spam-y-como-podemos-prevenirlos/
+- https://www.eset.com/es/caracteristicas/spam/
+- https://www.strato.es/faq/correo/que-es-spam-y-como-puedo-protegerme/
+- https://www.mailjet.com/es/blog/entregabilidad/que-es-spam/
+- https://www.avast.com/es-es/c-spam
+- https://www.proofpoint.com/es/threat-reference/email-scams
+- https://medac.es/blogs/masteres-online/que-es-scam
+- https://es.wikipedia.org/wiki/Scam
+- https://www.pandasecurity.com/es/security-info/scam/
+- https://www.uv.mx/infosegura/general/noti_scam-3/
+- https://uniblog.unicajabanco.es/-que-es-el-scam-
+- https://www.cloudflare.com/es-es/learning/email-security/what-is-email-security/
+- https://es.linkedin.com/pulse/descifrando-las-t%C3%A1cticas-y-los-impactos-del-fraude-de-paola-noriega
+- https://dynamics.microsoft.com/es-es/ai/fraud-protection/account-takeover/
+- https://www.skrill.com/es/skrill-news/inside-skrill/prevencion-del-fraude-de-apropiacion-de-cuentas/
+- https://www.cloudflare.com/es-es/learning/insights-bec-proactive-security/
+- https://easydmarc.com/blog/es/como-hacen-los-estafadores-de-phishing-para-obtener-tu-direccion-de-correo-electronico/
+- https://peritosinformaticos.es/fraude-por-cambio-de-numero-de-cuenta-bancaria-en-correos-electronicos/#:~:text=La%20t%C3%A9cnica%20de%20intercepci%C3%B3n%20de,-est%C3%A1n%20cruzando%20conversaciones%20por%20email.
+- https://foro.elhacker.net/hacking/se_pueden_interceptar_correos_electronicos-t517901.0.html;msg2270313
+- https://es.ccm.net/aplicaciones-e-internet/museo-de-internet/enciclopedia/10566-que-es-el-email-bombing/
+- https://medium.com/@edinsonrequena/tutorial-qu%C3%A9-es-un-email-bomb-attack-y-como-crearlo-con-python-3-c566d688944a
+- https://zonavirus.com/noticias/2021/e-mail-bombing-como-usan-el-spam-para-atacar_71650
+- https://es.wikipedia.org/wiki/Gusano_inform%C3%A1tico
+- https://www.pandasecurity.com/es/security-info/worm/
+- https://www.kaspersky.es/resource-center/threats/ransomware-wannacry
+- https://es.malwarebytes.com/ransomware/
+- https://es.wikipedia.org/wiki/Ransomware
+- https://www.fortra.com/es/blog/pentesting-herramientas-tecnicas
+- https://www.disruptivos.com/auditoria-email-mejorar-resultados/
+- https://blog.mailup.es/2021/02/email-auditorias/
+- https://www.acronis.com/es-es/blog/posts/cyber-security-audit/
+- https://secuora.es/blog/auditoria-de-ciberseguridad-red-team-conoce-por-que-necesitas-realizarla/
+- https://www.hiberus.com/crecemos-contigo/pentesting-owasp-fases-metodologia/
+- https://www.reydes.com/d/?q=Metodologia_de_Pruebas_OWASP
+- https://www.arsys.es/blog/owasp#:~:text=6%20Conclusiones-,%C2%BFQu%C3%A9%20es%20OWASP%3F,las%20mejores%20pr%C3%A1cticas%20de%20seguridad.
