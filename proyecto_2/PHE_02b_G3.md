@@ -1035,20 +1035,15 @@ Finalmente, se elimina cualquier acceso y rastro dejado durante el pentesting, l
 
 ## Herramientas de Pentesting
 
-### Herramientas para Pentesting de Correos Electrónicos
-
-#### 1. Herramientas OSINT (Open Source INTelligence)
-
-Estas herramientas nos serán muy útil para nuestra auditoría de correos electronicos ya que nos ahorrará mucho tiempo buscando direcciones de correos de los empleados de la empresa, direcciones IP, nombres de los servidores, arquitectura de red, etc...
-
-**Herramientas:**
-
 En esta sección se han definido las herramientas más adecuadas para cada área que nuestra empresa utilizará. 
 
 Son las siguientes:
 
-##### The Harvester
+#### Herramientas OSINT (Open Source INTelligence)
 
+Estas herramientas nos serán muy útiles para nuestra auditoría de correos electronicos ya que nos ahorrará mucho tiempo buscando direcciones de correos de los empleados de la empresa, direcciones IP, nombres de los servidores, arquitectura de red, etc...
+
+##### The Harvester
 Es una herramienta para la obtención de informacióna a través de los diferentes motores de los principales buscadores y servicios utilizados, o si lo preferimos haciendo fuerza bruta, resoluciones inversas, etc…
  
 ##### Hunter.io
