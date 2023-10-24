@@ -15,8 +15,26 @@
 ## Índice
 
 - [Introducción](#introducción)
-- [Tipos de Ataque y su Clasificación](#tipos-de-ataques-y-su-clasificación)
-
+- [Tipos de Ataque clasificados por área](#tipos-de-ataques-clasificados-por-área)
+  - [Investigación de Tipos de Ataques](#investigación-de-tipos-de-ataques)
+    - [Ataques en Correos Electrónicos](#ataques-en-correos-electrónicos)
+    - [Ataques en la Red](#ataques-en-la-red)
+    - [Ataques en el Área Web](#ataques-en-el-área-web)
+    - [Ataques en Software](#ataques-en-software)
+- [Tipos de Auditorías Ofensivas ofrecidas](#tipos-de-auditorías-ofensivas-ofrecidas)
+    - [Auditoría de Correos Electrónicos](#1-auditoría-de-correos-electrónicos)
+    - [Auditoría de Red Inalámbrica](#2-auditoría-de-red-inalámbrica)
+    - [Auditoría Externa o Perimetral](#3-auditoría-externa-o-perimetral)
+    - [Auditoría IOT](#4-auditoria-iot)
+    - [Auditoría de Seguridad de Software](#5-auditoría-de-seguridad-de-software)
+- [Metodologías de Pentesting utilizadas](#metodologías-de-pentesting-utilizadas)
+    - [Metodología para Auditorías de Correos Electrónicos](#1-metodología-para-auditorías-de-correos-electrónicos)
+    - [Metodología para Auditorías de IOT](#2-metodología-para-auditorías-de-iot)
+    - [Metodología OWISAM para Redes Inalámbricas](#3-metodología-owisam-para-redes-inalámbricas)
+    - [Metodología PTES](#4-metodología-ptes)
+- [Herramientas de Pentesting](#herramientas-de-pentesting)
+- [Conclusión](#conclusión)
+- [Bibliografía](#bibliografía)
 ## Introducción
 
 En el mundo actual en la era digital la evolución es frenética y constante. Este hecho supone grandes avances en materia informática, lo que lleva a mejorar las vidas de millones de personas, ofreciendo facilidades y soluciones que en años pasados se antojaban como ‘fantásticas’, y en algunos casos hasta ’futuristas’. La realidad, sin embargo, no está carente de ciertos problemas, y esto se debe principalmente a dos factores, el factor humano, ya sea debido a un descuido o el desconocimiento por parte de un trabajador o particular, o por la maldad inherente a ciertas personas, que les mueve a querer perpetrar acciones ilegales contra empresas y/o particulares, ya sea por motivo de lucro, por motivos políticos o incluso simplemente sólo por el placer de hacerlo; y las múltiples vulnerabilidades y fallos de seguridad en sistemas existentes, que abren una puerta a una infinidad de posibles ataques, lo que conforma el mundo de la ciberseguridad. 
@@ -41,7 +59,7 @@ Cuando hablamos de tipos de ataques informáticos, nos viene a la mente una gran
 
 Por motivos de comprensión y de organización, dividiremos este abanico de ataques entre las diferentes áreas susceptibles de sufrir ataques, que son el software, los servicios de mensajería electrónica, las páginas web, las redes informáticas y el IOT (Internet of Things).
 
-#### Ataques en correos electrónicos
+#### Ataques en Correos Electrónicos
 
 ##### 1. Phishing
 
@@ -200,7 +218,7 @@ El ataque de bombardeo de correos electrónicos consiste en enviar grandes volú
 
 Estos mensajes se almacenan en el servidor hasta que el dueño de dicha cuenta de correo los lea. Cuando el dueño abra su correo, el último mensaje tardará demasiado tiempo en abrirse y la dirección de correo electrónico quedará inservible. También una cosa a tener en cuenta es que en ocasiones el e-mail bombing se utiliza para intentar distraer a los usuarios, a las empresas y organizaciones, y de esta forma pasar por alto otros correos importantes que puedan recibir.
 
-#### Ataques en la red
+#### Ataques en la Red
 
 ##### 1. Ataque de denegación de servicio o Denial of Service (DoS)
 
@@ -273,7 +291,7 @@ Este tipo de ataque se debe utilizar en un momento concreto que es en el inicio 
 
 ![Imagen Hijacking](img/hijacking.png)
 
-#### Ataques en el área de web
+#### Ataques en el Área Web
 
 El área de web es una de las áreas de acción más comunes de las empresas. Muchas empresas de todos los tamaños se fundamentan en el correcto funcionamiento de una página web, ya sea porque es su medio de contacto con sus clientes, porque es una parte fundamental de su soporte o porque es de hecho su producto. 
 
@@ -815,7 +833,7 @@ Después se utilizan técnicas de análisis de vulnerabilidades dobre router, t�
 
 Esta auditoría tiene como beneficio proporcionar información veraz y fiable del estado de seguridad de la red WLAN de la organización, poniendo barreras de protección y control para determinar la seguridad de dicha red.
 
-### 3. Auditoría externa o perimetral
+### 3. Auditoría Externa o Perimetral
 
 La auditoría externa o perimetral consiste en realizar un examen detallado y crítico con el fin de expresar un criterio profesional sobre la eficiencia y el funcionamiento de una prganización a la hora de desarrollar una gestión determinada.
 
@@ -888,7 +906,7 @@ Para enfocarnos en el entorno del software, respetando es esquema construido par
 
 Las pruebas de pentesting son importantes en el ámbito de la seguridad informática, dado que poniendo a prueba los sistemas en los que realizan las pruebas, logran obtener resultados y, por ende, posibles soluciones o mitigaciones a fallos de seguridad y vulnerabilidades.
 
-### 1. Metodología para auditorias de correos electronicos
+### 1. Metodología para Auditorías de Correos Electrónicos
 
 #### Justificación de la Elección:
 
@@ -909,7 +927,7 @@ Por ejemplo, también podemos buscar CVE's conocidas de algunos protocolos que s
 
 - **4. Informes:** En esta fase se generará un informe que resuma los hallazgos de la auditoría y las recomendaciones para mejorar la seguridad del sistema de correo electrónico.
 
-### 2. Metodología para auditorias de Iot
+### 2. Metodología para Auditorías de Iot
 
 #### Justificación de la elección:
 
@@ -983,7 +1001,7 @@ En esta fase de explotación utilizaríamos todas las técnicas posibles para co
 
 Esta fase la he querido incluir yo para realizar un informe completo y detallado donde especifiquemos todas las vulnerabilidades encontradas y como se podrían solucionar si fuera posible así como algunas medidas de seguridad que deben aplicar la empresa para mejorar la seguridad de la misma.
 
-### 3. Metodología OWISAM para redes inalámbricas
+### 3. Metodología OWISAM para Redes Inalámbricas
 
 #### Justificación de su uso
 
