@@ -25,15 +25,25 @@ Debido a estas dos poderosas razones, hemos podido ver un aumento exponencial de
 
 Además de clasificar estos ataques, también se busca diseñas estrategias de auditoría ofensiva, lo cual es un componente esencial en el ámbito de la ciberseguridad. Las auditorías ofensivas nos permiten identificar debilidades y vulnerabilidades en sistemas, aplicaciones y redes antes que los atacantes las puedan explotar.
 
-## Tipos de Ataques y clasificación por área
+## Tipos de Ataques clasificados por área
 
 Como antes hemos explicado, el modus vivendi de los profesionales de la ciberseguridad orbita en torno a la búsqueda y estudio de las vulnerabilidades y fallos de seguridad informáticos, analizando y comprendiendo los diversos tipos de ataques que los sistemas y aplicaciones pueden sufrir, anticipándose a ellos. 
 
 Precisamente por ese motivo llevaremos a cabo una investigación y subsiguiente clasificación de la amplia gama de tipos de ataques posibles, así como de los tipos de auditorías ofensivas que ofrecemos, exponiendo una descripción de los susodichos servicios.
 
-### Ataques en correos electrónicos
+Cuando hablamos de tipos de ataques informáticos, nos viene a la mente una gran cantidad y diversidad de formas, comúnmente maliciosas, de acceder de una forma no autorizada a sistemas e incluso controlarlos, obtener datos confidenciales, e incluso producir daños en los equipos, redes, sistemas y servicios que sufran estos ataques cibernéticos. El mundo de la informática es amplio, así como por extensión lo es el de la ciberseguridad, y es por ello que hemos de comprender la rama de posibles áreas donde estos cibercrímenes son perpetrados.
 
-#### 1. Phishing
+Por motivos de comprensión y de organización, dividiremos este abanico de ataques entre las diferentes áreas susceptibles de sufrir ataques, que son el software, los servicios de mensajería electrónica, las páginas web, las redes informáticas y el IOT (Internet of Things).
+
+### Investigación de Tipos de Ataques
+
+Cuando hablamos de tipos de ataques informáticos, nos viene a la mente una gran cantidad y diversidad de formas, comúnmente maliciosas, de acceder de una forma no autorizada a sistemas e incluso controlarlos, obtener datos confidenciales, e incluso producir daños en los equipos, redes, sistemas y servicios que sufran estos ataques cibernéticos. El mundo de la informática es amplio, así como por extensión lo es el de la ciberseguridad, y es por ello que hemos de comprender la rama de posibles áreas donde estos cibercrímenes son perpetrados.
+
+Por motivos de comprensión y de organización, dividiremos este abanico de ataques entre las diferentes áreas susceptibles de sufrir ataques, que son el software, los servicios de mensajería electrónica, las páginas web, las redes informáticas y el IOT (Internet of Things).
+
+#### Ataques en correos electrónicos
+
+##### 1. Phishing
 
 El **phishing** es una técnica de estafa en la que se hace uso de técnicas de ingeniería social para engañar a un usuario con el fin de obtener información privada, beneficios económicos o incluso para instalar malware en el dispositivo.
 
@@ -53,7 +63,7 @@ Este tipo de ataque suele aprovechar la navegación en línea de las víctimas a
 
 - También existen más variantes como por ejemplo, el Vishing (phishing a través de llamadas telefónicas) o como el Smishing (phishing a través de mensajes de texto), Angler Phishing (Dirigido a los usuarios de las redes sociales), etc.. pero en estos no me centraré ya que no entran en el área de los correos electrónicos.
 
-#### 2- Spoofing
+##### 2. Spoofing
 
 El **email spoofing** consiste en la suplantación de identidad por correo electrónico, que se produce cuando un atacante envía un correo electrónico a un usuario haciéndose pasar por otra persona o empresa. Esto se consigue camuflando la dirección de correo electrónico de forma que la sustituyen por una legítima. Un ejemplo puede ser que el atacante use paypa1.com en vez de paypal.com. La mayoría de usuarios a los que van destinados estos correos no se suelen fijar bien en la dirección si el nombre le resulta familiar o simplemente ni la leen por lo que no se dan cuenta de que se trata de una dirección de correo falsa.
 
@@ -63,7 +73,7 @@ Los atacantes consiguen camuflar las direcciones de correo electrónico debido a
 
 Si bien es similar al phishing, estos dos ataques son distintos. El phishing busca robar información personal o credenciales a través de engaños o estafas, mientras que el email spoofing su objetivo principal es suplantar la identidad de alguien en un correo electrónico, lo que puede llevar a ataques de phishing, pero su objetivo principal es la suplantación de identidad.
 
-#### 3. Spam
+##### 3. Spam
 
 El spam de correos electrónicos es un tipo de comunicación masiva que se envía principalmente por motivos comerciales. A los atacantes que realizan el envió de este tipo de correos se les suele llamar "Spammers". Estos correos electrónicos suelen contener publicidad no deseada, promociones, malware, enlaces a sitios web falsos o contenido irrelevante. 
 
@@ -79,7 +89,7 @@ Algunos ejemplos pueden ser:
 Aunque en la mayoría de los casos no se considera dañino, puede resultar molesto y difícil de filtrar. También es importante destacar que el spam puede llevar a la pérdida de productividad y tiempo para los usuarios, ya que deben dedicar tiempo a eliminar o ignorar estos correos no deseados.
 Para combatir el spam, se utilizan filtros de correo electrónico que intentan bloquear estos mensajes no deseados antes de que lleguen a la bandeja de entrada del usuario.
 
-#### 4. Scam
+##### 4. Scam
 
 El scam son los intentos de estafas llevadas a cabo a través de correos electrónicos, cuyo objetivo es engañar al usuario para que cometan una acción legítima, pero en realidad no lo son. En la mayoría de los casos, se pretende estafar económicamente pero también se utiliza para instalar malware o robar información.
 
@@ -103,7 +113,7 @@ El funcionamiento del scam se divide en tres etapas:
 - 3: Una vez que se ha conseguido engañar a la víctima, el atacante recibe dinero, información confidencial o simplemente infecta el dispositivo de la víctima con malware.
 
 
-#### 5. Malware
+##### 5. Malware
 
 **Malware o “software malicioso”** es un término amplio que describe cualquier programa o código malicioso que es dañino para los sistemas. Los ataques de malware a través del correo electrónico son muy habituales y generan una amenaza persistente y creciente en el mundo actual. Los atacantes lo usan para robar, cifrar o borrar datos, alterar o secuestrar funciones básicas del dispositivo e incluso para espiar su actividad sin su permiso.
 
@@ -111,7 +121,8 @@ El funcionamiento del scam se divide en tres etapas:
 
 Como existen muchos tipos de malware y mis compañeros también lo van a detallar y a explicar, mostraré algunos ejemplos de los más comunes que se distribuyen por correo electrónico:
 
-##### - Troyanos (Caballos de Troya): 
+###### 5.1. Troyanos (Caballos de Troya)
+
 Es un tipo de archivo que contiene malware y que comúnmente se camuflar dentro de un software legítimo adjunto a un correo electrónico. Aunque el correo electrónico y el archivo adjunto parezcan legítimos y procedan de una fuente fiable, cuando la víctima hace clic en ellos, el malware se instala en su ordenador. Los troyanos pueden utilizarse para robar datos, controlar el equipo para ser usado por una red de bots (BotNet) o incluso borrar completamente todos los archivos del disco duro.
 
 Algunos ejemplos de troyanos relacionados con los correos electrónicos pueden ser:
@@ -124,28 +135,31 @@ Algunos ejemplos de troyanos relacionados con los correos electrónicos pueden s
 
 - **TrickBot:** Es un conocido troyano bancario que se utiliza principalmente para robar información financiera y realizar actividades maliciosas en los dispositivos infectados.
 
-##### - Gusanos:
+###### 5.2. Gusanos
+
 Son un tipo de malware que tienen la peculiaridad de replicarse para propagarse a otras dispositivos. Utiliza la red para propagarse, aprovechando las fallas de seguridad en el dispositivo de destino para acceder a él.
 <br>
 Un ejemplo muy común es el del gusano ILOVEYOU que se propagó a través de un correo electrónico con un asunto que decía "ILOVEYOU". Este afectó a millones de dispositivos en todo el mundo en el año 2000. Una vez abierto, el virus se replicaba y se enviaba a todos los contactos en la libreta de direcciones de la víctima.
 
-##### - Backdoors (Puertas traseras): 
+###### 5.3. Backdoors (Puertas traseras)
+
 Este tipo de malware permite al atacante tener control remoto total en el dispositivo infectado. 
 El atacante puede hacer lo que quiera en el dispositivo, como, por ejemplo, enviar y recibir archivos, ejecutar archivos, mostrar mensajes, borrar datos, reiniciar el equipo, etc...
   
-##### - Rootkits: 
+###### 5.4. Rootkits
+
 Este de malware es diseñado para no ser detectado por los sistemas operativos y los antivirus/ antimalwares y trabajar en segundo plano. Con este tipo de malware consiguen tener acceso al dispositivo durante un periodo más largo.
 
-##### - Keyloggers: 
+###### 5.5. Keyloggers
 Es un tipo de malware que se ejecuta en nuestro dispositivo en segundo plano y que permite registrar todas las pulsaciones de teclas que se realicen en este.
 
-##### - Ransomware: 
+###### 5.6. Ransomware
 
 Es un tipo de malware que impide a los usuarios acceder a su sistema o a sus archivos personales y que exige el pago de un rescate para poder acceder de nuevo a ellos.
 
 Es muy común que los atacantes o ciberdelincuentes utilicen ataques como el phishing o el spam para incluir este malware en el contenido del correo electrónico de alguna forma.
 
-#### 6. Apropiación de cuentas de correo electrónico
+##### 6. Apropiación de cuentas de correo electrónico
 
 La apropiación de cuentas de correos electrónicos es una práctica muy común entre los ciberdelincuentes. 
 Los atacantes se apropian de los correos electrónicos de los usuarios reales con la intención de realizar actividades como controlar sus mensajes, robar información, enviar malware a otras cuentas, realizar spam.
@@ -170,7 +184,7 @@ Existen muchas técnicas que usan los atacante para apropiarse de las cuentas:
 
 - **Explotación de vulnerabilidades:** El atacante podría aprovechar vulnerabilidades en los protocolos del servidor de correo para acceder a las cuentas de los usuarios.
 
-#### 7. Interceptación de correos electrónicos
+##### 7. Interceptación de correos electrónicos
 
 La interceptación de correos electrónicos es una actividad que implica que el atacante pueda leer o incluso modificar los correos electrónicos que se envían desde una persona a otra, situándose en medio de la comunicación (man-in-the-middle). 
 Los atacantes interceptan los mensajes para robar la información que contienen, o para llevar a cabo ataques en los que se hacen pasar por ambas partes de una conversación.
@@ -178,7 +192,7 @@ El método más común para hacerlo es la monitorización de los paquetes de dat
 
 ![Alt text](./img/man_the_middle-1.jpg)
 
-#### 8. E-mail Bombing
+##### 8. E-mail Bombing
 
 El ataque de bombardeo de correos electrónicos consiste en enviar grandes volúmenes de correos electrónicos a una dirección en específico con la intención de desbordar el buzón y saturar el servidor de correos donde está alojado. Su función es la misma que un ataque de denegación de servicio (ataque DoS) pero en este caso contra las cuentas de correos.
 
@@ -186,9 +200,9 @@ El ataque de bombardeo de correos electrónicos consiste en enviar grandes volú
 
 Estos mensajes se almacenan en el servidor hasta que el dueño de dicha cuenta de correo los lea. Cuando el dueño abra su correo, el último mensaje tardará demasiado tiempo en abrirse y la dirección de correo electrónico quedará inservible. También una cosa a tener en cuenta es que en ocasiones el e-mail bombing se utiliza para intentar distraer a los usuarios, a las empresas y organizaciones, y de esta forma pasar por alto otros correos importantes que puedan recibir.
 
-### Ataques en la red
+#### Ataques en la red
 
-#### 1.Ataque de denegación de servicio o Denial of Service (DoS) y 
+##### 1. Ataque de denegación de servicio o Denial of Service (DoS)
 
 Este tipo de ataque apunta a colapsar una red inundandola de tráfico. Lo hace mediante envío de muchas peticiones, por lo tanto los recursos se desbordan, el sitio no puede responder, se apaga y se vuelve innacesible.
 
@@ -207,7 +221,7 @@ Hay varios tipos de ataque DoS con técnicas distintas además de los ya mencion
 
 ![Imagen DoS](img/DoS.png)
 
-#### Ataque de denegación de servicio o Distributed Denial of Service (DDoS)
+##### 2. Ataque de denegación de servicio o Distributed Denial of Service (DDoS)
 
 Este ataque es un ataque DoS que utiliza múltiples dispositivos (Equipos remotos, bots o zombis) para que la red objetivo se vea desbordada, esto hace que el servidor se sobrecargue de forma más rápida que con un ataque DoS. 
 
@@ -215,7 +229,7 @@ Un ejemplo de este ataque es el que recibió AWS en Febrero de 2020 que generó 
 
 ![Imagen DDOS](img/DDoS.png)
 
-#### Spoofing de DNS y Spoofing IP
+##### 3. Spoofing de DNS y Spoofing IP
 
 El spoofing de DNS consiste en alterar el DNS para por ejemplo redigir el tráfico a una página web falsa que emula una legítima.
 
@@ -227,13 +241,13 @@ En el Spoofing IP se suplanta la dirección IP de origen de un determinado equip
 
 ![Imagen DNS Spoofing](img/ip-spoofing.png)
 
-#### ARP Spoofing
+##### 4. ARP Spoofing
 
 Este ataque permite atacar a equipos que esten en la misma red local, ya sea cableada o inalámbrica.
 
 El atacante se hace pasar por el router haciendo que todo el tráfico de la red hacia internet pase directamente por él, pudiendo leer, modificar o bloquear este tráfico.
 
-#### Ataque Man in the Middle (MitM)
+##### 5. Ataque Man in the Middle (MitM)
 
 El atacante en este tipo de ataques intercepta una comunicación entre dos personas de forma secreta e incluso puede alterarla.
 
@@ -241,17 +255,17 @@ En este ataque se puede por ejemplo hacer en una red WiFi no cifrada. Las victim
 
 ![Imagen Man in the Middle](img/Man-in-the-middle.png)
 
-#### Tunelización de DNS
+##### 6. Tunelización de DNS
 
 Se usa el protocolo DNS para comunicar tráfico que no pertenece al tráfico DNS por el puerto 53. Por ejemplo se puede enviar HTTP y otro tipo de tráfico.
 
 También se puede utilizar para tráfico VPN de tunelización DNS, manipular las solicitudes DNS a fin de exfiltrar los datos de un sistema comprometido y para encubrir tráfico saliente ocultando los datos que se suelen compartir mediante una conexión a internet. 
 
-#### Ataque de inundación MAC
+##### 7. Ataque de inundación MAC
 
 Este tipo de ataques es uno de los más comunes y consiste en inundar la tabla CAM de un Switch con diferentes MAC como dirección de origen, con el objetivo de que el Switch acabe funcionando como un HUB.
 
-#### TCP Session Hijacking
+##### 8. TCP Session Hijacking
 
 Consiste en tomar posesión de una sesión TCP que ya existe y la victima ya está utilizando. 
 
@@ -259,13 +273,13 @@ Este tipo de ataque se debe utilizar en un momento concreto que es en el inicio 
 
 ![Imagen Hijacking](img/hijacking.png)
 
-### Ataques en el área de web
+#### Ataques en el área de web
 
 El área de web es una de las áreas de acción más comunes de las empresas. Muchas empresas de todos los tamaños se fundamentan en el correcto funcionamiento de una página web, ya sea porque es su medio de contacto con sus clientes, porque es una parte fundamental de su soporte o porque es de hecho su producto. 
 
 Por ello, el área de web puede resultar de crucial interés para todo tipo de perfiles de clientes. Se han enumerado en esta sección los ataques más destacables que podemos encontrar y una descripción de los mismos
 
-#### Inyección de SQL
+##### 1. Inyección de SQL
 Una inyección SQL en web consiste como bien dice el nombre en introducir código malicioso en algún lugar de la web que lo permita, normalmente formularios, parámetros de la misma URL o barras de búsqueda. Este código aprovechará la forma en la que una aplicación web maneja las entradas de usuario, poniendo a prueba la forma en la que se validan o sanitizan.
 
 Para comprenderlo mejor podríamos pensar en este caso:
@@ -299,7 +313,8 @@ El atacante ha utilizado el operador lógico `OR` para añadir la condición ver
 
 De esta manera un atacante sortea el proceso de autenticación con facilidad y sin ni siquiera conocer la contraseña.
 
-#### Cross-Site Scripting
+##### 2. Cross-Site Scripting
+
 El Cross-Site Scripting o XSS, son principalmente ataques que permiten la ejecución de código malicioso que ha sido inyectado en sitios benignos y fiables, provocando que los usuarios que también visiten o utilicen esa página web se vean afectados por la acción maliciosa. Los problemas de seguridad que se pueden provocar por este problema abarcan desde una suplantación de la identidad hasta el robo de información sensible.
 
 Este tipo de ataque intenta evadir la *política del mismo origen* (SOP, Same-Origin Policy), la cual consiste de una manera resumida en que un documento o script de un origen concreto ( entendiéndose origen como la combinación entre dominio, protocolo y puerto ) no podrá afectar ni interactuar con un recurso de otro origen.
@@ -337,7 +352,8 @@ document.body.appendChild(script);
 ```
 
 Estaríamos realizando un XSS basado en el DOM.
-#### Cross-Site Request Forgering
+
+##### 3. Cross-Site Request Forgering
 Este tipo de ataque consiste en trucar a un usuario para que realice una acción en una aplicación en la que está logueado.
 
 Por ejemplo se podría trucar a un usuario para que realice una solicitud a una aplicación web en la que ya está autenticado, y siendo así, la aplicación no podría distinguir entre una solicitud maliciosa y una legítima. 
@@ -373,7 +389,8 @@ Ya estaría *forjada* la petición, ahora solo tendría que distribuirse. Esto s
 Este sería un esquema su funcionamiento:
 
 ![[CSRF.png]]
-#### Session Hijacking
+
+##### 3. Session Hijacking
 
 El *session hijacking* o secuestro de sesión consiste en valerse de un token de inicio de sesión, una cookie o un session ID y utilizarlo para tomar el control. Una vez que la sesión ha sido robada, el atacante pasará totalmente desapercibido y ni siquiera ha tenido que preocuparse de averiguar la contraseña.
 
@@ -393,7 +410,7 @@ Sabiendo como funcionan las sesiones, deducimos que si consiguiéramos hacernos 
 
 ****
 
-#### Ataques DoS y DDoS
+##### 4. Ataques DoS y DDoS
 
 Los ataques de Denegación de Servicio (*Denial Of Service* o *DoS*) tienen como objetivo saturar la capacidad de un sistema, red o servicio al inundarlo con un gran volumen de tráfico falso. Existen dos variantes principales de este tipo de ataque:
 
@@ -422,13 +439,14 @@ En cuanto a los ataques DDoS, existen 3 tipos principales que destacar:
 	- *Inundación SYN*: En el momento de una conexión a internet, se activa el protocolo TCP que requiere tres pasos para funcionar: Envío de un paquete SYN, otro envío de paquete SYN-ACK para confirmar la conexión y uno ACK para completarla. Este tipo de ataque envía muchos paquetes SYN, *sin* enviar el paquete de confirmación, por lo que un servidor queda a la espera de los paquetes de confirmación
 	- *Ataque Smurf*: En este ataque se envían paquetes ICMP con la dirección de IP de la víctima a una extensa red de dispositivos que se ven obligados a dar una respuesta, por lo que se dirigen todas a la IP de la víctima. Su nombre fue tomado de "The Smurfs" (*Los pitufos*), capaces de derrotar a un enemigo mas grande que ellos siendo muchos.
 - **Ataque a la capa de aplicación**: Ataques dirigidos a la capa 7 de OSI, de aplicación, generalmente se suelen realizar a través de múltiples peticiones HTTP.
-#### Credential Stuffing
+
+##### 5. Credential Stuffing
 
 El relleno de credenciales por fuerza bruta (*Credential Stuffing*) implica intentar adivinar contraseñas probando muchas combinaciones posibles. Normalmente los atacantes utilizarían una herramienta que automatice este proceso y utilizarán un *diccionario*, construido normalmente de filtraciones de credenciales. Realmente se considera un subconjunto de la categoría ataques de fuerza bruta, sin embargo estos ataques suelen intentar adivinar las contraseñas sin contexto ni pistas, mientras que en estos ataques mayormente se suelen utilizar credenciales expuestas.
 
 Un ejemplo sería un ataque en el que un atacante utiliza un programa automatizado para probar sistemáticamente diversas combinaciones de nombres de usuario y contraseñas hasta encontrar la correcta.
 
-#### API Abuse
+##### 6. API Abuse
 
 El abuso de API implica el uso indebido de una interfaz de programación de aplicaciones (API), como realizar solicitudes no autorizadas o manipuladas.
 
@@ -442,7 +460,7 @@ Por supuesto las APIs también se ven afectadas por ataques DDoS provocados norm
 
 Las APIs reciben ataques también de *Web Scraping*, que en sí no tiene por que ser un ciberataque, pero en este caso existen cibercriminales que mediante llamadas masivas a una API consiguen clonar en su totalidad un sitio web, con intención de falsearlo y utilizarlo como trampa para otras actividades maliciosas.
 
-#### Third-Party Code Exploitation
+##### 7. Third-Party Code Exploitation
 
 El abuso de código de terceros implica explotar vulnerabilidades en códigos externos, como por ejemplo CMS (Wordpress, Joomla!), librerías de desarrollo, plugins de servicios de terceros o incluso vulnerabilidades en el propio javascript.
 
@@ -454,7 +472,8 @@ Existen también casos en los que muchos cibercriminales distribuyen parches de 
 *Imagen proveniente de [DVV solutions](https://www.dvvs.co.uk/third-party-javascript-attack/), TrendMicro*
 
 Un ejemplo sería un atacante que aprovecha una vulnerabilidad en un plugin de WordPress para inyectar código malicioso en un sitio web y comprometer la seguridad del mismo.
-#### Zero-Days attack
+
+##### 8. Zero-Days attack
 
 Las vulnerabilidades zero-day son un punto más a tener en cuenta en las aplicaciones web y son una de las más críticas. 
 
@@ -468,9 +487,275 @@ En la siguiente sección detallamos los servicios ofrecidos por nuestra empresa 
 
 Basándonos en la anterior clasificación de ataques, hemos definido las siguientes auditorías como servicio.
 
-## Auditorías ofrecidas por la empresa
+#### Ataques en Software
 
-### Auditoría de correos electrónicos
+El *software* es un conjunto de programas, aplicaciones y datos que permiten que un equipo informático realice tareas específicas. Es la parte lógica y no física de un sistema que le permite funcionar y llevar a cabo diversas funciones tales como el procesamiento de datos, la gestión del hardware o la ejecución de aplicaciones. Como podremos imaginar, cualquier software no está exento de la posibilidad de sufrir diversos tipos de ciberataques, los cuales clasificaremos y analizaremos, con el fin de comprender mejor cómo funcionan y qué buscan lograr.
+
+Antes de comenzar a clasificar las formas usadas por los atacantes para vulnerar un sistema debemos entender la diferencia entre un *exploit* y un *virus*. Mientras que un exploit es un software malicioso usado para aprovechar las vulnerabilidades de un sistema objetivo, un virus se acopla en un programa legítimo para camuflarse, y al ser ejecutado, el código malicioso entra en escena, copiándose en programas y ficheros del sistema.
+
+##### 1. Ataque de Fuerza Bruta Estándar
+
+*Características*
+
+- Es un ataque de fuerza bruta es un método utilizado para descubrir contraseñas o claves de cifrado desconocidas. 
+- Este tipo de ataque trata de probar todas las combinaciones posibles de caracteres, números y símbolos hasta encontrar la correcta.
+
+*Métodos*
+
+- A través de un software especializado, los atacantes automatizan este proceso, probando miles de combinaciones por segundo. 
+- Es común enfocarse en encontrar contraseñas débiles.
+
+*Objetivos*
+
+- El objetivo principal es el de obtener acceso no autorizado a cuentas, sistemas o datos protegidos por contraseña.
+- Suele ser usado en cuentas online, sistemas protegidos por contraseñas o incluso en el descifrado de datos.
+
+##### 2. Ataque de Fuerza Bruta de Diccionario
+
+*Características*
+
+- A diferencia del tipo de ataque anterior, en un ataque de diccionario se utiliza una lista predefinida de palabras y combinaciones de caracteres. 
+- Estos ataques suelen ser más eficientes que los de fuerza bruta, ya que se centran en contraseñas comunes y más probables.
+
+*Métodos*
+
+- Uso de software especializado o scripts en su defecto, que automatizan la prueba de contraseñas en la lista del diccionario. 
+- Se puede personalizar el diccionario para adaptarlo al objetivo.
+
+*Objetivos*
+
+- El objetivo principal es adivinar la contraseña de un usuario, cuenta, sistemas o datos protegidos.
+- Tras la obtención de la contraseña, el objetivo suele ser robar información confidencial, acceder a sistemas no autorizados, etc.
+
+*Ejemplos*
+
+- Aircrack-ng
+
+![Aircrack](img/Aircrack.png)
+
+##### 3. Ataque de Fuerza Bruta con Algoritmo de Búsqueda Inteligente
+
+*Características*
+
+- Es un tipo de ataque de fuerza bruta en el que los atacantes usan algoritmos diseñados para predecir las combinaciones de contraseñas más probables.
+- El ataque usa una base de información conocida de la víctima, así como de pautas usuales al crear contraseñas.  
+
+*Métodos*
+
+- Uso de software especializado o scripts en su defecto, aunque existe la posibilidad de usar una IA para esta tarea.
+
+*Objetivos*
+
+- El objetivo es el mismo que los demás ataques de fuerza bruta, que es obtener un acceso no autorizado a una cuenta de un usuario online, adivinar contraseñas, y acceder a sistemas o datos protegidos.
+
+##### 4. Ataque de Fuerza de Fuerza Bruta Híbrido
+
+*Características*
+
+- Este tipo de ataque combina tanto los ataques de fuerza bruta comunes como los ataques de diccionario.
+- Se suele crear un diccionario con contraseñas comunes, y a través de fuerza bruta estándar agregar caracteres especiales o números.
+
+*Métodos*
+
+- Uso de software especializado o scripts en su defecto.
+
+*Objetivos*
+
+- Estos ataques buscan poder acceder de forma no autorizada a sistemas, cuentas de usuario, contraseñas o información confidencial.
+
+##### 5. Ataque de Escalada de Privilegios
+
+*Características*
+
+- Intento por parte del atacante de lograr un nivel de acceso o privilegios en un sistema superior al concedido inicialmente. 
+- Esta clase de ataque suelen servirse de vulnerabilidades y fallos en la configuración de seguridad de sistemas para obtener dichos privilegios.
+- El atacante suele buscar cuentas de root o administrador.
+- Se distinguen entre la escalada de privilegios vertical, donde el atacante eleva sus privilegios desde una cuenta con privilegios de nivel bajo; y la escalada de privilegios horizontal, donde el atacante a pesar de usar una cuenta con bajos privilegios, gana acceso a datos y funcionalidades a las que no debería poder acceder.
+
+*Métodos*
+
+- No existe un solo método para lograr una escalada de privilegios, dado que esto varía de un sistema operativo a otro. 
+- Algunas de las técnicas usadas por atacantes para lograr dichos privilegios incluyen la inyección de código o la suplantación de identidad.
+- Estos ataques pueden suceder en sistemas locales, donde el atacante ya tiene acceso al mismo, o en sistemas remotos, donde se ha comprometido previamente una cuenta con un nivel menor de privilegios.
+
+*Objetivos*
+
+- El objetivo principal de este tipo de ataque es lograr un mayor control sobre un sistema, abriendo la puerta a atacantes a acciones que previamente les serían imposibles, tales como acceder a datos confidenciales, instalar malware o incluso modificar el propio sistema a su antojo.
+
+##### 6. Rootkit
+
+*Características*
+
+- Tipo de software malicioso diseñado para ocultarse en un sistema objetivo y proporcionar a los atacantes acceso no autorizado al mismo. 
+- El término “rootkit” viene de “root”, que alude a los mayores privilegios en sistemas UNIX, lo que serían privilegios de administración en Windows.
+- Los rootkits suelen funcionar ocultándose de los usuarios y de los sistemas de seguridad.
+- Pueden llegar a modificar el SO, aumentando su control del mismo y asegurando su persistencia. 
+
+*Métodos*
+
+- Este tipo de malware suele instalarse en los sistemas objetivo de diferentes maneras, ya sea a través del uso de la ingeniería social como el phishing, ocultos en software de otra índole, aparentemente inocuo, etc.
+
+*Objetivos*
+
+- El principal objetivo es el de otorgar a los atacantes acceso al sistema infectado, así como de mantener dicho acceso de forma persistente.
+- El objetivo de los atacantes es robar contraseñas o datos financieros, información confidencial o alterar o destruir el sistema objetivo.
+
+*Ejemplos*
+
+- Uroburos (2014). El rootkit Uroburos tenía como objetivo robar datos en compañías de alto perfil, pudiendo afectar desde empresas hasta organizaciones gubernamentales.
+- Rustock (2006). Este rootkit tenía el siguiente *modus operandi*: infectar equipos informáticos de toda índole, desde ordenadores personales hasta sistemas empresariales, para convertirlos en *bots*, agregándolos a una *botnet* dedicada a enviar spam de manera masiva.
+
+##### 7. Troyano
+
+*Características*
+
+- Malware destinado a camuflarse como un programa legítimo e inocuo, y así otorgar acceso no autorizado a un sistema a los atacantes. 
+- Aunque pueda parecer lo mismo que un rootkit, la diferencia radica en la detección de ambos por parte del sistema, ya que el rootkit se enfoca más en ocultar su presencia tanto del usuario como de sus sistemas de seguridad, mientras que el troyano trata de ejecutar acciones maliciosas en el sistema directamente. 
+
+*Métodos*
+
+- Esta clase de software malicioso puede transmitirse en correos de phishing, descarga de software pirata, enlaces malintencionados, la explotación de alguna vulnerabilidad, o incluso documentos o imágenes.
+
+*Objetivos*
+
+- Al igual que un rootkit, los troyanos pueden dar acceso no autorizado a un sistema, y también suelen utilizarse para robar todo tipo de información.
+- Los troyanos suelen usarse para crear puertas traseras (backdoors) en los sistemas atacados.
+- También poseen capacidades de espionaje tales como el uso de keyloggers (software que registra las pulsaciones de teclado) o capturar la pantalla.
+
+*Ejemplo*
+
+- URSNIF. Troyano especializado en robar datos bancarios, contraseñas, y datos personales. Ezste malware además, puede ser usado como puente para instalar más malware en el sistema
+
+##### 8. Adware
+
+*Características*
+
+- El adware es un tipo de software diseñado para mostrar anuncios no deseados en el sistema objetivo, y suelen manifestarse como banners, pop-ups, etc. 
+
+*Métodos*
+
+- Comúnmente el adware se instala en un sistema formando parte de un software legítimo.
+
+*Objetivos*
+
+- El objetivo principal del adware es generar ingresos para los anunciantes y desarrolladores del mismo.
+- Algunos tipos de adware pueden llegar a recopilar información del usuario, a fin de poder mostrar publicidad personalizada a estas personas, o directamente vender esta información a otras empresas.
+
+*Ejemplo*
+
+- Appearch. Adware que usa software gratuito instalado como medio para poder colarse en el sistema, ya que es instalado junto con el software gratis aparentemente inocuo. Una vez instalado, llena el navegador de la víctima con publicidad basura.
+
+##### 9. Spyware
+
+*Características*
+
+- El spyware es un tipo de software malicioso diseñado para ser capaz de recopilar información de la víctima.
+- Este tipo de malware se oculta, funcionando en segundo plano.
+- Es capaz de rastrear la navegación en Internet, registrar pulsaciones de teclado y robar contraseñas o información sensible.
+
+*Métodos*
+
+- El spyware se suele instalar de forma encubierta en un sistema objetivo, a través de descargas de programas pirata, phishing o incluso unido a software legítimo.
+- Una vez que se instala funciona de forma sigilosa, en segundo plano.
+
+*Objetivos*
+
+- El objetivo consiste en la recopilación de información del usuario infectado.
+- Estos datos pueden incluir tarjetas de crédito, contraseña, historial de Internet o correos electrónicos.
+
+*Ejemplo*
+
+- Pegasus. Malware de espionaje (spyware) diseñado por la compañia israelí NSO Group. Pegasus puede instalarse de diversas formas en los móviles de sus víctimas, habiendo hecho uso para su ventaja de varias vulnerabilidades 0-Day. Este spyware es capaz de afectar tanto a iOS como a Android.
+
+##### 10. Gusano
+
+*Características*
+
+- Clase de malware que funciona propagándose a través de redes y sistemas informáticos, sin necesidad de intervención humana.
+- La diferencia con otros tipos de virus o malware no necesitan ir adjuntos a archivos o programas, dado que se replican de forma automática.
+
+*Métodos*
+
+- Los gusanos aprovechan vulnerabilidades para propagarse por redes y sistemas informáticos.
+- Una vez infectado un sistema, el gusano analiza la red en busca de otros objetivos a los que copiarse, y si no los encuentra usará Internet para esa misma tarea.
+
+*Objetivos*
+
+- El objetivo principal y razón de la existencia de un gusano es propagarse a otros sistemas, infectándolos para poder seguir propagándose.
+- Algunos gusanos pueden contener payloads maliciosos.
+
+*Ejemplos*
+
+- Morris Worm (1998). El gusano Morris fué el primer gusano que causó un impacto significativo en Internet, siendo desarrollado por el entonces estudiante de postgrado, Robert Tappan Morris.
+- Sasser Worm (2004). Gusano que explotaba una vulnerabilidad en sistemas Windows, bloqueando y reiniciando los equipos. Este gusano fué desarrollado por un estudiante alemán de 18, el cual fué capturado y condenado.
+
+##### 11. Botnets
+
+*Características*
+
+- El término “botnet” viene de la expresión robot network o red de robots.
+- Esta es una red de sistemas infectados (“bots” o “zombis”) por un atacante.
+
+*Métodos*
+
+- Los bots que componen una botnet suelen integrarse a esta a través de malware que los infectó previamente.
+- Una vez infectado, el bot se comunica con un servidor de Comando y Control (C&C), controlado por el atacante.
+- Algunas botnet tienen varios C&C.
+
+*Objetivos*
+
+- Ataques DDoS.
+- Distribución de Spam.
+- Robo de Datos.
+- Infección de más dispositivos.
+- Cryptojacking o minado de criptomonedas.
+
+*Ejemplos*
+
+- CONFICKER (2008). Botnet dedicada a los ataques DDoS y al envío masivo de spam. Llegó a infectar entre 9 y 15 millones de equipos.
+
+- GAMEOVER ZEUS (2012). Con su origen en Rusia, esta botnet infectó entre medio millón y un millón de equipos, y está diseñada para propagar entre los bots el malware CryptoLocker, que es un malware de tipo RansomWare, el cual encripta los equipos de las víctima y pide un rescate a cambio de la clave de desencriptado.
+
+##### 12. Rogueware
+
+*Características*
+
+- El rogueware es un software malicioso y fraudulento, diseñado para aparentar ser un software legítimo y/o de seguridad, cuando realmente lleva a cabo acciones ilegales.
+- Suelen venderse como programas diseñados para mejorar el rendimiento de un dispositivo, pero realmente realizan acciones maliciosas.
+
+*Métodos*
+
+- El rogueware suele contraerse a través de descargar software de sitios no oficiales ni confiables, phishing, etc.
+- Una vez instalado, este tipo de software muestra alertas de “supuestos problemas” que requieren de nuestra atención de forma inmediata.
+- Incluso existen casos que poseen una versión “premium”, que no ofrece ningún beneficio real, siendo además de una intrusión informática, una estafa.
+
+*Objetivos*
+
+- El objetivo prioritario del rogueware es el lucro y la estafa a las víctimas a través de la venta de un software falso, que no sólo no los protege, sino que los daña.
+- El rogueware es además capaz de robar información del usuario y su sistema.
+- También posee la capacidad de instalar malware adicional.
+
+*Ejemplo*
+
+- WinWebSec. Familia de supuestos escáneres que emulan ser un sistema de seguridad legítimo, pero en realidad pueden llegar a infectar el equipo, convirtiéndolo en un *bot*. Algunos ejemplos son Live Security Platinum, Smart Protection y Win XP Security System.
+
+
+
+## Tipos de Auditorías Ofensivas ofrecidas
+
+A fin de garantizar la seguridad de los sistemas, redes y dispositivos de los clientes, ofrecemos diversos tipos de auditorías ofensivas, con un enfoque práctico y directo. Este enfoque nos permite llegar a la raíz de los posibles problemas, fallos y/o debilidades en configuraciones de seguridad, localizar contraseñas débiles o encontrar vulnerabilidades críticas que pudieran ser explotadas por cibercriminales.
+
+Antes de comenzar es importante proponer acuerdos, establecer límites y estudiar las regulaciones y normas de su compañía, a fin de delimitar el área que auditar, así como los horarios a los que llevar a cabo la auditoría en cuestión. Otro aspecto a tener en cuenta es discutir el tipo de prueba a llevar a cabo, siendo las opciones a elegir las siguientes:
+
+- **Pruebas de Caja Negra (Black Box Testing).** En las pruebas de caja negra, los analistas de seguridad no conocemos los detalles internos y exactos del funcionamiento de su sistema, dado que el enfoque debe simular un ataque por parte de un elemento externo a la empresa, identificando vulnerabilidades sin acceso al código o a la estructura interna del sistema.
+- **Pruebas de Caja Gris (Gray Box Testing).** Las pruebas de caja gris otorgan un conocimiento parcial del sistema al analista de ciberseguridad, ofreciendo detalles sobre el diseño o arquitectura del sistema, pero sin entrar en el código del mismo. Esto permite realizar pruebas con un enfoque mayor en un área concreta.
+- **Pruebas de Caja Blanca (White Box Testing).** En las pruebas de caja blanca, a los evaluadores se les da un conocimiento completo del sistema, incluido el acceso al código fuente y la arquitectura interna del mismo. Esto da la posibilidad de llevar a cabo pruebas complejas, profundas y exhaustivas, con el objeto de identificar vulnerabilidades y/o fallos en el código del sistema.
+
+![Testing](img/black-box-white-box-gray-box-ethical-hacking.png)
+
+Conociendo esto, se explicarán los tipos de auditorías ofensivas. Estas se dividen entre las diferentes áreas informáticas, y el objetivo de cada tipo es centrar los esfuerzos en un área concreta, para mayor efectividad y profundidad de las pruebas.
+
+### 1. Auditoría de correos electrónicos
 
 La auditoría ofensiva de correos electrónicos nos puede ayudar mucho ya que con ella podemos evaluar la seguridad para identificar y corregir vulnerabilidades que podrían ser explotadas por atacantes. 
 
@@ -518,7 +803,7 @@ En este segundo servicio nos centraremos en los siguientes puntos:
 
 Obviamente todos estos ataques se realizarán con el consentimiento de la empresa y sin poner en riesgo los datos.
 
-### Auditoría de red inalámbrica
+### 2. Auditoría de red inalámbrica
 
 El proceso de auditar las conexiones Wi-Fi se realiza con la intención de determinar el nivel de segguridad y confidencialidad que proporcionan este tipo de redes. Normalmente en este tipo de redes se suelen encontrar configuraciones ni cifrados óptimos. 
 
@@ -530,7 +815,7 @@ Después se utilizan técnicas de análisis de vulnerabilidades dobre router, t�
 
 Esta auditoría tiene como beneficio proporcionar información veraz y fiable del estado de seguridad de la red WLAN de la organización, poniendo barreras de protección y control para determinar la seguridad de dicha red.
 
-### Auditoría externa o perimetral
+### 3. Auditoría externa o perimetral
 
 La auditoría externa o perimetral consiste en realizar un examen detallado y crítico con el fin de expresar un criterio profesional sobre la eficiencia y el funcionamiento de una prganización a la hora de desarrollar una gestión determinada.
 
@@ -546,7 +831,7 @@ Una vez haber identificado los posibles vectores de acceso y vulnerabilidades, s
 
 Gracias a esto se dispone de los vectores de acceso, configuraciones erróneas y vulnerabilidades existentes en el perimtro, permitiendonos corregir y subsanar estas brechas de seguridad.
 
-### Auditoria IoT
+### 4. Auditoria IoT
 
 En los últimos años la cantidad de dispositivos conectados que existen han ido incrementando exponencialmente, desde dispositivos como relojes, básculas o pulseras, hasta dispositivos implicados en la seguridad de nuestros hogares.
 
@@ -562,9 +847,48 @@ Estudiar los posibles fallos de seguridad en el flujo de datos del dispositivo, 
 
 Análisis de las posibles implicaciones de seguridad derivadas de la arquitectura y tecnologías usadas por el dispositivo IoT. Identificacar las debilidades en el dispositivo físico mediante pruebas de hardware hacking y análisis del ifrmware del dispositivo con ingienería inversa.
 
-## Metodologías con las que operamos
+### 5. Auditoría de Seguridad de Software
 
-### Metodología para auditorias de correos electronicos
+Una de las áreas más importantes en el panorama actual de la tecnología y de la información en general es el software, dado el papel fundamental que este desempeña en la operación de las organizaciones. 
+
+No es de extrañar que este sea uno de los puntos clave por los que los atacantes suelen encontrar vulnerabilidades y fallos de seguridad y/o de configuración, usándolos para perpetrar sus ataques y acceder de forma no autorizada a los sistemas ajenos. Es por ello que ofrecemos una auditoría exclusiva al ámbito del software, analizando los programas en la red y sistemas de su empresa, ofreciendo un informe detallado de los resultados encontrados, ofreciendo soluciones para fortalecer su seguridad, la de su compañía y de sus empleados.
+
+Nuestra Auditoría de Seguridad Ofensiva orientada al Software está diseñada para simular los ataques de cibercriminales reales, con el objetivo de identificar vulnerabilidades, fallos en configuraciones de seguridad, contraseñas débiles o por defecto en todas las aplicaciones y programas utilizados en su organización. Este estudio le permitirá mantener a salvo sus sistemas y datos confidenciales, mejorando su seguridad.
+
+Comenzando por el entorno donde se llevarán a cabo las pruebas, existe la opción de realizarse de forma interna o externa a su organización, según los intereses que tenga el cliente. Obviamente, ambos enfoques ofrecen resultados distintos, así como enfoques distintos:
+
+- *Auditoría Interna.* Una auditoría interna se realiza teniendo acceso a la red interna de la empresa cliente, llevando a cabo las pruebas de penetración o pentesting desde allí, pudiendo incluir las propias oficinas, su Intranet o una VPN. En esta clase de auditoría el experto en seguridad actúa como un usuario que previamente disponía de acceso a la red de la empresa.
+- *Auditoría Externa.* Las auditorías externas se llevan a cabo desde fuera de la red de la organización, no teniendo acceso a los sistemas internos o datos de la empresa cliente. A diferencia del tipo de auditoría interna, en esta el auditor asume el papel de un atacante externo, el cual obviamente carece de un acceso autorizado a los sistemas de la empresa.
+
+Una vez que hemos elegido si queremos una auditoría externa o interna, también debemos optar entre enfoques diferentes a la hora de realizar las pruebas, dado que estas podrán tener una mayor superficie para realizarlas, o llegar a una mayor profundidad en el sistema de la empresa cliente, obteniendo resultados más concretos en un área. Estos tres enfoques son los siguientes:
+
+- *Análisis de Vulnerabilidades (Vulnerability Assessment).* Los análisis de vulnerabilidades consisten en la identificación y la recopilación de vulnerabilidades, fallos de configuraciones de seguridad, contraseñas débiles o por defecto, y en general fallos en la seguridad general de la empresa que puedan proporcionar un vector de ataque a un posible atacante. Este tipo de pruebas son las que cubren una mayor superficie, pero alcanzan un nivel de penetración menor en los sistemas de la empresa cliente.	
+- *Test de Penetración (Pentesting).* Los tests de pentesting buscan realizar simulaciones de ataque controladas a la infraestructura, red y sistemas de la empresa cliente, con el fin de lograr resultados más precisos que un análisis superficial. Estas pruebas siempre se realizan siguiendo un código ético y cumpliendo unas normas acordadas con el cliente, tales como vetar ciertas partes de la infraestructura de la red de la empresa, limitar el pentesting a ciertas horas, etc.  Normalmente en esta clase de pruebas no es necesario hacer hincapié en el ocultamiento de los sistemas de seguridad de la empresa, y en la discreción, dado que la misión consiste en obtener el mayor número de fallas de seguridad posibles, sin preocuparse del sigilo. 
+- *Red Teaming.* Las pruebas de Red Team podría decirse que son las más realistas de las tres, dado que alcanzan el mayor nivel de profundidad posible en los sistemas de la empresa, simulando un ataque real por parte de cibercriminales. Este tipo de prueba no posee constricciones de ningún tipo, pudiendo usar técnicas de Ingeniería Social como el Spear-Phishing, así como buscar ocultarse de los sistemas de seguridad de la empresa o explotar vulnerabilidades, tal y como lo haría un atacante real. El objetivo consiste no sólo en analizar las vulnerabilidades y fallos de seguridad de la compañía, sino en evaluar también la capacidad de respuesta de la misma.
+
+Ya elegido el tipo exacto de pruebas que desea para su empresa, pasaremos a explicar el esquema general de la auditoría, desde la realización de las pruebas hasta la presentación del informe con los resultados obtenidos.
+
+![Alt text](img/Esquema_Auditoría.png)
+
+Se ha de remarcar que este es un mero esquema general con un enfoque claro en la seguridad del software de la empresa, haciendo hincapié en esta área concreta. Si se elige un enfoque de análisis externo, obviamente se obtendrá una evaluación general de la seguridad de sus programas, pero careciendo de un nivel alto de detalles.
+
+Para enfocarnos en el entorno del software, respetando es esquema construido para ejecutar la auditoría ofensiva, orientándola al software, se deberán incluir las siguientes pruebas:
+
+- **Ataques de Fuerza Bruta.** Se recomienda poner a prueba las constraseñas encontradas haciendo uso de ataques de fuerza bruta, tanto estándar, como de diccionario, híbridos e incluso con algoritmos de búsqueda inteligente.
+
+- **Uso de exploits.** El uso de exploits es ampliamente utilizado por agresores en ataques reales, a fin de obtener un acceso no autorizado al sistema objetivo, por lo que el uso de estos es recomendado para entender las técnicas empleadas por los atacantes.
+
+- **Ingeniería Social.** Si el cliente contrata una auditoría ofensiva con un enfonque de Red Teaming, se llevarían a cabo estrategias de ingeniería socialcon el fin de obtener acceso a sistemas no autorizados, tal y como lo harían atacantes reales. Esto se puede emplear en un ámbito de software, accediendo a herramientas empresariales que hagan uso de sistemas de autentificación.
+
+- **Uso generalizado de malware (Troyanos, Rootkits, Spyware, etc).** Lo que se busca con esto es usar malware diseñado para lograr un acceso permanente a los sistemas de la empresa, creando incluso puertas traseras (*backdoors*) que faciliten el acceso a los mismos. El objetivo no es damnificar dichos sistemas, sino evaluar la capacidad de respuesta de los equipos de seguridad de la empresa, y buscar formas de sobrepasar las defensas informáticas de la misma, a fin de mitigar ataques reales a futuro.
+
+- **Análisis de fallos a nivel de código.** Es necesario usar herramientas que evalúen de forma automática el código de diferentes aplicaciones de la empresa, con el objetivo de encontrar fallos de seguridad que puedan llevar a accesos no autorizados e incluso posibles vulnerabilidaes.
+
+## Metodologías de Pentesting utilizadas
+
+Las pruebas de pentesting son importantes en el ámbito de la seguridad informática, dado que poniendo a prueba los sistemas en los que realizan las pruebas, logran obtener resultados y, por ende, posibles soluciones o mitigaciones a fallos de seguridad y vulnerabilidades.
+
+### 1. Metodología para auditorias de correos electronicos
 
 #### Justificación de la Elección:
 
@@ -585,11 +909,11 @@ Por ejemplo, también podemos buscar CVE's conocidas de algunos protocolos que s
 
 - **4. Informes:** En esta fase se generará un informe que resuma los hallazgos de la auditoría y las recomendaciones para mejorar la seguridad del sistema de correo electrónico.
 
-### Metodología para auditorias de Iot
+### 2. Metodología para auditorias de Iot
 
 #### Justificación de la elección:
 
-Elección: OWASP-FSTM (Firmware Security Testing Methodology)
+**Elección:** OWASP-FSTM (Firmware Security Testing Methodology)
 
 Tras realizar una investigación en profundidad de las posibles metodologías para realizar auditorías de Iot (Internet de las cosas) me he decantado por la metodología OWASP-FSTM ya que cubre todas las etapas que en mi opinión necesitaría dicha auditoria. Es una metodología bastante completa y muy recomendada por los expertos en el área de Iot. Además, es bastante flexible por lo que podremos adaptarla a diferentes dispositivos y entornos con los que trabajemos en nuestra empresa.
 
@@ -659,13 +983,15 @@ En esta fase de explotación utilizaríamos todas las técnicas posibles para co
 
 Esta fase la he querido incluir yo para realizar un informe completo y detallado donde especifiquemos todas las vulnerabilidades encontradas y como se podrían solucionar si fuera posible así como algunas medidas de seguridad que deben aplicar la empresa para mejorar la seguridad de la misma.
 
-### Metodología OWISAM para redes inalámbricas
+### 3. Metodología OWISAM para redes inalámbricas
 
 #### Justificación de su uso
 
 OWISAM es la metodología más utilizada para las auditorias de redes Wi-Fi. Esta metodologia fue creada específicamente para su uso en redes Wireless y define perfectamente las restricciones que pueden abarcar este tipo de redes y las fases para auditar correctamente trabajando sobre los estándares de red 802.11.
 
 #### Descripción
+
+**Elección:** OWISAM
 
 La metodología Open Wireless Security Assessment Methodology (OWISAM) tiene como objetivo poner en común controles de seguridad que se deben verificar sobre redes inalámbricas, ayudando a diferentes administradores de redes, de sistema y analista de seguridad a identificar riesgo a los que minimizar el impacto de futuros ataques de infraestructuras Wireless basadas en el estándar 802.11.
 
@@ -697,7 +1023,39 @@ Además de estas restricciones, existen una serie de fases que se emplean en el 
 6. Pruebas sobre normativa y directivas: Verificación del cumplimiento de los controles normativos.
 7. Generación de resultados: Documentación de informes, análisis final de evidencias y clasificación de riesgos.
 
-## Herramientas
+### 4. Metodología PTES
+
+#### Justificación de la elección
+
+**Elección:** PTES (Penetration Testing Execution Standard)
+
+Se ha elegido implementar la metodología PTES (Penetration Testing Execution Standard), que posee un enfoque en un amplio espectro de áreas. Esta metodología está diseñada para poder ser aplicada tanto en redes y sistemas, aplicaciones web, redes, aplicaciones (software), ingeniería social e incluso seguridad física. Esta elección se hace debido al hecho de no existir una metodología concreta para el ámbito del software, pero sí una que cubre en gran medida, la mayoría de campos relevantes en el campo de la seguridad informática.
+
+#### Descripción
+
+La metodología de Evaluación de Seguridad de Pentesting Estándar (*PTES*) está compuesta por un conjunto de estándares y directrices definidos con el objetivo de estandarizar las pruebas de penetración o pentesting en el ámbito de la seguridad informática. 
+
+#### Fases de la Metodología PTES
+
+La metodología PTES proporciona una forma clara y estructurada de auditar la seguridad de múltiples ámbitos. Para lograr esto, esta metodología dispone de una serie de fases, las cuales expondremos a continuación:
+
+1. **Fase de Interacción Previa.** Fase inicial, en la que se planifica el pentesting, definiendo los objetivos del mismo, el alcance que va a tener, acordar una autorización con la empresa objetivo, así como llevar a cabo una recopilación básica de información.
+
+2. **Fase de Recopilación de Información.** En esta fase se comienza a analizar el objetivo, llevándose a cabo a través de fuentes OSINT. Con esto obtenemos información detallada sobre la organización objetivo, incluyendo sus sistemas, aplicaciones y recursos de red. Este análisis puede llegar a cubrir el escaneo de puertos, enumeración de servicios y repopilación de información sobre empleados y archivos. 
+
+3. **Fase de Modelado de Amenazas.** Esta fase consiste en analizar tanto el entorno interno como el externo del objetivo en busca de elementos susceptibles de ser explotados por posibles atacantes, pudiendo llevar a futuros ataques contra la organización objetivo. Su propósito es doble: primero, identificar los activos que serán objeto de la auditoría, evaluando su valor para la empresa y su importancia en los procesos de la organización; y en segundo lugar, evaluar quiénes podrían ser los posibles atacantes y su capacidad, se busca comprender y describir las amenazas en profundidad. Esta fase permite perfilar los tipos de ataques más probables, que serán los que se considerarán principalmente en las etapas posteriores del proceso.
+
+4. **Fase de Análisis de Vulnerabilidades.** Fase en la que se realiza el proceso de análisis de vulnerabilidades y fallos en la configuración de los sistemas del objetivo, adelantándose al posible atacante. Una configuración de seguridad errónea, una contraseña débil o por defecto o un diseño inseguro pueden facilitar un posible ataque, y son objetivos en esta fase del pentesting.
+
+5. **Fase de Explotación.** Una vez recopilada una lista de fallos de seguridad y vulnerabilidades, los pentesters o expertos en seguridad informática comienzan el proceso de acceso al sistema objetivo, saltándose los mecanismos de seguridad sirviéndose de exploits y apoyándose en las vulnerabilidades descubiertas. El fin último es lograr el control del sistema bajo prueba.
+
+6. **Fase de Post-Explotación.** Una vez logrado el acceso al sistema, se busca lograr una persistencia en el mismo, así como llevar a cabo movimientos laterales cuyo objetivo sea alcanzar el control de otros activos. Con estas acciones se busca, a través del acceso conseguido, analizar y recopilar la información con mayor valor posible.
+
+7. **Fase de Reporte.** Es la última fase, y consiste en la elaboración de un informe que detallen las conclusiones de las pruebas de pentesting. En este documento se resumen los resultados obtenidos, se evalúan los riesgos identificados y se sugiere un plan para reducir o gestionar dichos riesgos.
+
+Finalmente, se elimina cualquier acceso y rastro dejado durante el pentesting, lo que devuelve el sistema a su estado original.
+
+## Herramientas de Pentesting
 
 ### Herramientas para correos electrónicos
 
@@ -758,13 +1116,13 @@ Nessus es una herramienta de escaneo de vulnerabilidades desarrollada por Tenabl
 
 Creemos que nessus es una herramienta bastante completa y bastante útil ya que es analizador de vulnerabilidades más potente del mercado por lo que nos ahorra mucho tiempo para encontrarlas ya que dispone de escaneo de puertos y servicios, escaneos de aplicaciones web, escaneos de configuración y escaneos de software.
 
-### SpoofCheck: Gratis
+#### SpoofCheck: Gratis
 
 Esta herramienta se encarga de ir comprobando una serie de condiciones para verificar si un servidor de correos es spoofeable o no.
 
 Nos será bastante útil ya que podremos comprobar si el servidor de correos es vulnerable o no ejecuntando la herramienta por lo que nos ahorrará tiempo.
 
-### Splunk: el precio depende de los datos usados
+#### Splunk: el precio depende de los datos usados
 
 Es una plataforma de análisis de datos en tiempo real que permite recopilar, almacenar, analizar y visualizar datos generados por los dispositivos.
 
@@ -823,11 +1181,32 @@ TCPDump es una herramienta diseñada para analizar el tráfico que circula por l
 
 La versión de Windows se llama WinDump y requiere la instalación previa de WinPCAP.
 
+### Herramientas para Pentesting de Software
+
+En este apartado incluimos un abanico de aplicaciones destinadas al uso del pentesting en el ámbito de la seguridad del software. Para ello hemos elegido cuidadosamente una serie de herramientas que nos facilitarán dicho trabajo:
+
+- **Nessus.** Herramienta de evaluación de vulnerabilidades en sistemas operativos. Esta herramienta se compone de dos módulos, siendo *Nessusd* y *Nessus Client*. El primero se encarga de realizar el escaneo, mientras que el segundo controla las exploraciones y muestra los resultados acerca de las vulnerabilidades encontradas.
+Este software es capaz de escanear puertos, así como los dispositivos conectados a una red, es capaz de detectar servicios, identificando los que son usados por las aplicaciones del sistema, identifica vulnerabilidades y finalmente, realiza un sondeo, asegurándose de no cometer falsos positivos. El precio oscila entre 500€ a 4482,49€ la versión más cara, aunque existe la posibilidad de solicitar una demo gratutita por 7 días.
+
+![Nessus](img/nessus-live-results_large.png)
+
+- **Metasploit.** Plataforma de pruebas de penetración y desarrollo de exploits ampliamente utilizada en al ámbito de seguridad informática. Esta herramienta permite el desarrollo y prueba de exploits, ofreciendo una amplia biblioteca, de modo que el pentester tan sólo tiene que elegir el que necesite en cada momento; también permite escanear y enumerar servicios en una red y recopilar información en sistemas objetivo. Metasploit incluye también una shell remota, permitiendo acceder a sistemas previamente comprometidos, ejecutando comandos de forma remota; ofrece un sistema de gestión de sesiones de explotación en una misma consola, y provee al pentester de un sistema de genración de informes. Esta herramienta es gratuita, pero existe una versión Pro por 14000€.
+
+![Metasploit](img/metasploit.png)
+
+- **John the Ripper.** Software de crackeo de contraseñas muy útil en tests de penetración por su capacidad de poner a prueba la robustez de contraseñas frente a ataques de fuerza bruta, llegando a romper hashes MD5 y SHA-1, pudiendo detectar el tipo de hash utilizado. Esta herramienta es ampliamente utilizada y funciona tanto en Windows como en sistemas Linux. Existen tres versiones, siendo la gratuita; John the Ripper Pro, que cuesta x€ y finalmente tenemos John the Ripper Jumbo, costando x€.
+
+![JohnTheRipper](img/JohnTheRipper.jpg)
+
+<br/>
+
 ## Conclusión
+
+[...]
 
 ## Bibliografía
 
-En este apartado hemos dividido la bibliografía de cada área investigada.
+A fin de aportar claridad y orden, se ha dividido la bibliografía por áreas de trabajo investigadas. 
 
 ### Bibliografía para la investigación de redes
 
@@ -936,13 +1315,12 @@ En este apartado hemos dividido la bibliografía de cada área investigada.
 - https://www.flu-project.com/2016/08/simpleemailspoofer-y-spoofcheck.html
 
 ### Bibliografía para la investigación del área web
-- https://www.imperva.com/learn/application-security/csrf-cross-site-request-forgery/
 
+- https://www.imperva.com/learn/application-security/csrf-cross-site-request-forgery/
 - https://owasp.org/www-community/Types_of_Cross-Site_Scripting
 - https://lenguajejs.com/javascript/dom/que-es/
 - https://developer.mozilla.org/es/docs/Glossary/Cross-site_scripting
 - https://venafi.com/blog/what-session-hijacking/
-
 - https://www.deltaprotect.com/blog/ataques-ddos-que-son
 - https://academy.bit2me.com/que-son-ataques-dos/
 - https://owasp.org/www-community/attacks/Credential_stuffing
@@ -953,7 +1331,7 @@ En este apartado hemos dividido la bibliografía de cada área investigada.
 - https://attack.mitre.org/
 - https://www.dvvs.co.uk/third-party-javascript-attack/
 
-### Bibliografía IoT
+### Bibliografía para la investigación de IoT
 
 - [https://www.tarlogic.com/es/auditoria-seguridad-iot/](https://www.tarlogic.com/es/auditoria-seguridad-iot/)
 - [https://www.isaca.org/es-es/resources/isaca-journal/issues/2018/volume-5/is-audit-basics-auditing-the-iot](https://www.isaca.org/es-es/resources/isaca-journal/issues/2018/volume-5/is-audit-basics-auditing-the-iot)
@@ -969,3 +1347,27 @@ En este apartado hemos dividido la bibliografía de cada área investigada.
 - https://www.tarlogic.com/es/blog/owasp-fstm-analisis-en-tiempo-de-ejecucion/
 - https://www.tarlogic.com/es/blog/owasp-fstm-etapa-9-explotacion-de-ejecutables/
 - https://auditordeciberseguridad.es/implementando-itdr-10-acciones-para-proteger-el-directorio-activo-3/
+
+### Bibliografía para la investigación de software
+
+- https://masterenciberseguridadonline.es/tipos-de-ataques-de-fuerza-bruta/
+- https://winempresas.pe/blog/ataques-informaticos-causas-y-12-tipos-de-ciberataques
+- https://cnipj.es/tipos-ataques-informaticos/
+- https://ciberseguridad.blog/25-tipos-de-ataques-informaticos-y-como-prevenirlos/
+- https://www.hackbysecurity.com/servicios-empresas/auditoria-informatica/tipos-de-auditorias-de-seguridad-informatica
+- https://www.deltaprotect.com/blog/auditoria-de-seguridad-informatica
+- https://resources.infosecinstitute.com/topics/hacking/popular-tools-for-brute-force-attacks/
+- https://www.ciberseguridad.eus/ciberglosario/escalada-de-privilegios
+- https://softwarelab.org/es/blog/que-es-un-rootkit/
+- https://www.20minutos.es/tecnologia/ciberseguridad/5-troyanos-muy-peligrosos-que-te-pueden-vaciar-la-cuenta-5040746/
+- https://nordvpn.com/es/blog/que-es-adware/
+- https://es.gridinsoft.com/spyware
+- https://softwarelab.org/es/blog/que-es-un-gusano-informatico/
+- https://www.danysoft.com/los-12-peores-botnets/
+- https://ayudaleyprotecciondatos.es/2021/04/23/rogueware/
+- https://www.platinumciber.com/las-fases-de-un-ciberataque/
+- https://www.ymant.com/blog/las-7-fases-de-un-ciberataque/
+- http://www.pentest-standard.org/index.php/Main_Page
+- https://keepcoding.io/blog/que-es-nessus/
+- https://keepcoding.io/blog/que-es-metasploit-ciberseguridad/
+- https://www.redeszone.net/tutoriales/seguridad/crackear-contrasenas-john-the-ripper/
