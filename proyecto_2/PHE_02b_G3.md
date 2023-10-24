@@ -298,6 +298,7 @@ OR '1'='1';
 El atacante ha utilizado el operador lógico `OR` para añadir la condición verdadera  `'1'='1'`, y luego ha añadido dos guiones `--` que crearían un comentario, eludiendo la comprobación de la contraseña. 
 
 De esta manera un atacante sortea el proceso de autenticación con facilidad y sin ni siquiera conocer la contraseña.
+
 #### Cross-Site Scripting
 El Cross-Site Scripting o XSS, son principalmente ataques que permiten la ejecución de código malicioso que ha sido inyectado en sitios benignos y fiables, provocando que los usuarios que también visiten o utilicen esa página web se vean afectados por la acción maliciosa. Los problemas de seguridad que se pueden provocar por este problema abarcan desde una suplantación de la identidad hasta el robo de información sensible.
 
@@ -544,6 +545,22 @@ Trás recolectar la información se numera y analiza para encontrar las vulnerab
 Una vez haber identificado los posibles vectores de acceso y vulnerabilidades, se planifican los metodos de ataque con mayor viabilidad y efectividad, por lo que habrá que buscar como acceder al sistema.
 
 Gracias a esto se dispone de los vectores de acceso, configuraciones erróneas y vulnerabilidades existentes en el perimtro, permitiendonos corregir y subsanar estas brechas de seguridad.
+
+### Auditoria IoT
+
+En los últimos años la cantidad de dispositivos conectados que existen han ido incrementando exponencialmente, desde dispositivos como relojes, básculas o pulseras, hasta dispositivos implicados en la seguridad de nuestros hogares.
+
+Gracias a esto este tipo de dispositivos presenta un aumento de superficie expuesta a actores maliciosos, tanto para las empresas que los gestiona como para los clientes que conviven con ellos.
+
+El objetivo de la auditoria IoT es evaluar el estado de seguridad de estas tecnologías, clasificando los ataques dependiendo de la naturaleza del dispositivo y los datos gestionados por él. Permitiremos al cliente conocer el estado de la seguridad de su infraestructura, incluyendo las soluciones a los problemas encontrados.
+
+El alcance de esta auditoria hace referencia a cualquier dispositivo conectado a internet, como por ejemplo los ya mencionados anteriormente relojes, básculas, seonsores, la nube u otros medios de almacenamiento.
+
+Los beneficios de este tipo de auditoria son conocer potenciales problemas en los dispositivos, incluyendo vulnerabilidades en componentes del sistema operativo que ejecute.
+
+Estudiar los posibles fallos de seguridad en el flujo de datos del dispositivo, tanto en conexiones locales a través de redes de corto alcance, como en su procesamiento posterior en servidores si los hubiese, así como sus posibles soluciones tanto a nivel técnico como de diseño.
+
+Análisis de las posibles implicaciones de seguridad derivadas de la arquitectura y tecnologías usadas por el dispositivo IoT. Identificacar las debilidades en el dispositivo físico mediante pruebas de hardware hacking y análisis del ifrmware del dispositivo con ingienería inversa.
 
 ## Metodologías con las que operamos
 
@@ -935,3 +952,8 @@ En este apartado hemos dividido la bibliografía de cada área investigada.
 - https://security.packt.com/json-web-token-attack/
 - https://attack.mitre.org/
 - https://www.dvvs.co.uk/third-party-javascript-attack/
+
+### Bibliografía IoT
+
+- [https://www.tarlogic.com/es/auditoria-seguridad-iot/](https://www.tarlogic.com/es/auditoria-seguridad-iot/)
+- [https://www.isaca.org/es-es/resources/isaca-journal/issues/2018/volume-5/is-audit-basics-auditing-the-iot](https://www.isaca.org/es-es/resources/isaca-journal/issues/2018/volume-5/is-audit-basics-auditing-the-iot)
