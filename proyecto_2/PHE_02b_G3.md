@@ -1182,9 +1182,9 @@ En función a las necesidades de nuestra empresa se ha estimado un presupuesto p
 | **Nessus**         | 4482,49€         |
 | **Splunk**         | 1698,65          |
 | **Burpsuite**      | 445€         |
-| ** Portátil Slimbook Pro X 15 AMD (Para 4 trabajadores) **   |  3996€    |
-| ** Salario (Para 4 trabajadores) **  | 88000€ |
-| ** Gastos legales ** | 5000€ |
+| **Portátil Slimbook Pro X 15 AMD(Para 4 trabajadores)**   |  3996€    |
+| **Salario (Para 4 trabajadores)**  | 88000€ |
+| **Gastos legales** | 5000€ |
 |---------------------|------------------|
 | **Total**             | **106498.98€**  |
 
