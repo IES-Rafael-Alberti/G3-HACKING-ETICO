@@ -1047,47 +1047,41 @@ En esta sección se han definido las herramientas más adecuadas para cada área
 
 Son las siguientes:
 
-##### - The Harvester: Gratis
+##### The Harvester
 
 Es una herramienta para la obtención de informacióna a través de los diferentes motores de los principales buscadores y servicios utilizados, o si lo preferimos haciendo fuerza bruta, resoluciones inversas, etc…
  
-##### - Hunter.io: 34€/mes, 408€/año (500 busquedas mensuales)
+##### Hunter.io
 
 Es un portal web que permite buscar los emails de personas que trabajan en una empresa con solo introducir su página web.
 
-##### - MAILSHUNT: 
+##### MAILSHUNT
 
 Esta extensión de navegador enumera todas las direcciones de correo electrónico de las personas que trabajan en una empresa en concreto.
 
-##### - MXTOOLBOX: $129/month
+##### MXTOOLBOX
 
 MxToolbox no es tan útil para correos electrónicos de dominios de correo electrónico conocidos como Gmail, pero si nuestro objetivo utiliza su propio servidor de intercambio de correo (lo que suelen hacer la gran mayoría de las grandes empresas), nos puede ayudar, ya que identificar la dirección IP de un servidor de intercambio de correo puede ser un buen punto de partida para nuestra investigación (podremos observar las direcciones IP compartidas, los nombres de los servidores, su arquitectura de red, etc).
 MxToolbox también ofrece un servicio de análisis de encabezados de correo electrónico.
 
-##### - Maltego: 999 EUR / año
+##### Maltego
 
 Maltego es un servicio que tiene el potencial de encontrar información sobre personas y empresas en Internet, permitiendo cruzar datos para obtener servidores de correo entre otras cosas.
 
-#### NMAP: Gratis
-
-Nmap es una herramienta que permite encontrar qué dispositivos se están ejecutando en la red, descubrir puertos y servicios abiertos y detectar vulnerabilidades.
-
-Nmap es indispensable para nuestra empresa ya que nos permitirá identificar servidores de correo, enumerar cuentas de correo, detectar cuentas de correo, etc...
-
-#### Wireshark: Gratis
+#### Wireshark
 
 Es una herramienta de análisis de tráfico de red que se utiliza para capturar y analizar paquetes de datos que se transmiten a través de una red. 
 
 Esta herramienta también nos resultará muy util ya que podremos para analizar todo el tráfico de la red de la empresa e identificar correos electrónicos sospechosos, recopilar evidencia de actividad y evaluar la seguridad de los servidores de correo.
 
-#### Network Miner: Gratis
+#### Network Miner
 
 Es similar a Wireshark.
 Es una herramienta de análisis de tráfico de red que puede ser utilizada para capturar y analizar paquetes de datos que se transmiten a través de una red. 
 
 Esta herramienta también nos resultará muy util ya que podremos para analizar todo el tráfico de la red de la empresa e identificar correos electrónicos sospechosos, recopilar evidencia de actividad y evaluar la seguridad de los servidores de correo.
 
-#### Nessus:  1 año - 4482,49 €
+#### Nessus
 
 Nessus es una herramienta de escaneo de vulnerabilidades desarrollada por Tenable Network Security. Es una de las herramientas de escaneo de vulnerabilidades más populares del mundo, y es utilizada por organizaciones y empresas de todos los tamaños para evaluar sus sistemas y redes en busca de vulnerabilidades conocidas.
 
@@ -1105,19 +1099,44 @@ Es una plataforma de análisis de datos en tiempo real que permite recopilar, al
 
 En nuestra empresa necesitamos de un SIEM que nos ayude a mejorar la eficiencia de nuestras auditorías y creemos que Splunk es la mejor opción ya que es bastante flexible y se paga por la cantidad de datos utilizados.
 
-### Herramientas para Pentesting de Redes
+#### Burp Suite
+Es una plataforma integral para pruebas de seguridad de aplicaciones web. Incluye herramientas como un proxy, escáner de seguridad, intrusión y varias otras herramientas. Durante una auditoría podría ayudarnos con el escaneo de vulnerabilidades, manipulación de tráfico web, pruebas de inyección, y análisis de seguridad de aplicaciones web.
+   
+#### OWASP ZAP (Zed Attack Proxy):
+ZAP es una herramienta de proxy interceptor de código abierto diseñada para pruebas de seguridad automatizadas y manuales en aplicaciones web. Nos podría servir para Identificación de vulnerabilidades web como XSS, SQL injection y otras amenazas comunes.
+   
+#### SQLMap 
+Esta herramienta automatizada nos será muy útil para detectar y explotar vulnerabilidades de inyección SQL en aplicaciones web. Especialmente útil en pruebas específicas de inyección SQL para evaluar la seguridad de bases de datos.
+   
+#### Nikto
+Otro escáner web para buscar vulnerabilidades y problemas de configuración comunes, podría utilizarse en caso de que fuera bien y tuvieramos que hacer alguna auditoría mas baja de precio. En principio nos ayuda con identificación de vulnerabilidades conocidas y problemas de configuración en servidores web.
+   
+#### DirBuster 
+DirBuster es una herramienta especializada en ciberseguridad diseñada para llevar a cabo la exploración automatizada de directorios en aplicaciones web. Su función principal es identificar posibles puntos de entrada, archivos ocultos o directorios que podrían ser vulnerables a ataques de fuerza bruta o que contengan información sensible. Esta herramienta nos será particularmente útil en este contexto de auditorías de pentesting, donde la identificación de posibles vectores de ataque es esencial.
+   
+#### Wfuzz
+Es una herramienta de fuzzing (inyección de datos de entrada aleatorios o semialeatorios en un programa o sistema con el objetivo de descubrir vulnerabilidades y errores) para pruebas de seguridad en aplicaciones web. Nos podría ayudar con la identificación de puntos débiles en parámetros y manejo de errores.
+   
+#### Skipfish
+Escaneo web automático caracterizado por su velocidad. Identificación rápida, reconocimiento y primer contacto de vulnerabilidades y problemas de seguridad.
+   
+#### BeEF (Browser Exploitation Framework)
+Es una herramienta de código abierto diseñada para aprovechar las vulnerabilidades en navegadores web. Su objetivo principal es demostrar las debilidades de seguridad en los navegadores y las posibles consecuencias de estas debilidades. Está principalmente centrada en el lado del cliente, concretamente en evaluar la resistencia de los navegadores a ataques maliciosos.
 
-#### NMAP: Gratis
+#### HTTrack 
+Es una herramienta de código abierto diseñada para descargar sitios web completos y crear copias locales de ellos. Esta utilidad es utilizada para realizar lo que comúnmente se conoce como "mirror" o espejo de un sitio web, permitiendo a los usuarios navegar por la versión descargada del sitio sin necesidad de una conexión a Internet. Podría ser útil para el reconocimiento de la estructura del sitio web y analizar la estructura.
+
+#### NMAP
 
 NMAP es una de las herramientas credas para administradores, auditores y profesionales de seguridad. Tiene muchas funcionalidades, entre ellas permite la ejecución de scripts personalizados que permiten la identifiaciones de informaciones específicas.
 
 Opera realizando un escaneo de objetivos que pueden ser redes y hosts, esntén abiertos a internet o no. También escanea puertas de servicios que estén abiertas, determina el tipo de servicio, versión y los sistemas operacionales. Con ella podemos hacer un barrido de la red y obtener respuestas de todos los dispositivos que estén conectados a la misma.
 
-#### NetCat: Gratis
+#### NetCat
 
 Conocido como nc, es una de las herramientas más antiguas. Fue creada para interactuar con puertas de servicios directamente a través de la entrega de una dirección IP, una puerta y un protocolo. Esta herramienta también puede transferir archivos y establecer sesiones de host a host.
 
-#### Kismet Wireless: Gratis
+#### Kismet Wireless
 
 Es un sistema de detección de intrusos, detector de redes inalámbricas y rastreador de contraseñas, funciona con otras tarjetas inalámbricas y admite el modo de monitoreo sin formato.
 
@@ -1125,48 +1144,50 @@ Es la mejor herramienta para probar redes inalámbricas y piratear LAN inalámbr
 
 Funciona principalmente con redes Wi-Fi(IEEE 802.11) y se le pueden ampliar sus funcionalidades mediante numerosos complementos. Funciona en sistemas Linux, Ubuntu y más.
 
-#### NetStumbler: Gratis
+#### NetStumbler
 
 Se utiliza para evitar wardriving, funciona en sistemas operativos Windows. Es capaz de detectar redes IEEE 802.11g, 802 y 802.11b. La versión más actualizada se llama MiniStumbler
 
-#### Aircrack-ng: Gratis
+#### Aircrack-ng
 
 Ofrece una variedad de herramientas de línes de comandos que verifican y evalúan la seguridad de la red Wi-Fi. Se dedica a actividades como ataque, monitoreo, prueba y descifrar contraseñas de redes inalámbricas WEP/WAP/WPA2.
 
 Su funcionamiento se basa en tomar los paquetes de la red, y analizarlos mediante contraseñas recuperadas.
 
-#### Wireshark: Gratis
+#### Wireshark
 
 Se utiliza para analizar paquetes de datos, también puede realizar inspecciones profundas de gran cantidad de protocolos establecidos. Podemos exportar los resultados del análisis a muchos formatos de archivo diferentes.
 
 Realiza capturas en vivo y análisis fuera de línea.
 
-#### Ettercap: Gratis
+#### Ettercap
 
 Es un sniffer/interceptor/logger para redes LAN con switchs, que soportan la disección activa y pasiva de muchos protocolos e incluye muchas características para el análisis de la red y el host anfitrión.
 
 Filtra contenido y puede rastrear conexiones en vivo.
 
-#### Angry IP Scanner: Gratis
+#### Angry IP Scanner
 
 Sirve para escanear direcciones IP y puertos. Puede usarse en internet o en LAN y es compatible con varios Sistemas Operativos. Permite realizar un rastreo y exportar los resultados en distintos formatos.
 
-#### TCPDump y WinDump: Gratis
+#### TCPDump y WinDump
 
 TCPDump es una herramienta diseñada para analizar el tráfico que circula por la red. Basada en línea de comandos y permite capturar y representar todo el tráfico que pasa por la red.
 
 La versión de Windows se llama WinDump y requiere la instalación previa de WinPCAP.
 
-### Herramientas para Pentesting de Software
-
 En este apartado incluimos un abanico de aplicaciones destinadas al uso del pentesting en el ámbito de la seguridad del software. Para ello hemos elegido cuidadosamente una serie de herramientas que nos facilitarán dicho trabajo:
 
-- **Nessus.** Herramienta de evaluación de vulnerabilidades en sistemas operativos. Esta herramienta se compone de dos módulos, siendo *Nessusd* y *Nessus Client*. El primero se encarga de realizar el escaneo, mientras que el segundo controla las exploraciones y muestra los resultados acerca de las vulnerabilidades encontradas.
+#### Nessus
+Herramienta de evaluación de vulnerabilidades en sistemas operativos. Esta herramienta se compone de dos módulos, siendo *Nessusd* y *Nessus Client*. El primero se encarga de realizar el escaneo, mientras que el segundo controla las exploraciones y muestra los resultados acerca de las vulnerabilidades encontradas.
+
 Este software es capaz de escanear puertos, así como los dispositivos conectados a una red, es capaz de detectar servicios, identificando los que son usados por las aplicaciones del sistema, identifica vulnerabilidades y finalmente, realiza un sondeo, asegurándose de no cometer falsos positivos. El precio oscila entre 500€ a 4482,49€ la versión más cara, aunque existe la posibilidad de solicitar una demo gratutita por 7 días.
 
-- **Metasploit.** Plataforma de pruebas de penetración y desarrollo de exploits ampliamente utilizada en al ámbito de seguridad informática. Esta herramienta permite el desarrollo y prueba de exploits, ofreciendo una amplia biblioteca, de modo que el pentester tan sólo tiene que elegir el que necesite en cada momento; también permite escanear y enumerar servicios en una red y recopilar información en sistemas objetivo. Metasploit incluye también una shell remota, permitiendo acceder a sistemas previamente comprometidos, ejecutando comandos de forma remota; ofrece un sistema de gestión de sesiones de explotación en una misma consola, y provee al pentester de un sistema de genración de informes. Esta herramienta es gratuita, pero existe una versión Pro por 14000€.
+#### Metasploit
+Plataforma de pruebas de penetración y desarrollo de exploits ampliamente utilizada en al ámbito de seguridad informática. Esta herramienta permite el desarrollo y prueba de exploits, ofreciendo una amplia biblioteca, de modo que el pentester tan sólo tiene que elegir el que necesite en cada momento; también permite escanear y enumerar servicios en una red y recopilar información en sistemas objetivo. Metasploit incluye también una shell remota, permitiendo acceder a sistemas previamente comprometidos, ejecutando comandos de forma remota; ofrece un sistema de gestión de sesiones de explotación en una misma consola, y provee al pentester de un sistema de genración de informes. Esta herramienta es gratuita, pero existe una versión Pro por 14000€.
 
-- **John the Ripper.** Software de crackeo de contraseñas muy útil en tests de penetración por su capacidad de poner a prueba la robustez de contraseñas frente a ataques de fuerza bruta, llegando a romper hashes MD5 y SHA-1, pudiendo detectar el tipo de hash utilizado. Esta herramienta es ampliamente utilizada y funciona tanto en Windows como en sistemas Linux. Existen tres versiones, siendo la gratuita; John the Ripper Pro, que cuesta x€ y finalmente tenemos John the Ripper Jumbo, costando x€.
+#### John the Ripper
+Software de crackeo de contraseñas muy útil en tests de penetración por su capacidad de poner a prueba la robustez de contraseñas frente a ataques de fuerza bruta, llegando a romper hashes MD5 y SHA-1, pudiendo detectar el tipo de hash utilizado. Esta herramienta es ampliamente utilizada y funciona tanto en Windows como en sistemas Linux. Existen tres versiones, siendo la gratuita; John the Ripper Pro, que cuesta x€ y finalmente tenemos John the Ripper Jumbo, costando x€.
 
 <br/>
 
