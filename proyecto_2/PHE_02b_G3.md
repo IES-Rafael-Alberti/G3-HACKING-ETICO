@@ -27,11 +27,13 @@
     - [Auditoría Externa o Perimetral](#3-auditoría-externa-o-perimetral)
     - [Auditoría IOT](#4-auditoria-iot)
     - [Auditoría de Seguridad de Software](#5-auditoría-de-seguridad-de-software)
+    - [Auditoría Web](#6-Auditoría-Web)
 - [Metodologías de Pentesting utilizadas](#metodologías-de-pentesting-utilizadas)
     - [Metodología para Auditorías de Correos Electrónicos](#1-metodología-para-auditorías-de-correos-electrónicos)
     - [Metodología para Auditorías de IOT](#2-metodología-para-auditorías-de-iot)
     - [Metodología OWISAM para Redes Inalámbricas](#3-metodología-owisam-para-redes-inalámbricas)
     - [Metodología PTES](#4-metodología-ptes)
+    - [Metodología OWASP Penetration Checklist](#5-Metodología-OWASP-Penetration-Checklist,-centrándonos-en-la-Web)
 - [Herramientas de Pentesting](#herramientas-de-pentesting)
 - [Conclusión](#conclusión)
 - [Bibliografía](#bibliografía)
@@ -861,6 +863,25 @@ Para enfocarnos en el entorno del software, respetando es esquema construido par
 
 - **Análisis de fallos a nivel de código.** Es necesario usar herramientas que evalúen de forma automática el código de diferentes aplicaciones de la empresa, con el objetivo de encontrar fallos de seguridad que puedan llevar a accesos no autorizados e incluso posibles vulnerabilidaes.
 
+### 6. Auditoría Web
+
+En la auditoría web ofrecemos una evaluación completa sobre la infraestructura web desde el cliente hasta servidor. 
+
+Esta auditoría se basa en la metodología de OWASP *Web Testing Security Guide* la cuál nos ofrece un enfoque muy guiado y organizado del test de penetración, además de contar con la guía disponible online para la consultar en caso de que se dude de los procedimientos y técnicas que se llevarán a cabo. 
+
+Por supuesto aunque la metodología está ahí, la evaluación la  llevaremos acabo con la mayor precisión posible.
+
+Baśandonos en la metodología OWASP, se testearán las siguientes áreas:
+
+- Configuración y gestión del despliegue
+- Testeo y pruebas en los inputs de la web
+- Testeo del manejo de sesiones
+- Procesos de autenticación
+- Pruebas de gestión de errores
+- Criptografía
+- Pruebas y revisión de la lógica de negocio
+- Pruebas en el lado cliente
+
 ## Metodologías de Pentesting utilizadas
 
 Las pruebas de pentesting son importantes en el ámbito de la seguridad informática, dado que poniendo a prueba los sistemas en los que realizan las pruebas, logran obtener resultados y, por ende, posibles soluciones o mitigaciones a fallos de seguridad y vulnerabilidades.
@@ -1031,6 +1052,38 @@ La metodología PTES proporciona una forma clara y estructurada de auditar la se
 7. **Fase de Reporte.** Es la última fase, y consiste en la elaboración de un informe que detallen las conclusiones de las pruebas de pentesting. En este documento se resumen los resultados obtenidos, se evalúan los riesgos identificados y se sugiere un plan para reducir o gestionar dichos riesgos.
 
 Finalmente, se elimina cualquier acceso y rastro dejado durante el pentesting, lo que devuelve el sistema a su estado original.
+
+### 5. Metodología OWASP Penetration Checklist, centrándonos en la Web
+
+OWASP es el acrónimo de *Open Web Security Project*, y consiste en una comunidad conformada por voluntarios y expertos en seguridad informática con la misión de mejorar la seguridad en aplicaciones web, proporcionando una gran cantidad de recursos, herramientas y guías, como la que vamos de hecho a usar, para contribuir al desarrollo y securización del software web.
+
+Esta  metodología se basa en una serie de pautas concretas, una *checklist*, muy bien definida y compartimentadas, que van guiando poco a poco al pentester en un escrutinio de los distintos aspectos técnicos más relevantes para la seguridad de una web.
+
+Es bastante clara, y se desarrolla cumpliendo las siguientes pautas:
+
+- El primer paso que debemos hacer llevar a cabo es recopilar toda la información posible de la infraestructura y aplicaciones involucradas. Es absolutamente crucial realizar esta etapa adecuadamente ya que es sobre la que cimentaremos el resto del proceso. Debemos comprender la tecnología involucrada y cómo funciona la estructura que estamos analizando.
+
+- El pentesting realizado debe de evaluar todas las fases que se enumerarán en la sección siguiente a estas pautas
+
+- El pentester debe tratar de explotar todas y cada una de las vulnerabilidades descubiertas, incluso aunque falle, para obtener una mejor comprensión de la misma.
+
+- Toda la información obtenida a través de las vulnerabilidades, por ejemplo los errores de programación, código fuente que podamos obtener o cualquier otra información interna debe ser utilizada para revaluar la comprensión global de como funciona la aplicación
+
+- Si durante el test una vulnerabilidad que provoque un compromiso de la web o revele información sensible, el cliente debe ser informado inmediatamente de la situación y los riesgos asociados a la vulnerabilidad.
+
+Durante el test se evaluarán las siguientes áreas, buscando cumplir unos objetivos concretos en cada una de ellas:
+
+- Control del acceso de la web (Autorización, id de sesiones..)
+- Autenticación general (Bypass general de la autenticación, evaluacion de calidad de contraseñas, gestión de la sesión con tokens...)
+- Evaluación de la configuración (Componentes del servidor web, copias de seguridad, parches de seguridad y vulnerabilidades, interfaces de administrador...)
+- Control de errores 
+- Protección de los datos (Como se transportan, versión de SSL, datos sensibles en caché...)
+- Validación de inputs (Testeo de múltiples tipos de inyección como SQL, XSS, LDAP...)
+- *Buffer Overflow* (Testeo de posibles desbordamientos de buffer)
+
+A continuación un diagrama del flujo de trabajo de un pentester usando esta metodología:
+
+![OWASP-Esquema](img/OWASP.png)
 
 ## Herramientas de Pentesting
 
@@ -1339,6 +1392,7 @@ A fin de aportar claridad y orden, se ha dividido la bibliografía por áreas de
 - https://security.packt.com/json-web-token-attack/
 - https://attack.mitre.org/
 - https://www.dvvs.co.uk/third-party-javascript-attack/
+- https://owasp.org/www-project-web-security-testing-guide/assets/archive/OWASP_Web_Application_Penetration_Checklist_v1_1.pdf
 
 ### Bibliografía para la investigación de IoT
 
