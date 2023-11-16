@@ -1,6 +1,6 @@
 # Blackbird
 
-![portada](Portada.png)
+![portada](img/portadabb.png)
 
 ## Índice
 
@@ -86,4 +86,4 @@ Esto nos permite ahorrar tiempo buscando posibles cuentas de usuario ya que nos 
 - [https://github.com/p1ngul1n0/blackbird](https://github.com/p1ngul1n0/blackbird)
 - [https://derechodelared.com/blackbird-cuentas-nombre-usuario/](https://derechodelared.com/blackbird-cuentas-nombre-usuario/)
 
-![logo](logo.png)
+![logo](img/logobb.png)
