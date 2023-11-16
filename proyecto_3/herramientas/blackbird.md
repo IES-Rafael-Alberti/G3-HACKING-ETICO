@@ -2,7 +2,12 @@
 
 ![portada](img/portadabb.png)
 
-**Autor:** Guerrero Merlo, Sergio
+**Autores:**
+
+- Guerrero Merlo, Sergio
+- Ladrón de Guevara García, Raúl
+- Romero Oliva, Christian
+- Cumbrera López, Juan Manuel
 
 ## Índice
 
@@ -81,7 +86,7 @@ En general esta es la única diferencia ya que es la misma interfaz gráfica y a
 
 Como hemos podido ver, esta herramienta es bastante útil. Por ejemplo, si conocemos el nombre de usuario de la persona a la que estamos haciendo OSINT nos da la posibilidad de encontrar posibles cuentas en distintas páginas webs que pueden ser de la misma persona.
 
-Esto nos permite ahorrar tiempo buscando posibles cuentas de usuario ya que nos da directamente los enlaces y los metadatos a esas cuentas de usuario sin tener que estar horas buscando todas estas cuentas de usuario en internet.
+Esto nos permite ahorrar tiempo buscando posibles cuentas de usuario ya que nos da directamente los enlaces y los metadatos a esas cuentas sin tener que estar horas buscando a través de internet.
 
 ## Bibliografía
 
