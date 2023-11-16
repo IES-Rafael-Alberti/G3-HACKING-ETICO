@@ -2,7 +2,7 @@
 
 ![portada](img/portadabb.png)
 
-**Autores:**
+**Integrantes**
 
 - Guerrero Merlo, Sergio
 - Ladrón de Guevara García, Raúl
