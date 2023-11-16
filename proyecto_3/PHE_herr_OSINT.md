@@ -2,7 +2,7 @@
 
 </br>
 
-![portada](img/portadabb.png)
+![portada](/herramientas/img/portadabb.png)
 
 **Integrantes**
 
