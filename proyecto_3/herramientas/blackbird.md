@@ -2,6 +2,8 @@
 
 ![portada](img/portadabb.png)
 
+**Autor:** Guerrero Merlo, Sergio
+
 ## Índice
 
 1. [Introducción](#introducción)
