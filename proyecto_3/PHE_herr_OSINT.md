@@ -14,81 +14,107 @@
 ## Índice
 
 1. [Introducción](#introducción)
-2. [Para que sirve](#para-que-sirve)
-3. [Intalación](#instalación)
+2. [Usos posibles](#para-que-sirve)
+3. [Instalación](#instalación)
 4. [Funcionamiento](#funcionamiento)
 5. [Conclusión](#conclusión)
 6. [Bibliografía](#bibliografía)
 
 ## Introducción
 
-Se ha investigado numerosas herramientas OSINT de tipo navegador web o aplicación, pero la mayoría de estas herramientas pedían un registro previo a su página web o un pago para poder ver los resultados u obtener capacidades menos limitadas.
+En esta primera parte del proyecto se han investigado numerosas herramientas OSINT de varios tipos, ya sean aplicaciones web, aplicación instalable o línea de comandos (*CLI*). 
 
-Nos hemos decidido utilizar esta herramienta ya que no solo no tiene el problema comentado anteriomente sino que, es una herramienta gratuita e instalable.
+Al encontrar que muchas de ellas solicitaban trámites como registro previo o diretamente opciones de pago para poder usarlas, decidimos limitar la lista de nuestras herramientas seleccionadas a aquellas con una relación mayor de facilidad de uso frente a calidad de información. De la lista hemos descartado algunas que consideramos bastante buenas como ***Hunter.io***, ***Breachdirectory.org***, ***Intelligence_X*** o algunas más con un enfoque menos general como ***jasperan/WhatsappOSINT***.
+
+Finalmente nos hemos decidido por BlackBird debido a que es una herramienta gratuita, instalable, sin trámites y que ofrece una información relativamente útil con sencillez.
 
 ## Para que sirve
 
-Blackbird es una herramienta OSINT que sirve para buscar cuentas por nombres de usuario en más de 500 sitios web. Cada vez que se genera una busqueda, utiliza User-Agent aleatorio de una lista de más de 1000 para evitar bloqueos.
+Blackbird es una herramienta OSINT que podemos usar para buscar posibles cuentas en múltiples plataformas a través de un nombre de usuario en más de 500 sitios web. Cada vez que se genera una busqueda, ***Blackbird*** utiliza un *user-agent* aleatorio de una lista de más de 1000 para evitar ser bloqueada.
 
-Esta herramienta nos permite además la posibilidad de obtener metadatos siempre cuando sea posible como por ejemplo, nombre, biogradía, ubicación y foto de perfil.
+Esta herramienta nos permite además la posibilidad de obtener metadatos siempre que sea posible como por ejemplo: Nombre, Biografía, Ubicación y fotos de perfil.
 
-Blackbird envía solicitudes HTTP asíncronas lo que permite mayor velocidad en estas peticiones.
+Blackbird utiliza solicitudes HTTP de manera asíncrona, lo que permite una mayor velocidad en estas peticiones.
 
 ## Instalación
 
-Esta herramienta se debe instalar clonado primero el repositorio de github donde se encuentra la herramienta. Se recomienda hacer apt update y apt upgrade antes de instalar la herramienta.
+Para instalar esta herramienta tan solo debemos clonar el repositorio de github donde se encuentra ubicada y seguir los siguientes pasos:
 
-```git clone https://github.com/p1ngul1n0/blackbird```
+```bash
+sudo apt-get update
+sudo apt upgrade
+
+git clone https://github.com/p1ngul1n0/blackbird
+```
 
 Una vez que se ha clonado el repositorio nos movemos al mismo desde la terminal de Kali Linux.
 
-```cd blackbird```
+```bash
+cd blackbird
+```
 
-Al clonar el repositorio, tendremos un fichero txt que nos instalará la herramienta con pip.
+Blackbird funciona con python, por lo que necesitaremos instalar las dependencias con el siguiente comando:
 
-```pip install -r requeriments.txt```
+```bash
+pip install -r requeriments.txt
+```
 
 ## Funcionamiento
 
-A día de hoy hay tres formas de utilizar esta herramienta. La primera de todas es utilizando la terminal de por ejemplo Kali Linux. 
+Existen tres formas de utilizar esta herramienta. 
 
-Si queremos ver la lista de sitios que son compatibles con la herramienta.
+La primera de ellas es mediante la terminal (CLI), para usarla mediante esta vía entramos al directorio de la herramienta con:
 
-```python blackbird.py --list-sites```
+```bash
+cd blackbird
+```
 
-Por ejemplo con esta herramienta podemos utilizar el siguiente comando para buscar un nombre de usuario.
+Y desde aquí ya podremos empezar a usar la herramienta. Con tan solo el siguiente comando podremos **buscar usuario y ver en que redes posee  una posible cuenta**:
 
-```python blackbird.py -u NombreUsuario```
+```bash
+python blackbird.py -u NombreUsuario
+```
 
-Con esta línea de comando nos genera un fichero con el nombre del usuario y la extensión .json. Para leer este tipo de ficheros por terminal podemos usar el siguiente comando.
+> Es posible que en lugar de `python` tengamos que usar `python3` en algunos casos
 
-```Python blackbird.py -f NombreUsuario.json```
+La herramienta nos mostrará solo las cuentas de usuario que ha encontrado. Sin embargo, es posible que existan cuentas que la herramienta sea incapaz de encontrar por diversos motivos, por lo que sería interesante ver todas las búsquedas que se han realizado durante la ejecución. Podríamos utilizar el siguiente comando para ver todos los resultados sean cuales sean:
 
-Esto nos mostrará solo las cuentas de usuario que ha encontrado pero no siempre estas cuentas que no ha encontrado no significa que no existan, por lo tanto podemos utilizar el siguiente comando para ver todos los resultados.
-
-```python blackbird.py -u crash --show-all```
+```bash
+python blackbird.py -u crash --show-all
+```
 
 También podemos exportar el resultado a un fichero con extensión .csv de la siguiente manera.
 
-```python blackbird.py -u crash --csv```
+```bash
+python blackbird.py -u crash --csv
+```
 
-La segunda forma de utilizar esta herramienta es levantando nuestro propio servidor web, esta herramienta nos permite levantarlo en local. A este servidor web nos podremos conectar por navegador utilizando la dirección http://127.0.0.1:9797.
+Podemos también ver la **lista de sitios que son compatibles** con la herramienta:
 
-```python blackbird.py --web```
+```bash
+python blackbird.py --list-sites
+```
+
+La **segunda forma** de utilizar esta herramienta es levantarla en un servidor web local. Normalmente se levanta en el puerto 9797 (http://127.0.0.1:9797). 
+
+```bash
+python blackbird.py --web
+```
 
 Al utilizar esta segunda posibilidad, nos seguirá guardando en la carpeta results del repositorio que hemos clonado, los ficheros con el nombre del usuario y acabado en .json.
 
-Además, esta interfaz gráfica en web nos permite exportarlo en un fichero pdf.
+Además, mediante la interfaz web tendremos una opción para exportar los resulados a un archivo pdf.
 
-La tercera y más reciente es utilizando la página web que el propio desarrollador de la misma ha creado. La diferencia entre esta página web y levantar nuestro propio servidor web en local, es que los nombres de usuario creados, no guardan el fichero con su nombre y de extensión .json en nuestra máquina. 
-
-En general esta es la única diferencia ya que es la misma interfaz gráfica y al igual que en nuestra versión en local como se ha mencionado anteriormente, nos permite exportarlo a un fichero pdf.
+La tercera forma y última es utilizando la web que el propio desarrollador de la misma ha publicado https://blackbird-osint.herokuapp.com/.
 
 ## Conclusión
 
-Como hemos podido ver, esta herramienta es bastante útil. Por ejemplo, si conocemos el nombre de usuario de la persona a la que estamos haciendo OSINT nos da la posibilidad de encontrar posibles cuentas en distintas páginas webs que pueden ser de la misma persona.
+En general Blackbird nos va a permitir agilizar el proceso de búsqueda y amplicar nuestra superficie de ataque rápidamente.
 
-Esto nos permite ahorrar tiempo buscando posibles cuentas de usuario ya que nos da directamente los enlaces y los metadatos a esas cuentas sin tener que estar horas buscando a través de internet.
+Por supuesto, por sí sola su utilidad es algo reducida, pero en combinación con otras herramientas puede resultar de bastante ayuda. Usada en conjunto con buscadores de bases de datos filtradas o con información personal ya obtenida o conocida previamente podríamos fácilmente cruzar datos para descubrir posibles brechas de seguridad. 
+
+Bien sabemos que no todo el mundo mantiene íntegra el cien por cien de la superficie digital de su perfil.
+
 
 ## Bibliografía
 
