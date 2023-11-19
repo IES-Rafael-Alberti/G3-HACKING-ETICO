@@ -2,7 +2,7 @@
 
 ## Información del dominio
 
-Lo primero que he realizado es buscar información sobre el dominio utilizando las herramientas whois.domaintools.com , whois y who.is:
+Lo primero que he hecho a sido buscar información sobre el dominio utilizando las herramientas whois.domaintools.com , whois y who.is:
 
 Lo más relevante que he encontrado ha sido:
 
