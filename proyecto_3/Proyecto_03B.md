@@ -22,24 +22,32 @@ Por hacer......
 
 ### Empresa Pantheon
 
-La empresa Pantheon se dedica a crear, alojar y administrar páginas web a través de las plataformas WordPress, Drupal y el framework de javascript NextJS. A través de su cuenta de Linkedin hemos descubierto la ubicación de su sede principal la cual es "717 California St. San Francisco, California 94108, US", que cuenta con una plantilla de 1000 empleados y que fue fundada en 2010. También hemos descubierto los dominios anteriores a pantheon.io, ambos dominios estaban a nombre de David Timothy Strauss:
+La actividad principal de nuestra empresa consiste en alojar y administrar páginas web a través de las plataformas WordPress, Drupal y el framework de Javascript NextJS. 
+
+A través de su cuenta de Linkedin hemos descubierto la dirección de su sede principal: 
+
+"*717 California St. San Francisco, California 94108, US*"
+
+Cuenta con una plantilla de 1000 empleados y fue fundada en 2010. También hemos descubierto los dominios anteriores a pantheon.io, ambos estaban a nombre de David Timothy Strauss:
 
 - pantheonsite.io
-- pantheon.io
+- pantheon.io 
 
-Link Linkedin: https://www.linkedin.com/company/getpantheon/
+Link LinkedIn: https://www.linkedin.com/company/getpantheon/
 
-A través de las herramientas **whois.domaintools.com , whois y who.is** hemos podido descubrir la dirección IP pública del dominio de la empresa que es 23.185.0.253. 
+A través de las herramientas **whois.domaintools.com , whois y who.is** hemos podido descubrir la dirección IP pública del dominio de la empresa es **23.185.0.253**. 
 
 Una vez encontrada esta dirección IP pública hemos utilizado la herramienta **IP2LOCATION** para encontrar más información sobre esta dirección. Como podemos ver en la siguiente imagen hemos podido encontrar el ISP y el ASN de la empresa:
 
 ![Alt text](imagenes/1.png)
 
+Para qué se pueden utilizar el ISP y el ASN?
+
 ### Servidores DNS
 
-Una vez recolectada toda la información básica sobre la empresa, hemos utilizado las herramientas dig, nslookup, DNSRECON, TheHarvester y DNSDumpster para recolectar toda la información posible sobre los servidores DNS del dominio pantheon.io. La información encontrada la hemos dividido por registros con sus respectivas direcciones IP:
+Una vez recolectada toda la información básica sobre la empresa, hemos utilizado las herramientas **dig**, **nslookup**, **DNSRECON**, **TheHarvester** y **DNSDumpster** para recolectar toda la información posible sobre los servidores DNS del dominio *pantheon.io*. La información encontrada la hemos dividido por registros con sus respectivas direcciones IP:
 
-- Servidores DNS:
+- Servidores DNS (Nameservers):
 
 ```
 ns-148.awsdns-18.com -> 205.251.192.148
@@ -103,13 +111,13 @@ TXT _dmarc.pantheon.io v=DMARC1; p=none; pct=100; sp=none; rua=mailto:3523e61d@i
 
 - Registros A (Direcciones IP de los dominios):
 
-Como la cantidad de registros obtenidos es demasiado grande hemos decidido poner una captura de una parte de los registros. Si se quieren consultar todos los registros estan en el fichero: https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva_Ra%C3%BAl/Datos/SUBDOMINIOS/pantheon.io-202311171820.xlsx
+Como la cantidad de registros obtenidos es demasiado grande hemos decidido poner una captura de una parte de los registros. Si se quieren consultar todos los registros estan en [este fichero de aquí](https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva_Ra%C3%BAl/Datos/SUBDOMINIOS/pantheon.io-202311171820.xlsx).
 
 ![Alt text](imagenes/3.png)
 
 ### Subdominios
 
-Con la ayuda de las herramienta sublist3r hemos podido detectar un total de 147 subdominios, especificamente utilizando el comando "```python sublist3r.py -v -d pantheon.io -t 3```" los cuales son:
+Con la ayuda de las herramienta sublist3r hemos podido detectar un total de 147 subdominios, especificamente utilizando el comando ```python sublist3r.py -v -d pantheon.io -t 3``` <--explicar que hace cada parámetro --> los cuales son:
 
 ```
 www.pantheon.io
@@ -261,11 +269,11 @@ test-vinyl-institute.pantheon.io
 varnishcheck.pantheon.io
 ```
 
-Con la herramienta **amass** hemos completado la información obtenida sobre los dominios, pero al ser tan grande el fichero hemos decido poner un enlace a él: https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva%20Juan%20Manuel/results.xlsx
+Con la herramienta **amass** hemos completado la información obtenida sobre los dominios, pero al ser tan grande el adjuntamos [el siguiente fichero con la información](https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva%20Juan%20Manuel/results.xlsx)
 
 ### Robots y Sitemap
 
-Para recolectar esta información no se ha utilizado ninguna herramienta en concreto simplemente se ha extraido la información del navegador:
+Para recolectar esta información hemos utilizado simplemente nuestro navegador como herramienta para extraer los datos:
 
 - El archivo **robots.txt** indica a los rastreadores de los buscadores a qué URLs de tu sitio pueden acceder.
 
@@ -325,7 +333,7 @@ Disallow: /index.php/*/media/oembed
 - **Sitemap.xml** es el archivo o una url que contiene todas y cada una de las páginas de una web.
 
 
-Es demasiado grande para incluirlo, el fichero esta en https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva_Ra%C3%BAl/Datos/sitemap.pdf
+El podemos encontrarlo [haciendo click aquí](https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva_Ra%C3%BAl/Datos/sitemap.pdf). 
 
 ### Certificados
 
@@ -335,45 +343,37 @@ Con la ayuda de la herramienta **crt.sh** hemos adquirido una gran cantidad de c
 
 ## Tecnologías que usa el dominio
 
-Para descubrir las tecnologías que usa la empresa hemos utilizado las herramientas **Wappalizer** y **Whatweb**. Las tecnologías que hemos descubierto son las siguientes:
+Para descubrir las tecnologías que usa la empresa hemos utilizado las herramientas **Wappalizer** y **WhatWeb**.
 
-- **Gestor de Contenido:** Drupal 9 Analítica: VWO
+Las tecnologías que hemos descubierto son las siguientes:
 
-- **Seguridad:** HSTS reCAPTCHA
+| Categoría               | Tecnología y Herramientas                          |
+|-------------------------|---------------------------------------------------|
+| Gestor de Contenido      | Drupal 9                                           |
+| Analytics               | VWO                                               |
+| Seguridad               | HSTS, reCAPTCHA                                    |
+| Tipografía              | Google Font API                                   |
+| Miscelánea              | Webpack, Open Graph, Module Federation             |
+| Servidor Web            | Nginx 1.17.8                                       |
+| Herramienta de Cache     | Varnish 1.1                                        |
+| Lenguaje de programación | PHP                                               |
+| CDN                     | Fastly                                            |
+| Base de Datos           | MariaDB                                           |
+| Tag Manager             | Google Tag Manager                                |
+| Librerías JavaScript     | jQuery UI 1.13.2, jQuery 3.6.3                     |
+| PaaS                    | Pantheon                                          |
+| Proxy Reverso           | Nginx 1.17.8                                       |
+| Cookie Compliance       | OneTrust                                          |
+| A/B Testing             | VWO                                               |
+| RUM (Real User Monitoring)| New Relic                                        |
+| Performance             | Priority Hints                                    |
 
-- **Tipografía:** Google Font API
-
-- **Miscelánea:** Webpack Open Graph Module Federation
-
-- **Servidor Web:** Nginx 1.17.8
-
-- **Herramienta de Cache:** Varnish 1.1
-
-- **Lenguaje de programación:** PHP
-
-- **CDN:** Fastly
-
-- **Base de Datos:** MariaDB 
-  
-- **Tag Manager:** Google Tag Manager
-
-- **Librerías JavaScript:** jQuery UI 1.13.2 jQuery 3.6.3
-
-- **PaaS:** Pantheon Proxy reverso: Nginx 1.17.8
-
-- **Cookie compliance:** OneTrust
-
-- **A/B testing:** VWO
-
-- **RUM:** New Relic
-
-- **Performance:** Priority Hints
 
 ## Información sobre los empleados de la empresa
 
 Toda la información de los empleados ha sido recolectada haciendo búquedas con dorks, con linkedin, hunter.io y truecaller:
 
-### Información CEO/co-fundador
+### CEO / Co-fundador
 
 **Nombre:** Zachary Rosen </br>
 **Localización:** San Francisco, California, Estados Unidos
@@ -387,7 +387,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 ---
 
-### Información CTO/Co-fundador
+### CTO / Co-fundador
 
 **Nombre:** David Timothy Strauss </br>
 **Localización:** San Francisco, California, Estados Unidos
@@ -405,7 +405,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 ---
 
-### Información Co-fundador y director de estrategia
+### Co-fundador y director de estrategia
 
 **Nombre:** Josh Koenig </br>
 **Localización:** San Francisco, California, Estados Unidos
