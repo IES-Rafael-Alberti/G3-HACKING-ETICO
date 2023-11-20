@@ -1,6 +1,4 @@
-## Información encontrada:
-
-## Empresa Pantheon
+## Pantheon
 
 **Ubicación:** 717 California St. San Francisco, California 94108, US
 
