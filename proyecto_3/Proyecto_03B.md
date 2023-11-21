@@ -17,14 +17,14 @@
 ## Índice
 
 1. [Introducción](#introducción)
-2. [Información recopilada](#información-recopilada)
+2. [Información recopilada](#información-recopilada)</br>
     2.1 [Empresa Pantheon](#empresa-pantehon) </br>
     2.2 [Servidores DNS](#servidores-dns) </br>
     2.3 [Subdominios](#subdominios) </br>
     2.4 [Robots y Sitemaps](#robots-y-sitemaps) </br>
     2.5 [Certificados](#certificados) </br>
 3. [Tecnologías que usa el dominio](#tecnologías-que-usa-el-dominio)
-4. [Información sobre los empleados de la empresa](#información-sobre-los-empleados-de-la-empresa)
+4. [Información sobre los empleados de la empresa](#información-sobre-los-empleados-de-la-empresa)</br>
     4.1 [CEO / Co-fundador](#ceo-/-co-fundador) </br>
     4.2 [CTO / Co-fundador](#cto-/-co-fundador) </br>
     4.3 [Co-fundador y director de estrategia](#co-fundador-y-director-de-estrategia) </br>
