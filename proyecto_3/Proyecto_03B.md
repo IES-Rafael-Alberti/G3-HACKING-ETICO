@@ -698,10 +698,10 @@ Desarrollador freelance especialista en wordpress el cual según su perfil de Li
 
 En este informe se ha conseguido recopilar una buena cantidad de información acerca de nuestra empresa objetivo, registrada en la plataforma de seguridad colaborativa [Bugcrowd](https://bugcrowd.com/pantheon) por supuesto para su análisis.
 
-Si bien es cierto que la cantidad de información recopilada no es baja, lo más importante que consideramos que debemos hacer a partir de toda esta información es realizar un escrutinio de estos datos para quedarnos con los que verdaderamente puedan sernos de gran utilidad.
+Si bien es cierto que la cantidad de información recopilada no es baja, es importante mencionar que es posible que su calidad no sea óptima en su totalidad, por lo que lo más importante que consideramos que debemos hacer a partir de toda esta información es **realizar un escrutinio de estos datos** para quedarnos con los que verdaderamente puedan sernos de mayor utilidad en la siguiente fase activa de nuestra investigación.
 
 Principalmente prestamos atención a las **tecnologías que utiliza la empresa** y sus versiones, que nos otorgan información valiosa a la hora de buscar posibles vulnerabilidades de esas tecnologías y versiones concretas en bases de datos de ciberseguridad como ExploitDB, Google Hacking DB o NVD. 
 
 Por supuesto para un escaneo activo es muy importante también utilizar todos los dominios y subdominios obtenidos, por los que no los pasamos por alto, pero debemos estar muy pendientes de las condiciones que la empresa ha publicado en su anuncio de *Bugcrowd*. 
 
-En conclusión, hemos podido aprender mediante la realización de este informe que la cantidad de información disponible en línea es realmente colosal e incluso de relativo fácil acceso para una persona con conocimientos básicos de tecnología, además de la volatilidad y fragilidad que algunas herramientas de OSINT pueden presentar.
+En conclusión, hemos podido aprender mediante la realización de este informe que **la cantidad de información disponible en línea es realmente colosal e incluso de relativo fácil acceso** para una persona con conocimientos básicos de tecnología, además de la **volatilidad y fragilidad** que algunas herramientas de OSINT pueden presentar.
