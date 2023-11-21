@@ -14,9 +14,16 @@
 
 - Sergio Guerrero Merlo
 
+## Índice
+
+1. [Introducción](#introducción)
+2. [Información recopilada](#información-recopilada)
+  - [Empresa Pantheon](#empresa-pantheon)
+  - [Servidores DNS]
+
 ## Introducción
 
-Por hacer......
+
 
 ## Información recopilada
 
@@ -372,7 +379,7 @@ Las tecnologías que hemos descubierto son las siguientes:
 
 ## Información sobre los empleados de la empresa
 
-Toda la información de los empleados ha sido recolectada haciendo búquedas con dorks, con linkedin, hunter.io y truecaller:
+Toda la información de los empleados ha sido recolectada haciendo búquedas con dorks, con linkedin, hunter.io, truecaller y con la extensión Clearbit Connect:
 
 ### CEO / Co-fundador
 
@@ -395,8 +402,10 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 - Linkedin account: https://www.linkedin.com/in/davidstrauss
 - Cuenta de twitter: https://twitter.com/davidstrauss
+- Cuenta de Instagram: https://www.instagram.com/warpforge/
+- Github: https://github.com/davidstrauss
 
-**Educación:** The University of Texas Austin
+**Educación:** The University of Texas Austin (2003 - 2007)
 
 **E-Mail Empresarial:** david@pantheon.io
 
@@ -415,7 +424,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 - Blog: https://www.outlandishjosh.com/
 - Twitter: https://twitter.com/outlandishjosh
 
-**Educación:** New York University
+**Educación:** New York University (1997 - 2001)
 
 **E-Mail Empresarial:** josh@pantheon.io
 
@@ -430,7 +439,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 - Linkedin account: https://www.linkedin.com/in/john-romano18/
 
-**Educación:** Northeastern University
+**Educación:** Northeastern University (2006 - 2011)
 
 **E-Mail Empresarial:** john.romano@pantheon.io
 
@@ -443,6 +452,12 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 - Linkedin account: https://www.linkedin.com/in/christymarble/
 
+**Educación:** 
+
+- Kellogg Executive Education (2018 - 2018) 
+- UCLA Anderson School of Management (1995 - 1997)
+- Pepperdine University (1985 - 1989)
+
 **E-Mail Empresarial:** christy.marble@pantheon.io
 
 ---
@@ -454,7 +469,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 - Linkedin account: https://www.linkedin.com/in/steven-juanes-jr/
 
-**Educación:** San Jose State University
+**Educación:** San Jose State University (2006 - 2012)
 
 **E-Mail Empresarial:** steven@pantheon.io
 
@@ -481,7 +496,10 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 - Linkedin account: https://www.linkedin.com/in/brownmeredith/
 - Twitter account: https://twitter.com/meredithbrownsf
 
-**Educación:** University of Pennsylvania
+**Educación:** 
+
+- University of Pennsylvania
+- Tufts University
 
 **E-mail Empresarial:** meredith.brown@pantheon.io
 
@@ -495,7 +513,10 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 - Linkedin account: https://www.linkedin.com/in/johngardiner3/
 - Twitter account: https://twitter.com/JohnGardiner1
 
-**Educación:** The University of Chicago Booth School of Business
+**Educación:** 
+
+- The University of Chicago Booth School of Business (2003 - 2003)
+- University of Florida (1990 - 1992)
 
 ---
 
@@ -506,7 +527,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 - Linkedin account: https://www.linkedin.com/in/atoosa/
 
-**Educación:** San Francisco State University
+**Educación:** San Francisco State University (2009 - 2014)
 
 **E-mail Empresarial:** atoosa@pantheon.io
 
@@ -517,10 +538,13 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 **Nombre:** Amanda Klimek </br>
 **Localización:** San Francisco, California, Estados Unidos
 
-- Linkedin account: https://www.linkedin.com/in/amanda-klimek-2769b71b/overlay/contact-info/
+- Linkedin account: https://www.linkedin.com/in/amanda-klimek-2769b71b/
 - Web personal: amandaklimek.com
 
-**Educación:** San Francisco Art Institute
+**Educación:** 
+
+- San Francisco Art Institute (2010 - 2012)
+- Pratt Institute (2003 - 2007)
 
 **E-mail Empresarial:** amanda@pantheon.io
 
@@ -533,7 +557,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 - Linkedin account: https://www.linkedin.com/in/sara-drohan/
 
-  **Educación:** University of South Carolina
+  **Educación:** University of South Carolina (2008 - 2012)
 
 - Email empresarial: sara.drohan@pantheon.io
   
@@ -546,7 +570,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 - Linkedin Account: https://www.linkedin.com/in/greg-anderson-5405a797/
 
-  **Educación:** University of California, Santa Cruz
+  **Educación:** University of California, Santa Cruz (1986 - 1990)
 
 - Email empresarial: greg@pantheon.io
 
@@ -559,7 +583,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 - Linkedin Account: https://www.linkedin.com/in/contactbrianperry/
 
-  **Educación:** Marist College
+  **Educación:** Marist College (1998 - 2002)
 
 - Email empresarial: brian.perry@pantheon.io
 
