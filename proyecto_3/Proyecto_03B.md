@@ -41,11 +41,9 @@
     4.15 [Staff Engineer](#staff-engineer)</br>
     4.16 [Más correos eléctronicos de la empresa](#más-correos-eléctronicos-de-la-empresa)
     
-    
-
 ## Introducción
 
-
+En este documento explicamos que herramientas se han utilizado para ejecutar una acción de OSINT pasivo sobre la empresa Pantheon seleccionada anteriormente. Además de explicar que herramientas se han utilizado, detallamos específicamente la información encontrada sobre la empresa, sus dominios, subdominios y empleados gracias a estas herramientas. 
 
 ## Información recopilada
 
