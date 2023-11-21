@@ -48,11 +48,11 @@
     
 ## Introducción
 
-En este documento se agrupa toda la información que hemos recabado en nuestro proceso de investigación pasiva acerca de la empresa *Pantheon Systems, Inc* con metodologías y herramientas de OSINT (*Open Source INTelligence*).
+En este documento se agrupa toda la información que hemos recabado en nuestro proceso de investigación pasiva acerca de la empresa *Pantheon Systems, Inc* con **metodologías y herramientas de OSINT** (*Open Source INTelligence*).
 
 Se mencionan y explican brevemente las herramientas que hemos utilizado para recabar la información, y se intentan detallar los resultados que hemos obtenidos con ellas. 
 
-Se ha procurado dividir esta información de manera que es presentada antes aquella perteneciente a las capas más superficiales, como los dominios y servidores DNS de la empresa, hasta llegar a capas más profundas como información personal de algunos de los empleados, pasando por las tecnologías en las que los servicios de la empresa están desarrollados.
+Se ha procurado dividir esta información de manera que **es presentada antes aquella perteneciente a las capas más superficiales**, como los dominios y servidores DNS de la empresa, hasta llegar a **capas más profundas como información personal de algunos de los empleados**, pasando por las tecnologías en las que los servicios de la empresa están desarrollados.
 
 A continuación podremos encontrar los datos que nuestro grupo ha podido recopilar acerca de nuestra empresa objetivo.
 
