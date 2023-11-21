@@ -18,7 +18,7 @@
 
 1. [Introducción](#introducción)
 2. [Información recopilada](#información-recopilada)</br>
-    2.1 [Empresa Pantheon](#empresa-pantheon) </br>
+    2.1 [Descripción general de Pantheon Systems, Inc](#descripción-general-de-pantheon-systems-inc) </br>
     2.2 [Servidores DNS](#servidores-dns) </br>
     2.3 [Subdominios](#subdominios) </br>
     2.4 [Robots y Sitemap](#robots-y-sitemap) </br>
@@ -39,15 +39,27 @@
     4.13 [Enterprise Account Executive at Pantheon Platform](#enterprise-account-executive-at-pantheon-platform) </br>
     4.14 [Engineering Manage](#engineering-manage) </br>
     4.15 [Staff Engineer](#staff-engineer)</br>
-    4.16 [Más correos eléctronicos de la empresa](#más-correos-eléctronicos-de-la-empresa)
+    4.16 [Sales Development](#sales-development)</br>
+    4.17 [Freelance Web Developer](#freelance-web-developer)</br>
+    4.18 [Desconocido](#desconocido)</br>
+    4.19 [Chief Revenue Officer](#chief-revenue-officer)</br>
+    4.20 [Más correos eléctronicos de la empresa](#más-correos-eléctronicos-de-la-empresa)
+5. [Conclusión](#conclusión)
     
 ## Introducción
 
-En este documento explicamos que herramientas se han utilizado para ejecutar una acción de OSINT pasivo sobre la empresa Pantheon seleccionada anteriormente. Además de explicar que herramientas se han utilizado, detallamos específicamente la información encontrada sobre la empresa, sus dominios, subdominios y empleados gracias a estas herramientas. 
+En este documento se agrupa toda la información que hemos recabado en nuestro proceso de investigación pasiva acerca de la empresa *Pantheon Systems, Inc* con metodologías y herramientas de OSINT (*Open Source INTelligence*).
+
+Se mencionan y explican brevemente las herramientas que hemos utilizado para recabar la información, y se intentan detallar los resultados que hemos obtenidos con ellas. 
+
+Se ha procurado dividir esta información de manera que es presentada antes aquella perteneciente a las capas más superficiales, como los dominios y servidores DNS de la empresa, hasta llegar a capas más profundas como información personal de algunos de los empleados, pasando por las tecnologías en las que los servicios de la empresa están desarrollados.
+
+A continuación podremos encontrar los datos que nuestro grupo ha podido recopilar acerca de nuestra empresa objetivo.
+
 
 ## Información recopilada
 
-### Empresa Pantheon
+### Descripción general de Pantheon Systems, Inc
 
 La actividad principal de nuestra empresa consiste en alojar y administrar páginas web a través de las plataformas WordPress, Drupal y el framework de Javascript NextJS. 
 
@@ -57,11 +69,19 @@ A través de su cuenta de Linkedin hemos descubierto la dirección de su sede pr
 
 Cuenta con una plantilla de 1000 empleados y fue fundada en 2010. 
 
-Link LinkedIn: https://www.linkedin.com/company/getpantheon/
+En el siguiente enlace podemos encontrar la cuenta de la empresa en la red LinkedIn: https://www.linkedin.com/company/getpantheon/
 
-A través de las herramientas **whois.domaintools.com , whois y who.is** hemos podido descubrir la dirección IP pública del dominio de la empresa es **23.185.0.253**. 
+A través de las herramientas **whois.domaintools.com , whois y who.is** hemos podido descubrir la dirección IP pública del dominio de la empresa es:
 
-La mayoria de elementos encontrados con whois.domaintools, whois y who.is nos muetra que la entidad que los ha registrado ahora es Gandi.net para mayor privacidad. También hemos descubierto los dominios anteriores a este registro estaban a nombre de David Timothy Strauss antes de 2023. Los dos dominios que estaban a nombre de David son los diguientes:
+``` 
+23.185.0.253
+```
+
+Además hemos podido averiguar los siguientes datos: 
+
+El dominio de la empresa fue registrado mediante el servicio *[Gandi.net](https://www.gandi.net/en-US)* con el nombre de organización *Pantheon Systems*. La fecha de expiración del dominio es **2024-04-12T23:50:18Z**.
+
+También hemos descubierto los dominios anteriores a este registro estaban a nombre de *David Timothy Strauss* antes de 2023, sin embargo, actualmente el nombre al que está registrado el dominio se muestra como *información privada*. Los dos dominios que estaban a nombre de David son los diguientes:
 
 - pantheonsite.io
 - pantheon.io 
@@ -70,11 +90,11 @@ Una vez encontrada esta dirección IP pública hemos utilizado la herramienta **
 
 ![Alt text](imagenes/1.png)
 
-Para qué se pueden utilizar el ISP y el ASN?
-
 ### Servidores DNS
 
-Una vez recolectada toda la información básica sobre la empresa, hemos utilizado las herramientas **dig**, **nslookup**, **DNSRECON**, **TheHarvester** y **DNSDumpster** para recolectar toda la información posible sobre los servidores DNS del dominio *pantheon.io*. La información encontrada la hemos dividido por registros con sus respectivas direcciones IP:
+Una vez recolectada toda la información básica sobre la empresa, hemos utilizado las herramientas **dig**, **nslookup**, **DNSRECON**, **TheHarvester** y **DNSDumpster** para recolectar toda la información posible sobre los servidores DNS del dominio *pantheon.io*. 
+
+La información encontrada la hemos dividido por registros con sus respectivas direcciones IP:
 
 - Servidores DNS (Nameservers):
 
@@ -103,6 +123,8 @@ alt2.aspmx.l.google.com -> 142.251.9.27
 
 aspmx.l.google.com -> 64.233.166.27
 ```
+
+> De estos registros se puede inducir que la empresa utiliza probablemente Gmail como su proveedor de correo electrónico.
 
 - Registros TXT:
 
@@ -138,7 +160,7 @@ TXT pantheon.io adobe-idp-site-verification=08da2afbd8a0dba4c7ebe96281c166246968
 TXT _dmarc.pantheon.io v=DMARC1; p=none; pct=100; sp=none; rua=mailto:3523e61d@inbox.ondmarc.com; ruf=mailto:3523e61d@inbox.ondmarc.com; adkim=r; aspf=r; fo=1; rf=afrf; ri=86400
 ```
 
-- Registros A (Direcciones IP de los dominios):
+#### Registros A (Direcciones IP de los dominios):
 
 Como la cantidad de registros obtenidos es demasiado grande hemos decidido poner una captura de una parte de los registros. Si se quieren consultar todos los registros estan en [este fichero de aquí](https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva_Ra%C3%BAl/Datos/SUBDOMINIOS/pantheon.io-202311171820.xlsx).
 
@@ -146,7 +168,18 @@ Como la cantidad de registros obtenidos es demasiado grande hemos decidido poner
 
 ### Subdominios
 
-Con la ayuda de las herramienta sublist3r hemos podido detectar un total de 147 subdominios, especificamente utilizando el comando ```python sublist3r.py -v -d pantheon.io -t 3``` <--explicar que hace cada parámetro --> los cuales son:
+Con la ayuda de las herramienta sublist3r hemos podido detectar un total de 147 subdominios, especificamente utilizando el comando:
+
+```bash
+python sublist3r.py -v -d pantheon.io -t 3
+```
+Se ha hecho uso también en este caso de la herramienta [Dome](https://github.com/v4d1/Dome) en modo pasivo con el comando:
+
+```bash
+python dome.py -m passive -d domain
+```
+
+Con las herramientas mencionadas se han conseguido los siguientes subdominios:
 
 ```
 www.pantheon.io
@@ -298,7 +331,7 @@ test-vinyl-institute.pantheon.io
 varnishcheck.pantheon.io
 ```
 
-Con la herramienta **amass** hemos completado la información obtenida sobre los dominios, pero al ser tan grande el adjuntamos [el siguiente fichero con la información](https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva%20Juan%20Manuel/results.xlsx)
+Con la herramienta **[AMASS](https://github.com/owasp-amass/amass)** hemos completado la información obtenida sobre los dominios, pero al ser tan grande el adjuntamos [el siguiente fichero con la información](https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva%20Juan%20Manuel/results.xlsx).
 
 ### Robots y Sitemap
 
@@ -361,17 +394,17 @@ Disallow: /index.php/*/media/oembed
 
 - **Sitemap.xml** es el archivo o una url que contiene todas y cada una de las páginas de una web.
 
-El podemos encontrarlo [haciendo click aquí](https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva_Ra%C3%BAl/Datos/sitemap.pdf). 
+Podemos encontrar un archivo PDF con un resumen sobre su contenido [haciendo click aquí](https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva_Ra%C3%BAl/Datos/sitemap.pdf). 
 
 ### Certificados
 
-Con la ayuda de la herramienta **crt.sh** hemos adquirido una gran cantidad de certificados los cuales hemos exportado a un fichero pdf (https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva_Ra%C3%BAl/Datos/CERTIFICADOS/crt.sh%20_%20pantheon.io.pdf) ya su tamaño es demasiado grande:
+Con la ayuda de la herramienta **crt.sh** hemos adquirido una gran cantidad de certificados los cuales hemos exportado al [siguiente fichero PDF](https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva_Ra%C3%BAl/Datos/CERTIFICADOS/crt.sh%20_%20pantheon.io.pdf), ya su tamaño es demasiado grande:
 
 ![Alt text](imagenes/2.png)
 
 ## Tecnologías que usa el dominio
 
-Para descubrir las tecnologías que usa la empresa hemos utilizado las herramientas **Wappalizer** y **WhatWeb**.
+Para descubrir las tecnologías que usa la empresa hemos utilizado las herramientas **Wappalyzer** y **WhatWeb**.
 
 Las tecnologías que hemos descubierto son las siguientes:
 
@@ -399,7 +432,13 @@ Las tecnologías que hemos descubierto son las siguientes:
 
 ## Información sobre los empleados de la empresa
 
-Toda la información de los empleados ha sido recolectada haciendo búquedas con dorks, con linkedin, hunter.io, truecaller y con la extensión Clearbit Connect:
+Toda la información de los empleados ha sido recolectada haciendo búquedas con dorks, con linkedin, hunter.io, truecaller y con la extensión Clearbit Connect. 
+
+Se ha conseguido también información sensible a través de las herramientas dehashed y breachdirectory, pero algunos como hashes de contraseñas o direcciones IP no serán publicadas en este repositorio público por cuestiones éticas.
+
+Los perfiles de los trabajadores y sus datos pueden sernos de gran utilidad en la fase de investigación activa, se podrían realizar con ellos desde ataques de ingeniería social hasta intrusión en correos electrónicos mediante el descubrimiento de contraseñas.
+
+Con los datos recopilados, hemos podido reconstruir los siguientes perfiles:
 
 ### CEO y Co-fundador
 
@@ -609,6 +648,42 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 ---
 
+### Sales Development
+
+**Nombre**: Robert Cook
+- Email empresarial: rob.cook@pantheon.io
+- Descubierto hash de contraseña
+
+---
+
+### Desconocido
+
+**Nombre**: *Panthea Hygenia*
+- Email empresarial: aviva@pantheon.io
+- Descubierto hash de contraseña
+- Descubierta posible dirección IP
+
+---
+
+### Freelance Web Developer
+
+**Nombre**: Carl Alberto
+- Descubierto hash de contraseña
+
+Desarrollador freelance especialista en wordpress el cual según su perfil de LinkedIn lleva trabajando 5 años y 7 meses para Pantheon.
+
+---
+
+### Chief Revenue Officer
+
+**Nombre**: Darin Wolter
+- Email empresarial: darin@pantheon.io
+- Descubierto hash de contraseña
+
+---
+
+
+
 ### Más correos eléctronicos de la empresa
 
 - news@pantheon.io
@@ -618,3 +693,15 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 - press@pantheon.io
 
 - info@pantheon.io
+
+## Conclusión
+
+En este informe se ha conseguido recopilar una buena cantidad de información acerca de nuestra empresa objetivo, registrada en la plataforma de seguridad colaborativa [Bugcrowd](https://bugcrowd.com/pantheon) por supuesto para su análisis.
+
+Si bien es cierto que la cantidad de información recopilada no es baja, lo más importante que consideramos que debemos hacer a partir de toda esta información es realizar un escrutinio de estos datos para quedarnos con los que verdaderamente puedan sernos de gran utilidad.
+
+Principalmente prestamos atención a las **tecnologías que utiliza la empresa** y sus versiones, que nos otorgan información valiosa a la hora de buscar posibles vulnerabilidades de esas tecnologías y versiones concretas en bases de datos de ciberseguridad como ExploitDB, Google Hacking DB o NVD. 
+
+Por supuesto para un escaneo activo es muy importante también utilizar todos los dominios y subdominios obtenidos, por los que no los pasamos por alto, pero debemos estar muy pendientes de las condiciones que la empresa ha publicado en su anuncio de *Bugcrowd*. 
+
+En conclusión, hemos podido aprender mediante la realización de este informe que la cantidad de información disponible en línea es realmente colosal e incluso de relativo fácil acceso para una persona con conocimientos básicos de tecnología, además de la volatilidad y fragilidad que algunas herramientas de OSINT pueden presentar.
