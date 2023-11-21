@@ -18,8 +18,7 @@
 
 1. [Introducción](#introducción)
 2. [Información recopilada](#información-recopilada)
-  - [Empresa Pantheon](#empresa-pantheon)
-  - [Servidores DNS]
+    a. [Empresa Pantheon](#empresa-pantehon)
 
 ## Introducción
 
