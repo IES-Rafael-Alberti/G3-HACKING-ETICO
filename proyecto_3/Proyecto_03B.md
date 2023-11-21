@@ -18,7 +18,6 @@
 
 1. [Introducción](#introducción)
 2. [Información recopilada](#información-recopilada)
-   
     2.1 [Empresa Pantheon](#empresa-pantehon) </br>
     2.2 [Servidores DNS](#servidores-dns) </br>
     2.3 [Subdominios](#subdominios) </br>
@@ -26,6 +25,23 @@
     2.5 [Certificados](#certificados) </br>
 3. [Tecnologías que usa el dominio](#tecnologías-que-usa-el-dominio)
 4. [Información sobre los empleados de la empresa](#información-sobre-los-empleados-de-la-empresa)
+    4.1 [CEO / Co-fundador](#ceo-/-co-fundador) </br>
+    4.2 [CTO / Co-fundador](#cto-/-co-fundador) </br>
+    4.3 [Co-fundador y director de estrategia](#co-fundador-y-director-de-estrategia) </br>
+    4.4 [Senior Director, Ventas Estrategia y operaciones](#senior-director,-ventas-estrategia-y-operaciones) </br>
+    4.5 [Directora de marketing de Pantheon](#directora-de-marketing-de-Pantheon) </br>
+    4.6 [Senior IT Manager](#senior-it-Manager) </br>
+    4.7 [Senior CRM Administrator](#senior-crm-administrator) </br>
+    4.8 [Product Leader & GM](#product-leader-&-gm) </br>
+    4.10 [CXO of hyper growth, PE-backed tech and data companies](#cxo-of-hyper-growth,-pe-backed-tech-and-data-companies) </br>
+    4.11 [Director, Field & Partner Marketing at Pantheon Platform](#director,-field-&-partner-marketing-at-pantheon-platform) </br>
+    4.12 [Workplace Experience Manager at Pantheon & Independent Fine Artist](#workplace-experience-manager-at-pantheon-&-independent-fine-artist) </br>
+    4.13 [Enterprise Account Executive at Pantheon Platform](#enterprise-account-executive-at-pantheon-platform) </br>
+    4.14 [Engineering Manage](#engineering-manage) </br>
+    4.15 [Staff Engineer](#staff-engineer)
+    4.16 [Más correos eléctronicos de la empresa](#más-correos-eléctronicos-de-la-empresa)
+    
+    
 
 ## Introducción
 
@@ -569,7 +585,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
   
 ---
 
-### Greg Anderson
+### Engineering Manage
 
 **Nombre:** Greg Anderson </br>
 **Localización:** San Francisco, California, Estados Unidos
@@ -582,7 +598,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 ---
 
-### Brian Perry
+### Staff Engineer
 
 **Nombre:** Brian Perry </br>
 **Localización:** San Francisco, California, Estados Unidos
@@ -595,7 +611,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 ---
 
-### Más correos eléctronicos de la empresa:
+### Más correos eléctronicos de la empresa
 
 - news@pantheon.io
 
