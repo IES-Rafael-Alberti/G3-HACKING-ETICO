@@ -483,6 +483,8 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 **Educación:** University of Pennsylvania
 
+**E-mail Empresarial:** meredith.brown@pantheon.io
+
 ---
 
 ### CXO of hyper growth, PE-backed tech and data companies
@@ -506,6 +508,8 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 **Educación:** San Francisco State University
 
+**E-mail Empresarial:** atoosa@pantheon.io
+
 ---
 
 ### Workplace Experience Manager at Pantheon & Independent Fine Artist
@@ -518,6 +522,8 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 **Educación:** San Francisco Art Institute
 
+**E-mail Empresarial:** amanda@pantheon.io
+
 ---
 
 ### Enterprise Account Executive at Pantheon Platform
@@ -525,14 +531,22 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 **Nombre:** Sara Drohan </br>
 **Localización:** San Francisco, California, Estados Unidos
 
-- Email empresarial: sara.drohan@pantheon.io
+- Linkedin account: https://www.linkedin.com/in/sara-drohan/
 
+  **Educación:** University of South Carolina
+
+- Email empresarial: sara.drohan@pantheon.io
+  
 ---
 
 ### Greg Anderson
 
 **Nombre:** Greg Anderson </br>
 **Localización:** San Francisco, California, Estados Unidos
+
+- Linkedin Account: https://www.linkedin.com/in/greg-anderson-5405a797/
+
+  **Educación:** University of California, Santa Cruz
 
 - Email empresarial: greg@pantheon.io
 
@@ -542,6 +556,10 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 **Nombre:** Brian Perry </br>
 **Localización:** San Francisco, California, Estados Unidos
+
+- Linkedin Account: https://www.linkedin.com/in/contactbrianperry/
+
+  **Educación:** Marist College
 
 - Email empresarial: brian.perry@pantheon.io
 
