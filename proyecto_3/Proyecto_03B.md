@@ -17,7 +17,7 @@
 ## Índice
 
 1. [Introducción](#introducción)
-2. [Información recopilada](#información-recopilada)
+2. [Información recopilada](#información-recopilada)</br>
     a. [Empresa Pantheon](#empresa-pantehon)
 
 ## Introducción
