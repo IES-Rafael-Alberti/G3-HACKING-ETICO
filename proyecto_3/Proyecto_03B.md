@@ -28,14 +28,16 @@ A través de su cuenta de Linkedin hemos descubierto la dirección de su sede pr
 
 "*717 California St. San Francisco, California 94108, US*"
 
-Cuenta con una plantilla de 1000 empleados y fue fundada en 2010. También hemos descubierto los dominios anteriores a pantheon.io, ambos estaban a nombre de David Timothy Strauss:
-
-- pantheonsite.io
-- pantheon.io 
+Cuenta con una plantilla de 1000 empleados y fue fundada en 2010. 
 
 Link LinkedIn: https://www.linkedin.com/company/getpantheon/
 
 A través de las herramientas **whois.domaintools.com , whois y who.is** hemos podido descubrir la dirección IP pública del dominio de la empresa es **23.185.0.253**. 
+
+La mayoria de elementos encontrados con whois.domaintools, whois y who.is nos muetra que la entidad que los ha registrado ahora es Gandi.net para mayor privacidad. También hemos descubierto los dominios anteriores a este registro estaban a nombre de David Timothy Strauss antes de 2023. Los dos dominios que estaban a nombre de David son los diguientes:
+
+- pantheonsite.io
+- pantheon.io 
 
 Una vez encontrada esta dirección IP pública hemos utilizado la herramienta **IP2LOCATION** para encontrar más información sobre esta dirección. Como podemos ver en la siguiente imagen hemos podido encontrar el ISP y el ASN de la empresa:
 
@@ -332,7 +334,6 @@ Disallow: /index.php/*/media/oembed
 
 - **Sitemap.xml** es el archivo o una url que contiene todas y cada una de las páginas de una web.
 
-
 El podemos encontrarlo [haciendo click aquí](https://github.com/IES-Rafael-Alberti/G3-HACKING-ETICO/blob/main/proyecto_3/Investigaciones_pasivas/Investigaci%C3%B3n_pasiva_Ra%C3%BAl/Datos/sitemap.pdf). 
 
 ### Certificados
@@ -525,7 +526,6 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 **Localización:** San Francisco, California, Estados Unidos
 
 - Email empresarial: sara.drohan@pantheon.io
-
 
 ---
 
