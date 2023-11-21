@@ -18,7 +18,7 @@
 
 1. [Introducción](#introducción)
 2. [Información recopilada](#información-recopilada)</br>
-    2.1 [Empresa Pantheon](#empresa-pantehon) </br>
+    2.1 [Empresa Pantheon](#empresa-pantheon) </br>
     2.2 [Servidores DNS](#servidores-dns) </br>
     2.3 [Subdominios](#subdominios) </br>
     2.4 [Robots y Sitemaps](#robots-y-sitemaps) </br>
