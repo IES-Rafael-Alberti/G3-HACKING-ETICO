@@ -25,8 +25,8 @@
     2.5 [Certificados](#certificados) </br>
 3. [Tecnologías que usa el dominio](#tecnologías-que-usa-el-dominio)
 4. [Información sobre los empleados de la empresa](#información-sobre-los-empleados-de-la-empresa)</br>
-    4.1 [CEO / Co-fundador](#ceo-/-co-fundador) </br>
-    4.2 [CTO / Co-fundador](#cto-/-co-fundador) </br>
+    4.1 [CEO y Co-fundador](#ceo-y-co-fundador) </br>
+    4.2 [CTO y Co-fundador](#cto-y-co-fundador) </br>
     4.3 [Co-fundador y director de estrategia](#co-fundador-y-director-de-estrategia) </br>
     4.4 [Senior Director, Ventas Estrategia y operaciones](#senior-director,-ventas-estrategia-y-operaciones) </br>
     4.5 [Directora de marketing de Pantheon](#directora-de-marketing-de-Pantheon) </br>
@@ -403,7 +403,7 @@ Las tecnologías que hemos descubierto son las siguientes:
 
 Toda la información de los empleados ha sido recolectada haciendo búquedas con dorks, con linkedin, hunter.io, truecaller y con la extensión Clearbit Connect:
 
-### CEO / Co-fundador
+### CEO y Co-fundador
 
 **Nombre:** Zachary Rosen </br>
 **Localización:** San Francisco, California, Estados Unidos
@@ -417,7 +417,7 @@ Toda la información de los empleados ha sido recolectada haciendo búquedas con
 
 ---
 
-### CTO / Co-fundador
+### CTO y Co-fundador
 
 **Nombre:** David Timothy Strauss </br>
 **Localización:** San Francisco, California, Estados Unidos
