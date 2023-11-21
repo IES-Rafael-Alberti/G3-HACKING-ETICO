@@ -19,11 +19,11 @@
 1. [Introducción](#introducción)
 2. [Información recopilada](#información-recopilada)
    
-    2.1 [Empresa Pantheon](#empresa-pantehon)
-    2.2 [Servidores DNS](#servidores-dns)
-    2.3 [Subdominios](#subdominios)
-    2.4 [Robots y Sitemaps](#robots-y-sitemaps)
-    2.5 [Certificados](#certificados)
+    2.1 [Empresa Pantheon](#empresa-pantehon) </br>
+    2.2 [Servidores DNS](#servidores-dns) </br>
+    2.3 [Subdominios](#subdominios) </br>
+    2.4 [Robots y Sitemaps](#robots-y-sitemaps) </br>
+    2.5 [Certificados](#certificados) </br>
 3. [Tecnologías que usa el dominio](#tecnologías-que-usa-el-dominio)
 4. [Información sobre los empleados de la empresa](#información-sobre-los-empleados-de-la-empresa)
 
