@@ -16,7 +16,7 @@ except ImportError:
 def create_task():
     script_path = os.path.abspath(__file__)
     task_name = "PythonPrankTask"
-    task_command = f"pythonw.exe C:\users\%username%\script.py"  # Usa pythonw.exe para ejecutar el script sin abrir una ventana de consola
+    task_command = f"pythonw.exe C:/users/%username%/script.py"  # Usa pythonw.exe para ejecutar el script sin abrir una ventana de consola
 
     # Crear tarea programada al inicio
     pyautogui.hotkey('winleft', 's')  # Abre el menú de inicio
