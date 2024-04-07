@@ -5,6 +5,7 @@
 | Severidad                        |                                                              |
 | Impacto                          |                                                              |
 | Sistemas afectados               |                                                              |
-| Prueba de concepto (POC)        |                                                              |
+| Prueba de concepto (POC)         |                                                              |
 | Remediación                      |                                                              |
 | Link de referencia               |                                                              |
+
