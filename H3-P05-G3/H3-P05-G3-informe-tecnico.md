@@ -1,10 +1,10 @@
 # Índice
 
-## Resumen Ejecutivo
+# Resumen Ejecutivo
 
-## Tabla de Riesgos
+# Tabla de Riesgos
 
-## Test de penetración
+# Test de penetración
 
 ## Vulnerabilidades PC Guillermo
 
@@ -108,3 +108,5 @@
 # Metodologías
 
 ## Herramientas
+
+# Conclusión
