@@ -275,3 +275,13 @@ Una vez se realice un hallazgo, se documentará añadiendo su categoría y códi
 Finalmente se aportará un enlace de referencia a la vulnerabilidad en cuestión.
 
 # Conclusión
+
+En base a los hallazgos recabados en los análisis realizados, y las posteriores pruebas de pentesting llevadas a cabo, hemos llegado a las siguientes conclusiones:
+
+- En el servidor Windows Server 2008 R2 se ha logrado explotar la vulnerabilidad CVE-2017-0143, que afecta al protocolo SMB, permitiéndonos acceder al servidor.
+
+- El segundo servidor, denominado como Windows Server Metasploitable 3, presenta 4 vulnerabilidades críticas, 7 de nivel alto y 4 de nivel medio. Estas afectan a servicios críticos del sistema tales como SMB, RDP o ManageEngine Desktop.
+
+Teniendo en cuenta los hallazgos de las pruebas de pentesting en los servidores evaluados, es evidente que La Descuidada S.A. enfrenta desafíos significativos en términos de seguridad de la información.
+
+La explotación exitosa de la amplia gama de vulnerabilidades críticas, de alto y medio nivel encontradas resaltan la necesidad urgente de mejorar las prácticas de seguridad de la empresa.
