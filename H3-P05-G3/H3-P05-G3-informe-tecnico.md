@@ -2,7 +2,9 @@
 
 - [Resumen Ejecutivo](#resumen-ejecutivo)
 - [Tabla de Riesgos](#tabla-de-riesgos)
-- [Test de penetración](#test-de-penetración)
+- [Evaluación](#evaluacion)
+    - [Breve Resumen](#breve-resumen)
+    - [Tabla de Hallazgos](#tabla-de-hallazgos)
 - [Metodologías](#metodologías)
   - [Herramientas utilizadas](#herramientas-utilizadas)
   - [Procedimiento](#procedimiento)
@@ -28,6 +30,8 @@ Se ha realizado un test de caja negra por cada sistema auditado y se han encontr
 ![ME3Wnessus](./img/tablametasploitable3.png)
 
 Además se ha encontrado una vulnerabilidad con el CVE: CVE-2018-15473 de SSH que no se encuentra entre los análisis realizados.
+
+### Tabla de hallazgos
 
 ## Vulnerabilidades Windows Server 2008 R2 Standard
 
