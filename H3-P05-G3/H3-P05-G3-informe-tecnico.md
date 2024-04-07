@@ -191,6 +191,9 @@ Además se ha encontrado una vulnerabilidad con el CVE: CVE-2018-15473 de SSH qu
 | Link de referencia               | https://cwe.mitre.org/data/definitions/200.html                                                                                                                     |
 
 
+<br>
+<br>
+
 | Descripción de la vulnerabilidad |                                                                                                                                                                                                                                                                                  |
 | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | CVE/CWE                          | CWE-521 (Weak Password Requirements)<br><br>Manage Engine                                                                                                                                                                                                                        |
@@ -200,6 +203,9 @@ Además se ha encontrado una vulnerabilidad con el CVE: CVE-2018-15473 de SSH qu
 | Sistemas afectados               | Metasploitable 3                                                                                                                                                                                                                                                                 |
 | Prueba de concepto (POC)         | Acceder al puerto 8020 o 8022 y realizar una prueba con varios conjuntos de credenciales básicas. Realizar un ataque de fuerza bruta con diccionarios básicos.<br><br>![](./img/Pasted%20image%2020240407181516.png)                                                                   |
 | Link de referencia               | https://www.cvedetails.com/cwe-details/521/Weak-Password-Requirements.html                                                                                                                                                                                                       |
+
+<br>
+<br>
 
 | Descripción de la vulnerabilidad |                                                                                                                                                                                                                                                                                                 |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
