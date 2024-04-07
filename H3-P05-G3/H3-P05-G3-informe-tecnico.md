@@ -24,6 +24,16 @@ En el segundo servidor, denominado Windows Server Metasploitable 3, logramos exp
 
 # Tabla de Riesgos
 
+La siguiente tabla con exclamaciones de colores indican de forma clara y concisa la puntuación de los riesgos de los sistemas en una escala del 1 al 10.
+
+| Nivel | Riesgo | CVSSv3 | Descripción |
+|-------|--------|--------|-------------|
+| <span style="color:red">!</span> | CRÍTICA | 10 | Se describe una vulnerabilidad que ha sido calificada como crítica y requiere resolución tan rápida como sea posible. |
+| <span style="color:orange">!</span> | ALTA | 7.0 - 9.9 | Se describe una vulnerabilidad que ha sido calificada como alta y requiere resolución a corto plazo. |
+| <span style="color:yellow">!</span> | MEDIA | 4.0 - 6.9 | Se describe una vulnerabilidad que ha sido calificada como media y debe resolverse como parte del mantenimiento de seguridad de un sistema. |
+| <span style="color:lightgreen">!</span> | BAJA | 1.0 – 3.9 | Se describe una vulnerabilidad que ha sido calificada como baja y debe ser abordada como parte de las tareas de mantenimiento rutinario. |
+| <span style="color:lightblue">!</span> | INFO | 0 – 0.9 | Se realizó un descubrimiento de carácter informal y debe ser abordado con el fin de cumplir con una buena práctica de seguridad. |
+
 # Evaluación
 
 ## Breve Resumen
@@ -41,7 +51,7 @@ Además se ha encontrado una vulnerabilidad con el CVE: CVE-2018-15473 de SSH qu
 
 ### Tabla de hallazgos
 
-## Vulnerabilidades Windows Server 2008 R2 Standard
+#### Vulnerabilidades Windows Server 2008 R2 Standard
 
 | Descripción de la vulnerabilidad |El servidor SMBv1 en Microsoft Windows Vista SP2; Windows Server 2008 SP2 y R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold y R2; Windows RT 8.1 y Windows 10 Gold, 1511 y 1607 y Windows Server 2016 permite a atacantes remotos ejecutar código arbitrario a través de paquetes manipulados, vulnerabilidad también conocida como "Windows SMB Remote Code Execution Vulnerability"|
 |----------------------------------|--------------------------------------------------------------|
@@ -57,7 +67,7 @@ Además se ha encontrado una vulnerabilidad con el CVE: CVE-2018-15473 de SSH qu
 <br>
 <br>
 
-## Vulnerabilidades Windows Server Metasploitable 3
+#### Vulnerabilidades Windows Server Metasploitable 3
 
 | Descripción de la vulnerabilidad |El servidor SMBv1 en Microsoft Windows Vista SP2; Windows Server 2008 SP2 y R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold y R2; Windows RT 8.1 y Windows 10 Gold, 1511 y 1607 y Windows Server 2016 permite a atacantes remotos ejecutar código arbitrario a través de paquetes manipulados, vulnerabilidad también conocida como "Windows SMB Remote Code Execution Vulnerability"|
 |----------------------------------|--------------------------------------------------------------|
