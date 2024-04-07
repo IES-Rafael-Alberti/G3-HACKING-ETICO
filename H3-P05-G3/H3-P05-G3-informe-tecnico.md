@@ -2,11 +2,11 @@
 
 # Resumen Ejecutivo
 
-En el presente informe se detallan las vulnerabilidades explotadas en la auditoría realizada a la empresa La Descuidada S.A, tras haber llevado a cabo análisis exhaustivos a los dos servidores acordados con la compañía. 
+En el presente informe se detallan las vulnerabilidades explotadas en la auditoría realizada a la empresa La Descuidada S.A, con el objetivo de identificar y evaluar las vulnerabilidades en sus sistemas. La auditoría se centró en dos servidores acordados con la empresa, Windows Server 2008 R2 Standard y Windows Server Metasploitable 3.
 
 Usando como base la extensa lista de vulnerabilidades encontradas en los análisis previos realizados, y tras llevar a cabo múltiples pruebas con la lista mencionada, logramos explotar algunas de las vulnerabilidades especificadas en los análisis. 
 
-Se ha logrado explotar una de las dos vulnerabilidades de nivel alto en el servidor Windows Server 2008 R2 Standard, la cual está relacionada con el protocolo SMB, encontrando que este servidor ha resultado ser el más seguro de los dos, debido a su menor número de vulnerabilidades, tanto analizadas como explotadas.
+Se identificó una vulnerabilidad de nivel alto relacionada con el protocolo SMB, la cual fue exitosamente explotada durante la auditoría. A pesar de esta vulnerabilidad, se observó que este servidor presentaba un menor número de vulnerabilidades en comparación con el otro servidor evaluado.
 
 En el segundo servidor, denominado Windows Server Metasploitable 3, logramos explotar múltiples vulnerabilidades de varios niveles, siendo algunas de estas de nivel crítico, siendo las demás de nivel alto y medio.  
 
