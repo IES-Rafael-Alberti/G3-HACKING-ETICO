@@ -128,7 +128,7 @@ Además se ha encontrado una vulnerabilidad con el CVE: CVE-2018-15473 de SSH qu
 | Severidad                        |                Crítica                                       |
 | Impacto                          |   Un atacante puede cargar y ejecutar archivos de su elección a través del parámetro ConnectionId.    |
 | Sistemas afectados               |           Windows Server Metasploitable 3                    |
-| Prueba de concepto (POC)         |   ![POC-MED](img/ManageEngine-Desktop-Central-Exploit.png)   |
+| Prueba de concepto (POC)         |   ![POC-MED](./img/ManageEngine-Desktop-Central-Exploit.png)   |
 | Remediación                      |      Actualizar a una build igual o posterior a la 91100     |
 | Link de referencia               |      https://nvd.nist.gov/vuln/detail/CVE-2015-8249          |
 
@@ -142,7 +142,7 @@ Además se ha encontrado una vulnerabilidad con el CVE: CVE-2018-15473 de SSH qu
 | Severidad                        |                Media                                       |
 | Impacto                          |  Un atacante puede ejecutar código arbitrario de forma remota, permitiéndoles acceder al sistema.  |
 | Sistemas afectados               |       Windows Server Metasploitable 3                        |
-| Prueba de concepto (POC)         |   ![ElasticSearch](img/ElasticSearch.png)                    |
+| Prueba de concepto (POC)         |   ![ElasticSearch](./img/ElasticSearch.png)                    |
 | Remediación                      |      Actualizar a una versión igual o posterior a la 1.2     |
 | Link de referencia               |      https://nvd.nist.gov/vuln/detail/CVE-2014-3120          |
 
