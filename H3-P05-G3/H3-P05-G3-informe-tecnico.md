@@ -15,7 +15,7 @@ Se ha realizado un test de caja negra por cada sistema auditado y se han encontr
 
 **Windows Server Metasploitable 3**
 
-![ME3Wnessus](tablametasploitable3.png)
+![ME3Wnessus](./img/tablametasploitable3.png)
 
 Además se ha encontrado una vulnerabilidad con el CVE: CVE-2018-15473 de SSH que no se encuentra entre los análisis realizados.
 
