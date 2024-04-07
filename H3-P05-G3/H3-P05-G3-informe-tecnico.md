@@ -118,6 +118,34 @@ Además se ha encontrado una vulnerabilidad con el CVE: CVE-2018-15473 de SSH qu
 | Remediación                      |                          Actualizar OpenSSH a una versión más moderna.                                    |
 | Link de referencia               |       [https://attack.mitre.org/techniques/T1087/](https://attack.mitre.org/techniques/T1087/)|
 
+<br>
+<br>
+
+| Descripción de la vulnerabilidad |  La vulnerabilidad se encuentra en la clase FileUploadServlet. Cuando se carga un archivo 7z, el parámetro ConnectionId, controlado por el usuario, no se valida adecuadamente. Esto permite a un atacante remoto inyectar un byte nulo al final del valor para crear un archivo malicioso con un tipo de archivo arbitrario. Posteriormente, este archivo malicioso puede ser colocado en un directorio que permita la ejecución de scripts del lado del servidor, lo que resulta en la ejecución remota de código bajo el contexto del usuario SYSTEM.   |
+|----------------------------------|--------------------------------------------------------------|
+| CVE/CWE                          |                CVE-2015-8249                                 |
+| CVSS v3                          |                9.8                                           |
+| Severidad                        |                Crítica                                       |
+| Impacto                          |   Un atacante puede cargar y ejecutar archivos de su elección a través del parámetro ConnectionId.    |
+| Sistemas afectados               |           Windows Server Metasploitable 3                    |
+| Prueba de concepto (POC)         |   ![POC-MED](img/ManageEngine-Desktop-Central-Exploit.png)   |
+| Remediación                      |      Actualizar a una build igual o posterior a la 91100     |
+| Link de referencia               |      https://nvd.nist.gov/vuln/detail/CVE-2015-8249          |
+
+<br>
+<br>
+
+| Descripción de la vulnerabilidad |  La configuración por defecto en ElasticSearch en versiones anteriores a la 1.2 permite el scrpting dinámico, lo que permite a los atacantes remotos ejecutar expresiones MVEL (MVEL es un lenguaje basado en la sintaxis de Java) y código en Java a través del parámetro fuente para _search.  |
+|----------------------------------|--------------------------------------------------------------|
+| CVE/CWE                          |                CVE-2014-3120                                 |
+| CVSS v3                          |                [6.8](https://www.cvedetails.com/cve/CVE-2014-3120/)  |
+| Severidad                        |                Media                                       |
+| Impacto                          |  Un atacante puede ejecutar código arbitrario de forma remota, permitiéndoles acceder al sistema.  |
+| Sistemas afectados               |       Windows Server Metasploitable 3                        |
+| Prueba de concepto (POC)         |   ![ElasticSearch](img/ElasticSearch.png)                    |
+| Remediación                      |      Actualizar a una versión igual o posterior a la 1.2     |
+| Link de referencia               |      https://nvd.nist.gov/vuln/detail/CVE-2014-3120          |
+
 # Metodologías
 
 ## Herramientas
