@@ -6,7 +6,7 @@
 
 # Test de penetración
 
-## Vulnerabilidades PC Guillermo
+## Vulnerabilidades Windows Server 2008 R2 Standard
 
 | Descripción de la vulnerabilidad |El servidor SMBv1 en Microsoft Windows Vista SP2; Windows Server 2008 SP2 y R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold y R2; Windows RT 8.1 y Windows 10 Gold, 1511 y 1607 y Windows Server 2016 permite a atacantes remotos ejecutar código arbitrario a través de paquetes manipulados, vulnerabilidad también conocida como "Windows SMB Remote Code Execution Vulnerability"|
 |----------------------------------|--------------------------------------------------------------|
@@ -22,7 +22,7 @@
 <br>
 <br>
 
-## Vulnerabilidades Windows Metasploitable 3
+## Vulnerabilidades Windows Server Metasploitable 3
 
 | Descripción de la vulnerabilidad |El servidor SMBv1 en Microsoft Windows Vista SP2; Windows Server 2008 SP2 y R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold y R2; Windows RT 8.1 y Windows 10 Gold, 1511 y 1607 y Windows Server 2016 permite a atacantes remotos ejecutar código arbitrario a través de paquetes manipulados, vulnerabilidad también conocida como "Windows SMB Remote Code Execution Vulnerability"|
 |----------------------------------|--------------------------------------------------------------|
