@@ -10,7 +10,7 @@
   - [Procedimiento](#procedimiento)
     - [Fase 1: Reconocimiento](#fase-1-reconocimiento)
     - [Fase 2: Explotación](#fase-2-explotación)
-- [Conclusión](#conclusion)
+- [Conclusión](#conclusión)
 
 # Resumen Ejecutivo
 
