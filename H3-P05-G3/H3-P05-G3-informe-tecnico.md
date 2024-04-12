@@ -132,7 +132,7 @@ Además se ha encontrado una vulnerabilidad con el CVE: CVE-2018-15473 de SSH qu
 | Severidad                        |                                       Medio                       |
 | Impacto                          |                                  Un atacante podría ver los servicios de red que se están usando en el sistema a través de SNMP para posible explotación de los mismos.                            |
 | Sistemas afectados               |                                        Windows Server Metasploitable 3                      |
-| Prueba de concepto (POC)        |                                                    ![networksnmp](./img/networksnmp.png)          |
+| Prueba de concepto (POC)        |                              Utilizando el modulo de metasploit snmp_enum podemos encontrar los servicios entre otra información importante del sistema a auditar. <br>                      ![networksnmp](./img/networksnmp.png)          |
 | Remediación                      |                                   Desactivar el protocolo si no se utiliza  |
 | Link de referencia               |                                        [https://attack.mitre.org/techniques/T1046/](https://attack.mitre.org/techniques/T1046/)                      |
 
