@@ -44,7 +44,7 @@ Estas tablas suponen una información superficial que servirá como idea general
 ![ME3Wnessus](./img/tablakioptrix.png)
 
 **Máquina W1r3s**
-![guillermonessus](./img/tablaw1r3s.png)
+![w1r3sNessus](./img/w1r3sNessus.png)
 
 ## Tabla de hallazgos
 
