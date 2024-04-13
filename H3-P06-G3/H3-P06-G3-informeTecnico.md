@@ -35,7 +35,7 @@ Se ha realizado un test de caja negra por cada sistema auditado y se han encontr
 **Linux Server Metasploitable 3**
 ![ME3Wnessus](./img/tablametasploitable3linux.png)
 
-**Máquina Kioptrix**
+**Máquina Kioptrix** <br>
 ![ME3Wnessus](./img/tablakioptrix.png)
 
 **Máquina W1r3s**
