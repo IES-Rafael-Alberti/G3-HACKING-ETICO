@@ -6,7 +6,7 @@
     - [Breve Resumen](#breve-resumen)
     - [Tabla de Hallazgos](#tabla-de-hallazgos)
       - [Metasploitable 3](#vulnerabilidades-ubuntu-metasploitable-3)
-      - [Kioptrix](#)
+      - [Kioptrix](#vulnerabilidades-kioptrix)
       - [w1r3s](#máquina-w1r3s)
 - [Metodologías](#metodologías)
   - [Herramientas utilizadas](#herramientas-utilizadas)
