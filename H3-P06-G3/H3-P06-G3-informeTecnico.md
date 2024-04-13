@@ -40,7 +40,7 @@ Estas tablas suponen una información superficial que servirá como idea general
 **Linux Server Metasploitable 3**
 ![ME3Wnessus](./img/tablametasploitable3linux.png)
 
-**Máquina Kioptrix**
+**Máquina Kioptrix** <br>
 ![ME3Wnessus](./img/tablakioptrix.png)
 
 **Máquina W1r3s**
