@@ -33,7 +33,7 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 Se ha realizado un test de caja negra por cada sistema auditado y se han encontrado varias vulnerabilidades catalogadas teniendo en cuenta las dos tablas siguientes. Las vulnerabilidades críticas, altas y medias podrían suponer un peligro para los sistemas auditados.
 
 **Linux Server Metasploitable 3**
-![ME3Wnessus](./img/tablametasploitable3linux.png) </br>
+![ME3Wnessus](./img/tablametasploitable3linux.png)
 
 **Máquina Kioptrix**
 ![ME3Wnessus](./img/tablakioptrix.png)
