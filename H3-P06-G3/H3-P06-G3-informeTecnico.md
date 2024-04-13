@@ -17,6 +17,16 @@
 
 # Resumen Ejecutivo
 
+En el presente informe se detallan las vulnerabilidades explotadas en la auditoría realizada a la empresa Pata de Palo Corp., con el objetivo de identificar y evaluar las vulnerabilidades en sus sistemas. La auditoría se centró en tres servidores acordados con la empresa, Linux Server Metasploitable 3, Kioptrix Level 1 y W1r3s.
+
+Se ha realizado un análisis de vulnerabilidades sobre los tres servidores mencionados, y tras llevarlos a cabo, logramos explotar algunas de las vulnerabilidades especificadas en dichos análisis.
+
+Se identificó una vulnerabilidad de nivel alto relacionada con el servidor ProFTPD, la cual fue exitosamente explotada durante la auditoría. También se pudieron explotar dos vulnerabilidades de nivel alto del servicio Drupal y una vulnerabilidad de nivel medio del servidor Apache.
+
+En el segundo servidor, denominado Kioptrix, logramos explotar una vulnerabilidad crítica relacionada con el servicio Samba. Tras averiguar la versión instalada de dicho servicio, se pudo encontrar y usar un exploit para poder acceder al servidor con privilegios de root.
+
+Por último, el servidor W1r3s alberga una serie de vulnerabilidades que pudimos explotar con éxito. Más concretamente, el servidor Apache fue afectado por una vulnerabilidad de nivel alto de exposición de información, una vulnerabilidad crítica en el servicio FTP que permite el login anónimo, dos vulnerabilidades de exposición de información de nivel alto y de nivel crítico respectivamente en el software Cuppa CMS, y una vulnerabilidad crítica de obtención de credenciales.
+
 # Tabla de Riesgos
 
 La siguiente tabla explica de forma clara y concisa la puntuación de los riesgos de los sistemas en una escala del 1 al 10.
