@@ -45,18 +45,56 @@ Además se ha encontrado una vulnerabilidad con el CVE: CVE-2018-15473 de SSH qu
 
 ### Tabla de hallazgos
 
-#### Vulnerabilidades Windows Server 2008 R2 Standard
+#### Vulnerabilidades Ubuntu Metasploitable 3
 
-| Descripción de la vulnerabilidad |   |
-|----------------------------------|---|
-| CVE/CWE                          |   |
-| CVSS v3                          |   |
-| Severidad                        |   |
-| Impacto                          |   |
-| Sistemas afectados               |   |
-| Prueba de concepto (POC)         |   |
-| Remediación                      |   |
-| Link de referencia               |   |
+| Descripción de la vulnerabilidad |  El módulo mod_copy en ProFTPD 1.3.5 permite a atacantes remotos leer y escribir en archivos de su elección mediante los comandos site cpfr y site cpto.|
+|----------------------------------|--------------------------------------------------------------|
+| CVE/CWE                          |        [CVE-2015-3306](https://nvd.nist.gov/vuln/detail/CVE-2015-3306)                                                    |
+| CVSS v3                          |            [9.8](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)                                                  |
+| Severidad                        |                       Alta                                       |
+| Impacto                          |     Un atacante puede leer información sensible, modificar archivos, crearlos e intentar ganar privilegios de administrador en el sistema.                                                         |
+| Sistemas afectados               |       Ubuntu Metasploitable 3                                                       |
+| Prueba de concepto (POC)         |       ![proftpd](./img/proftpd.png)                                                       |
+| Remediación                      |     Actualizar a una versión posterior a ProFTPD 1.3.5.                                                         |
+| Link de referencia               |     [https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure)                                                         |
+<br>
+
+| Descripción de la vulnerabilidad | La versión de Drupal que se ejecuta en el servidor web remoto se ve afectada por una vulnerabilidad de ejecución de código remoto en el módulo Coder, específicamente en el archivo coder_upgrade.run.php, debido a una validación incorrecta de la entrada proporcionada por el usuario a la función unserialize(). Un atacante remoto no autenticado puede explotar esto, a través de una solicitud especialmente diseñada, para ejecutar código PHP arbitrario. |
+|----------------------------------|--------------------------------------------------------------|
+| CVE/CWE                          |     [CVE-2018-7600](https://nvd.nist.gov/vuln/detail/CVE-2018-7600)                                                                                    |
+| CVSS v3                          |         [9.8](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)                                                                                    |
+| Severidad                        |                  Alta                                        |
+| Impacto                          |         Un atacante podría ejecutar código malicioso en la máquina, acceder a información que se encuentre en el servidor web y modificarla.                                                     |
+| Sistemas afectados               |             Ubuntu Metasploitable 3                                                 |
+| Prueba de concepto (POC)         |            ![drupal](./img/drupal_coder_exec.png)                                                  |
+| Remediación                      |     Actualizar la versión de drupal a una versión posterior a la 7.x-2.6 o eliminar el módulo de drupal.                                                         |
+| Link de referencia               |         [https://attack.mitre.org/techniques/T1059/004/](https://attack.mitre.org/techniques/T1059/004/)                                                     |
+
+<br>
+
+| Descripción de la vulnerabilidad | El servidor web remoto ejecuta una versión de Drupal que se ve afectada por una vulnerabilidad de inyección SQL debido a una falla en la API de abstracción de la base de datos de Drupal, que permite a un atacante remoto utilizar solicitudes especialmente diseñadas que pueden resultar en una ejecución SQL arbitraria. Esto puede provocar una escalada de privilegios, una ejecución arbitraria de PHP o una ejecución remota de código. |
+|----------------------------------|--------------------------------------------------------------|
+| CVE/CWE                          |    [CVE-2014-3704](https://nvd.nist.gov/vuln/detail/CVE-2014-3704)                                                                                     |
+| CVSS v3                          |        [9.8](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)                                                                                     |
+| Severidad                        |                                 Alta                      |
+| Impacto                          |        Un atacante podría ejecutar código malicioso en la máquina, acceder a información que se encuentre en el servidor web y modificarla.                                                      |
+| Sistemas afectados               |             Ubuntu Metasploitable 3                                                                                                 |
+| Prueba de concepto (POC)         |      ![drupalgeddon](./img/drupalgeddon.png)                                                        |
+| Remediación                      |         Actualizar a una versión superior a la 7.32 de Drupal.                                                     |
+| Link de referencia               |              [https://attack.mitre.org/techniques/T1059/004/](https://attack.mitre.org/techniques/T1059/004/)                                                 |
+
+<br>
+
+| Descripción de la vulnerabilidad | El servidor web Apache que se ejecuta en el host remoto se ve afectado por una vulnerabilidad de divulgación de información. Un atacante remoto no autenticado puede aprovechar esto enviando una solicitud manipulada para mostrar una lista de un directorio remoto, incluso si existe un archivo de índice válido en el directorio. |
+|----------------------------------|--------------------------------------------------------------|
+| CVE/CWE                          |         [CVE-2001-0731](https://nvd.nist.gov/vuln/detail/CVE-2001-0731)                                                                                |
+| CVSS v3                          |                               [5.3](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)                                                              |
+| Severidad                        |                          Medio                            |
+| Impacto                          |     Un atacante puede listar los directorios del servidor web.                                                         |
+| Sistemas afectados               |             Ubuntu Metasploitable 3                                                                                                 |
+| Prueba de concepto (POC)         |      ![directorylist](./img/directorylist.png)                                                      |
+| Remediación                      |                                 Modificar el fichero .htaccess para deshabilitar el listado de directorios y actualizar a una versión superior de apache.                             |
+| Link de referencia               |       [https://attack.mitre.org/techniques/T1592/](https://attack.mitre.org/techniques/T1592/)
 
 <br>
 
