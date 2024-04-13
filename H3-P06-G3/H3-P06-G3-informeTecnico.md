@@ -21,7 +21,7 @@ En el presente informe se detallan las vulnerabilidades explotadas en la auditor
 
 Se ha realizado un análisis de vulnerabilidades sobre los tres servidores mencionados, y tras llevarlos a cabo, logramos explotar algunas de las vulnerabilidades especificadas en dichos análisis.
 
-Se identificó una vulnerabilidad de nivel alto relacionada con el servidor ProFTPD, la cual fue exitosamente explotada durante la auditoría. También se pudieron explotar dos vulnerabilidades de nivel alto del servicio Drupal y una vulnerabilidad de nivel medio del servidor Apache.
+En primer lugar, en el servidor Linux Server Metasploitable 3, se identificó una vulnerabilidad de nivel alto relacionada con el servidor ProFTPD, la cual fue exitosamente explotada durante la auditoría. También se pudieron explotar dos vulnerabilidades de nivel alto del servicio Drupal y una vulnerabilidad de nivel medio del servidor Apache.
 
 En el segundo servidor, denominado Kioptrix, logramos explotar una vulnerabilidad crítica relacionada con el servicio Samba. Tras averiguar la versión instalada de dicho servicio, se pudo encontrar y usar un exploit para poder acceder al servidor con privilegios de root.
 
@@ -232,3 +232,12 @@ Finalmente se aportará un enlace de referencia a la vulnerabilidad en cuestión
 
 En base a los hallazgos recabados en los análisis realizados, y las posteriores pruebas de pentesting llevadas a cabo, hemos llegado a las siguientes conclusiones:
 
+- En el servidor Linux Server Metasploitable 3 hemos logrado explotar la vulnerabilidad CVE-2015-3306, que afecta al servidor ProFTPD, permitiéndonos acceder al servidor. Además, se han explotado las vulnerabilidades CVE-2018-7600, CVE-2014-3704 y CVE-2001-0731, que afectan al servicio Drupal y Aapche respectivamente.
+
+- El segundo servidor, cuyo nombre es Kioptrix Level 1, presenta 1 vulnerabilidad crítica explotable, la cual afecta al servicio Samba del servidor. El exploit usado nos da acceso al servidor con privilegios root.
+
+- El servidor W1r3s posee 5 vulnerabilidades explotables, todas de nivel alto o superior. Estas afectan a las credenciales de los usuarios, permiten acceder de forma anónima al servidor a través del servicio FTP, y facilitan la exposición de información sensible. 
+
+Teniendo en cuenta los hallazgos de las pruebas de pentesting en los servidores evaluados, resulta evidente que Pata de Palo Corp. enfrenta una importante lista de desafíos en materia de seguridad de la información.
+
+Debemos recalcar que la explotación exitosa de la amplia gama de vulnerabilidades de nivel crítico, de alto y medio halladas resaltan la imperiosa necesidad de realizar mejoras en las prácticas de seguridad de la compañía.
