@@ -101,6 +101,19 @@ Estas tablas suponen una información superficial que servirá como idea general
 
 <br>
 
+#### Vulnerabilidades Kioptrix
+
+| Descripción de la vulnerabilidad | Desbordamiento de búfer en la función call_trans2open en trans2.c en Samba 2.2.x, antes de la versión 2.2.8a, 2.0.10 y versiones anteriores 2.0.x, y anteriores a la 0.3.2 en Samba-TNG. Esto permite a atacantes remotos ejecutar código arbitrario. |
+|----------------------------------|------------------------------------|
+| CVE/CWE                          | CVE-2003-0201            |
+| CVSS v3                          | [9.8](https://www.tenable.com/cve/CVE-2003-0201)                     |
+| Severidad                        |     Crítica              |
+| Impacto                          | Un atacante puede ejecutar código arbitrario de forma remota.        |
+| Sistemas afectados               |             Kioptrix Level 1         |
+| Prueba de concepto (POC)         |      ![directorylist](./img/2-exploit.png)                          
+| Remediación                      |   Se recomienda actualizar a una versión de Samba 2.2.8a o posterior, o Samba-TNG 0.3.2 o posterior.                         |
+| Link de referencia               |  [https://nvd.nist.gov/vuln/detail/CVE-2003-0201](https://nvd.nist.gov/vuln/detail/CVE-2003-0201)
+
 ### Máquina W1r3s
 
 
