@@ -5,6 +5,9 @@
 - [Evaluación](#evaluacion)
     - [Breve Resumen](#breve-resumen)
     - [Tabla de Hallazgos](#tabla-de-hallazgos)
+      - [Metasploitable 3](#vulnerabilidades-ubuntu-metasploitable-3)
+      - [Kioptrix](#)
+      - [w1r3s](#máquina-w1r3s)
 - [Metodologías](#metodologías)
   - [Herramientas utilizadas](#herramientas-utilizadas)
   - [Procedimiento](#procedimiento)
@@ -30,7 +33,9 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 
 ## Breve Resumen
 
-Se ha realizado un test de caja negra por cada sistema auditado y se han encontrado varias vulnerabilidades catalogadas teniendo en cuenta las dos tablas siguientes. Las vulnerabilidades críticas, altas y medias podrían suponer un peligro para los sistemas auditados.
+Se ha realizado un test de caja negra por cada sistema auditado y se han encontrado varias vulnerabilidades catalogadas teniendo en cuenta las tres tablas siguientes. Las vulnerabilidades críticas, altas y medias podrían suponer un peligro para los sistemas auditados. 
+
+Estas tablas suponen una información superficial que servirá como idea general del estado de las máquinas con las que estamos trabajando.
 
 **Linux Server Metasploitable 3**
 ![ME3Wnessus](./img/tablametasploitable3linux.png)
@@ -41,11 +46,9 @@ Se ha realizado un test de caja negra por cada sistema auditado y se han encontr
 **Máquina W1r3s**
 ![guillermonessus](./img/tablaw1r3s.png)
 
-Además se ha encontrado una vulnerabilidad con el CVE: CVE-2018-15473 de SSH que no se encuentra entre los análisis realizados.
+## Tabla de hallazgos
 
-### Tabla de hallazgos
-
-#### Vulnerabilidades Ubuntu Metasploitable 3
+### Vulnerabilidades Ubuntu Metasploitable 3
 
 | Descripción de la vulnerabilidad | El módulo mod_copy en ProFTPD 1.3.5 permite a atacantes remotos leer y escribir en archivos de su elección mediante los comandos site cpfr y site cpto.|
 |----------------------------------|--------------------------------------------------------------|
