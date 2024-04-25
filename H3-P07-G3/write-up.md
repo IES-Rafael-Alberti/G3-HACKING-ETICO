@@ -110,7 +110,7 @@ Por favor, tenga en cuenta que los comandos y técnicas mencionados son para fin
 
 Habiendo realizado esto, tendremos el primer túnel de conexión que nos permitirá usar las herramientas de nuestra máquina Kali en el **PC 1**
 
-![alt text](image-2.png)
+![alt text](./img/image-2.png)
 
 Esto nos permitirá usar la máquina **PC 1** como proxy a través del cuál enviar nuestras herramientas de Kali al **PC 2** a través de *proxychains*
 
