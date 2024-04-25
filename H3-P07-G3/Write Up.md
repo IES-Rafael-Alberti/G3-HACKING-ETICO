@@ -1,5 +1,9 @@
 # Write Up Proyecto 7
 
+## Esquema
+
+![esquema](img/image-1.png)
+
 ## kali - PC-1
 
 ### Escaneo de red
