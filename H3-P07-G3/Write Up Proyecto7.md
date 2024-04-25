@@ -1,5 +1,7 @@
+# Write Up Proyecto 7
 
-# kali - PC-1
+## kali - PC-1
+
 ### Escaneo de red
 
 Primero de todo vamos a escanear la red para comprobar cual es la dirección IP de PC-1.
@@ -27,6 +29,7 @@ Así que ahora vamos a intentar conseguir una shell de meterpreter en esta máqu
 Lo ejecutamos para obtener la shell y como vemos somos SYSTEM.
 ![](Pasted%20image%2020240424200950.png)
 Estas vulnerabilidades han sido encontradas buscando en google como explotar el puerto 3389.
+
 ### Crear túnel con chisel
 
 Ahora que estamos dentro, nos interesa crear un túnel con chisel pero primero vamos a ejecutar el módulo autoroute para obtener las rutas de la sesión que se ha generado.
@@ -71,16 +74,51 @@ La ruta existe y encima podemos ver que es un wordpress.
 ![](./img/Pasted%20image%2020240424213020.png)
 Si buscamos en google como vulnerar wordpress nos aparece un video de youtube con una herramienta.
 ![](./img/Pasted%20image%2020240424213424.png)
-Si seguimos investigando un poco encontramos que tenemos que registrarnos para buscar con un token que nos genera los cve en su base de datos. La web usada es [Malcare](https://www.malcare.com/blog/how-to-use-wpscan/)
-![](./img/Pasted%20image%2020240424214224.png)
-Así que vamos a hacer exactamente lo mismo. Nos registramos y con nuestro token investigamos en la url. Como no ha funcionado no podemos seguir avanzando ya que las herramientas que hemos usado para escanear el wordpress, nos las bloqueaba el firewall.
+Si seguimos investigando un poco encontramos que tenemos que registrarnos para buscar con un token que nos genera los cve en su base de datos. La web usada es [Malcare](./img/https://www.malcare.com/blog/how-to-use-wpscan/)
+![](Pasted%20image%2020240424214224.png)
+Así que vamos a hacer exactamente lo mismo. Nos registramos y con nuestro token investigamos en la url. Como no me ha funcionado vamos a probar otra cosa.
 ![](./img/Pasted%20image%2020240424214955.png)
-
+Esto seguía sin funcionar así que buscando en internet encontré un comando para mostrar los plugins ya que la mayoría de wordpress son vulnerables. La dirección IP ha cambiado porque se reiniciaron las máquinas.
+![](./img/Pasted%20image%2020240425090345.png)
+Además de estas reglas, he añadido la regla 4443 para el puerto que vamos a tener de escucha.
+Investigando sobre estos plugins, vi que existe un plugin para mail-masta.
+![](./img/Pasted%20image%2020240425090510.png)
 
 ### Obtener acceso 
 
-## PC-1 - PC-4
-
-### Escaneo de puertos
-
-Después de varios intentos sin exito las direcciones IP han cambiado. Siendo ahora la PC-2 la 10.10.10.129 y PC-1 la 10.10.10.130, escaneamos los puertos "más" comunes del PC-4. Pero nos aparecen todos los puertos cerrados sin motivo aparente.
+Lo primero es comprobar que funciona por ejemplo mostrando /etc/passwd, para ello vamos a abrir firefox con proxychains hacia la página web.
+![](./img/Pasted%20image%2020240425090810.png)
+Ahora ponemos detrás de h3l105 "/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/passwd"
+![](./img/Pasted%20image%2020240425090657.png)
+Nos interesa ahora que sabemos que existe esta vulnerabilidad acceder. Para ello ponemos en escucha kali por el puerto 4443 por ejemplo.
+![](./img/Pasted%20image%2020240425090934.png)
+Inyectamos el código a través de telnet con proxychains.
+![](./img/Pasted%20image%2020240425091214.png)
+Ahora vamos a la url y ponemos lo siguiente después de h3l105/ para revisar que se ha ejecutado bien el comando. http://10.10.10.129/h3l105/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/var/mail/helios&comando=id
+![](./img/Pasted%20image%2020240425091420.png)
+Ahora debemos crear la regla de firewall para el puerto 4443.
+![](./img/Pasted%20image%2020240425095123.png)
+Creo la regla de netsh para redirigir las conexiones del 4443 de la máquina que contiene la red 10.10.10.129 para que pase a través de la ip de Windows 7 hacia mi máquina kali.
+![](./img/Pasted%20image%2020240425095712.png)
+Entramos por localhost con el comando para crear una shell mientras escuchamos por el puerto 4443.
+![](./img/Pasted%20image%2020240425095903.png)
+Si ejecutamos el comando id en nuestra shell creada veremos que somos helios.
+![](./img/Pasted%20image%2020240425095956.png)
+Vamos ahora a estabilizar la shell con python -c “import pty; pty.spawn('/bin/bash')”
+![](./img/Pasted%20image%2020240425100103.png)
+Vamos a buscar binarios con la flag SUID. Esta flag indica permisos de acceso que pueden asignarse a archivos o directorios. Estos permisos permiten ser ejecutados a estos ficheros con el usuario que los posee.
+Vamos a buscar con --perm -u=s para especificar el permiso con el bit de SUID.
+El único que difiere de los otros es /opt/statuscheck por eso vamos a intentar ver con strings que contiene.
+![](./img/Pasted%20image%2020240425100513.png)
+Vemos que internamente ejecuta el comando curl.
+![](./img/Pasted%20image%2020240425100735.png)
+Ahora nos interesa falsear el binario para poder escalar privilegios. Nos movemos hacia /tmp y con echo creamos el fichero curl.
+![](./img/Pasted%20image%2020240425101129.png)
+Le damos permisos 777 al fichero que hemos creado.
+![](./img/Pasted%20image%2020240425101208.png)
+Ahora con echo $PATH imprimos el valor de la acutal variable PATH.
+![](./img/Pasted%20image%2020240425101314.png)
+Agregamos /tmp a la variable path.
+![](./img/Pasted%20image%2020240425101354.png)
+Ejecutamos el binario y ya somos root.
+![](./img/Pasted%20image%2020240425101444.png)
