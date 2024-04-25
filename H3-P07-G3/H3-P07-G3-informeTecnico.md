@@ -5,8 +5,8 @@
 - [Evaluación](#evaluacion)
     - [Breve Resumen](#breve-resumen)
     - [Tabla de Hallazgos](#tabla-de-hallazgos)
-      - [PC-1](#vulnerabilidades-ubuntu-metasploitable-3)
-      - [PC-2](#vulnerabilidades-kioptrix)
+      - [PC-1](#vulnerabilidades-PC1)
+      - [PC-2](#vulnerabilidades-PC-2)
 - [Metodologías](#metodologías)
   - [Herramientas utilizadas](#herramientas-utilizadas)
   - [Procedimiento](#procedimiento)
@@ -36,7 +36,7 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 
 ## Tabla de hallazgos
 
-### Vulnerabilidades PC
+### Vulnerabilidades PC-1
 
 | Descripción de la vulnerabilidad | La implementación del Protocolo de escritorio remoto (RDP) en Microsoft Windows XP SP2 y SP3, Windows Server 2003 SP2, Windows Vista SP2, Windows Server 2008 SP2, R2 y R2 SP1, y Windows 7 Gold y SP1 no procesa correctamente los paquetes en la memoria. que permite a atacantes remotos ejecutar código arbitrario enviando paquetes RDP manipulados que activan el acceso a un objeto que (1) no se inicializó correctamente o (2) se eliminó, también conocido como "vulnerabilidad del protocolo de escritorio remoto". |
 |----------------------------------|--------------------------------------------------------------|
@@ -62,6 +62,8 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 | Link de referencia               |         [https://attack.mitre.org/techniques/T1210/](https://attack.mitre.org/techniques/T1210/)                                                     |
 
 <br>
+
+### Vulnerabilidades PC-2
 
 | Descripción de la vulnerabilidad | El complemento mail-masta 1.0 para WordPress incluye archivos locales en count_of_send.php y csvexport.php. |
 |----------------------------------|--------------------------------------------------------------|
