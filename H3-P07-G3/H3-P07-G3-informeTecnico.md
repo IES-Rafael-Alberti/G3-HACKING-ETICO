@@ -72,8 +72,8 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 | Severidad                        |                                 Alta                      |
 | Impacto                          |Permite generar una denegación de servicios explotando el servidor de correo electrónico.                                                    |
 | Sistemas afectados               |             PC-2                                                                                                 |
-| Prueba de concepto (POC)         |                                                            |
-| Remediación                      |         Actualizar mailman a una versión superior.                                              |
+| Prueba de concepto (POC)         |                ![ms12-020](img/Pasted%20image%2020240425090657.png)                                              |
+| Remediación                      |         Actualizar mailman a una versión superior del plugin mail-masta.                                              |
 | Link de referencia               |              [https://attack.mitre.org/techniques/T1499/004/](https://attack.mitre.org/techniques/T1499/004/)                                                  |
 
 <br>
@@ -85,7 +85,7 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 | Severidad                        |                          Alta                            |
 | Impacto                          |                     Un atacante puede ejecutar comandos para ejecutar código malicioso.                               |
 | Sistemas afectados               |             PC-2                                                                                           |
-| Prueba de concepto (POC)         |                                                          |
+| Prueba de concepto (POC)         |            ![ms12-020](img/Pasted%20image%2020240425104902.png)                                                |
 | Remediación                      |                             |
 | Link de referencia               |   [https://attack.mitre.org/techniques/T1659/](https://attack.mitre.org/techniques/T1659/)|  
 
