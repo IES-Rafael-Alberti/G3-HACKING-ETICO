@@ -46,9 +46,6 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 | Severidad                        |                       Alta                                       |
 | Impacto                          | Un atacante puede hacer una denegación de servicios y generar un pantallazo azúl a lamáquina                                                        |
 | Sistemas afectados               |       PC-1                                    |
-<<<<<<< HEAD
-| Prueba de concepto (POC)         |       ![ms12-020](./im)/pa                                     |
-=======
 | Prueba de concepto (POC)         |       ![ms12-020](img/Pasted%20image%2020240425104902.png)                                                |
 >>>>>>> c33c9e96673bad9b1cdba61cfb9bf3d096e5d5f7
 | Remediación                      | Actualizar a una versión posterior a ProFTPD 1.3.5.                                                         |
