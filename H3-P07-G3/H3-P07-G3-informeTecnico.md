@@ -17,7 +17,7 @@
 
 # Resumen Ejecutivo
 
-
+Se ha realizado una serie de escaneos para la comprobación de servicios de cada equipo explotado. Se ha utilizado metasploit para vulnerar el PC1. Se ha pivoteado con chisel creando un tunel entre nuestro kali y el PC1 para poder realizar las herramientas hacia el PC2. Se ha utilizado una vulnerabilidad encontrada en un plugin de Wordpress para inyectar comandos para ganar acceso y escalar privilegios para ser root en el PC2.
 
 # Tabla de Riesgos
 
