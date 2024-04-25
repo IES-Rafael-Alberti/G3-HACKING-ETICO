@@ -94,6 +94,8 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 - Nmap 7.94SVN
 - Metasploit Framework 6.4.1-dev-
 - WPScan 3.8.25
+- Chisel 1.7.7
+- Chisel 1.9.1
 
 ## Procedimiento
 
