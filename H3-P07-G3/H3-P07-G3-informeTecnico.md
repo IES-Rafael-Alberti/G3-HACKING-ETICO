@@ -131,5 +131,18 @@ Una vez se realice un hallazgo, se documentará añadiendo su categoría y códi
 
 Finalmente se aportará un enlace de referencia a la vulnerabilidad en cuestión.
 
-# Conclusión
+### Fase 3: Post-Explotación
+En caso de que se haya conseguido explotar una de las máquinas, se procederá a relizar técnicas de escalado de privilegios, persistencia y pivotaje sobre las máquinas vulneradas. 
 
+Estas técnicas nos permitirán comprobar como podría escalar un posible ataque, comprobando la magnitud que podría tener y por tanto la efectividad de las medidas de seguridad internas de nuestro objetivo.
+
+Se realizarán pruebas para comprobar el alcance de un posible ataque de manera tanto vertica, es decir la cantidad de privilegios que pueden llegar a alcanzarse en un equipo, tanto horizontal, la cantidad de equipos y usuarios de los que se puede llegar a comprometer.
+
+# Conclusiones
+
+En base al test de penetración en la red propuesta, podemos llegar a las siguientes conclusiones:
+
+- El **PC 1** de la red es principalmente vulnerable al **CVE-2019-0708**, lo que permite a un atacante obtener una sesión remota con privilegios de administrador en el equipo a través del puerto **3389**.
+- Partiendo de un equipo en la red **VBOX1**, se ha conseguido alcanzar un equipo de la red **VBOX3** mediante técnicas de pivotaje, por lo cual se concluye que la seguridad actual de los equipos y la red permiten a un atacante ejecutar y montar herramientas que le permitan moverse no por un equipo si no por varios.
+- El **PC 2** de la red es vulnerable principalmente al **CVE-2023-22973**, el cual a través de un LFI (Local File Inclusion) permite a un atacante ejecutar código de manera remota a través del campo *formname*.
+- El firewall en la red **VBOX1** es una medida de seguridad insuficiente si se quiere proteger el acceso a otras redes y equipos.
