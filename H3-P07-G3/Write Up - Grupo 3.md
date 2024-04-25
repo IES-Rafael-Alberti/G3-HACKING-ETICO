@@ -2,6 +2,7 @@
 
 ## Esquema
 
+En la siguiente captura se muestra el esquema de direccionamiento IP.
 ![esquema](img/image-1.png)
 
 ## kali - PC-1
