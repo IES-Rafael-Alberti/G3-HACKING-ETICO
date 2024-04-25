@@ -57,7 +57,7 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 | Severidad                        |                  Alta                                        |
 | Impacto                          | Un atacante podría obtener acceso a la máquina como administrador o generar una denegación de servicio.                                                   |
 | Sistemas afectados               |             PC-1                                                |
-| Prueba de concepto (POC)         |                  ![ms12-020](img/Pasted%20image%20202404242000950.png)                                        |
+| Prueba de concepto (POC)         |                  ![bluekeep](img/Pasted%20image%2020240424200950.png)                                        |
 | Remediación                      |                                                   Desactivar el puerto 3389 si no va a ser utilizado o actualizar a Windows.       |
 | Link de referencia               |         [https://attack.mitre.org/techniques/T1210/](https://attack.mitre.org/techniques/T1210/)                                                     |
 
@@ -72,7 +72,7 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 | Severidad                        |                                 Alta                      |
 | Impacto                          |Permite generar una denegación de servicios explotando el servidor de correo electrónico.                                                    |
 | Sistemas afectados               |             PC-2                                                                                                 |
-| Prueba de concepto (POC)         |                ![ms12-020](img/Pasted%20image%2020240425090657.png)                                              |
+| Prueba de concepto (POC)         |                ![mailmasta](img/Pasted%20image%2020240425090657.png)                                              |
 | Remediación                      |         Actualizar mailman a una versión superior del plugin mail-masta.                                              |
 | Link de referencia               |              [https://attack.mitre.org/techniques/T1499/004/](https://attack.mitre.org/techniques/T1499/004/)                                                  |
 
