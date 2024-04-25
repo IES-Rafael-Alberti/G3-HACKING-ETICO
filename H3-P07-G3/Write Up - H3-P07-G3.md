@@ -45,6 +45,7 @@ Ya tenemos las rutas, vamos a cambar a /Temp para subir con upload chisel.exe qu
 ![](./img/Pasted%20image%2020240424201643.png)
 En nuestro kali ejecutamos el servidor de chisel.
 ![](./img/Pasted%20image%2020240424201740.png)
+
 Y en el PC-1 ejecutamos el comando para ser cliente y crear el túnel pero primero tenemos que generar la shell con el comando del mismo nombre de meterpreter. Para ello colocamos nuestra dirección IP con R: seguido del puerto que está configurado en proxychains4.conf.
 ![](./img/Pasted%20image%2020240424201949.png)
 
