@@ -17,15 +17,7 @@
 
 # Resumen Ejecutivo
 
-En el presente informe se detallan las vulnerabilidades explotadas en la auditoría realizada a la empresa Pata de Palo Corp., con el objetivo de identificar y evaluar las vulnerabilidades en sus sistemas. La auditoría se centró en tres servidores acordados con la empresa, Linux Server Metasploitable 3, Kioptrix Level 1 y W1r3s.
 
-Se ha realizado un análisis de vulnerabilidades sobre los tres servidores mencionados, y tras llevarlos a cabo, logramos explotar algunas de las vulnerabilidades especificadas en dichos análisis.
-
-En primer lugar, en el servidor Linux Server Metasploitable 3, se identificó una vulnerabilidad de nivel alto relacionada con el servidor ProFTPD, la cual fue exitosamente explotada durante la auditoría. También se pudieron explotar dos vulnerabilidades de nivel alto del servicio Drupal y una vulnerabilidad de nivel medio del servidor Apache.
-
-En el segundo servidor, denominado Kioptrix, logramos explotar una vulnerabilidad crítica relacionada con el servicio Samba. Tras averiguar la versión instalada de dicho servicio, se pudo encontrar y usar un exploit para poder acceder al servidor con privilegios de root.
-
-Por último, el servidor W1r3s alberga una serie de vulnerabilidades que pudimos explotar con éxito. Más concretamente, el servidor Apache fue afectado por una vulnerabilidad de nivel alto de exposición de información, una vulnerabilidad crítica en el servicio FTP que permite el login anónimo, dos vulnerabilidades de exposición de información de nivel alto y de nivel crítico respectivamente en el software Cuppa CMS, y una vulnerabilidad crítica de obtención de credenciales.
 
 # Tabla de Riesgos
 
@@ -43,31 +35,18 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 
 ## Breve Resumen
 
-Se ha realizado un test de caja negra por cada sistema auditado y se han encontrado varias vulnerabilidades catalogadas teniendo en cuenta las tres tablas siguientes. Las vulnerabilidades críticas, altas y medias podrían suponer un peligro para los sistemas auditados. 
-
-Estas tablas suponen una información superficial que servirá como idea general del estado de las máquinas con las que estamos trabajando.
-
-**Linux Server Metasploitable 3**
-![ME3Wnessus](./img/tablametasploitable3linux.png)
-
-**Máquina Kioptrix** <br>
-![ME3Wnessus](./img/tablakioptrix.png)
-
-**Máquina W1r3s**
-![w1r3sNessus](./img/w1r3sNessus.png)
-
 ## Tabla de hallazgos
 
-### Vulnerabilidades Ubuntu Metasploitable 3
+### Vulnerabilidades PC
 
-| Descripción de la vulnerabilidad | El módulo mod_copy en ProFTPD 1.3.5 permite a atacantes remotos leer y escribir en archivos de su elección mediante los comandos site cpfr y site cpto.|
+| Descripción de la vulnerabilidad | La implementación del Protocolo de escritorio remoto (RDP) en Microsoft Windows XP SP2 y SP3, Windows Server 2003 SP2, Windows Vista SP2, Windows Server 2008 SP2, R2 y R2 SP1, y Windows 7 Gold y SP1 no procesa correctamente los paquetes en la memoria. que permite a atacantes remotos ejecutar código arbitrario enviando paquetes RDP manipulados que activan el acceso a un objeto que (1) no se inicializó correctamente o (2) se eliminó, también conocido como "vulnerabilidad del protocolo de escritorio remoto". |
 |----------------------------------|--------------------------------------------------------------|
-| CVE/CWE                          |        [CVE-2015-3306](https://nvd.nist.gov/vuln/detail/CVE-2015-3306)                                                    |
-| CVSS v3                          |            [9.8](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)                                                  |
+| CVE/CWE                          |        [CVE-2012-0002](https://nvd.nist.gov/vuln/detail/CVE-2012-0002)                                                    |
+| CVSS v3                          |            [7.5](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)                                                  |
 | Severidad                        |                       Alta                                       |
-| Impacto                          | Un atacante puede leer información sensible, modificar archivos, crearlos e intentar ganar privilegios de administrador en el sistema.                                                         |
-| Sistemas afectados               |       Ubuntu Metasploitable 3                                                       |
-| Prueba de concepto (POC)         |       ![proftpd](./img/proftpd.png)                                                       |
+| Impacto                          | Un atacante puede hacer una denegación de servicios y generar un pantallazo azúl a lamáquina                                                        |
+| Sistemas afectados               |       PC-1                                    |
+| Prueba de concepto (POC)         |       ![ms12-020](./img/Pasted image 20240425104902.png)                                                 |
 | Remediación                      | Actualizar a una versión posterior a ProFTPD 1.3.5.                                                         |
 | Link de referencia               |     [https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure)                                                         |
 <br>
