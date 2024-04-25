@@ -51,7 +51,7 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 | Link de referencia               |     [https://attack.mitre.org/techniques/T1499/](https://attack.mitre.org/techniques/T1499/)                                                        |
 <br>
 
-| Descripción de la vulnerabilidad | La versión de Drupal que se ejecuta en el servidor web remoto se ve afectada por una vulnerabilidad de ejecución de código remoto en el módulo Coder, específicamente en el archivo coder_upgrade.run.php, debido a una validación incorrecta de la entrada proporcionada por el usuario a la función unserialize(). Un atacante remoto no autenticado puede explotar esto, a través de una solicitud especialmente diseñada, para ejecutar código PHP arbitrario. |
+| Descripción de la vulnerabilidad | Existe una vulnerabilidad de ejecución remota de código en los Servicios de Escritorio remoto, anteriormente conocidos como Servicios de Terminal Server, cuando un atacante no autenticado se conecta al sistema de destino mediante RDP y envía solicitudes especialmente diseñadas, también conocida como 'Vulnerabilidad de ejecución remota de código de los Servicios de Escritorio remoto'. |
 |----------------------------------|--------------------------------------------------------------|
 | CVE/CWE                          |     [CVE-2018-7600](https://nvd.nist.gov/vuln/detail/CVE-2018-7600)                                                                                    |
 | CVSS v3                          |         [9.8](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)                                                                                    |
