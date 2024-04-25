@@ -7,6 +7,7 @@
     - [Tabla de Hallazgos](#tabla-de-hallazgos)
       - [PC-1](#vulnerabilidades-PC1)
       - [PC-2](#vulnerabilidades-PC-2)
+- [Trayectoria de ataque](#trayectoria-de-ataque)
 - [Metodologías](#metodologías)
   - [Herramientas utilizadas](#herramientas-utilizadas)
   - [Procedimiento](#procedimiento)
@@ -89,7 +90,16 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 | Remediación                      |      Utilizar rutas absolutas para las rutas de las páginas que tenemos en wordpress y restricciones de acceso a las páginas que no se han usado.                       |
 | Link de referencia               |   [https://attack.mitre.org/techniques/T1659/](https://attack.mitre.org/techniques/T1659/)|  
 
-# Metodologías                                     
+# Trayectoria de ataque
+
+En este punto vamos a definir la trayectoria de ataque realizada en el PC-1.
+[PC-1](./img/PC-1.png)
+
+En este punto vamos a definir la trayectoria de ataque realizada en el PC-2.
+[PC-2](./img/PC-2.png)
+
+# Metodologías
+
 ## Herramientas utilizadas
 
 - Nmap 7.94SVN
