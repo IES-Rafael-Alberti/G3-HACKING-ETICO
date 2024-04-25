@@ -17,7 +17,11 @@
 
 # Resumen Ejecutivo
 
-Se ha realizado una serie de escaneos para la comprobación de servicios de cada equipo explotado. Se ha utilizado metasploit para vulnerar el PC1. Se ha pivoteado con chisel creando un tunel entre nuestro kali y el PC1 para poder realizar las herramientas hacia el PC2. Se ha utilizado una vulnerabilidad encontrada en un plugin de Wordpress para inyectar comandos para ganar acceso y escalar privilegios para ser root en el PC2.
+El presente informe detalla las vulnerabilidades identificadas y el proceso seguido durante la auditoría realizada en los sistemas de la compañía CyberSecPro S.A. La auditoría se enfocó en cinco equipos acordados con la empresa y ubicados dentro de sus redes internas. Además, es importante destacar que se acordó no realizar escaneos de vulnerabilidades intensivos hasta después de las 7 de la tarde, fuera del horario laboral regular, para evitar interrupciones en las operaciones normales de la empresa.
+
+En primer lugar, se identificó una vulnerabilidad en el equipo Windows 7, el cual sirve como punto de acceso a la red corporativa, relacionada con el puerto 3389 y el servicio RDP. Esta vulnerabilidad fue exitosamente explotada durante la auditoría, lo que permitió iniciar el proceso de pivoting hacia otros equipos de la red.
+
+Posteriormente, al escanear los equipos mencionados, se logró acceder al segundo equipo al detectar una vulnerabilidad en un plugin de Wordpress. Esta vulnerabilidad permitió la inyección de comandos, lo que facilitó la obtención de acceso y la escalada de privilegios en el sistema.
 
 # Tabla de Riesgos
 
@@ -34,6 +38,8 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 # Evaluación
 
 ## Breve Resumen
+
+Se ha realizado una serie de escaneos para la comprobación de servicios de cada equipo explotado. Se ha utilizado metasploit para vulnerar el PC1. Se ha pivoteado con chisel creando un tunel entre nuestro kali y el PC1 para poder realizar las herramientas hacia el PC2. Se ha utilizado una vulnerabilidad encontrada en un plugin de Wordpress para inyectar comandos para ganar acceso y escalar privilegios para ser root en el PC2.
 
 ## Tabla de hallazgos
 
