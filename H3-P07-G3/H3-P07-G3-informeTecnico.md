@@ -85,8 +85,8 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 | Severidad                        |                          Alta                            |
 | Impacto                          |                     Un atacante puede ejecutar comandos para ejecutar código malicioso.                               |
 | Sistemas afectados               |             PC-2                                                                                           |
-| Prueba de concepto (POC)         |            ![FLI](img/Pasted%20image%2020240425095903.png)                                                |
-| Remediación                      |                             |
+| Prueba de concepto (POC)         |            ![LFI](img/Pasted%20image%2020240425095903.png)                                                |
+| Remediación                      |      Utilizar rutas absolutas para las rutas de las páginas que tenemos en wordpress y restricciones de acceso a las páginas que no se han usado.                       |
 | Link de referencia               |   [https://attack.mitre.org/techniques/T1659/](https://attack.mitre.org/techniques/T1659/)|  
 
 # Metodologías                                     
