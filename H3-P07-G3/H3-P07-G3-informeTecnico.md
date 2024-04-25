@@ -44,11 +44,11 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 | CVE/CWE                          |        [CVE-2012-0002](https://nvd.nist.gov/vuln/detail/CVE-2012-0002)                                                    |
 | CVSS v3                          |            [7.5](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)                                                  |
 | Severidad                        |                       Alta                                       |
-| Impacto                          | Un atacante puede hacer una denegación de servicios y generar un pantallazo azúl a lamáquina                                                        |
+| Impacto                          | Un atacante puede hacer una denegación de servicios y generar un pantallazo azúl a la máquina obligando a su reinicio.                                                     |
 | Sistemas afectados               |       PC-1                                    |
 | Prueba de concepto (POC)         |       ![ms12-020](img/Pasted%20image%2020240425104902.png)                                                |
-| Remediación                      | Actualizar a una versión posterior a ProFTPD 1.3.5.                                                         |
-| Link de referencia               |     [https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure)                                                         |
+| Remediación                      | Desactivar el puerto 3389 si no va a ser utilizado o actualizar a Windows.                                                      |
+| Link de referencia               |     [https://attack.mitre.org/techniques/T1499/](https://attack.mitre.org/techniques/T1499/)                                                        |
 <br>
 
 | Descripción de la vulnerabilidad | La versión de Drupal que se ejecuta en el servidor web remoto se ve afectada por una vulnerabilidad de ejecución de código remoto en el módulo Coder, específicamente en el archivo coder_upgrade.run.php, debido a una validación incorrecta de la entrada proporcionada por el usuario a la función unserialize(). Un atacante remoto no autenticado puede explotar esto, a través de una solicitud especialmente diseñada, para ejecutar código PHP arbitrario. |
