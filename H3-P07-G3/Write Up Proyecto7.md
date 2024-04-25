@@ -73,7 +73,7 @@ Si buscamos en google como vulnerar wordpress nos aparece un video de youtube co
 ![](./img/Pasted%20image%2020240424213424.png)
 Si seguimos investigando un poco encontramos que tenemos que registrarnos para buscar con un token que nos genera los cve en su base de datos. La web usada es [Malcare](https://www.malcare.com/blog/how-to-use-wpscan/)
 ![](./img/Pasted%20image%2020240424214224.png)
-Así que vamos a hacer exactamente lo mismo. Nos registramos y con nuestro token investigamos en la url. Como no me ha funcionado vamos a probar otra cosa.
+Así que vamos a hacer exactamente lo mismo. Nos registramos y con nuestro token investigamos en la url. Como no ha funcionado no podemos seguir avanzando ya que las herramientas que hemos usado para escanear el wordpress, nos las bloqueaba el firewall.
 ![](./img/Pasted%20image%2020240424214955.png)
 
 
@@ -83,8 +83,4 @@ Así que vamos a hacer exactamente lo mismo. Nos registramos y con nuestro token
 
 ### Escaneo de puertos
 
-Después de varios intentos sin exito las direcciones IP han cambiado. Siendo ahora la PC-2 la 10.10.10.129 y PC-1 la 10.10.10.130, escaneamos los puertos "más" comunes del PC-4. Como pasaba en el caso anterior, también aparecen filtered.
-
-
-### Comprobación de servicios
-
+Después de varios intentos sin exito las direcciones IP han cambiado. Siendo ahora la PC-2 la 10.10.10.129 y PC-1 la 10.10.10.130, escaneamos los puertos "más" comunes del PC-4. Pero nos aparecen todos los puertos cerrados sin motivo aparente.
