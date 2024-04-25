@@ -53,6 +53,7 @@ Y en el PC-1 ejecutamos el comando para ser cliente y crear el túnel pero prime
 ### Escaneo de puertos
 
 Siguiendo nuestro esquema, la dirección IP del PC-2 sería 10.10.10.129. Para ello añadiremos proxychains4 antes del comando de nmap. Esta vez buscaremos los puertos 21, 22, 80 y 445 por ahora ya que suelen ser de los puertos más típicos.  Tras el intento no me cogía nada entonces probé con la .130 y ahí si me los pilló como filtered.
+
 ![](./img/Pasted%20image%2020240424210445.png)
 
 ## Comprobación de servicios
