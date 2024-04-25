@@ -92,6 +92,7 @@ Ahora ponemos detrás de h3l105 "/wp-content/plugins/mail-masta/inc/campaign/cou
 ![](./img/Pasted%20image%2020240425090657.png)
 Nos interesa ahora que sabemos que existe esta vulnerabilidad acceder. Para ello ponemos en escucha kali por el puerto 4443 por ejemplo.
 ![](./img/Pasted%20image%2020240425090934.png)
+
 Inyectamos el código a través de telnet con proxychains.
 ![](./img/Pasted%20image%2020240425091214.png)
 Ahora vamos a la url y ponemos lo siguiente después de h3l105/ para revisar que se ha ejecutado bien el comando. http://10.10.10.129/h3l105/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/var/mail/helios&comando=id
@@ -115,7 +116,9 @@ Vemos que internamente ejecuta el comando curl.
 Ahora nos interesa falsear el binario para poder escalar privilegios. Nos movemos hacia /tmp y con echo creamos el fichero curl.
 ![](./img/Pasted%20image%2020240425101129.png)
 Le damos permisos 777 al fichero que hemos creado.
+
 ![](./img/Pasted%20image%2020240425101208.png)
+
 Ahora con echo $PATH imprimos el valor de la acutal variable PATH.
 ![](./img/Pasted%20image%2020240425101314.png)
 Agregamos /tmp a la variable path.
