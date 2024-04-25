@@ -16,6 +16,7 @@ Primero de todo vamos a escanear la red para comprobar cual es la dirección IP 
 
 Ahora que sabemos la dirección IP de la máquina que vamos a vulnerar, hacemos un escaneo de los puertos con nmap.
 ![](./img/Pasted%20image%2020240424194525.png)
+
 Como podemos comprobar, la máquina tiene un puerto 3389 abierto. Vamos a intentar comprobar si es vulnerable a ms12-020 para ello usaremos metasploit.
 Creamos un workspace para el pentesting que estamos haciendo.
 ![](./img/Pasted%20image%2020240424194733.png)
