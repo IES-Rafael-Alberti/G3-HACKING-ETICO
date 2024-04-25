@@ -58,7 +58,7 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 | Severidad                        |                  Alta                                        |
 | Impacto                          | Un atacante podría obtener acceso a la máquina como administrador o generar una denegación de servicio.                                                   |
 | Sistemas afectados               |             PC-1                                                |
-| Prueba de concepto (POC)         |            ![Bluekeep]()                                                |
+| Prueba de concepto (POC)         |                                                          |
 | Remediación                      |                                                   Desactivar el puerto 3389 si no va a ser utilizado o actualizar a Windows.       |
 | Link de referencia               |         [https://attack.mitre.org/techniques/T1210/](https://attack.mitre.org/techniques/T1210/)                                                     |
 
