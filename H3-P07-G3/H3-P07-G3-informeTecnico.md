@@ -46,7 +46,7 @@ La siguiente tabla explica de forma clara y concisa la puntuación de los riesgo
 | Severidad                        |                       Alta                                       |
 | Impacto                          | Un atacante puede hacer una denegación de servicios y generar un pantallazo azúl a lamáquina                                                        |
 | Sistemas afectados               |       PC-1                                    |
-| Prueba de concepto (POC)         |       ![ms12-020](./img/Pasted image 20240425104902.png)                                                 |
+| Prueba de concepto (POC)         |       ![ms12-020](./im)/pa                                     |
 | Remediación                      | Actualizar a una versión posterior a ProFTPD 1.3.5.                                                         |
 | Link de referencia               |     [https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure)                                                         |
 <br>
