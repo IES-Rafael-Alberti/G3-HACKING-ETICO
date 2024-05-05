@@ -1,6 +1,6 @@
 # Investigación Hackrf One
 
-## ¿Qué es Hackrf One?¿Cuáles son sus características?
+## ¿Qué es Hackrf One? ¿Cuáles son sus características?
 
 La HackRF One es un periférico SDR. El término SDR o "Software Defined Radio" por sus siglas en inglés se utiliza para definir dispositivos que implementan en software los componentes encargados de modular y demodular señales de radio en lugar de hacerlo por hardware. La idea es tener un dispositivo capaz de recibir y transmitir distintos protocolos de radio solo teniendo que configurar su software para hacerlo.
 
