@@ -21,6 +21,24 @@ La HackRF One es un SDR. El término SDR o "Software Defined Radio" por sus sigl
 - Alimentado por USB.
 - Hardware de código abierto.
 
+## Software del Hackrf One
+
+Desde 2014 HackRF One funciona con 'SDR-Radio', GNU Radio' y 'SDR#'' (SDR Sharp). Gracias a que es de código abierto y libre de licencias de pago.
+
+## Circuito del Hackrf One
+
+La entrada de antena tiene dos amplificadores MGA-81 GaAs MMIC, uno sirve para la entrada, y el otro para la salida. Los amplificadores ICs pueden ser seleccionados para la entrada o salida de señal usando las teclas RF.
+
+El bloque del amplificador va seguido de un filtro pasa bajo y otro pasa alto, los cuales se pueden usar para limitar la señal en cualquier sentido (entrada o salida).
+
+Después del filtro, la señal llega al mezclador de RF RFFC 5072. Este mezclador puede usarse hasta los 6GHz. La señal es mezclada arriba o abajo, dependiendo de la programación del usuario y finalmente llevada al circuito de banda base.
+
+El mezclador y los filtros pueden puentearse usando otras teclas RF, permitiendo asi que las señales IF puedan ser cambiadas directamente en los amplificadores o directamente en la antena.
+
+El chip de la banda base se usa un componente Maxim MAX2837, el cual cubre de 2.3 a 2.7 GHz. Este chip usa filtros monoliticos que ofrecen una señal muy lineal y bajo nivel de ruido. Los datos IQ son luego llevados a un chip ADC/DAC Maxim MAX5864. 
+
+Este usa una resolución de 8 bits. Estos conversores soportan una sample rate máxima de 20MS/s.Las señales digitales son finalmente enviadas a un CPLD Xilinx XC2C. Todo el sistema y las interfaces son controladas por un potente procesador ARM Dual Core Cortex (NXP LPC4320) y la placa soporta una memoria flash de 1MB flash.
+
 ## Usos comunes de Hackrf One
 
 Hackrf One permite varios usos, como hacer ingienería inversa a cualquiekr protocolo de radiofrecuencias pero también permite lo siguiente:
@@ -34,9 +52,7 @@ Hackrf One permite varios usos, como hacer ingienería inversa a cualquiekr prot
 
 ## Usos por atacantes y para pentesting
 
-Como hemos visto en los usos comunes de Hackrf One, un atacante podría por ejemplo bloquear señales hacia su victima como señales GPS.
-
-Pueden grabar y repetir señales de radio para emular cualquier tipo de señal y usarla como por ejemplo para abrir la puerta de un vehículo.
+Como hemos visto en los usos comunes de Hackrf One, un atacante podría bloquear señales hacia su victima como señales GPS. Pueden grabar y repetir señales de radio para emular cualquier tipo de señal y usarla como por ejemplo para abrir la puerta de un vehículo.
 
 También puede ser utilizado para ataques de tipo lateral permitiendo al atacante visualizar el monitor de su victima y ver en pleno directo o grabar dicha visualización.
 
@@ -47,4 +63,4 @@ Por lo tanto, teniendo en cuenta las posibilidades de un atacante con este dispo
 - [https://www.astroradio.com/p/hackrf-one/](https://www.astroradio.com/p/hackrf-one/)
 - [https://lab401.com/es-es/products/hackrf-one](https://lab401.com/es-es/products/hackrf-one)
 - [https://www.jtsec.es/es/entrada-blog/111/usos-comunes-y-puesta-en-marcha-de-una-hackrf-one](https://www.jtsec.es/es/entrada-blog/111/usos-comunes-y-puesta-en-marcha-de-una-hackrf-one)
-
+- [https://www.wimo.com/es/hackrf-one](https://www.wimo.com/es/hackrf-one )
