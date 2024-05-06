@@ -1,7 +1,7 @@
 # Índice
 
 1. [Resumen Ejecutivo](#resumen-ejecutivo)
-2. [¿Qué es Hackrf One? ¿Cuáles son sus características?](#qué-es-hackrf-one--cuáles-son-sus-características)
+2. [¿Qué es Hackrf One? ¿Cuáles son sus características?](#qué-es-hackrf-one-cuáles-son-sus-características)
 3. [Software del Hackrf One](#software-del-hackrf-one)
 4. [Circuito del Hackrf One](#circuito-del-hackrf-one)
 5. [Usos comunes de Hackrf One](#usos-comunes-de-hackrf-one)
