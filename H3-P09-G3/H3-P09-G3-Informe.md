@@ -1,19 +1,12 @@
 # Índice
 
-- [Resumen Ejecutivo](#resumen-ejecutivo)
-- [Tabla de Riesgos](#tabla-de-riesgos)
-- [Evaluación](#evaluacion)
-    - [Breve Resumen](#breve-resumen)
-    - [Tabla de Hallazgos](#tabla-de-hallazgos)
-      - [PC-1](#vulnerabilidades-PC1)
-      - [PC-2](#vulnerabilidades-PC-2)
-- [Trayectoria de ataque](#trayectoria-de-ataque)
-- [Metodologías](#metodologías)
-  - [Herramientas utilizadas](#herramientas-utilizadas)
-  - [Procedimiento](#procedimiento)
-    - [Fase 1: Reconocimiento](#fase-1-reconocimiento)
-    - [Fase 2: Explotación](#fase-2-explotación)
-- [Conclusión](#conclusión)
+1. [Resumen Ejecutivo](#resumen-ejecutivo)
+2. [¿Qué es Hackrf One? ¿Cuáles son sus características?](#qué-es-hackrf-one--cuáles-son-sus-características)
+3. [Software del Hackrf One](#software-del-hackrf-one)
+4. [Circuito del Hackrf One](#circuito-del-hackrf-one)
+5. [Usos comunes de Hackrf One](#usos-comunes-de-hackrf-one)
+6. [Usos por atacantes y para pentesting](#usos-por-atacantes-y-para-pentesting)
+7. [Referencias](#referencias)
 
 # Resumen Ejecutivo
 
