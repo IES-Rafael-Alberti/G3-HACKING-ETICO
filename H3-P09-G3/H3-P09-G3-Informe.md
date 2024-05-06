@@ -10,6 +10,8 @@
 
 # Resumen Ejecutivo
 
+HackRF One es un periférico SDR que ofrece una amplia gama de funcionalidades gracias a su versatilidad y características técnicas avanzadas. Este dispositivo opera en un rango de frecuencia de 1 MHz a 6 GHz, con un ancho de banda de 20 MHz y una sensibilidad de recepción de hasta -121 dBm. Con una potencia de transmisión de +10 dBm y una interfaz Hi-Speed USB 2.0, el HackRF One es compacto y fácil de usar. Sus características adicionales incluyen muestras de cuadratura de 8 bits, compatibilidad con una amplia gama de software SDR, filtros configurables por software y control de alimentación de antena. Desde 2014, HackRF One es compatible con varios softwares SDR, lo que le brinda a los usuarios flexibilidad y opciones para adaptarse a sus necesidades específicas. Además de sus usos legítimos, HackRF One también puede ser utilizado por atacantes con fines maliciosos, por lo que es importante comprender las posibilidades de uso indebido de este dispositivo y considerar las medidas de seguridad adecuadas.
+
 # ¿Qué es Hackrf One? ¿Cuáles son sus características?
 
 HackRF One es un periférico SDR. El término de SDR o "Software Defined Radio" por sus siglas en inglés se utiliza para definir dispositivos que implementan en software los componentes encargados de modular y demodular señales de radio en lugar de hacerlo por hardware. La idea es tener un dispositivo capaz de recibir y transmitir distintos protocolos de radio solo teniendo que configurar su software para hacerlo.
