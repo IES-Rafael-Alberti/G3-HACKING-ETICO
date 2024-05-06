@@ -23,20 +23,33 @@ HackRF One es un periférico SDR. El término de SDR o "Software Defined Radio" 
 
 **Características** 
 
-- Frecuencia de funcionamiento de 1MHz a 6GHz.
-- Transceptor semidúplex.
-- 20 millones de muestras por segundos.
-- Muestras de cuadraturas de 8 bits.
-- Compatible con GNU Radio, SDR#, SDR-Console, SdrAngel, Remote SDR v5 etc..
-- Filtro de banda base y ganancia RX y TX configurable por software.
-- Alimentación del puerto de antena controlada por software.
-- Conector de antena SMA hembra.
-- Entrada y salida de reloj SMA hembra para sincronización exterior.
-- Botones para programar.
-- Puerto interno para expansión.
-- USB2.0 de alta velocidad.
-- Alimentado por USB.
-- Hardware de código abierto.
+- **Rango de frecuencia:** 1 MHz a 6 GHz
+- **Ancho de banda:** 20 MHz
+- **Sensibilidad de recepción:**
+    - 121 dBm a 10 MHz
+    - 117 dBm a 1 GHz
+    - 110 dBm a 6 GHz
+- **Sample rate:** 20 MS/s (millones de muestras por segundo)
+- **Potencia de transmisión:** +10 dBm (100 mW)
+- **Interfaz:** Hi-Speed USB 2.0
+- **Formato de muestreo:** 8 bits
+- **Alimentación:** USB
+- **Dimensiones:**
+    - Tamaño: 100 mm x 60 mm x 21 mm
+    - Peso: 86 g
+- **Muestras de cuadratura:** 8 bits (I de 8 bits y Q de 8 bits)
+- **Compatibilidad con software:** 
+  - Compatible con las principales suites SDR a través de múltiples plataformas como GNU Radio, SDR#, SDR_Radio, Universal Radio Hacker, QSpectrumAnalyzer1, así como otros programas como SDR-Console, SdrAngel, Remote SDR v5, entre otros.
+- **Características adicionales:**
+    - Filtro de ganancia de banda base y banda RX y TX configurables por software
+    - Alimentación de puerto de antena controlada por software (50 mA a 3,3 V)
+    - Conector de antena: SMA hembra
+    - Conector SMA para reloj de entrada y salida hembra para sincronización
+    - Botones convenientes para la programación
+    - Encabezados internos para expansión
+- **Transceptor:** Semidúplex
+- **Puerto interno para expansión**
+- **Código abierto:** Hardware de código abierto
 
 # Software del Hackrf One
 
